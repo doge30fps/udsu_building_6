@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://xun6tlxomfpg"]
+
+[node name="viewmodel" type="Camera3D" unique_id=1753393732]
+cull_mask = 1047554
+fov = 30.0
+
+[node name="FPSRig" type="Node3D" parent="." unique_id=1145998313]
+
+[node name="wpn_empty" type="Node3D" parent="FPSRig" unique_id=1758655170 groups=["weapons"]]
+transform = Transform3D(-0.005, 1.13133e-10, -4.2222e-10, 0, 0.00482963, 0.0012941, 4.37114e-10, 0.0012941, -0.00482963, 0, -0.1, -0.15)
+visible = false
+
+[node name="Reach" type="RayCast3D" parent="." unique_id=1114146089]
+transform = Transform3D(1, 0, 0, 0, 2.98023e-08, -1, 0, 1, 2.98023e-08, 0, 0, 0)
+collide_with_areas = true
