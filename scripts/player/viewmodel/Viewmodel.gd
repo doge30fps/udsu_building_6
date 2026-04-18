@@ -15,7 +15,7 @@ func _physics_process(delta : float) -> void:
 	fps_rig.rotation.y = lerp(fps_rig.rotation.y,0.0,delta*5);
 	fps_rig.rotation.z = lerp(fps_rig.rotation.z,0.0,delta*5);
 	
-	sway_move(Vector3(player.blend_govno.z, player.blend_govno.y, player.blend_govno.x));
+	sway_move(Vector3(player.blend_rotation.z, player.blend_rotation.y, player.blend_rotation.x));
 	
 func sway(sway_amount : Vector2) -> void:
 	fps_rig.position.x -= sway_amount.x*0.00001;

@@ -27,24 +27,24 @@ var was_on_floor : bool = false
 
 @onready var feet = player.get_node("Feet")
 @onready var feet_sounds = [
-	preload("res://player/Sounds/steps/concrete_01.ogg"),
-	preload("res://player/Sounds/steps/concrete_02.ogg"),
-	preload("res://player/Sounds/steps/concrete_03.ogg"),
-	preload("res://player/Sounds/steps/concrete_04.ogg"),
-	preload("res://player/Sounds/steps/concrete_05.ogg"),
-	preload("res://player/Sounds/steps/concrete_06.ogg")
+	preload("res://sounds/player/steps/wooden_floor/wooden_floor_01.ogg"),
+	preload("res://sounds/player/steps/wooden_floor/wooden_floor_02.ogg"),
+	preload("res://sounds/player/steps/wooden_floor/wooden_floor_03.ogg"),
+	preload("res://sounds/player/steps/wooden_floor/wooden_floor_04.ogg"),
+	preload("res://sounds/player/steps/wooden_floor/wooden_floor_05.ogg"),
+	preload("res://sounds/player/steps/wooden_floor/wooden_floor_06.ogg")
 ]
 @onready var land_sounds = [
-	preload("res://player/Sounds/steps/land_concrete_01.ogg"),
-	preload("res://player/Sounds/steps/land_concrete_02.ogg"),
-	preload("res://player/Sounds/steps/land_concrete_03.ogg"),
-	preload("res://player/Sounds/steps/land_concrete_04.ogg"),
-	preload("res://player/Sounds/steps/land_concrete_05.ogg")
+	preload("res://sounds/player/steps/concrete/land_concrete_01.ogg"),
+	preload("res://sounds/player/steps/concrete/land_concrete_02.ogg"),
+	preload("res://sounds/player/steps/concrete/land_concrete_03.ogg"),
+	preload("res://sounds/player/steps/concrete/land_concrete_04.ogg"),
+	preload("res://sounds/player/steps/concrete/land_concrete_05.ogg")
 ]
 @onready var jump_sounds = [
-	preload("res://player/Sounds/steps/jump_concrete_01.ogg"),
-	preload("res://player/Sounds/steps/jump_concrete_02.ogg"),
-	preload("res://player/Sounds/steps/jump_concrete_03.ogg")
+	preload("res://sounds/player/steps/concrete/jump_concrete_01.ogg"),
+	preload("res://sounds/player/steps/concrete/jump_concrete_02.ogg"),
+	preload("res://sounds/player/steps/concrete/jump_concrete_03.ogg")
 ]
 
 
@@ -96,7 +96,7 @@ func _physics_process(delta : float) -> void:
 		if player.is_on_floor() and !was_on_floor:
 			play_random_sound(speed_clamped, land_sounds)
 			
-		sway_camera(Vector3(player.blend_govno.z, player.blend_govno.y, player.blend_govno.x));
+		sway_camera(Vector3(player.blend_rotation.z, player.blend_rotation.y, player.blend_rotation.x));
 		was_on_floor = player.is_on_floor();
 	
 func sway_camera(sway_amount : Vector3) -> void:

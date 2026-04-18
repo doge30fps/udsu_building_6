@@ -14,6 +14,8 @@
 [ext_resource type="Script" uid="uid://bmugl8gnen4nj" path="res://scripts/player/state_machine/StateDebugLabel.gd" id="12_ugbui"]
 [ext_resource type="Script" uid="uid://d2hlolajvrasv" path="res://scripts/player/posture_machine/PostureDebugLabel.gd" id="13_fcs02"]
 [ext_resource type="Script" uid="uid://q4rll33g3wun" path="res://scripts/player/fps_counter/FPSCounter.gd" id="14_myrg7"]
+[ext_resource type="AudioStream" uid="uid://br2nk4uf6i7hs" path="res://sounds/player/voice/jump.ogg" id="15_myrg7"]
+[ext_resource type="AudioStream" uid="uid://by5skqorriw74" path="res://sounds/player/other_effects/windrush.ogg" id="16_kvlxm"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2v6pm"]
 radius = 0.4
@@ -29,10 +31,16 @@ font_color = Color(0.206496, 0.695845, 0.584443, 1)
 outline_size = 5
 outline_color = Color(0, 0, 0, 1)
 
-[node name="Player" type="CharacterBody3D" unique_id=480734254]
+[node name="Player" type="CharacterBody3D" unique_id=480734254 node_paths=PackedStringArray("player_capsule_top", "player_capsule_down", "head_check", "head", "windrush_sound", "jump_sound")]
 process_mode = 1
 wall_min_slide_angle = 0.523599
 script = ExtResource("1_je7p5")
+player_capsule_top = NodePath("BodyTop")
+player_capsule_down = NodePath("BodyLower")
+head_check = NodePath("Head/HeadCheck")
+head = NodePath("Head")
+windrush_sound = NodePath("Windrush")
+jump_sound = NodePath("JumpSound")
 
 [node name="BodyTop" type="CollisionShape3D" parent="." unique_id=2115972158]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 0)
@@ -42,9 +50,11 @@ shape = SubResource("CapsuleShape3D_2v6pm")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0)
 shape = SubResource("CapsuleShape3D_f67h2")
 
-[node name="Head" type="Node3D" parent="." unique_id=1411443533]
+[node name="Head" type="Node3D" parent="." unique_id=1411443533 node_paths=PackedStringArray("sub_viewport", "player")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.68, 0)
 script = ExtResource("2_fm80t")
+sub_viewport = NodePath("Camera/SubViewportContainer/SubViewport")
+player = NodePath("..")
 
 [node name="Camera" type="Camera3D" parent="Head" unique_id=1212332343]
 cull_mask = 1048573
@@ -62,8 +72,12 @@ handle_input_locally = false
 size = Vector2i(1280, 720)
 render_target_update_mode = 4
 
-[node name="viewmodel" parent="Head/Camera/SubViewportContainer/SubViewport" unique_id=1753393732 instance=ExtResource("1_8afob")]
+[node name="viewmodel" parent="Head/Camera/SubViewportContainer/SubViewport" unique_id=1753393732 node_paths=PackedStringArray("fps_rig", "player", "reach_ray", "viewmodel_reach_ray") instance=ExtResource("1_8afob")]
 script = ExtResource("4_gx1jg")
+fps_rig = NodePath("FPSRig")
+player = NodePath("../../../../..")
+reach_ray = NodePath("../../../../Reach")
+viewmodel_reach_ray = NodePath("Reach")
 
 [node name="HeadCheck" type="RayCast3D" parent="Head" unique_id=1953120378]
 transform = Transform3D(1, 0, 0, 0, -1, -8.9407e-08, 0, 8.9407e-08, -1, 0, 0, 0)
@@ -75,33 +89,46 @@ collide_with_areas = true
 debug_shape_custom_color = Color(1, 0, 0, 1)
 script = ExtResource("5_ugbui")
 
-[node name="CharacterStateMachine" type="Node" parent="." unique_id=27252009]
+[node name="CharacterStateMachine" type="Node" parent="." unique_id=27252009 node_paths=PackedStringArray("player", "current_state", "viewmodel")]
 script = ExtResource("6_fcs02")
+player = NodePath("..")
+current_state = NodePath("AirState")
+viewmodel = NodePath("../Head/Camera/SubViewportContainer/SubViewport/viewmodel")
 
-[node name="GroundState" type="Node" parent="CharacterStateMachine" unique_id=929642273]
+[node name="GroundState" type="Node" parent="CharacterStateMachine" unique_id=929642273 node_paths=PackedStringArray("air_state")]
 script = ExtResource("7_myrg7")
+air_state = NodePath("../AirState")
 
-[node name="AirState" type="Node" parent="CharacterStateMachine" unique_id=783699053]
+[node name="AirState" type="Node" parent="CharacterStateMachine" unique_id=783699053 node_paths=PackedStringArray("ground_state")]
 script = ExtResource("8_kvlxm")
+ground_state = NodePath("../GroundState")
 
-[node name="CharacterPostureMachine" type="Node" parent="." unique_id=939965040]
+[node name="CharacterPostureMachine" type="Node" parent="." unique_id=939965040 node_paths=PackedStringArray("player", "current_posture", "viewmodel")]
 script = ExtResource("9_uf5tr")
+player = NodePath("..")
+current_posture = NodePath("Standing")
+viewmodel = NodePath("../Head/Camera/SubViewportContainer/SubViewport/viewmodel")
 
-[node name="Standing" type="Node" parent="CharacterPostureMachine" unique_id=1027400831]
+[node name="Standing" type="Node" parent="CharacterPostureMachine" unique_id=1027400831 node_paths=PackedStringArray("crouching_posture", "posture_machine")]
 script = ExtResource("10_lgqa7")
+crouching_posture = NodePath("../Crouching")
+posture_machine = NodePath("..")
 
-[node name="Crouching" type="Node" parent="CharacterPostureMachine" unique_id=986130874]
+[node name="Crouching" type="Node" parent="CharacterPostureMachine" unique_id=986130874 node_paths=PackedStringArray("standing_posture", "posture_machine")]
 script = ExtResource("11_8ydkj")
+standing_posture = NodePath("../Standing")
+posture_machine = NodePath("..")
 
-[node name="StateDebugLabel" type="Label" parent="." unique_id=477352940]
+[node name="StateDebugLabel" type="Label" parent="." unique_id=477352940 node_paths=PackedStringArray("state_machine")]
 offset_right = 40.0
 offset_bottom = 23.0
 text = "1000
 "
 label_settings = SubResource("LabelSettings_xkvt8")
 script = ExtResource("12_ugbui")
+state_machine = NodePath("../CharacterStateMachine")
 
-[node name="PostureDebugLabel" type="Label" parent="." unique_id=2046551195]
+[node name="PostureDebugLabel" type="Label" parent="." unique_id=2046551195 node_paths=PackedStringArray("posture_machine")]
 offset_top = 36.0
 offset_right = 68.0
 offset_bottom = 81.0
@@ -109,6 +136,7 @@ text = "1000
 "
 label_settings = SubResource("LabelSettings_xkvt8")
 script = ExtResource("13_fcs02")
+posture_machine = NodePath("../CharacterPostureMachine")
 
 [node name="FpsLabel" type="Label" parent="." unique_id=47363627]
 offset_left = 1030.0
@@ -121,7 +149,15 @@ label_settings = SubResource("LabelSettings_xkvt8")
 script = ExtResource("14_myrg7")
 
 [node name="JumpSound" type="AudioStreamPlayer" parent="." unique_id=848725756]
+stream = ExtResource("15_myrg7")
 volume_db = -16.068
 
 [node name="Windrush" type="AudioStreamPlayer" parent="." unique_id=1521732232]
+stream = ExtResource("16_kvlxm")
 autoplay = true
+
+[node name="Feet" type="AudioStreamPlayer" parent="." unique_id=979506349]
+volume_db = -8.0
+max_polyphony = 3
+
+[editable path="Head/Camera/SubViewportContainer/SubViewport/viewmodel"]

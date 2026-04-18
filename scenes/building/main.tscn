@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bkrhc20mwwo86"]
 
+[ext_resource type="PackedScene" uid="uid://crdvlwq6cw1ne" path="res://scenes/player/player.tscn" id="1_vbb3r"]
+
 [sub_resource type="BoxMesh" id="BoxMesh_8ja4x"]
 size = Vector3(35, 1, 35)
 
@@ -17,3 +19,5 @@ mesh = SubResource("BoxMesh_8ja4x")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="floor" unique_id=842887430]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_vbb3r")
+
+[node name="Player" parent="." unique_id=480734254 instance=ExtResource("1_vbb3r")]

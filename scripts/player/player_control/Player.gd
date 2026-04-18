@@ -34,7 +34,7 @@ var direction : Vector3 = Vector3.ZERO
 var is_forward_moving  : bool = false
 var is_in_crouch : bool = false;
 var is_sprinting : bool = false;
-var blend_govno : Vector3;
+var blend_rotation : Vector3;
 
 @export var player_capsule_top : CollisionShape3D
 @export var player_capsule_down : CollisionShape3D
@@ -82,7 +82,7 @@ func _physics_process(delta : float) -> void:
 	
 	velocity = velocity.lerp(direction * speed, accel * delta)
 	
-	blend_govno = velocity.rotated(Vector3.UP, -global_rotation.y)
+	blend_rotation = velocity.rotated(Vector3.UP, -global_rotation.y)
 	
 	move_and_slide()
 	handle_rush()
