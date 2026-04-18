@@ -10,13 +10,13 @@ size = Vector3(35, 1, 35)
 
 [node name="Node3D" type="Node3D" unique_id=1503407360]
 
-[node name="floor" type="StaticBody3D" parent="." unique_id=232929963]
+[node name="global_floor" type="StaticBody3D" parent="." unique_id=232929963]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="floor" unique_id=820354240]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="global_floor" unique_id=820354240]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.508, 0)
 mesh = SubResource("BoxMesh_8ja4x")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="floor" unique_id=842887430]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="global_floor" unique_id=842887430]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_vbb3r")
 

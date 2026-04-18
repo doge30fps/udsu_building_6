@@ -13,7 +13,14 @@ config_version=5
 config/name="udsu"
 run/main_scene="uid://bkrhc20mwwo86"
 config/features=PackedStringArray("4.6", "Forward Plus")
+run/max_fps=300
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/vsync/vsync_mode=0
 
 [input]
 
@@ -69,4 +76,8 @@ pause={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=3
+textures/canvas_textures/default_texture_repeat=1
 rendering_device/driver.windows="d3d12"
+environment/defaults/default_clear_color=Color(0.0970766, 0.3217446, 0.46347594, 1)
+anti_aliasing/quality/use_taa=true
