@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://crdvlwq6cw1ne" path="res://scenes/player/player.tscn" id="1_vbb3r"]
 [ext_resource type="AudioStream" uid="uid://cwiyj8ltdygbi" path="res://sounds/ambient/SummerAmbient.mp3" id="1_vvu1a"]
 [ext_resource type="Material" uid="uid://im036vl3ik65" path="res://materials/placeholder_grid/placeholder_grid.tres" id="3_a87b0"]
+[ext_resource type="Material" uid="uid://begxfr1w3bq6g" path="res://materials/room321/inner_wall.tres" id="5_xxpmb"]
+[ext_resource type="Material" uid="uid://bfduhrv4fmrf5" path="res://materials/room321/laminate.tres" id="8_eetaf"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_a87b0"]
 panorama = ExtResource("1_unbpl")
@@ -14,6 +16,7 @@ sky_material = SubResource("PanoramaSkyMaterial_a87b0")
 [sub_resource type="Environment" id="Environment_vvu1a"]
 background_mode = 2
 sky = SubResource("Sky_hc167")
+reflected_light_source = 2
 
 [sub_resource type="BoxMesh" id="BoxMesh_8ja4x"]
 lightmap_size_hint = Vector2i(354, 191)
@@ -41,7 +44,7 @@ shadow_enabled = true
 [node name="Global Floor" type="StaticBody3D" parent="." unique_id=232929963]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Global Floor" unique_id=820354240]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.508, 0)
+transform = Transform3D(0.9999999, 0.00020590068, 0.000477729, -0.00020621777, 0.99999976, 0.0006787495, -0.0004775922, -0.0006788458, 0.99999964, 0, -0.508, 0)
 mesh = SubResource("BoxMesh_8ja4x")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Global Floor" unique_id=842887430]
@@ -62,6 +65,7 @@ size = Vector3(16, 4, 0.25)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.25)
 calculate_tangents = false
 size = Vector3(16, 4, 0.25)
+material = ExtResource("5_xxpmb")
 
 [node name="вентялиция1" type="CSGBox3D" parent="room321/стена правая/стена внутренняя" unique_id=861761709]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.516902, 1.150394, 0)
@@ -89,6 +93,7 @@ operation = 2
 size = Vector3(0.3, 0.3, 0.4)
 
 [node name="решетка1" type="CSGCombiner3D" parent="room321/стена правая/стена внутренняя" unique_id=2080758561]
+calculate_tangents = false
 
 [node name="CSGBox3D" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка1" unique_id=1569943447]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4142036, 1.143754, 0.09677458)
@@ -266,46 +271,59 @@ size = Vector3(0.02935791, 0.3136139, 0.020996094)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4782352, -1.0145524, 0.11642766)
 operation = 2
 size = Vector3(1.2436523, 2, 0.67871094)
-material = ExtResource("3_a87b0")
+material = ExtResource("5_xxpmb")
 
 [node name="стена передняя" type="CSGBox3D" parent="room321" unique_id=1680867752]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.746666, 2, 4.378895)
 size = Vector3(8, 4, 0.5)
+material = ExtResource("5_xxpmb")
 
 [node name="дверной проём" type="CSGBox3D" parent="room321/стена передняя" unique_id=23046974]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6731756, -1.0145524, -0.07654381)
 operation = 2
 size = Vector3(1.0217285, 2, 0.67871094)
-material = ExtResource("3_a87b0")
+material = ExtResource("5_xxpmb")
 
 [node name="стена левая" type="CSGBox3D" parent="room321" unique_id=896953911]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9972539, 2, 8.85)
 size = Vector3(16, 4, 1)
+material = ExtResource("5_xxpmb")
 
 [node name="окно1" type="CSGBox3D" parent="room321/стена левая" unique_id=930644780]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6703157, 0.29174805, 0)
 operation = 2
 size = Vector3(2.7839355, 2.8911133, 1)
+material = ExtResource("5_xxpmb")
 
 [node name="окно2" type="CSGBox3D" parent="room321/стена левая" unique_id=1725499062]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1064196, 0.29174805, 0)
 operation = 2
 size = Vector3(2.7839355, 2.8911133, 1)
+material = ExtResource("5_xxpmb")
 
 [node name="окно3" type="CSGBox3D" parent="room321/стена левая" unique_id=1810325737]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6221042, 0.29174805, 0)
 operation = 2
 size = Vector3(2.7839355, 2.8911133, 1)
+material = ExtResource("5_xxpmb")
 
 [node name="окно4" type="CSGBox3D" parent="room321/стена левая" unique_id=2025647035]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6285615, 0.29174805, 0)
 operation = 2
 size = Vector3(2.7839355, 2.8911133, 1)
+material = ExtResource("5_xxpmb")
 
 [node name="стена задняя" type="CSGBox3D" parent="room321" unique_id=325432031]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.743085, 2, 4.378895)
 size = Vector3(8, 4, 0.5)
+material = ExtResource("5_xxpmb")
 
 [node name="потолок" type="CSGBox3D" parent="room321" unique_id=421730671]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.9937315, 4.18751, 4.610431)
 size = Vector3(9.468018, 0.5, 15.973633)
+material = ExtResource("5_xxpmb")
+
+[node name="пол" type="CSGBox3D" parent="room321" unique_id=438788580]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.9937315, -0.044107914, 4.610431)
+size = Vector3(9.468, 0.1, 15.974)
+material = ExtResource("8_eetaf")
