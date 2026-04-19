@@ -22,6 +22,10 @@ window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/vsync/vsync_mode=0
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 move_forward={
@@ -73,11 +77,16 @@ pause={
 [physics]
 
 3d/physics_engine="Jolt Physics"
+common/physics_interpolation=true
 
 [rendering]
 
-textures/canvas_textures/default_texture_filter=3
+textures/canvas_textures/default_texture_filter=0
 textures/canvas_textures/default_texture_repeat=1
 rendering_device/driver.windows="d3d12"
+textures/default_filters/anisotropic_filtering_level=4
+anti_aliasing/quality/msaa_3d=1
+textures/default_filters/texture_mipmap_bias=-0.5
+textures/decals/filter=5
+textures/light_projectors/filter=5
 environment/defaults/default_clear_color=Color(0.0970766, 0.3217446, 0.46347594, 1)
-anti_aliasing/quality/use_taa=true

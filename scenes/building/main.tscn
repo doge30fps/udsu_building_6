@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cs732vwr7knqs" path="res://environments/panorama/DaySkyHDRI008B_4K_TONEMAPPED.jpg" id="1_unbpl"]
 [ext_resource type="PackedScene" uid="uid://crdvlwq6cw1ne" path="res://scenes/player/player.tscn" id="1_vbb3r"]
 [ext_resource type="AudioStream" uid="uid://cwiyj8ltdygbi" path="res://sounds/ambient/SummerAmbient.mp3" id="1_vvu1a"]
+[ext_resource type="Material" uid="uid://im036vl3ik65" path="res://materials/ground_placeholder/ground.tres" id="3_a87b0"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_a87b0"]
 panorama = ExtResource("1_unbpl")
@@ -15,6 +16,8 @@ background_mode = 2
 sky = SubResource("Sky_hc167")
 
 [sub_resource type="BoxMesh" id="BoxMesh_8ja4x"]
+lightmap_size_hint = Vector2i(354, 191)
+material = ExtResource("3_a87b0")
 size = Vector3(35, 1, 35)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vbb3r"]
