@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://bxli4fca05e32"]
+[gd_scene format=4 uid="uid://bhsnbe2h5epvh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kffso"]
 resource_name = "Material"
@@ -1121,145 +1121,116 @@ shadow_mesh = SubResource("ArrayMesh_uynbl")
 [sub_resource type="BoxShape3D" id="BoxShape3D_virl4"]
 size = Vector3(0.62719727, 4.025144, 0.7514038)
 
-[node name="СтойкаДляОдежды" type="Node3D" unique_id=243597210]
+[node name="StaticBody3D" type="StaticBody3D" unique_id=91366424]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=91366424]
-
-[node name="Нижняя_часть_стойки_для_одежды" type="MeshInstance3D" parent="StaticBody3D" unique_id=869648808]
+[node name="Нижняя_часть_стойки_для_одежды" type="MeshInstance3D" parent="." unique_id=869648808]
 transform = Transform3D(56.1257, 0, 0, 0, -6.6907e-06, 6.52624, 0, -56.1257, -7.77989e-07, -0.555099, 0.149806, 0.139635)
 mesh = SubResource("ArrayMesh_de6m6")
-skeleton = NodePath("")
 
-[node name="Нижняя_перекладина1" type="MeshInstance3D" parent="StaticBody3D" unique_id=1095455263]
+[node name="Нижняя_перекладина1" type="MeshInstance3D" parent="." unique_id=1095455263]
 transform = Transform3D(6.52624, 0, 0, 0, -2.56736e-06, 4.95994, 0, -21.5366, -5.91271e-07, -0.555099, 0.173657, 0.382547)
 mesh = SubResource("ArrayMesh_05e4d")
-skeleton = NodePath("")
 
-[node name="Ось" type="MeshInstance3D" parent="StaticBody3D" unique_id=2048662340]
+[node name="Ось" type="MeshInstance3D" parent="." unique_id=2048662340]
 transform = Transform3D(11, 0, 0, 0, -1.3113e-06, 190, 0, -11, -2.26498e-05, -0.556011, 2.02622, 0.140813)
 mesh = SubResource("ArrayMesh_fpo2m")
-skeleton = NodePath("")
 
-[node name="Нижняя_перекладина2" type="MeshInstance3D" parent="StaticBody3D" unique_id=781284892]
+[node name="Нижняя_перекладина2" type="MeshInstance3D" parent="." unique_id=781284892]
 transform = Transform3D(6.52624, 0, 0, 0, -2.56736e-06, 4.95994, 0, -21.5366, -5.91271e-07, -0.555099, 0.173657, -0.114344)
 mesh = SubResource("ArrayMesh_akee7")
-skeleton = NodePath("")
 
-[node name="Нижняя_перекладина3" type="MeshInstance3D" parent="StaticBody3D" unique_id=1607818851]
+[node name="Нижняя_перекладина3" type="MeshInstance3D" parent="." unique_id=1607818851]
 transform = Transform3D(0, -21.5366, -1.47818e-07, -1.94497e-07, 0, 4.95994, -6.52624, 6.41841e-07, 0, -0.285624, 0.173657, 0.139633)
 mesh = SubResource("ArrayMesh_21spl")
-skeleton = NodePath("")
 
-[node name="Нижняя_перекладина4" type="MeshInstance3D" parent="StaticBody3D" unique_id=1882598247]
+[node name="Нижняя_перекладина4" type="MeshInstance3D" parent="." unique_id=1882598247]
 transform = Transform3D(0, -21.5366, -1.47818e-07, -1.94497e-07, 0, 4.95994, -6.52624, 6.41841e-07, 0, -0.816017, 0.173657, 0.139633)
 mesh = SubResource("ArrayMesh_hr0rd")
-skeleton = NodePath("")
 
-[node name="Средний_цилиндр" type="MeshInstance3D" parent="StaticBody3D" unique_id=1816794470]
+[node name="Средний_цилиндр" type="MeshInstance3D" parent="." unique_id=1816794470]
 transform = Transform3D(12.7, 0, 0, 0, 7.56979e-07, 14.8, 0, -12.7, 8.82149e-07, -0.556011, 1.29263, 0.140813)
 mesh = SubResource("ArrayMesh_qqxh8")
-skeleton = NodePath("")
 
-[node name="Средний_обод" type="MeshInstance3D" parent="StaticBody3D" unique_id=1460127121]
+[node name="Средний_обод" type="MeshInstance3D" parent="." unique_id=1460127121]
 transform = Transform3D(-34.5279, 0, 0, 0, 4.11605e-06, -4.47039, 0, 34.5279, 5.32913e-07, -0.549074, 1.29343, 0.148139)
 mesh = SubResource("ArrayMesh_mbei2")
-skeleton = NodePath("")
 
-[node name="Средняя_перекладина1" type="MeshInstance3D" parent="StaticBody3D" unique_id=1430412806]
+[node name="Средняя_перекладина1" type="MeshInstance3D" parent="." unique_id=1430412806]
 transform = Transform3D(-2.73808, 10.104, 2.66456e-07, 0, 1.61276e-06, -4.47039, 3.07514, 8.99655, 5.32913e-07, -0.670952, 1.29082, 0.0374308)
 mesh = SubResource("ArrayMesh_xwqoh")
-skeleton = NodePath("")
 
-[node name="Средняя_перекладина2" type="MeshInstance3D" parent="StaticBody3D" unique_id=654397417]
+[node name="Средняя_перекладина2" type="MeshInstance3D" parent="." unique_id=654397417]
 transform = Transform3D(-2.73808, 10.104, -1.33228e-07, -1.2271e-07, -8.06381e-07, -4.47039, 3.07514, 8.99655, -2.66456e-07, -0.432646, 1.29082, 0.25239)
 mesh = SubResource("ArrayMesh_6lv7n")
-skeleton = NodePath("")
 
-[node name="Средняя_перекладина3" type="MeshInstance3D" parent="StaticBody3D" unique_id=745463757]
+[node name="Средняя_перекладина3" type="MeshInstance3D" parent="." unique_id=745463757]
 transform = Transform3D(3.07514, 8.99655, -2.66456e-07, 0, 0, -4.47039, 2.73808, -10.104, 5.32913e-07, -0.666473, 1.29082, 0.273624)
 mesh = SubResource("ArrayMesh_fmg7n")
-skeleton = NodePath("")
 
-[node name="Средняя_перекладина4" type="MeshInstance3D" parent="StaticBody3D" unique_id=267375379]
+[node name="Средняя_перекладина4" type="MeshInstance3D" parent="." unique_id=267375379]
 transform = Transform3D(3.07514, 8.99655, -2.66456e-07, 0, 0, -4.47039, 2.73808, -10.104, 5.32913e-07, -0.439068, 1.29082, 0.0155468)
 mesh = SubResource("ArrayMesh_h7obu")
-skeleton = NodePath("")
 
-[node name="Верхний_цилиндр" type="MeshInstance3D" parent="StaticBody3D" unique_id=1439428403]
+[node name="Верхний_цилиндр" type="MeshInstance3D" parent="." unique_id=1439428403]
 transform = Transform3D(12.7, 0, 0, 0, -1.51396e-06, 7, 0, -12.7, -8.34465e-07, -0.556011, 2.45389, 0.140813)
 mesh = SubResource("ArrayMesh_qhpf4")
-skeleton = NodePath("")
 
-[node name="Крепление_для_крючков" type="MeshInstance3D" parent="StaticBody3D" unique_id=540124542]
+[node name="Крепление_для_крючков" type="MeshInstance3D" parent="." unique_id=540124542]
 transform = Transform3D(12.7, 0, 0, 0, -1.51396e-06, 7, 0, -12.7, -8.34465e-07, -0.556011, 3.25358, 0.140813)
 mesh = SubResource("ArrayMesh_rpgvd")
-skeleton = NodePath("")
 
-[node name="Верхний_обод" type="MeshInstance3D" parent="StaticBody3D" unique_id=1168631959]
+[node name="Верхний_обод" type="MeshInstance3D" parent="." unique_id=1168631959]
 transform = Transform3D(14, 0, 0, 0, -1.66893e-06, 1.3, 0, -14, -1.54972e-07, -0.556011, 3.19709, 0.140813)
 mesh = SubResource("ArrayMesh_7l7b2")
-skeleton = NodePath("")
 
-[node name="Крючок_нижняя_часть1" type="MeshInstance3D" parent="StaticBody3D" unique_id=452471172]
+[node name="Крючок_нижняя_часть1" type="MeshInstance3D" parent="." unique_id=452471172]
 transform = Transform3D(-1.78814e-05, -8.58307e-06, 5.34, -48.9889, 6.40263, -1.4323e-06, -10.0041, -31.3529, -1.90973e-06, -0.565008, 3.24927, 0.442686)
 mesh = SubResource("ArrayMesh_v4qmp")
-skeleton = NodePath("")
 
-[node name="Крючок_верхняя_часть1" type="MeshInstance3D" parent="StaticBody3D" unique_id=1734653021]
+[node name="Крючок_верхняя_часть1" type="MeshInstance3D" parent="." unique_id=1734653021]
 transform = Transform3D(10, 0, 0, 0, 12.5, -1.44248e-07, 0, 5.46392e-07, 3.3, -0.56501, 3.66881, 0.500103)
 mesh = SubResource("ArrayMesh_db7lb")
-skeleton = NodePath("")
 
-[node name="Крючок_верхняя_часть2" type="MeshInstance3D" parent="StaticBody3D" unique_id=1734683704]
+[node name="Крючок_верхняя_часть2" type="MeshInstance3D" parent="." unique_id=1734683704]
 transform = Transform3D(4.97946, 4.73836e-07, 2.86179, -1.77636e-14, 12.5, -1.44248e-07, -8.67208, 2.72074e-07, 1.64322, -0.847193, 3.66881, -0.0233998)
 mesh = SubResource("ArrayMesh_83n47")
-skeleton = NodePath("")
 
-[node name="Крючок_нижняя_часть2" type="MeshInstance3D" parent="StaticBody3D" unique_id=1944844995]
+[node name="Крючок_нижняя_часть2" type="MeshInstance3D" parent="." unique_id=1944844995]
 transform = Transform3D(8.67564, 27.1895, -2.65903, -48.9889, 6.40263, 4.77433e-07, 4.98151, 15.6121, 4.63089, -0.822628, 3.24927, -0.00565529)
 mesh = SubResource("ArrayMesh_bufv8")
-skeleton = NodePath("")
 
-[node name="Крючок_верхняя_часть3" type="MeshInstance3D" parent="StaticBody3D" unique_id=2099029737]
+[node name="Крючок_верхняя_часть3" type="MeshInstance3D" parent="." unique_id=2099029737]
 transform = Transform3D(-4.47196, 4.88713e-07, 2.95164, -3.55271e-14, 12.5, -1.44248e-07, -8.94436, -2.44344e-07, -1.47575, -0.23769, 3.66881, -0.0135999)
 mesh = SubResource("ArrayMesh_ooblb")
-skeleton = NodePath("")
 
-[node name="Крючок_нижняя_часть3" type="MeshInstance3D" parent="StaticBody3D" unique_id=974924570]
+[node name="Крючок_нижняя_часть3" type="MeshInstance3D" parent="." unique_id=974924570]
 transform = Transform3D(-8.94803, -28.0432, -2.38803, -48.9889, 6.40264, -7.95722e-08, 4.4738, 14.0209, -4.77629, -0.285831, 3.24927, 0.0091114)
 mesh = SubResource("ArrayMesh_w8tlu")
-skeleton = NodePath("")
 
-[node name="Крючок_нижняя_часть4" type="MeshInstance3D" parent="StaticBody3D" unique_id=1170225680]
+[node name="Крючок_нижняя_часть4" type="MeshInstance3D" parent="." unique_id=1170225680]
 transform = Transform3D(-0.820076, -2.57013, -5.32203, -48.9889, 6.40263, 0, 9.97044, 31.2474, -0.437743, -0.53651, 3.50777, -0.161037)
 mesh = SubResource("ArrayMesh_q0fxf")
-skeleton = NodePath("")
 
-[node name="Крючок_верхняя_часть4" type="MeshInstance3D" parent="StaticBody3D" unique_id=318299826]
+[node name="Крючок_верхняя_часть4" type="MeshInstance3D" parent="." unique_id=318299826]
 transform = Transform3D(-9.96634, 4.479e-08, 0.270515, -5.55112e-15, 12.5, -1.44248e-07, -0.819741, -5.44553e-07, -3.28889, -0.530937, 3.92731, -0.213974)
 mesh = SubResource("ArrayMesh_6ke6f")
-skeleton = NodePath("")
 
-[node name="Крючок_нижняя_часть5" type="MeshInstance3D" parent="StaticBody3D" unique_id=231288885]
+[node name="Крючок_нижняя_часть5" type="MeshInstance3D" parent="." unique_id=231288885]
 transform = Transform3D(8.76079, 27.4564, 2.57826, -48.9889, 6.40263, -3.18289e-07, -4.8302, -15.1379, 4.67634, -0.827738, 3.50777, 0.290135)
 mesh = SubResource("ArrayMesh_b1k1s")
-skeleton = NodePath("")
 
-[node name="Крючок_верхняя_часть5" type="MeshInstance3D" parent="StaticBody3D" unique_id=597857126]
+[node name="Крючок_верхняя_часть5" type="MeshInstance3D" parent="." unique_id=597857126]
 transform = Transform3D(-4.82821, 4.78486e-07, 2.88987, 1.77636e-14, 12.5, -1.44248e-07, -8.75719, -2.6381e-07, -1.59331, -0.855654, 3.92731, 0.301922)
 mesh = SubResource("ArrayMesh_33fbi")
-skeleton = NodePath("")
 
-[node name="Крючок_верхняя_часть6" type="MeshInstance3D" parent="StaticBody3D" unique_id=418647751]
+[node name="Крючок_верхняя_часть6" type="MeshInstance3D" parent="." unique_id=418647751]
 transform = Transform3D(5.19012, 4.67038e-07, 2.82073, 1.77636e-14, 12.5, -1.44248e-07, -8.54767, 2.83584e-07, 1.71274, -0.261724, 3.92731, 0.332425)
 mesh = SubResource("ArrayMesh_4ceqg")
-skeleton = NodePath("")
 
-[node name="Крючок_нижняя_часть6" type="MeshInstance3D" parent="StaticBody3D" unique_id=1359425532]
+[node name="Крючок_нижняя_часть6" type="MeshInstance3D" parent="." unique_id=1359425532]
 transform = Transform3D(-8.55119, -26.7995, 2.77152, -48.9889, 6.40263, -4.77433e-07, -5.19225, -16.2725, -4.56446, -0.310801, 3.50777, 0.302623)
 mesh = SubResource("ArrayMesh_gnoxk")
-skeleton = NodePath("")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1530553522]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1530553522]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.56205726, 2.051388, 0.13888542)
 shape = SubResource("BoxShape3D_virl4")
