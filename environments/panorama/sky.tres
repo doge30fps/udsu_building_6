@@ -1,0 +1,6 @@
+[gd_resource type="Sky" format=3 uid="uid://ibcfvq2j25fy"]
+
+[sub_resource type="PanoramaSkyMaterial" id="acg_iykfgxcu"]
+
+[resource]
+sky_material = SubResource("acg_iykfgxcu")

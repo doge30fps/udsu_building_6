@@ -1,7 +1,18 @@
 [gd_scene format=3 uid="uid://bkrhc20mwwo86"]
 
+[ext_resource type="Texture2D" uid="uid://cs732vwr7knqs" path="res://environments/panorama/DaySkyHDRI008B_4K_TONEMAPPED.jpg" id="1_unbpl"]
 [ext_resource type="PackedScene" uid="uid://crdvlwq6cw1ne" path="res://scenes/player/player.tscn" id="1_vbb3r"]
 [ext_resource type="AudioStream" uid="uid://cwiyj8ltdygbi" path="res://sounds/ambient/SummerAmbient.mp3" id="1_vvu1a"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_a87b0"]
+panorama = ExtResource("1_unbpl")
+
+[sub_resource type="Sky" id="Sky_hc167"]
+sky_material = SubResource("PanoramaSkyMaterial_a87b0")
+
+[sub_resource type="Environment" id="Environment_vvu1a"]
+background_mode = 2
+sky = SubResource("Sky_hc167")
 
 [sub_resource type="BoxMesh" id="BoxMesh_8ja4x"]
 size = Vector3(35, 1, 35)
@@ -11,20 +22,28 @@ size = Vector3(35, 1, 35)
 
 [node name="Node3D" type="Node3D" unique_id=1503407360]
 
-[node name="ambient(simple)" type="AudioStreamPlayer" parent="." unique_id=789984037]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=387344912]
+environment = SubResource("Environment_vvu1a")
+
+[node name="Ambient (simple)" type="AudioStreamPlayer" parent="WorldEnvironment" unique_id=789984037]
 stream = ExtResource("1_vvu1a")
 volume_db = -25.0
 autoplay = true
 parameters/looping = true
 
-[node name="global_floor" type="StaticBody3D" parent="." unique_id=232929963]
+[node name="Sun" type="DirectionalLight3D" parent="WorldEnvironment" unique_id=1764951405]
+transform = Transform3D(0.95178735, -0.21111989, 0.22255169, 0, 0.72549444, 0.688228, -0.30675864, -0.6550467, 0.6905164, 5.540121, 8.514353, 25.486807)
+shadow_enabled = true
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="global_floor" unique_id=820354240]
+[node name="Global Floor" type="StaticBody3D" parent="." unique_id=232929963]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Global Floor" unique_id=820354240]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.508, 0)
 mesh = SubResource("BoxMesh_8ja4x")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="global_floor" unique_id=842887430]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Global Floor" unique_id=842887430]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_vbb3r")
 
 [node name="Player" parent="." unique_id=480734254 instance=ExtResource("1_vbb3r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.469336, 0)
