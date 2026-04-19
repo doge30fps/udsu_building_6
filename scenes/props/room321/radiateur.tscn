@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://db5bkxguqe3e5"]
+
+[ext_resource type="ArrayMesh" uid="uid://uh5wiph405l7" path="res://Assets/Models/bedroom-heater-radiator/source/c51a2032f2624a16999897d19035d02f.zip/Radiateur.obj" id="1_ltc5x"]
+
+[node name="Radiateur" type="MeshInstance3D" unique_id=380983977]
+mesh = ExtResource("1_ltc5x")

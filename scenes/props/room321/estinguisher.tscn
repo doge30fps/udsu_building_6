@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://drsgvknyxr3vv"]
+
+[ext_resource type="Texture2D" uid="uid://dfmcshclbwvgn" path="res://Assets/Models/Огнетушитель/Diffuse.png" id="1_0ulf7"]
+[ext_resource type="ArrayMesh" uid="uid://ycmft6ybul5y" path="res://Assets/Models/Огнетушитель/red_Baked_004_Baked.obj" id="2_pxorw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ovtyk"]
+albedo_texture = ExtResource("1_0ulf7")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5fcvc"]
+size = Vector3(16.816345, 61.51248, 16.307129)
+
+[node name="Node3D" type="Node3D" unique_id=931220285]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1132536550]
+
+[node name="RedBaked004Baked" type="MeshInstance3D" parent="StaticBody3D" unique_id=626199744]
+material_override = SubResource("StandardMaterial3D_ovtyk")
+mesh = ExtResource("2_pxorw")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1139817341]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76412964, 0.60520935, 7.6535645)
+shape = SubResource("BoxShape3D_5fcvc")

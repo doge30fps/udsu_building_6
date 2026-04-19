@@ -5,6 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://cwiyj8ltdygbi" path="res://sounds/ambient/SummerAmbient.mp3" id="1_vvu1a"]
 [ext_resource type="Material" uid="uid://im036vl3ik65" path="res://materials/placeholder_grid/placeholder_grid.tres" id="3_a87b0"]
 [ext_resource type="Material" uid="uid://begxfr1w3bq6g" path="res://materials/room321/inner_wall.tres" id="5_xxpmb"]
+[ext_resource type="Material" uid="uid://ct8efwxjjgr1g" path="res://materials/room321/plintus.tres" id="7_u5l64"]
 [ext_resource type="Material" uid="uid://bfduhrv4fmrf5" path="res://materials/room321/laminate.tres" id="8_eetaf"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_a87b0"]
@@ -44,7 +45,7 @@ shadow_enabled = true
 [node name="Global Floor" type="StaticBody3D" parent="." unique_id=232929963]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Global Floor" unique_id=820354240]
-transform = Transform3D(0.9999999, 0.00020590068, 0.000477729, -0.00020621777, 0.99999976, 0.0006787495, -0.0004775922, -0.0006788458, 0.99999964, 0, -0.508, 0)
+transform = Transform3D(0.9999999, 0.00020590068, 0.000477729, -0.00020621777, 0.99999976, 0.0006787495, -0.0004775922, -0.0006788458, 0.99999964, -0.0045084953, -0.508, 0.0003131032)
 mesh = SubResource("BoxMesh_8ja4x")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Global Floor" unique_id=842887430]
@@ -324,6 +325,51 @@ size = Vector3(9.468018, 0.5, 15.973633)
 material = ExtResource("5_xxpmb")
 
 [node name="пол" type="CSGBox3D" parent="room321" unique_id=438788580]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.9937315, -0.044107914, 4.610431)
-size = Vector3(9.468, 0.1, 15.974)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.0004756, -0.044107914, 4.610431)
+size = Vector3(9.468, 0.1, 15.987488)
 material = ExtResource("8_eetaf")
+
+[node name="плинтус" type="CSGBox3D" parent="room321" unique_id=2083869352]
+transform = Transform3D(1, 0, 0, 0, 0.94802976, 0.31818175, 0, -0.31818175, 0.94802976, -1.1740456, 0.041847795, 0.38582867)
+size = Vector3(13.326134, 0.08691406, 0.004272461)
+material = ExtResource("7_u5l64")
+
+[node name="плинтус3" type="CSGBox3D" parent="room321" unique_id=1373334237]
+transform = Transform3D(-4.371139e-08, 0.31818172, -0.94802976, 0, 0.9480297, 0.3181817, 0.99999994, 1.3908165e-08, -4.1439694e-08, 5.4674735, 0.041847795, 4.3520703)
+size = Vector3(7.9743557, 0.08691406, 0.004272461)
+material = ExtResource("7_u5l64")
+
+[node name="плинтус4" type="CSGBox3D" parent="room321" unique_id=1139170268]
+transform = Transform3D(1.3113416e-07, -0.31818178, 0.94802976, 2.1908793e-15, 0.9480297, 0.31818172, -0.99999994, -4.1724498e-08, 1.2431909e-07, -9.488625, 0.041847795, 5.2782154)
+size = Vector3(6.1220655, 0.08691406, 0.004272461)
+material = ExtResource("7_u5l64")
+
+[node name="плинтус5" type="CSGBox3D" parent="room321" unique_id=760893140]
+transform = Transform3D(1.3113416e-07, -0.31818178, 0.94802976, 2.1908793e-15, 0.9480297, 0.31818172, -0.99999994, -4.1724498e-08, 1.2431909e-07, -9.488625, 0.041847795, 0.76908684)
+size = Vector3(0.83495855, 0.08691406, 0.004272461)
+material = ExtResource("7_u5l64")
+
+[node name="плинтус7" type="CSGBox3D" parent="room321" unique_id=1082054026]
+transform = Transform3D(1.3113416e-07, -0.31818178, 0.94802976, 2.1908793e-15, 0.9480297, 0.31818172, -0.99999994, -4.1724498e-08, 1.2431909e-07, -9.076649, 0.034441315, 0.12959136)
+size = Vector3(0.5078113, 0.07128906, 0.004272461)
+material = ExtResource("7_u5l64")
+
+[node name="плинтус8" type="CSGBox3D" parent="room321" unique_id=459729080]
+transform = Transform3D(-4.3492076e-08, 0.22173578, -0.9751069, -4.373281e-09, 0.97510684, 0.22173575, 0.9999999, 1.3908165e-08, -4.1439698e-08, -7.847662, 0.039764725, 0.12721129)
+size = Vector3(0.50305116, 0.08251953, 0.004272461)
+material = ExtResource("7_u5l64")
+
+[node name="плинтус9" type="CSGBox3D" parent="room321" unique_id=697982194]
+transform = Transform3D(-0.9999999, -2.3600542e-08, 8.4062975e-08, -4.373281e-09, 0.97510684, 0.22173575, -8.720346e-08, 0.22173578, -0.9751069, -9.741625, 0.039764725, 2.2120914)
+size = Vector3(0.48980683, 0.08251953, 0.004272461)
+material = ExtResource("7_u5l64")
+
+[node name="плинтус6" type="CSGBox3D" parent="room321" unique_id=1868418198]
+transform = Transform3D(1, 5.5632672e-08, -1.657588e-07, 6.0989815e-15, 0.9480298, 0.31818178, 1.7484555e-07, -0.3181818, 0.94802976, -9.305184, 0.041847795, 0.38034248)
+size = Vector3(0.42572007, 0.08691406, 0.004272461)
+material = ExtResource("7_u5l64")
+
+[node name="плинтус2" type="CSGBox3D" parent="room321" unique_id=178225811]
+transform = Transform3D(1, 0, 0, 0, 0.7495682, -0.661927, 0, 0.661927, 0.7495682, -2.003889, 0.041847795, 8.328056)
+size = Vector3(14.985821, 0.08691406, 0.004272461)
+material = ExtResource("7_u5l64")
