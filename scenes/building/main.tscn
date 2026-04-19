@@ -49,21 +49,263 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_vbb3r")
 
 [node name="Player" parent="." unique_id=480734254 instance=ExtResource("1_vbb3r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.959033, 3.469336, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.959033, 3.469336, -13.168838)
 sprint_speed = 8.0
 
-[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=1615547416]
+[node name="room321" type="CSGCombiner3D" parent="." unique_id=1615547416]
 
-[node name="стена" type="CSGBox3D" parent="CSGCombiner3D" unique_id=387033434]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
-size = Vector3(20, 4, 0.25)
+[node name="стена правая" type="CSGBox3D" parent="room321" unique_id=387033434]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9877172, 2, 0)
+size = Vector3(16, 4, 0.25)
 
-[node name="стена2" type="CSGBox3D" parent="CSGCombiner3D/стена" unique_id=835057308]
+[node name="стена внутренняя" type="CSGBox3D" parent="room321/стена правая" unique_id=835057308]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.25)
-size = Vector3(20, 4, 0.25)
+calculate_tangents = false
+size = Vector3(16, 4, 0.25)
 
-[node name="дверной проём" type="CSGBox3D" parent="CSGCombiner3D/стена" unique_id=802225060]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.0751805, -1.0145524, 0.11642766)
+[node name="вентялиция1" type="CSGBox3D" parent="room321/стена правая/стена внутренняя" unique_id=861761709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.516902, 1.150394, 0)
 operation = 2
-size = Vector3(1.25, 2, 0.67871094)
+size = Vector3(0.3, 0.3, 0.4)
+
+[node name="вентялиция2" type="CSGBox3D" parent="room321/стена правая/стена внутренняя" unique_id=1520440542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0912004, 1.150394, 0)
+operation = 2
+size = Vector3(0.3, 0.3, 0.4)
+
+[node name="вентялиция3" type="CSGBox3D" parent="room321/стена правая/стена внутренняя" unique_id=2051758743]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8179591, 1.5276484, 0)
+operation = 2
+size = Vector3(0.3, 0.3, 0.4)
+
+[node name="вентялиция4" type="CSGBox3D" parent="room321/стена правая/стена внутренняя" unique_id=302376030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2436607, 1.5276484, 0)
+operation = 2
+size = Vector3(0.3, 0.3, 0.4)
+
+[node name="вентялиция5" type="CSGBox3D" parent="room321/стена правая/стена внутренняя" unique_id=94432079]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7048614, 1.5276484, 0)
+operation = 2
+size = Vector3(0.3, 0.3, 0.4)
+
+[node name="решетка1" type="CSGCombiner3D" parent="room321/стена правая/стена внутренняя" unique_id=2080758561]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка1" unique_id=1569943447]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4142036, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка1" unique_id=1100986181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4837866, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка1" unique_id=1061448352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5483627, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка1" unique_id=1849888299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6154265, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка1" unique_id=1043171790]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.252037, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка1" unique_id=1453781699]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.1940255, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка1" unique_id=2128917070]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.1207745, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка1" unique_id=1442261512]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.0576553, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="решетка2" type="CSGCombiner3D" parent="room321/стена правая/стена внутренняя" unique_id=598956161]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41846704, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка2" unique_id=2120497138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4142036, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка2" unique_id=1394508729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4837866, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка2" unique_id=48821776]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5483627, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка2" unique_id=928339852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6154265, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка2" unique_id=893952083]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.252037, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка2" unique_id=817064236]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.1940255, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка2" unique_id=384466108]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.1207745, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка2" unique_id=515719485]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.0576553, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="решетка3" type="CSGCombiner3D" parent="room321/стена правая/стена внутренняя" unique_id=2026744357]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.3434486, 0.3772545, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка3" unique_id=2080654310]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4142036, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка3" unique_id=1253634988]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4837866, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка3" unique_id=368473111]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5483627, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка3" unique_id=1620543835]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6154265, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка3" unique_id=1951035594]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.252037, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка3" unique_id=1408046676]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.1940255, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка3" unique_id=1809316537]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.1207745, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка3" unique_id=1180703492]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.0576553, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="решетка4" type="CSGCombiner3D" parent="room321/стена правая/стена внутренняя" unique_id=899010106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.7552314, 0.3772545, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка4" unique_id=1963504354]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4142036, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка4" unique_id=510884986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4837866, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка4" unique_id=1910467764]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5483627, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка4" unique_id=1453986024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6154265, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка4" unique_id=1412666050]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.252037, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка4" unique_id=97226839]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.1940255, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка4" unique_id=2098738955]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.1207745, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка4" unique_id=1840601148]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.0576553, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="решетка5" type="CSGCombiner3D" parent="room321/стена правая/стена внутренняя" unique_id=208611128]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.21832, 0.3772545, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка5" unique_id=1817605852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4142036, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка5" unique_id=743211590]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4837866, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка5" unique_id=1174734234]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5483627, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка5" unique_id=2104989795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6154265, 1.143754, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка5" unique_id=1385706010]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.252037, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка5" unique_id=993104774]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.1940255, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка5" unique_id=1685584954]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.1207745, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="room321/стена правая/стена внутренняя/решетка5" unique_id=386390523]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.517192, 1.0576553, 0.09677458)
+size = Vector3(0.02935791, 0.3136139, 0.020996094)
+
+[node name="дверной проём" type="CSGBox3D" parent="room321/стена правая" unique_id=802225060]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4782352, -1.0145524, 0.11642766)
+operation = 2
+size = Vector3(1.2436523, 2, 0.67871094)
 material = ExtResource("3_a87b0")
+
+[node name="стена передняя" type="CSGBox3D" parent="room321" unique_id=1680867752]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.746666, 2, 4.378895)
+size = Vector3(8, 4, 0.5)
+
+[node name="дверной проём" type="CSGBox3D" parent="room321/стена передняя" unique_id=23046974]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6731756, -1.0145524, -0.07654381)
+operation = 2
+size = Vector3(1.0217285, 2, 0.67871094)
+material = ExtResource("3_a87b0")
+
+[node name="стена левая" type="CSGBox3D" parent="room321" unique_id=896953911]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9972539, 2, 8.85)
+size = Vector3(16, 4, 1)
+
+[node name="окно1" type="CSGBox3D" parent="room321/стена левая" unique_id=930644780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6703157, 0.29174805, 0)
+operation = 2
+size = Vector3(2.7839355, 2.8911133, 1)
+
+[node name="окно2" type="CSGBox3D" parent="room321/стена левая" unique_id=1725499062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1064196, 0.29174805, 0)
+operation = 2
+size = Vector3(2.7839355, 2.8911133, 1)
+
+[node name="окно3" type="CSGBox3D" parent="room321/стена левая" unique_id=1810325737]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6221042, 0.29174805, 0)
+operation = 2
+size = Vector3(2.7839355, 2.8911133, 1)
+
+[node name="окно4" type="CSGBox3D" parent="room321/стена левая" unique_id=2025647035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6285615, 0.29174805, 0)
+operation = 2
+size = Vector3(2.7839355, 2.8911133, 1)
+
+[node name="стена задняя" type="CSGBox3D" parent="room321" unique_id=325432031]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.743085, 2, 4.378895)
+size = Vector3(8, 4, 0.5)
+
+[node name="потолок" type="CSGBox3D" parent="room321" unique_id=421730671]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.9937315, 4.18751, 4.610431)
+size = Vector3(9.468018, 0.5, 15.973633)
