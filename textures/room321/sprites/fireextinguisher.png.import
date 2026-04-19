@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0wb4dyotymf4"
-path="res://.godot/imported/electricshield.png-87029697e308db94277807299a826824.ctex"
+uid="uid://c5h20vaxiuq7n"
+path="res://.godot/imported/fireextinguisher.png-9bd98a4887ecb0fe745136701274437d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/room321/2d_sprites/electricshield.png"
-dest_files=["res://.godot/imported/electricshield.png-87029697e308db94277807299a826824.ctex"]
+source_file="res://textures/room321/sprites/fireextinguisher.png"
+dest_files=["res://.godot/imported/fireextinguisher.png-9bd98a4887ecb0fe745136701274437d.ctex"]
 
 [params]
 

@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://cndyhgmg0x5cm"]
+[gd_scene format=4 uid="uid://cssdykjh5j6wm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oor8d"]
 resource_name = "Material"
@@ -39,6 +39,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_tst4m")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_io1ip"]
+albedo_color = Color(0.79624295, 0.796243, 0.7962429, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4w2ws"]
 resource_name = "Material.004"
@@ -334,71 +337,61 @@ size = Vector3(2.6937866, 0.30023193, 5.5269775)
 [sub_resource type="BoxShape3D" id="BoxShape3D_4ebdk"]
 size = Vector3(0.2553711, 2.4277496, 0.24780273)
 
-[node name="Стол9" type="Node3D" unique_id=2104495727]
+[node name="StaticBody3D" type="StaticBody3D" unique_id=720825980]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=720825980]
-
-[node name="Парта" type="MeshInstance3D" parent="StaticBody3D" unique_id=547862400]
+[node name="Парта" type="MeshInstance3D" parent="." unique_id=547862400]
 transform = Transform3D(134.2, 0, 0, 0, -3.28779e-05, 10, 0, -275.8, -1.19209e-06, 0, 2.66323, 0)
 mesh = SubResource("ArrayMesh_mh15v")
-skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_io1ip")
 
-[node name="Ножка_Стола1" type="MeshInstance3D" parent="StaticBody3D" unique_id=2146501937]
+[node name="Ножка_Стола1" type="MeshInstance3D" parent="." unique_id=2146501937]
 transform = Transform3D(11, 0, 0, 0, -1.3113e-06, 130, 0, -11, -1.54972e-05, -1.14968, 1.43845, 2.5704)
 mesh = SubResource("ArrayMesh_0v7q8")
-skeleton = NodePath("")
 
-[node name="Ножка_Стола2" type="MeshInstance3D" parent="StaticBody3D" unique_id=778740852]
+[node name="Ножка_Стола2" type="MeshInstance3D" parent="." unique_id=778740852]
 transform = Transform3D(11, 0, 0, 0, -1.3113e-06, 130, 0, -11, -1.54972e-05, 1.12555, 1.43845, 2.5704)
 mesh = SubResource("ArrayMesh_fvqb8")
-skeleton = NodePath("")
 
-[node name="Ножка_Стола3" type="MeshInstance3D" parent="StaticBody3D" unique_id=419453464]
+[node name="Ножка_Стола3" type="MeshInstance3D" parent="." unique_id=419453464]
 transform = Transform3D(11, 0, 0, 0, -1.3113e-06, 130, 0, -11, -1.54972e-05, -1.1497, 1.43845, -2.5704)
 mesh = SubResource("ArrayMesh_rf8v2")
-skeleton = NodePath("")
 
-[node name="Ножка_Стола5" type="MeshInstance3D" parent="StaticBody3D" unique_id=1951410945]
+[node name="Ножка_Стола5" type="MeshInstance3D" parent="." unique_id=1951410945]
 transform = Transform3D(11, 0, 0, 0, -1.3113e-06, 130, 0, -11, -1.54972e-05, -1.1497, 1.43845, -2.5704)
 mesh = SubResource("ArrayMesh_rf8v2")
-skeleton = NodePath("")
 
-[node name="Ножка_Стола4" type="MeshInstance3D" parent="StaticBody3D" unique_id=1315115617]
+[node name="Ножка_Стола4" type="MeshInstance3D" parent="." unique_id=1315115617]
 transform = Transform3D(11, 0, 0, 0, -1.3113e-06, 130, 0, -11, -1.54972e-05, 1.12555, 1.43845, -2.5704)
 mesh = SubResource("ArrayMesh_clw0c")
-skeleton = NodePath("")
 
-[node name="Боковая_опора" type="MeshInstance3D" parent="StaticBody3D" unique_id=386016653]
+[node name="Боковая_опора" type="MeshInstance3D" parent="." unique_id=386016653]
 transform = Transform3D(112.51, 0, 0, 0, -5.96046e-07, 10, 0, -5, -1.19209e-06, -0.0376508, 2.39592, 2.5704)
 mesh = SubResource("ArrayMesh_77ia7")
-skeleton = NodePath("")
 
-[node name="Боковая_опора_001" type="MeshInstance3D" parent="StaticBody3D" unique_id=2117353148]
+[node name="Боковая_опора_001" type="MeshInstance3D" parent="." unique_id=2117353148]
 transform = Transform3D(112.51, 0, 0, 0, -5.96046e-07, 10, 0, -5, -1.19209e-06, -0.0376508, 2.3959, -2.5704)
 mesh = SubResource("ArrayMesh_3ocfp")
-skeleton = NodePath("")
 
-[node name="передня_опора" type="MeshInstance3D" parent="StaticBody3D" unique_id=2136830167]
+[node name="передня_опора" type="MeshInstance3D" parent="." unique_id=2136830167]
 transform = Transform3D(0, -5, -2.98023e-07, -7.77841e-06, 0, 10, -261, 1.49012e-07, 0, -1.1457, 2.39592, 0)
 mesh = SubResource("ArrayMesh_ukx8p")
-skeleton = NodePath("")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1189954850]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1189954850]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.011871338, 2.6414247, -0.013046265)
 shape = SubResource("BoxShape3D_bg73m")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" unique_id=168566212]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=168566212]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1541791, 1.3554106, 2.5664291)
 shape = SubResource("BoxShape3D_4ebdk")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="StaticBody3D" unique_id=852989001]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="." unique_id=852989001]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1541791, 1.3554106, -2.554266)
 shape = SubResource("BoxShape3D_4ebdk")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="StaticBody3D" unique_id=1202153360]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="." unique_id=1202153360]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1390557, 1.3554106, -2.554266)
 shape = SubResource("BoxShape3D_4ebdk")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="StaticBody3D" unique_id=1845152762]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="." unique_id=1845152762]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1390557, 1.3554106, 2.572072)
 shape = SubResource("BoxShape3D_4ebdk")

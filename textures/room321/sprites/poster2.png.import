@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c87on1t0i1v7x"
-path="res://.godot/imported/poster5.png-3c06350e0bee33534d48c0df0838a4b6.ctex"
+uid="uid://h2yiw0p6krbu"
+path="res://.godot/imported/poster2.png-35e0d319833474e1dc4d41706c6637d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/room321/2d_sprites/poster5.png"
-dest_files=["res://.godot/imported/poster5.png-3c06350e0bee33534d48c0df0838a4b6.ctex"]
+source_file="res://textures/room321/sprites/poster2.png"
+dest_files=["res://.godot/imported/poster2.png-35e0d319833474e1dc4d41706c6637d6.ctex"]
 
 [params]
 

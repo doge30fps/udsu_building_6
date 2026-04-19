@@ -1,6 +1,6 @@
-[gd_scene format=4 uid="uid://cy70wsc2nbcf"]
+[gd_scene format=4 uid="uid://ckmuuw06jf3nl"]
 
-[ext_resource type="Material" uid="uid://xhhq1evv5u5g" path="res://Materials/white_wall.tres" id="1_qei4g"]
+[ext_resource type="Material" uid="uid://dk60bcu6hjcj2" path="res://materials/room321/white_wood.tres" id="1_3y1ae"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1xs2m"]
 resource_name = "Material"
@@ -118,10 +118,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_k2qgb")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_sq0d4"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_mtasj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xsujr"]
 resource_name = "Material.006"
@@ -452,74 +448,63 @@ shadow_mesh = SubResource("ArrayMesh_hogbr")
 [sub_resource type="BoxShape3D" id="BoxShape3D_r3sjw"]
 size = Vector3(1.5886221, 4.56985, 2.97717)
 
-[node name="Шкаф" type="Node3D" unique_id=2114356660]
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1581117704]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1581117704]
-
-[node name="Правая_Стенка" type="MeshInstance3D" parent="StaticBody3D" unique_id=718140539]
+[node name="Правая_Стенка" type="MeshInstance3D" parent="." unique_id=718140539]
 transform = Transform3D(76.5, 0, 0, 0, -3.8147e-07, 230, 0, -3.2, -2.74181e-05, 0, 0, 0)
-material_override = ExtResource("1_qei4g")
 mesh = SubResource("ArrayMesh_53vjx")
-skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_3y1ae")
 
-[node name="Левая_Стенка" type="MeshInstance3D" parent="StaticBody3D" unique_id=191546004]
+[node name="Левая_Стенка" type="MeshInstance3D" parent="." unique_id=191546004]
 transform = Transform3D(76.5, 0, 0, 0, -3.8147e-07, 230, 0, -3.2, -2.74181e-05, 0, 0, -2.95777)
-material_override = ExtResource("1_qei4g")
 mesh = SubResource("ArrayMesh_4dan2")
-skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_3y1ae")
 
-[node name="Задняя_Стенка" type="MeshInstance3D" parent="StaticBody3D" unique_id=1903672091]
+[node name="Задняя_Стенка" type="MeshInstance3D" parent="." unique_id=1903672091]
 transform = Transform3D(3.2, 0, 0, 0, -1.73652e-05, 230, 0, -145.67, -2.74181e-05, -0.729933, 0, -1.47482)
-material_override = ExtResource("1_qei4g")
 mesh = SubResource("ArrayMesh_hdeuo")
-skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_3y1ae")
 
-[node name="Нижняя_Полка" type="MeshInstance3D" parent="StaticBody3D" unique_id=1528017863]
+[node name="Нижняя_Полка" type="MeshInstance3D" parent="." unique_id=1528017863]
 transform = Transform3D(75.4, 0, 0, 0, -1.73688e-05, 3.2, 0, -145.7, -3.8147e-07, 0, -0.0432172, -1.48038)
-material_override = SubResource("ShaderMaterial_sq0d4")
-material_overlay = SubResource("ShaderMaterial_mtasj")
 mesh = SubResource("ArrayMesh_6ymav")
-skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_3y1ae")
 
-[node name="Нижняя_Стенка" type="MeshInstance3D" parent="StaticBody3D" unique_id=884564111]
+[node name="Нижняя_Стенка" type="MeshInstance3D" parent="." unique_id=884564111]
 transform = Transform3D(75.4, 0, 0, 0, -1.73688e-05, 3.2, 0, -145.7, -3.8147e-07, 0, -2.26552, -1.48038)
 mesh = SubResource("ArrayMesh_k2l8x")
-skeleton = NodePath("")
 
-[node name="Верхняя_Стенка" type="MeshInstance3D" parent="StaticBody3D" unique_id=2010861114]
+[node name="Верхняя_Стенка" type="MeshInstance3D" parent="." unique_id=2010861114]
 transform = Transform3D(75.4, 0, 0, 0, -1.73688e-05, 3.2, 0, -145.7, -3.8147e-07, 0, 2.26629, -1.48038)
 material_override = SubResource("ShaderMaterial_dpc2v")
+material_overlay = ExtResource("1_3y1ae")
 mesh = SubResource("ArrayMesh_v7bhy")
-skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_3y1ae")
 
-[node name="Левая_Дверь" type="MeshInstance3D" parent="StaticBody3D" unique_id=287042310]
+[node name="Левая_Дверь" type="MeshInstance3D" parent="." unique_id=287042310]
 transform = Transform3D(3.2, 0, 0, 0, -8.9407e-06, 113, 0, -75, -1.34706e-05, 0.769577, -1.16358, -0.717965)
 material_override = SubResource("ShaderMaterial_a1cql")
 mesh = SubResource("ArrayMesh_34juk")
-skeleton = NodePath("")
 
-[node name="Верхняя_Полка" type="MeshInstance3D" parent="StaticBody3D" unique_id=1351299060]
+[node name="Верхняя_Полка" type="MeshInstance3D" parent="." unique_id=1351299060]
 transform = Transform3D(75.4, 0, 0, 0, -1.73688e-05, 3.2, 0, -145.7, -3.8147e-07, 0, 1.12504, -1.48038)
 material_override = SubResource("ShaderMaterial_u8hn5")
+material_overlay = ExtResource("1_3y1ae")
 mesh = SubResource("ArrayMesh_sdwdy")
-skeleton = NodePath("")
 
-[node name="Правая_Дверь" type="MeshInstance3D" parent="StaticBody3D" unique_id=7063852]
+[node name="Правая_Дверь" type="MeshInstance3D" parent="." unique_id=7063852]
 transform = Transform3D(3.2, 0, 0, 0, -8.9407e-06, 113, 0, -75, -1.34706e-05, 0.769577, -1.16358, -2.22751)
 material_override = SubResource("ShaderMaterial_5rbys")
 mesh = SubResource("ArrayMesh_kmh81")
-skeleton = NodePath("")
 
-[node name="Левая_Ручка" type="MeshInstance3D" parent="StaticBody3D" unique_id=1750123604]
+[node name="Левая_Ручка" type="MeshInstance3D" parent="." unique_id=1750123604]
 transform = Transform3D(3.4, 0, 0, 0, -4.05312e-07, 50, 0, -3.4, -5.96046e-06, 0.947084, -0.784414, -1.00496)
 mesh = SubResource("ArrayMesh_cgtdq")
-skeleton = NodePath("")
 
-[node name="Правая_Ручка" type="MeshInstance3D" parent="StaticBody3D" unique_id=1628157715]
+[node name="Правая_Ручка" type="MeshInstance3D" parent="." unique_id=1628157715]
 transform = Transform3D(3.4, 0, 0, 0, -4.05312e-07, 50, 0, -3.4, -5.96046e-06, 0.947084, -0.784414, -1.92395)
 mesh = SubResource("ArrayMesh_r2b0r")
-skeleton = NodePath("")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1836368951]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1836368951]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0147699565, 0.0349884, -1.48714)
 shape = SubResource("BoxShape3D_r3sjw")
