@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://im036vl3ik65"]
+
+[ext_resource type="Texture2D" uid="uid://b83uulko8ps58" path="res://textures/ground_placeholder/texture_04_2.png" id="1_c7811"]
+
+[resource]
+albedo_texture = ExtResource("1_c7811")
+normal_enabled = true
+ao_enabled = true
+uv1_offset = Vector3(0.74, 0, 0)
+uv1_triplanar = true
+texture_filter = 5

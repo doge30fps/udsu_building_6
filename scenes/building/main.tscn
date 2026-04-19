@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cs732vwr7knqs" path="res://environments/panorama/DaySkyHDRI008B_4K_TONEMAPPED.jpg" id="1_unbpl"]
 [ext_resource type="PackedScene" uid="uid://crdvlwq6cw1ne" path="res://scenes/player/player.tscn" id="1_vbb3r"]
 [ext_resource type="AudioStream" uid="uid://cwiyj8ltdygbi" path="res://sounds/ambient/SummerAmbient.mp3" id="1_vvu1a"]
-[ext_resource type="Material" uid="uid://im036vl3ik65" path="res://materials/ground_placeholder/ground.tres" id="3_a87b0"]
+[ext_resource type="Material" uid="uid://im036vl3ik65" path="res://materials/placeholder_grid/placeholder_grid.tres" id="3_a87b0"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_a87b0"]
 panorama = ExtResource("1_unbpl")
@@ -23,7 +23,7 @@ size = Vector3(35, 1, 35)
 [sub_resource type="BoxShape3D" id="BoxShape3D_vbb3r"]
 size = Vector3(35, 1, 35)
 
-[node name="Node3D" type="Node3D" unique_id=1503407360]
+[node name="MAIN_NODE" type="Node3D" unique_id=1503407360]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=387344912]
 environment = SubResource("Environment_vvu1a")
@@ -49,4 +49,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_vbb3r")
 
 [node name="Player" parent="." unique_id=480734254 instance=ExtResource("1_vbb3r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.469336, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.959033, 3.469336, 0)
+sprint_speed = 8.0
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=1615547416]
+
+[node name="стена" type="CSGBox3D" parent="CSGCombiner3D" unique_id=387033434]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+size = Vector3(20, 4, 0.25)
+
+[node name="стена2" type="CSGBox3D" parent="CSGCombiner3D/стена" unique_id=835057308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.25)
+size = Vector3(20, 4, 0.25)
+
+[node name="дверной проём" type="CSGBox3D" parent="CSGCombiner3D/стена" unique_id=802225060]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.0751805, -1.0145524, 0.11642766)
+operation = 2
+size = Vector3(1.25, 2, 0.67871094)
+material = ExtResource("3_a87b0")

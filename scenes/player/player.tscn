@@ -17,11 +17,11 @@
 [ext_resource type="AudioStream" uid="uid://br2nk4uf6i7hs" path="res://sounds/player/voice/jump.ogg" id="15_myrg7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2v6pm"]
-radius = 0.4
+radius = 0.3
 height = 1.1
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f67h2"]
-radius = 0.401
+radius = 0.3
 height = 1.1
 
 [sub_resource type="LabelSettings" id="LabelSettings_xkvt8"]
