@@ -10,6 +10,5 @@ albedo_texture = ExtResource("1_ekcls")
 roughness_texture = ExtResource("3_m0evm")
 roughness_texture_channel = 4
 normal_enabled = true
-normal_scale = 16.0
 normal_texture = ExtResource("2_oq6xp")
 uv1_triplanar = true

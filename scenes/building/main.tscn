@@ -30,6 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://dohtn8utdmst5" path="res://textures/wooden_door/wooden_door_only_texture.JPG" id="28_l5dpv"]
 [ext_resource type="Texture2D" uid="uid://cfounh21pxe1y" path="res://textures/wooden_door/blinn1SG_normal.png" id="29_a5omt"]
 [ext_resource type="Texture2D" uid="uid://h4xs1s3htlws" path="res://textures/wooden_door/blinn1SG_metallicRoughness.png" id="30_tgqov"]
+[ext_resource type="PackedScene" uid="uid://b1gs87gef3cfh" path="res://scenes/props/room321/lamp.tscn" id="31_a5omt"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_a87b0"]
 panorama = ExtResource("1_unbpl")
@@ -40,7 +41,12 @@ sky_material = SubResource("PanoramaSkyMaterial_a87b0")
 [sub_resource type="Environment" id="Environment_vvu1a"]
 background_mode = 2
 sky = SubResource("Sky_hc167")
+ambient_light_source = 2
+ambient_light_color = Color(0.8209578, 0.8730365, 0.9999977, 1)
+ambient_light_energy = 0.2
 reflected_light_source = 2
+tonemap_mode = 3
+tonemap_white = 1.77
 
 [sub_resource type="BoxMesh" id="BoxMesh_8ja4x"]
 lightmap_size_hint = Vector2i(354, 191)
@@ -82,7 +88,8 @@ autoplay = true
 parameters/looping = true
 
 [node name="Sun" type="DirectionalLight3D" parent="WorldEnvironment" unique_id=1764951405]
-transform = Transform3D(0.95178735, -0.21111989, 0.22255169, 0, 0.72549444, 0.688228, -0.30675864, -0.6550467, 0.6905164, 5.540121, 8.514353, 25.486807)
+transform = Transform3D(0.95178735, -0.21111988, 0.22255167, 0.088293895, 0.8833341, 0.46035323, -0.29377723, -0.4185084, 0.8593868, 5.540121, 8.514353, 25.486807)
+light_color = Color(1, 0.87141407, 0.66503364, 1)
 shadow_enabled = true
 
 [node name="Global Floor" type="StaticBody3D" parent="." unique_id=232929963]
@@ -364,14 +371,14 @@ mesh = SubResource("BoxMesh_vifd3")
 [node name="poster_4" type="Sprite3D" parent="posters" unique_id=1131465559]
 transform = Transform3D(0.50821996, 0, 0, 0, 0.26615644, 0, 0, 0, 0.28, -4.2630963, 2.2911634, 0.4069196)
 material_override = SubResource("StandardMaterial3D_030wa")
-texture = ExtResource("19_r6w2n")
+texture = ExtResource("24_eei83")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="posters/poster_4" unique_id=537845907]
-transform = Transform3D(5.697379, -0.0084068505, 0, 0.13227634, 0.36209816, 0, 0, 0, 0.24852157, -0.13113809, 4.7872896, 0)
+transform = Transform3D(5.697379, -0.0084068505, 0, 0.13227634, 0.36209825, 0, 0, 0, 0.24852157, 0.013279915, 4.274667, 0)
 mesh = SubResource("BoxMesh_vifd3")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="posters/poster_4" unique_id=1859325867]
-transform = Transform3D(5.698759, 0.0026739733, 0, -0.042073216, 0.36218593, 0, 0, 0, 0.24852157, 0.006919861, -4.7500024, 0)
+transform = Transform3D(5.698759, 0.0026739733, 0, -0.042073216, 0.36218596, 0, 0, 0, 0.24852157, 0.006918907, -4.2548537, 0)
 mesh = SubResource("BoxMesh_vifd3")
 
 [node name="poster_5" type="Sprite3D" parent="posters" unique_id=1261035027]
@@ -399,14 +406,61 @@ texture = ExtResource("25_hc3cg")
 [node name="door1" type="Node3D" parent="interactables" unique_id=1705459371]
 
 [node name="Node3D" parent="interactables/door1" unique_id=70657082 instance=ExtResource("27_ewqwr")]
-transform = Transform3D(0.008928667, 0, 0, 0, 0.009559598, 0, 0, 0, 0.01, -7.736053, 0.0028173998, -0.0691421)
+transform = Transform3D(0.008928667, 0, 0, 0, 0.009559598, 0, 0, 0, 0.00577888, -7.736053, 0.0028173998, -0.12061578)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="interactables/door1" unique_id=1703757389]
-transform = Transform3D(0.4054368, 0, 0, 0, 2.0552256, 0, 0, 0, 0.11741044, -8.8525305, 1.0297107, 0)
+transform = Transform3D(0.4054368, 0, 0, 0, 2.0552256, 0, 0, 0, 0.09731443, -8.8525305, 0.95900154, -0.07425991)
 mesh = SubResource("BoxMesh_ewqwr")
 surface_material_override/0 = SubResource("StandardMaterial3D_rnl05")
 
 [node name="door2" type="Node3D" parent="interactables" unique_id=1778197959]
 
 [node name="Node3D" parent="interactables/door2" unique_id=339671832 instance=ExtResource("27_ewqwr")]
-transform = Transform3D(-4.5298754e-10, 0, -0.01, 0, 0.009629221, 0, 0.010363147, 0, -4.3711387e-10, -10.971532, 0.0028173998, 2.6063592)
+transform = Transform3D(-4.5298754e-10, 0, -0.01, 0, 0.009629221, 0, 0.010363147, 0, -4.3711387e-10, -10.697337, 0.0028173998, 2.6063592)
+
+[node name="lamps" type="Node3D" parent="." unique_id=1802431725]
+
+[node name="StaticBody3D" parent="lamps" unique_id=846836424 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, 1.7444284, 3.8689275, 1.7542305)
+
+[node name="StaticBody3D2" parent="lamps" unique_id=1091851511 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, 1.7444284, 3.8689275, 3.9849257)
+
+[node name="StaticBody3D3" parent="lamps" unique_id=1532077968 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, 1.7444284, 3.8689275, 6.225668)
+
+[node name="StaticBody3D4" parent="lamps" unique_id=1892780185 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, -0.39313936, 3.8689275, 1.7542305)
+
+[node name="StaticBody3D5" parent="lamps" unique_id=1538929209 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, -0.39313936, 3.8689275, 3.9849257)
+
+[node name="StaticBody3D6" parent="lamps" unique_id=1561981640 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, -0.39313936, 3.8689275, 6.225668)
+
+[node name="StaticBody3D7" parent="lamps" unique_id=1494309903 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, -2.8042316, 3.8689275, 1.7542305)
+
+[node name="StaticBody3D8" parent="lamps" unique_id=1295719429 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, -2.8042316, 3.8689275, 3.9849257)
+
+[node name="StaticBody3D9" parent="lamps" unique_id=577731596 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, -2.8042316, 3.8689275, 6.225668)
+
+[node name="StaticBody3D10" parent="lamps" unique_id=1868998887 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, -5.143356, 3.8689275, 1.7542305)
+
+[node name="StaticBody3D11" parent="lamps" unique_id=327089039 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, -5.143356, 3.8689275, 3.9849257)
+
+[node name="StaticBody3D12" parent="lamps" unique_id=463380749 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, -5.143356, 3.8689275, 6.225668)
+
+[node name="StaticBody3D13" parent="lamps" unique_id=2121033011 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, -7.5942206, 3.8689275, 1.7542305)
+
+[node name="StaticBody3D14" parent="lamps" unique_id=389743625 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, -7.5942206, 3.8689275, 3.9849257)
+
+[node name="StaticBody3D15" parent="lamps" unique_id=1006265975 instance=ExtResource("31_a5omt")]
+transform = Transform3D(-3.2841587e-08, -1.8156435e-08, 0.43499997, -3.8028904e-08, -0.20768541, -3.8028904e-08, 0.43499997, -1.8156438e-08, 3.2841584e-08, -7.5942206, 3.8689275, 6.225668)

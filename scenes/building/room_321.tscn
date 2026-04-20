@@ -54,7 +54,7 @@ operation = 2
 size = Vector3(0.3, 0.3, 0.4)
 
 [node name="решетка1" type="CSGCombiner3D" parent="стена правая/стена внутренняя" unique_id=1212946373]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.78044415, -0.13693142, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0028853416, -0.003975868, 0)
 calculate_tangents = false
 
 [node name="CSGBox3D" type="CSGBox3D" parent="стена правая/стена внутренняя/решетка1" unique_id=31153493]
@@ -90,7 +90,7 @@ transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -4.5
 size = Vector3(0.02935791, 0.3136139, 0.020996094)
 
 [node name="решетка2" type="CSGCombiner3D" parent="стена правая/стена внутренняя" unique_id=1427082379]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1989112, -0.13693142, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4155817, -0.003975868, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="стена правая/стена внутренняя/решетка2" unique_id=12438013]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4142036, 1.143754, 0.09677458)
