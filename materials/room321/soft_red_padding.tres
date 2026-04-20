@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b32kqy7j4cxev"]
+
+[ext_resource type="Texture2D" uid="uid://ctptan11e1xmg" path="res://textures/room321/chairs/red_padding.png" id="1_17an7"]
+
+[resource]
+albedo_texture = ExtResource("1_17an7")
+uv1_scale = Vector3(0.69, 0.69, 0.69)

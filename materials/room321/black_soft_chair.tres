@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cfxndm1wg0k6g"]
+
+[ext_resource type="Texture2D" uid="uid://py722mq5liia" path="res://textures/room321/chairs/black_soft_chair.jpg" id="1_s0ufy"]
+
+[resource]
+albedo_texture = ExtResource("1_s0ufy")

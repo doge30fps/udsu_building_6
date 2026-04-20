@@ -1,6 +1,20 @@
-[gd_scene format=3 uid="uid://db5bkxguqe3e5"]
+[gd_scene format=3 uid="uid://dseg1qh4okite"]
 
-[ext_resource type="ArrayMesh" uid="uid://uh5wiph405l7" path="res://Assets/Models/bedroom-heater-radiator/source/c51a2032f2624a16999897d19035d02f.zip/Radiateur.obj" id="1_ltc5x"]
+[ext_resource type="ArrayMesh" uid="uid://4fqbqxrrmipi" path="res://models/room321/heater-radiator/Radiateur.obj" id="1_fs2o0"]
 
-[node name="Radiateur" type="MeshInstance3D" unique_id=380983977]
-mesh = ExtResource("1_ltc5x")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fs2o0"]
+albedo_color = Color(0.86660165, 0.8551509, 0.9227271, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fs2o0"]
+size = Vector3(9.413239, 5.503357, 0.22064209)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1705125497]
+
+[node name="Radiateur" type="MeshInstance3D" parent="." unique_id=380983977]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+mesh = ExtResource("1_fs2o0")
+surface_material_override/0 = SubResource("StandardMaterial3D_fs2o0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=880679127]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7901764, 3.2364807, 0.83096313)
+shape = SubResource("BoxShape3D_fs2o0")

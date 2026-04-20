@@ -1,6 +1,7 @@
-[gd_scene format=4 uid="uid://80dnjhcpqv22"]
+[gd_scene format=4 uid="uid://dbt41oktgyo4u"]
 
-[ext_resource type="Material" uid="uid://bx027ih1cgy52" path="res://materials/room321/wooden_chair.tres" id="1_q3g77"]
+[ext_resource type="Material" uid="uid://bx027ih1cgy52" path="res://materials/room321/wooden_chair.tres" id="1_jbfej"]
+[ext_resource type="Material" uid="uid://b32kqy7j4cxev" path="res://materials/room321/soft_red_padding.tres" id="2_rcluw"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_185wl"]
 _surfaces = [{
@@ -569,6 +570,18 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_kj7oq")
 
+[sub_resource type="ArrayMesh" id="ArrayMesh_xafho"]
+_surfaces = [{
+"aabb": AABB(-1.1577841, 0.9368454, -0.1963355, 0.22948778, 0.66990817, 0.980469),
+"attribute_data": PackedByteArray("AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/9ggEPAAAAAAAAAAAAAAAAAAAAADc730/AACAP9zvfT8AAAAAAACAPwAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAgD8AAIA/AACAPwAAAAAAAAAAAACAPwAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAP9zvfT8AAIA/AACAPwAAAAAAAAAAAAAAAAAAgD/c730/AACAP9zvfT8AAAAAAAAAAAAAgD8AAIA/AAAAAAAAAAAUxeo7AACAPwAAgD8AAIA/FMXqOwAAAAAAAIA/9ggEPAAAgD8AAAAAAAAAAAAAAAAAAIA/9ggEPBTF6jsAAAAAAACAPwAAgD8AAIA/dip+PwAAAAAAAIA/AAAAAAAAgD8AAIA/dip+PwAAAAB2Kn4/AAAAAAAAAAAAAIA/AACAPwAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPxTF6jsAAIA/AACAPwAAAADSv3w/nLF8PwAAgD9N2n8/AACAPwAAAAA3yhY6AAAAADfKFjoAAIA/AACAPwAAAAAAAAAAAAAAANK/fD+csXw/AACAPwAAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAMDbCzsAAIA/AAAAAAAAAAAAAAAAJHR/P9K/fD+csXw/AACAPwAAgD8AAIA/N8oWOtK/fD8CmVM8AACAPwAAgD/Sv3w/AplTPAAAAADA2ws7AACAPwAAAAA3yhY6AACAPwAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAAAAAAIA/AACAPwAAgD8AAAAAwNsLOwAAAAAAAIA/AACAPwAAAADA2ws7AAAAAMDbCzsAAIA/"),
+"format": 34359738391,
+"material": ExtResource("2_rcluw"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 84,
+"vertex_data": PackedByteArray("RTKUvyx3zD8sDEm+vcqQvxqqzT8sDEm+vcqQvxqqzT/5vEg/RTKUvyx3zD8sDEm+XGuCv+b8mT8sDEm+tr19v9jGmj8sDEm+RTKUvyx3zD8sDEm+XGuCv+b8mT/5vEg/XGuCv+b8mT8sDEm+RTKUvyx3zD8sDEm+tr19v9jGmj8sDEm+vcqQvxqqzT8sDEm+vcqQvxqqzT8sDEm+tr19v9jGmj8sDEm+vcqQvxqqzT/5vEg/RTKUvyx3zD8sDEm+vcqQvxqqzT/5vEg/RTKUvyx3zD/5vEg/RTKUvyx3zD8sDEm+RTKUvyx3zD/5vEg/XGuCv+b8mT/5vEg/RTKUvyx3zD/5vEg/vcqQvxqqzT/5vEg/XGuCv+b8mT/5vEg/XGuCv+b8mT/5vEg/vcqQvxqqzT/5vEg/Y0aCv+qTmT/5vEg/vcqQvxqqzT/5vEg/M8p9v6XEmj/5vEg/Y0aCv+qTmT/5vEg/M8p9v6XEmj8sDEm+XGuCv+b8mT8sDEm+Y0aCv+qTmT8sDEm+tr19v9jGmj8sDEm+XGuCv+b8mT8sDEm+M8p9v6XEmj8sDEm+tr19v9jGmj8sDEm+M8p9v6XEmj8sDEm+tr19v9jGmj/5vEg/tr19v9jGmj/5vEg/M8p9v6XEmj8sDEm+M8p9v6XEmj/5vEg/vcqQvxqqzT/5vEg/tr19v9jGmj8sDEm+tr19v9jGmj/5vEg/vcqQvxqqzT/5vEg/tr19v9jGmj/5vEg/M8p9v6XEmj/5vEg/5Kp0vxrVbz8sDEm+Y0aCv+qTmT8sDEm+XGuCv+b8mT8sDEm+5Kp0vxrVbz8sDEm+XGuCv+b8mT8sDEm+XGuCv+b8mT/5vEg/5Kp0vxrVbz8sDEm+1KRtv85/cT8sDEm+Y0aCv+qTmT8sDEm+5Kp0vxrVbz8sDEm+5Kp0vxrVbz/5vEg/1KRtv85/cT8sDEm+1KRtv85/cT8sDEm+1KRtv85/cT/5vEg/M8p9v6XEmj8sDEm+1KRtv85/cT8sDEm+M8p9v6XEmj8sDEm+Y0aCv+qTmT8sDEm+5Kp0vxrVbz/5vEg/XGuCv+b8mT/5vEg/Y0aCv+qTmT/5vEg/5Kp0vxrVbz/5vEg/Y0aCv+qTmT/5vEg/M8p9v6XEmj/5vEg/5Kp0vxrVbz8sDEm+XGuCv+b8mT/5vEg/5Kp0vxrVbz/5vEg/1KRtv85/cT8sDEm+5Kp0vxrVbz/5vEg/1KRtv85/cT/5vEg/5Kp0vxrVbz/5vEg/M8p9v6XEmj/5vEg/1KRtv85/cT/5vEg/1KRtv85/cT/5vEg/M8p9v6XEmj/5vEg/M8p9v6XEmj8sDEm+qV6o3v//AACpXqje//8AAKleqN7//wAA/////1YhqlD/////ViGqUP////9WIapQViGpXlWhVG9WIaleVaFUb1YhqV5VoVRv/////1YhqlD/////ViGqUP////9WIapQqN5VoVWhVG+o3lWhVaFUb6jeVaFVoVRvqV6o3v//AACpXqje//8AAKleqN7//wAAViGpXlWhVG9WIaleVaFUb1YhqV5VoVRv/3//f1YhqlD/f/9/ViGqUP9//39VIapQ/3//f1UhqlD/f/9/ViGqUP9//39WIapQ/3//f1YhqlD/f/9/ViGrUP9//39WIapQ/////1Yhq1D/////ViGqUP////9WIapQ/////1YhqlD/////ViGqUP////9WIatQVqFWIf//AABWoVYh//8AAFahViH//wAAVqFWIf//AABWoVYh//8AAFahViH//wAAqN5VoVWhVG+o3lWhVaFUb6jeVaFVoVRv/3//f1YhqlD/f/9/ViGrUP9//39WIatQ/////4wYRkz/////jBhFTP////+LGEVMjBhyZ4yYuXOMGHJnjJi5c4wYcmeMmLlz/////4wYRkz/////jBhGTP////+MGEVMjJiMGP//AACMmIwY//8AAIyYjBj//wAAcueMmIyYuXNy54yYjJi5c3LnjJiMmLlz/////4wYRkz/////jBhGTP////+MGEVM/3//f4wYRkz/f/9/ixhFTP9//3+MGEVM/3//f4wYRkz/f/9/jBhFTP9//3+MGEZMjBhyZ4yYuXOMGHJnjJi5c4wYcmeMmLlzjJiMGP//AACMmIwY//8AAIyYjBj//wAA/3//f4wYRkz/f/9/jBhGTP9//3+MGEZMcueMmIyYuXNy54yYjJi5c3LnjJiMmLlz")
+}]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_ij6lt"]
 size = Vector3(1.1730957, 0.2055664, 1.2112427)
 
@@ -583,87 +596,91 @@ size = Vector3(1.0012512, 0.22009277, 1.2112427)
 [node name="Округление_1" type="MeshInstance3D" parent="." unique_id=780564301]
 transform = Transform3D(10, 0, 0, 0, 12.5, -2.18557e-07, 0, 5.46392e-07, 5, 0.00283, 0.589314, 0.83261)
 mesh = SubResource("ArrayMesh_8tje4")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="Ножка_1" type="MeshInstance3D" parent="." unique_id=990983965]
 transform = Transform3D(7.78, 0, 0, 0, -5.96046e-07, 70, 0, -5, -8.34465e-06, 0.0183614, 0.0653679, 0.83261)
 mesh = SubResource("ArrayMesh_gn8dx")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="Боковая_Частб_2" type="MeshInstance3D" parent="." unique_id=1488177484]
 transform = Transform3D(0, -1.49012e-07, 70, -10, 0, -2.08616e-06, 2.98023e-07, -5, 0, -0.529455, 0.614274, 0.832609)
 mesh = SubResource("ArrayMesh_aghho")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="Ножка_2" type="MeshInstance3D" parent="." unique_id=1882982436]
 transform = Transform3D(7.78, 0, 0, 0, -5.96046e-07, 70, 0, -5, -8.34465e-06, -0.98384, 0.0653679, 0.83261)
 mesh = SubResource("ArrayMesh_n5y5f")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="Округление_2" type="MeshInstance3D" parent="." unique_id=1885781341]
 transform = Transform3D(10, 0, 0, 0, 12.5, -2.18557e-07, 0, 5.46392e-07, 5, 0.00283036, 0.589314, -0.24938)
 mesh = SubResource("ArrayMesh_hr420")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="Ножка_4" type="MeshInstance3D" parent="." unique_id=1988287523]
 transform = Transform3D(7.78, 0, 0, 0, -5.96046e-07, 70, 0, -5, -8.34465e-06, -0.973657, 0.065368, -0.24938)
 mesh = SubResource("ArrayMesh_xnskn")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="Боковая_Часть_1" type="MeshInstance3D" parent="." unique_id=1755286402]
 transform = Transform3D(0, -1.49012e-07, 70, -10, 0, -2.08616e-06, 2.98023e-07, -5, 0, -0.529455, 0.614274, -0.249379)
 mesh = SubResource("ArrayMesh_sfumn")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="Ножка_3" type="MeshInstance3D" parent="." unique_id=1958952870]
 transform = Transform3D(7.78, 0, 0, 0, -5.96046e-07, 70, 0, -5, -8.34465e-06, 0.0180387, 0.0653679, -0.24938)
 mesh = SubResource("ArrayMesh_penf2")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="Передняя_Часть" type="MeshInstance3D" parent="." unique_id=1209353239]
 transform = Transform3D(-9.29832e-07, 5, -3.0598e-06, -7.8, -5.96046e-07, 6.21725e-13, 1.38556e-14, 2.18557e-07, 70, 0.005, 0.62501, 0.269222)
 mesh = SubResource("ArrayMesh_1t5h3")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="Задняя_Часть" type="MeshInstance3D" parent="." unique_id=437167780]
 transform = Transform3D(-9.35793e-07, 5, -3.0598e-06, -7.85, -5.96046e-07, 6.21725e-13, 1.39444e-14, 2.18557e-07, 70, -0.98689, 0.634471, 0.269222)
 mesh = SubResource("ArrayMesh_1n8o7")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="Доска" type="MeshInstance3D" parent="." unique_id=1281845749]
 transform = Transform3D(50, 0, 0, 0, -6.28233e-06, 100, 0, -52.7, -1.19209e-05, -0.481091, 0.71674, 0.295621)
 mesh = SubResource("ArrayMesh_1jfal")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="ЧастьОпоры_1" type="MeshInstance3D" parent="." unique_id=1076880591]
 transform = Transform3D(1.37819, 4.80631, -2.94127e-06, -4.80631, 1.37819, -8.43395e-07, -8.88178e-15, 2.18557e-07, 70, -1.19433, 1.5514, 0.276982)
 mesh = SubResource("ArrayMesh_dhas7")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="Передняя_Опора" type="MeshInstance3D" parent="." unique_id=1970500607]
 transform = Transform3D(-5.96046e-07, 5, -3.0598e-06, -5, -5.96046e-07, 6.21725e-13, 8.88178e-15, 2.18557e-07, 70, 0.00964198, 0.425844, 0.269222)
 mesh = SubResource("ArrayMesh_3ekxy")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="Боковая_Верхняя_Часть_2" type="MeshInstance3D" parent="." unique_id=2113455735]
 transform = Transform3D(7.79853, -1.11759e-07, 10.3243, -1.19792, -5.96046e-07, 67.2117, 0, -5, -8.10623e-06, -1.0968, 1.1973, -0.24938)
 mesh = SubResource("ArrayMesh_o8ct7")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="Боковая_Верхняя_Часть" type="MeshInstance3D" parent="." unique_id=479027307]
 transform = Transform3D(7.79853, -1.11759e-07, 10.3243, -1.19792, -5.96046e-07, 67.2117, 0, -5, -8.10623e-06, -1.0968, 1.1973, 0.83261)
 mesh = SubResource("ArrayMesh_kyxl2")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="ЧастьОпоры_3" type="MeshInstance3D" parent="." unique_id=1267638659]
 transform = Transform3D(1.37819, 4.80631, -2.94127e-06, -4.80631, 1.37819, -8.43395e-07, -8.88178e-15, 2.18557e-07, 70, -1.10647, 1.34904, 0.276982)
 mesh = SubResource("ArrayMesh_teg11")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="ЧастьОпоры_2" type="MeshInstance3D" parent="." unique_id=2099259630]
 transform = Transform3D(1.37819, 4.80631, -2.94127e-06, -4.80631, 1.37819, -8.43395e-07, -8.88178e-15, 2.18557e-07, 70, -1.06441, 1.1246, 0.27698)
 mesh = SubResource("ArrayMesh_t76ll")
-surface_material_override/0 = ExtResource("1_q3g77")
+surface_material_override/0 = ExtResource("1_jbfej")
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="." unique_id=621980405]
+mesh = SubResource("ArrayMesh_xafho")
+skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=666099685]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4664796, 0.6282615, 0.28821635)

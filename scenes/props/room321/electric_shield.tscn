@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://ctdyvxfid3kfl"]
+[gd_scene format=4 uid="uid://cmq8hl3jge44r"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82hct"]
 resource_name = "Material"
@@ -1218,159 +1218,135 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_e6xqj")
 
-[node name="Schitok" type="Node3D" unique_id=1867877951]
+[sub_resource type="BoxShape3D" id="BoxShape3D_xgxmb"]
+size = Vector3(1, 1, 0.68774414)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=119814742]
 
 [node name="Cube" type="MeshInstance3D" parent="." unique_id=1643245882]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.34, 0, 0, 0)
 mesh = SubResource("ArrayMesh_d5unq")
-skeleton = NodePath("")
 
 [node name="Cube_001" type="MeshInstance3D" parent="." unique_id=146392437]
 transform = Transform3D(0.05, 0, 0, 0, 0.1, 0, 0, 0, 0.05, -0.345073, 0, -0.0615777)
 mesh = SubResource("ArrayMesh_lc5bt")
-skeleton = NodePath("")
 
 [node name="Cylinder" type="MeshInstance3D" parent="." unique_id=2016682658]
 transform = Transform3D(0, 0.034, 0, -0.034, 0, 0, 0, 0, 0.034, -0.348886, 0, -0.0171523)
 mesh = SubResource("ArrayMesh_74gp7")
-skeleton = NodePath("")
 
 [node name="Cube_002" type="MeshInstance3D" parent="." unique_id=1090003126]
 transform = Transform3D(0.019, 0, 0, 0, 0.026496, -0.00848048, 0, 0.0424024, 0.00529919, -0.34708, 0, 0)
 mesh = SubResource("ArrayMesh_13p63")
-skeleton = NodePath("")
 
 [node name="Cube_003" type="MeshInstance3D" parent="." unique_id=552709995]
 transform = Transform3D(0.028, 0, 0, 0, 0.00529919, -0.00848048, 0, 0.00848048, 0.00529919, -0.345857, 0.0329782, 0.0511845)
 mesh = SubResource("ArrayMesh_nlhle")
-skeleton = NodePath("")
 
 [node name="Cylinder_001" type="MeshInstance3D" parent="." unique_id=1280913468]
 transform = Transform3D(0, 0.034, 0, -0.034, 0, 0, 0, 0, 0.034, -0.240183, 0, -0.0171523)
 mesh = SubResource("ArrayMesh_yt66o")
-skeleton = NodePath("")
 
 [node name="Cube_004" type="MeshInstance3D" parent="." unique_id=1564886295]
 transform = Transform3D(0.028, 0, 0, 0, 0.00529919, -0.00848048, 0, 0.00848048, 0.00529919, -0.237154, 0.0329782, 0.0511845)
 mesh = SubResource("ArrayMesh_riope")
-skeleton = NodePath("")
 
 [node name="Cube_005" type="MeshInstance3D" parent="." unique_id=825042895]
 transform = Transform3D(0.019, 0, 0, 0, 0.026496, -0.00848048, 0, 0.0424024, 0.00529919, -0.238377, 0, 0)
 mesh = SubResource("ArrayMesh_kqrgr")
-skeleton = NodePath("")
 
 [node name="Cube_006" type="MeshInstance3D" parent="." unique_id=1208588950]
 transform = Transform3D(0.05, 0, 0, 0, 0.1, 0, 0, 0, 0.05, -0.236371, 0, -0.0615777)
 mesh = SubResource("ArrayMesh_ohl70")
-skeleton = NodePath("")
 
 [node name="Cylinder_002" type="MeshInstance3D" parent="." unique_id=871217208]
 transform = Transform3D(0, 0.034, 0, -0.034, 0, 0, 0, 0, 0.034, -0.131265, 0, -0.0171523)
 mesh = SubResource("ArrayMesh_hyhtt")
-skeleton = NodePath("")
 
 [node name="Cube_007" type="MeshInstance3D" parent="." unique_id=300264665]
 transform = Transform3D(0.028, 0, 0, 0, 0.00529919, -0.00848048, 0, 0.00848048, 0.00529919, -0.128236, 0.0329782, 0.0511845)
 mesh = SubResource("ArrayMesh_mm46i")
-skeleton = NodePath("")
 
 [node name="Cube_008" type="MeshInstance3D" parent="." unique_id=1342434922]
 transform = Transform3D(0.019, 0, 0, 0, 0.026496, -0.00848048, 0, 0.0424024, 0.00529919, -0.129459, 0, 0)
 mesh = SubResource("ArrayMesh_5jopt")
-skeleton = NodePath("")
 
 [node name="Cube_009" type="MeshInstance3D" parent="." unique_id=1806175217]
 transform = Transform3D(0.05, 0, 0, 0, 0.1, 0, 0, 0, 0.05, -0.127452, 0, -0.0615777)
 mesh = SubResource("ArrayMesh_jweji")
-skeleton = NodePath("")
 
 [node name="Cylinder_003" type="MeshInstance3D" parent="." unique_id=1689612028]
 transform = Transform3D(0, 0.034, 0, -0.034, 0, 0, 0, 0, 0.034, -0.0189945, 0, -0.0171523)
 mesh = SubResource("ArrayMesh_rykjh")
-skeleton = NodePath("")
 
 [node name="Cube_010" type="MeshInstance3D" parent="." unique_id=1898918894]
 transform = Transform3D(0.028, 0, 0, 0, 0.00529919, -0.00848048, 0, 0.00848048, 0.00529919, -0.0159659, 0.0329782, 0.0511845)
 mesh = SubResource("ArrayMesh_gbwpc")
-skeleton = NodePath("")
 
 [node name="Cube_011" type="MeshInstance3D" parent="." unique_id=1245241273]
 transform = Transform3D(0.019, 0, 0, 0, 0.026496, -0.00848048, 0, 0.0424024, 0.00529919, -0.0171885, 0, 0)
 mesh = SubResource("ArrayMesh_xraou")
-skeleton = NodePath("")
 
 [node name="Cube_012" type="MeshInstance3D" parent="." unique_id=1919039171]
 transform = Transform3D(0.05, 0, 0, 0, 0.1, 0, 0, 0, 0.05, -0.0151823, 0, -0.0615777)
 mesh = SubResource("ArrayMesh_s0lx3")
-skeleton = NodePath("")
 
 [node name="Cylinder_004" type="MeshInstance3D" parent="." unique_id=1566547630]
 transform = Transform3D(0, 0.034, 0, -0.034, 0, 0, 0, 0, 0.034, 0.0971391, 0, -0.0171523)
 mesh = SubResource("ArrayMesh_6wlge")
-skeleton = NodePath("")
 
 [node name="Cube_013" type="MeshInstance3D" parent="." unique_id=1928159280]
 transform = Transform3D(0.028, 0, 0, 0, 0.00529919, -0.00848048, 0, 0.00848048, 0.00529919, 0.100168, 0.0329782, 0.0511845)
 mesh = SubResource("ArrayMesh_rgegy")
-skeleton = NodePath("")
 
 [node name="Cube_014" type="MeshInstance3D" parent="." unique_id=1097573243]
 transform = Transform3D(0.019, 0, 0, 0, 0.026496, -0.00848048, 0, 0.0424024, 0.00529919, 0.0989451, 0, 0)
 mesh = SubResource("ArrayMesh_hycia")
-skeleton = NodePath("")
 
 [node name="Cube_015" type="MeshInstance3D" parent="." unique_id=1919016438]
 transform = Transform3D(0.05, 0, 0, 0, 0.1, 0, 0, 0, 0.05, 0.100951, 0, -0.0615777)
 mesh = SubResource("ArrayMesh_ulkgq")
-skeleton = NodePath("")
 
 [node name="Cylinder_005" type="MeshInstance3D" parent="." unique_id=1151176732]
 transform = Transform3D(0, 0.034, 0, -0.034, 0, 0, 0, 0, 0.034, 0.215897, -0.00426765, -0.0171523)
 mesh = SubResource("ArrayMesh_n66rq")
-skeleton = NodePath("")
 
 [node name="Cube_016" type="MeshInstance3D" parent="." unique_id=1739312809]
 transform = Transform3D(0.028, 0, 0, 0, 0.00529919, -0.00848048, 0, 0.00848048, 0.00529919, 0.217943, 0.0329782, 0.0511845)
 mesh = SubResource("ArrayMesh_hqqu8")
-skeleton = NodePath("")
 
 [node name="Cube_017" type="MeshInstance3D" parent="." unique_id=1613257782]
 transform = Transform3D(0.019, 0, 0, 0, 0.026496, -0.00848048, 0, 0.0424024, 0.00529919, 0.216721, 0, 0)
 mesh = SubResource("ArrayMesh_kmri2")
-skeleton = NodePath("")
 
 [node name="Cube_018" type="MeshInstance3D" parent="." unique_id=1427882146]
 transform = Transform3D(0.05, 0, 0, 0, 0.1, 0, 0, 0, 0.05, 0.218727, 0, -0.0615777)
 mesh = SubResource("ArrayMesh_nijq4")
-skeleton = NodePath("")
 
 [node name="Plane" type="MeshInstance3D" parent="." unique_id=1519074333]
 transform = Transform3D(0.475, 0, 0, 0, 0.866025, 0.05, 0, -0.5, 0.0866025, 0, 0.308165, 0.205201)
 mesh = SubResource("ArrayMesh_wicwv")
-skeleton = NodePath("")
 
 [node name="Cube_019" type="MeshInstance3D" parent="." unique_id=2016656509]
 transform = Transform3D(0.48, 0, 0, 0, 0.5, 0, 0, 0, 0.19, 0, 0, 0.154086)
 mesh = SubResource("ArrayMesh_3ubxi")
-skeleton = NodePath("")
 
 [node name="Plane_001" type="MeshInstance3D" parent="." unique_id=1879908076]
 transform = Transform3D(0.475, 0, 0, 0, 0.866025, -0.05, 0, 0.5, 0.0866025, 0, -0.319553, 0.205201)
 mesh = SubResource("ArrayMesh_hbbqn")
-skeleton = NodePath("")
 
 [node name="Cube_020" type="MeshInstance3D" parent="." unique_id=1391495620]
 transform = Transform3D(0.05, 0, 0, 0, 0.08, 0, 0, 0, 0.05, 0.330081, -0.0215201, -0.041419)
 mesh = SubResource("ArrayMesh_nvyjm")
-skeleton = NodePath("")
 
 [node name="Cube_021" type="MeshInstance3D" parent="." unique_id=1685908037]
 transform = Transform3D(0.019, 0, 0, 0, 0.026496, -0.00848048, 0, 0.0424024, 0.00529919, 0.328075, -0.0170651, 0.044145)
 mesh = SubResource("ArrayMesh_mdx47")
-skeleton = NodePath("")
 
 [node name="Cylinder_006" type="MeshInstance3D" parent="." unique_id=218099880]
 transform = Transform3D(0, 0.034, 0, -0.034, 0, 0, 0, 0, 0.034, 0.330373, -0.0355457, 0.00173331)
 mesh = SubResource("ArrayMesh_5vui4")
-skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=672457786]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0064697266)
+shape = SubResource("BoxShape3D_xgxmb")

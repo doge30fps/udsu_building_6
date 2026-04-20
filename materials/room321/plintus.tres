@@ -1,4 +1,9 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://ct8efwxjjgr1g"]
 
+[ext_resource type="Texture2D" uid="uid://dwfkc854bo3ar" path="res://textures/room321/laminate/laminate_floor_03_rough_4k.jpg" id="1_o8oo4"]
+
 [resource]
 albedo_color = Color(0.7851914, 0.65089273, 0.58868, 1)
+normal_enabled = true
+normal_scale = -16.0
+normal_texture = ExtResource("1_o8oo4")

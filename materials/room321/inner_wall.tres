@@ -5,10 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://4qpg0r60bagn" path="res://textures/room321/walls/PaintedPlaster017_2K-PNG_Roughness.png" id="3_m0evm"]
 
 [resource]
+albedo_color = Color(0.86036915, 0.8603692, 0.8603692, 1)
 albedo_texture = ExtResource("1_ekcls")
 roughness_texture = ExtResource("3_m0evm")
 roughness_texture_channel = 4
 normal_enabled = true
-normal_scale = 2.98
+normal_scale = 16.0
 normal_texture = ExtResource("2_oq6xp")
 uv1_triplanar = true

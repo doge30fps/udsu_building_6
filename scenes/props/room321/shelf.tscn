@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://ckmuuw06jf3nl"]
 
 [ext_resource type="Material" uid="uid://dk60bcu6hjcj2" path="res://materials/room321/white_wood.tres" id="1_3y1ae"]
+[ext_resource type="Material" uid="uid://b8bq4rft1svfr" path="res://materials/room321/metal_part_lowres.tres" id="2_kpnd1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1xs2m"]
 resource_name = "Material"
@@ -500,6 +501,7 @@ mesh = SubResource("ArrayMesh_kmh81")
 [node name="Левая_Ручка" type="MeshInstance3D" parent="." unique_id=1750123604]
 transform = Transform3D(3.4, 0, 0, 0, -4.05312e-07, 50, 0, -3.4, -5.96046e-06, 0.947084, -0.784414, -1.00496)
 mesh = SubResource("ArrayMesh_cgtdq")
+surface_material_override/0 = ExtResource("2_kpnd1")
 
 [node name="Правая_Ручка" type="MeshInstance3D" parent="." unique_id=1628157715]
 transform = Transform3D(3.4, 0, 0, 0, -4.05312e-07, 50, 0, -3.4, -5.96046e-06, 0.947084, -0.784414, -1.92395)

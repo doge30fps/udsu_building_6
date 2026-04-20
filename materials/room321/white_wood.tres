@@ -3,5 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://bjgj75tnvb7o0" path="res://textures/room321/tables/white_wood_part.JPG" id="1_j5mvo"]
 
 [resource]
+albedo_color = Color(0.76240367, 0.76240367, 0.76240367, 1)
 albedo_texture = ExtResource("1_j5mvo")
 uv1_scale = Vector3(1.895, 1.895, 1.895)
