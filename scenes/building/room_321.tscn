@@ -236,9 +236,9 @@ size = Vector3(0.27233887, 0.48150635, 0.17080688)
 material = ExtResource("1_dcyrx")
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="стена правая/стена внутренняя" unique_id=1227875323]
-transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.7392378, -0.3870889, 0.15737906)
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.7281065, -0.3870889, 0.15737906)
 radius = 0.022460938
-height = 0.0687561
+height = 0.09101868
 material = ExtResource("2_5jk5x")
 
 [node name="CSGCylinder3D2" type="CSGCylinder3D" parent="стена правая/стена внутренняя" unique_id=1670874445]

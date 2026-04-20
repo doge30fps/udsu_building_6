@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://drsgvknyxr3vv" path="res://scenes/props/room321/extinguisher.tscn" id="16_0b882"]
 [ext_resource type="PackedScene" uid="uid://dsveiukv2620q" path="res://scenes/props/room321/chair_soft.tscn" id="17_32x2k"]
 [ext_resource type="PackedScene" uid="uid://dbt41oktgyo4u" path="res://scenes/props/room321/chair_hard_padding.tscn" id="18_jalgn"]
+[ext_resource type="Material" uid="uid://duyxkq158rh8v" path="res://materials/posters/udsu3d.tres" id="19_fri4y"]
 [ext_resource type="Texture2D" uid="uid://cbqwtat4r784p" path="res://textures/room321/sprites/poster1.png" id="19_r6w2n"]
 [ext_resource type="PackedScene" uid="uid://80dnjhcpqv22" path="res://scenes/props/room321/chair_hard.tscn" id="19_vifd3"]
 [ext_resource type="Material" uid="uid://dx8sp5whu4mw3" path="res://materials/room321/wooden_chair_black.tres" id="20_phsit"]
@@ -22,13 +23,18 @@
 [ext_resource type="Texture2D" uid="uid://h2yiw0p6krbu" path="res://textures/room321/sprites/poster2.png" id="21_e6lx5"]
 [ext_resource type="PackedScene" uid="uid://dseg1qh4okite" path="res://scenes/props/room321/radiateur.tscn" id="21_phsit"]
 [ext_resource type="Texture2D" uid="uid://bc5eewkyxvdv1" path="res://textures/room321/sprites/poster3.png" id="22_e6lx5"]
-[ext_resource type="Texture2D" uid="uid://c5lvbvb7r85mn" path="res://textures/room321/sprites/poster4.png" id="23_7m600"]
+[ext_resource type="Material" uid="uid://lxwobt8gmfsr" path="res://materials/posters/multiprocessor_big.tres" id="22_oud7x"]
 [ext_resource type="Texture2D" uid="uid://c5h20vaxiuq7n" path="res://textures/room321/sprites/fireextinguisher.png" id="24_030wa"]
 [ext_resource type="Texture2D" uid="uid://c87on1t0i1v7x" path="res://textures/room321/sprites/poster5.png" id="24_eei83"]
+[ext_resource type="Material" uid="uid://b6rc1eisj24tm" path="res://materials/posters/multiprocessor_very_big.tres" id="24_nii2b"]
 [ext_resource type="Texture2D" uid="uid://b0wb4dyotymf4" path="res://textures/room321/sprites/electricshield.png" id="25_hc3cg"]
+[ext_resource type="Material" uid="uid://tty6iwhxufs2" path="res://materials/posters/tank.tres" id="26_wbtfh"]
 [ext_resource type="PackedScene" uid="uid://bo0ien07l58u8" path="res://scenes/interactable/door_interactable.tscn" id="27_ewqwr"]
 [ext_resource type="Texture2D" uid="uid://dohtn8utdmst5" path="res://textures/wooden_door/wooden_door_only_texture.JPG" id="28_l5dpv"]
+[ext_resource type="Material" uid="uid://g6kg6orx3y7o" path="res://materials/posters/multiprocessor.tres" id="28_you3j"]
 [ext_resource type="Texture2D" uid="uid://cfounh21pxe1y" path="res://textures/wooden_door/blinn1SG_normal.png" id="29_a5omt"]
+[ext_resource type="Material" uid="uid://lba5bmoc21k1" path="res://materials/posters/extinguisher.tres" id="29_nii2b"]
+[ext_resource type="Material" uid="uid://by2buyjdjsl2j" path="res://materials/posters/electricity.tres" id="30_oud7x"]
 [ext_resource type="Texture2D" uid="uid://h4xs1s3htlws" path="res://textures/wooden_door/blinn1SG_metallicRoughness.png" id="30_tgqov"]
 [ext_resource type="PackedScene" uid="uid://b1gs87gef3cfh" path="res://scenes/props/room321/lamp.tscn" id="31_a5omt"]
 
@@ -60,9 +66,6 @@ size = Vector3(35, 1, 35)
 
 [sub_resource type="BoxMesh" id="BoxMesh_vifd3"]
 material = ExtResource("20_phsit")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_030wa"]
-albedo_texture = ExtResource("23_7m600")
 
 [sub_resource type="BoxMesh" id="BoxMesh_ewqwr"]
 
@@ -334,6 +337,7 @@ transform = Transform3D(-0.1260269, 0, 1.509958e-08, 0, 0.11411204, 0, -1.902953
 
 [node name="poster_1" type="Sprite3D" parent="posters" unique_id=1695632621]
 transform = Transform3D(0.28, 0, 0, 0, 0.28, 0, 0, 0, 0.28, -0.6512911, 2.3310947, 0.4069196)
+material_override = ExtResource("19_fri4y")
 texture = ExtResource("19_r6w2n")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="posters/poster_1" unique_id=1811667847]
@@ -346,6 +350,7 @@ mesh = SubResource("BoxMesh_vifd3")
 
 [node name="poster_2" type="Sprite3D" parent="posters" unique_id=1898308565]
 transform = Transform3D(0.4177483, 0, 0, 0, 0.4439103, 0, 0, 0, 0.37, 3.108565, 2.3715296, 0.4069196)
+material_override = ExtResource("22_oud7x")
 texture = ExtResource("21_e6lx5")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="posters/poster_2" unique_id=765379354]
@@ -358,19 +363,20 @@ mesh = SubResource("BoxMesh_vifd3")
 
 [node name="poster_3" type="Sprite3D" parent="posters" unique_id=1218701945]
 transform = Transform3D(5.0206108e-08, 0, -0.37, 0, 0.6622129, 0, 0.665, 0, 2.7934224e-08, 5.492763, 2.3670902, 4.3293266)
+material_override = ExtResource("24_nii2b")
 texture = ExtResource("22_e6lx5")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="posters/poster_3" unique_id=674521512]
-transform = Transform3D(9.910305, -9.643351e-05, 0, 0.003286386, 0.29080382, 0, 0, 0, 0.24852157, -0.13113785, 1.7862206, 0)
+transform = Transform3D(10.173228, -9.6432675e-05, 0, 0.0033735752, 0.29080132, 0, 0, -8.6736174e-19, 0.24852157, -0.008896828, 1.7862208, 0)
 mesh = SubResource("BoxMesh_vifd3")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="posters/poster_3" unique_id=142871851]
-transform = Transform3D(9.910305, -9.643352e-05, 0, 0.0032863857, 0.29080382, 0, 0, 0, 0.24852157, -0.13113785, -1.6460159, 0)
+transform = Transform3D(10.251234, -9.643242e-05, 0, 0.0033994426, 0.2908005, 0, -1.1368684e-13, 0, 0.24852157, 0.018312931, -1.6460159, 0)
 mesh = SubResource("BoxMesh_vifd3")
 
 [node name="poster_4" type="Sprite3D" parent="posters" unique_id=1131465559]
 transform = Transform3D(0.50821996, 0, 0, 0, 0.26615644, 0, 0, 0, 0.28, -4.2630963, 2.2911634, 0.4069196)
-material_override = SubResource("StandardMaterial3D_030wa")
+material_override = ExtResource("26_wbtfh")
 texture = ExtResource("24_eei83")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="posters/poster_4" unique_id=537845907]
@@ -383,6 +389,7 @@ mesh = SubResource("BoxMesh_vifd3")
 
 [node name="poster_5" type="Sprite3D" parent="posters" unique_id=1261035027]
 transform = Transform3D(-1.1271607e-08, 0, 0.28, 0, 0.260223, 0, -0.25786433, 0, -1.2239188e-08, -10.657615, 2.6124039, 7.179561)
+material_override = ExtResource("28_you3j")
 texture = ExtResource("24_eei83")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="posters/poster_5" unique_id=488906922]
@@ -395,10 +402,12 @@ mesh = SubResource("BoxMesh_vifd3")
 
 [node name="poster_extinguisher" type="Sprite3D" parent="posters" unique_id=850895190]
 transform = Transform3D(0.15049198, 0, 0, 0, 0.16535044, 0, 0, 0, 0.22885092, -1.83546, 2.274169, 0.37755883)
+material_override = ExtResource("29_nii2b")
 texture = ExtResource("24_030wa")
 
 [node name="poster_extinguisher2" type="Sprite3D" parent="posters" unique_id=1721473970]
 transform = Transform3D(0.118405506, 0, 0, 0, 0.11528823, 0, 0, 0, 0.22885092, -2.24963, 1.554682, 0.5190646)
+material_override = ExtResource("30_oud7x")
 texture = ExtResource("25_hc3cg")
 
 [node name="interactables" type="Node3D" parent="." unique_id=1538279458]

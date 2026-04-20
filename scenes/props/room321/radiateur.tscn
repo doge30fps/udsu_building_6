@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://dseg1qh4okite"]
 
 [ext_resource type="ArrayMesh" uid="uid://4fqbqxrrmipi" path="res://models/room321/heater-radiator/Radiateur.obj" id="1_fs2o0"]
+[ext_resource type="Texture2D" uid="uid://bvib4g8arq728" path="res://textures/room321/walls/beige_wall.JPG" id="2_v0274"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fs2o0"]
-albedo_color = Color(0.86660165, 0.8551509, 0.9227271, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v7q0c"]
+albedo_texture = ExtResource("2_v0274")
+uv1_scale = Vector3(94.445, 1, 1)
+uv1_triplanar = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fs2o0"]
 size = Vector3(9.413239, 5.503357, 0.22064209)
@@ -13,7 +16,7 @@ size = Vector3(9.413239, 5.503357, 0.22064209)
 [node name="Radiateur" type="MeshInstance3D" parent="." unique_id=380983977]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 mesh = ExtResource("1_fs2o0")
-surface_material_override/0 = SubResource("StandardMaterial3D_fs2o0")
+surface_material_override/0 = SubResource("StandardMaterial3D_v7q0c")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=880679127]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7901764, 3.2364807, 0.83096313)
