@@ -5,4 +5,3 @@
 [resource]
 albedo_texture = ExtResource("1_5c1q6")
 uv1_scale = Vector3(0.985, 1, 1)
-uv1_offset = Vector3(0.005, 0, 0)

@@ -1,14 +1,43 @@
-[gd_scene format=3 uid="uid://1gfesl0vyx66"]
+[gd_scene format=4 uid="uid://1gfesl0vyx66"]
 
-[ext_resource type="Script" uid="uid://dq52a8q5yop4i" path="res://Levels/vickluchatel.gd" id="1_niovq"]
-[ext_resource type="AudioStream" uid="uid://oq3n75a22bsm" path="res://sounds/lamps.mp3" id="2_uqtr6"]
+[ext_resource type="Script" uid="uid://dhxygx5hufwvk" path="res://scripts/interactable_objects/switch.gd" id="1_1o4r3"]
+[ext_resource type="AudioStream" uid="uid://qc86tgjdt6s" path="res://sounds/interactions/switch/switch.mp3" id="1_1467v"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_koa61"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_owuy3"]
 
+[sub_resource type="ArrayMesh" id="ArrayMesh_1o4r3"]
+_surfaces = [{
+"aabb": AABB(-0.060547, -0.067749, -0.00915525, 0.121094, 0.135498, 0.0183105),
+"attribute_data": PackedByteArray("AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/"),
+"format": 34359738391,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("IgB4vf2/ir3n/xU8IgB4vf2/ir3n/xW8IgB4vf2/ij3n/xW8IgB4Pf2/ir3n/xW8IgB4vf2/ir3n/xW8IgB4vf2/ir3n/xU8IgB4vf2/ij3n/xW8IgB4vf2/ir3n/xW8IgB4Pf2/ir3n/xW8IgB4vf2/ij3n/xW8IgB4vf2/ij3n/xU8IgB4vf2/ir3n/xU8IgB4Pf2/ij3n/xU8IgB4vf2/ij3n/xU8IgB4vf2/ij3n/xW8IgB4vf2/ir3n/xU8IgB4vf2/ij3n/xU8IgB4Pf2/ij3n/xU8IgB4vf2/ir3n/xU8IgB4Pf2/ir3n/xU8IgB4Pf2/ir3n/xW8IgB4Pf2/ir3n/xW8IgB4Pf2/ir3n/xU8IgB4Pf2/ij3n/xU8IgB4Pf2/ij3n/xU8IgB4Pf2/ir3n/xU8IgB4vf2/ir3n/xU8IgB4Pf2/ir3n/xW8IgB4Pf2/ij3n/xW8IgB4vf2/ij3n/xW8IgB4vf2/ij3n/xW8IgB4Pf2/ij3n/xW8IgB4Pf2/ij3n/xU8IgB4Pf2/ij3n/xU8IgB4Pf2/ij3n/xW8IgB4Pf2/ir3n/xW8AAD/f/9//n8AAP9//3/+fwAA/3//f/5//38AAP//AAD/fwAA//8AAP9/AAD//wAA/////wAA/z//////AAD/P/////8AAP8/AAD/f/9//n8AAP9//3/+fwAA/3//f/5//3//////AAD/f/////8AAP9//////wAA/3//fwAA/z//f/9/AAD/P/9//38AAP8//38AAP//AAD/fwAA//8AAP9/AAD//wAA////f/9//n////9//3/+f////3//f/5//3//fwAA/z//f/9/AAD/P/9//38AAP8//////wAA/z//////AAD/P/////8AAP8//3//////AAD/f/////8AAP9//////wAA////f/9//n////9//3/+f////3//f/5/")
+}, {
+"aabb": AABB(-0.0404473, -0.04819833, 0.01208685, 0.0429688, 0.105957, 0.005737301),
+"attribute_data": PackedByteArray("AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/"),
+"format": 34359738391,
+"material": SubResource("StandardMaterial3D_koa61"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("EawlvZ1rRb30A5I8EawlvZ1rRb3sB0Y8EawlvVuUbD3sB0Y8wD8lO51rRb3sB0Y8EawlvZ1rRb3sB0Y8EawlvZ1rRb30A5I8EawlvZ1rRb30A5I8wD8lO51rRb30A5I8wD8lO51rRb3sB0Y8EawlvVuUbD3sB0Y8EawlvZ1rRb3sB0Y8wD8lO51rRb3sB0Y8wD8lO1uUbD30A5I8wD8lO51rRb30A5I8EawlvZ1rRb30A5I8EawlvVuUbD3sB0Y8EawlvVuUbD30A5I8EawlvZ1rRb30A5I8EawlvZ1rRb30A5I8EawlvVuUbD30A5I8wD8lO1uUbD30A5I8wD8lO51rRb3sB0Y8wD8lO1uUbD3sB0Y8EawlvVuUbD3sB0Y8wD8lO1uUbD30A5I8EawlvVuUbD30A5I8EawlvVuUbD3sB0Y8EawlvVuUbD3sB0Y8wD8lO1uUbD3sB0Y8wD8lO1uUbD30A5I8wD8lO51rRb3sB0Y8wD8lO51rRb30A5I8wD8lO1uUbD30A5I8wD8lO1uUbD30A5I8wD8lO1uUbD3sB0Y8wD8lO51rRb3sB0Y8AAD/f/9//n8AAP9//3/+fwAA/3//f/5//38AAP//AAD/fwAA//8AAP9/AAD//wAA/38AAP//AAD/fwAA//8AAP9/AAD//wAA/////wAA/z//////AAD/P/////8AAP8//3//fwAA/z//f/9/AAD/P/9//38AAP8/AAD/f/9//n8AAP9//3/+fwAA/3//f/5//3//fwAA/z//f/9/AAD/P/9//38AAP8//////wAA/z//////AAD/P/////8AAP8//3//////AAD/f/////8AAP9//////wAA/3//////AAD/f/////8AAP9//////wAA////f/9//n////9//3/+f////3//f/5/////f/9//n////9//3/+f////3//f/5/")
+}, {
+"aabb": AABB(0.0056467, -0.04819833, 0.01208685, 0.042968802, 0.105957, 0.005737301),
+"attribute_data": PackedByteArray("AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAA"),
+"format": 34359738391,
+"material": SubResource("StandardMaterial3D_owuy3"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("DCFHPZ1rRb3sB0Y89Ae5O51rRb3sB0Y89Ae5O51rRb30A5I89Ae5O51rRb30A5I89Ae5O51rRb3sB0Y89Ae5O1uUbD3sB0Y89Ae5O1uUbD3sB0Y89Ae5O51rRb3sB0Y8DCFHPZ1rRb3sB0Y89Ae5O51rRb30A5I8DCFHPZ1rRb30A5I8DCFHPZ1rRb3sB0Y8DCFHPVuUbD30A5I8DCFHPZ1rRb30A5I89Ae5O51rRb30A5I8DCFHPZ1rRb3sB0Y8DCFHPZ1rRb30A5I8DCFHPVuUbD30A5I89Ae5O1uUbD3sB0Y89Ae5O1uUbD30A5I89Ae5O51rRb30A5I89Ae5O51rRb30A5I89Ae5O1uUbD30A5I8DCFHPVuUbD30A5I8DCFHPVuUbD30A5I89Ae5O1uUbD30A5I89Ae5O1uUbD3sB0Y8DCFHPZ1rRb3sB0Y8DCFHPVuUbD3sB0Y89Ae5O1uUbD3sB0Y8DCFHPVuUbD30A5I8DCFHPVuUbD3sB0Y8DCFHPZ1rRb3sB0Y89Ae5O1uUbD3sB0Y8DCFHPVuUbD3sB0Y8DCFHPVuUbD30A5I8/38AAP//AAD/fwAA//8AAP9/AAD//wAAAAD/f/9//n8AAP9//3/+fwAA/3//f/5//////wAA/z//////AAD/P/////8AAP8//38AAP//AAD/fwAA//8AAP9/AAD//wAA/3//fwAA/z//f/9/AAD/P/9//38AAP8/////f/9//n////9//3/+f////3//f/5/AAD/f/9//n8AAP9//3/+fwAA/3//f/5//3//fwAA/z//f/9/AAD/P/9//38AAP8//3//////AAD/f/////8AAP9//////wAA/////wAA/z//////AAD/P/////8AAP8/////f/9//n////9//3/+f////3//f/5//3//////AAD/f/////8AAP9//////wAA")
+}]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_jcwgk"]
-size = Vector3(0.147095, 0.338135, 0.518494)
+size = Vector3(0.2306214, 0.338135, 0.12167376)
 
 [sub_resource type="Animation" id="Animation_47o1b"]
 resource_name = "close"
@@ -55,7 +84,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("AnimationPlayer/Lamps2:playing")
+tracks/1/path = NodePath("AnimationPlayer/Lamps:playing")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -71,32 +100,23 @@ _data = {
 &"open": SubResource("Animation_qfuhi")
 }
 
-[node name="Выключатель" type="CSGBox3D" unique_id=23437941]
-size = Vector3(0.121094, 0.135498, 0.0183105)
+[node name="StaticBody3D2" type="StaticBody3D" unique_id=934361363]
 
-[node name="Выключатель2" type="CSGBox3D" parent="." unique_id=920446463]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0189629, 0.00478017, 0.0149555)
-size = Vector3(0.0429688, 0.105957, 0.0057373)
-material = SubResource("StandardMaterial3D_koa61")
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="." unique_id=1767667658]
+mesh = SubResource("ArrayMesh_1o4r3")
 
-[node name="Выключатель3" type="CSGBox3D" parent="." unique_id=2109833083]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0271311, 0.00478017, 0.0149555)
-size = Vector3(0.0429688, 0.105957, 0.0057373)
-material = SubResource("StandardMaterial3D_owuy3")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1818777419 node_paths=PackedStringArray("animation_player")]
-script = ExtResource("1_niovq")
-animation_player = NodePath("../AnimationPlayer")
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1818777419]
+script = ExtResource("1_1o4r3")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1629813289]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00543213, -0.0367432, -0.240753)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00648502, -0.0367432, -0.04234287)
 shape = SubResource("BoxShape3D_jcwgk")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1979918367]
 libraries/ = SubResource("AnimationLibrary_sv7ax")
 
 [node name="Lamps" type="AudioStreamPlayer" parent="AnimationPlayer" unique_id=2003119735]
-stream = ExtResource("2_uqtr6")
+stream = ExtResource("1_1467v")
 
 [node name="Lamps2" type="AudioStreamPlayer" parent="AnimationPlayer" unique_id=284522398]
-stream = ExtResource("2_uqtr6")
+stream = ExtResource("1_1467v")

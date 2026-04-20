@@ -1,8 +1,8 @@
-[gd_scene format=4 uid="uid://dyfthb5qgad7s"]
+[gd_scene format=4 uid="uid://bpj8bvie4qwin"]
 
-[ext_resource type="Script" uid="uid://c24uufsngxyvj" path="res://!!!!/projector.gd" id="1_wyj0u"]
-[ext_resource type="AudioStream" uid="uid://ctl6j0xhnt7s1" path="res://sounds/otrk.mp3" id="2_ngue3"]
-[ext_resource type="AudioStream" uid="uid://btnwylvoa64c1" path="res://sounds/zakr.mp3" id="3_fvqoj"]
+[ext_resource type="Script" uid="uid://bi64o6hmhqbm2" path="res://scripts/interactable_objects/projector.gd" id="1_bxd6x"]
+[ext_resource type="AudioStream" uid="uid://cdkkfolxkw0fo" path="res://sounds/interactions/projector/open.mp3" id="2_midoe"]
+[ext_resource type="AudioStream" uid="uid://duoypf8urtirp" path="res://sounds/interactions/projector/close.mp3" id="3_2wpvg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fwmcj"]
 
@@ -212,7 +212,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_hm21v")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ans54"]
-size = Vector3(0.112671, 2.8692, 0.597061)
+size = Vector3(0.112671, 3.7635572, 0.597061)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ngchh"]
 
@@ -297,7 +297,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.233333, 1),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector3(1, 1, 1), Vector3(1, 1.07, 1), Vector3(1, 0.055, 1)]
+"values": [Vector3(1, 1, 0.445), Vector3(1, 1.07, 0.445), Vector3(1, 0.055, 0.445)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -306,7 +306,7 @@ tracks/1/path = NodePath("../close:playing")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0.0333333),
+"times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -314,6 +314,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_rdjlp"]
 resource_name = "open"
+length = 2.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -324,7 +325,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5, 0.666667),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector3(1, 0.055, 1), Vector3(1, 1.07, 1), Vector3(1, 1, 1)]
+"values": [Vector3(1, 0.055, 0.445), Vector3(1, 1.07, 0.445), Vector3(1, 1, 0.445)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -417,64 +418,56 @@ shadow_mesh = SubResource("ArrayMesh_1cm6k")
 [node name="Sweep" type="MeshInstance3D" parent="." unique_id=1205320443]
 transform = Transform3D(-1, 0, 3.71953e-08, 0, 0.659708, 0, -8.74228e-08, 0, -0.425464, -0.13833387, 0.60249156, -1.5770377)
 mesh = SubResource("ArrayMesh_5subi")
-skeleton = NodePath("")
 
 [node name="Remesh_1" type="MeshInstance3D" parent="." unique_id=650118610]
 transform = Transform3D(-1, 4.5549736e-24, -3.71953e-08, 0, -0.659708, -8.078851e-17, -8.74228e-08, -5.210275e-17, 0.425464, 0.011795837, 0.60464746, -1.5734552)
 mesh = SubResource("ArrayMesh_233l2")
-skeleton = NodePath("")
 
 [node name="Sweep_2" type="MeshInstance3D" parent="." unique_id=1493410279]
 transform = Transform3D(-1, 0, 3.71953e-08, 0, 0.659708, 0, -8.74228e-08, 0, -0.425464, -0.13833414, 0.60249156, 1.5834154)
 mesh = SubResource("ArrayMesh_vfwie")
-skeleton = NodePath("")
 
 [node name="Remesh_2" type="MeshInstance3D" parent="." unique_id=188357114]
 transform = Transform3D(-1, 4.5549736e-24, -3.71953e-08, 0, -0.659708, -8.078851e-17, -8.74228e-08, -5.210275e-17, 0.425464, 0.011795561, 0.60464746, 1.5869977)
 mesh = SubResource("ArrayMesh_yu2fl")
-skeleton = NodePath("")
 
 [node name="Cylinder_2" type="MeshInstance3D" parent="." unique_id=37101315]
 transform = Transform3D(-1, 0, 3.71953e-08, 0, 0.659708, 0, -8.74228e-08, 0, -0.425464, 0.00783215, 0.33158836, 6.8470846e-10)
 mesh = SubResource("ArrayMesh_qtxvj")
-skeleton = NodePath("")
 
 [node name="Cylinder" type="MeshInstance3D" parent="." unique_id=2024321486]
 transform = Transform3D(-1, 0, 3.71953e-08, 0, 0.659708, 0, -8.74228e-08, 0, -0.425464, 0, 0.4074482, 0)
 material_override = SubResource("StandardMaterial3D_5dul7")
 mesh = SubResource("ArrayMesh_yn0mg")
-skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=848243137 node_paths=PackedStringArray("animation_player")]
-transform = Transform3D(-1, 0, 3.71953e-08, 0, 0.659708, 0, -8.74228e-08, 0, -0.425464, 0.011796, -2.093623, -1.9069414e-05)
-script = ExtResource("1_wyj0u")
+transform = Transform3D(-1, 0, 1.509958e-07, 0, 1, 0, -1.509958e-07, 0, -1, 0.011796, -2.093623, -1.9069414e-05)
+script = ExtResource("1_bxd6x")
 animation_player = NodePath("../Cylinder_1/Remesh/AnimationPlayer")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=732574424]
-transform = Transform3D(1, 0, -3.90799e-14, 0, 1, 0, 0, 0, 0.999992, 0.00768661, 1.2297, 0.011054)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00768661, 0.49962723, 0.011053995)
 shape = SubResource("BoxShape3D_ans54")
 
 [node name="Cylinder_1" type="MeshInstance3D" parent="." unique_id=142014183]
-transform = Transform3D(-1, 0, 3.71953e-08, 0, 0.659708, 0, -8.74228e-08, 0, -0.425464, 0, 0.4074482, 0)
+transform = Transform3D(-1, 0, 6.719313e-08, 0, 1, 0, -1.509958e-07, 0, -0.445, 0, 0.4074482, 0)
 material_override = SubResource("StandardMaterial3D_ngchh")
 mesh = SubResource("ArrayMesh_3eib4")
-skeleton = NodePath("")
 
 [node name="Remesh" type="MeshInstance3D" parent="Cylinder_1" unique_id=1522678324]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011796, -3.82179, 4.48227e-05)
 mesh = SubResource("ArrayMesh_7kwqq")
-skeleton = NodePath("")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Cylinder_1/Remesh" unique_id=389326059]
 libraries/ = SubResource("AnimationLibrary_1canx")
 
 [node name="open" type="AudioStreamPlayer" parent="Cylinder_1" unique_id=1462357325]
-stream = ExtResource("2_ngue3")
+stream = ExtResource("2_midoe")
 volume_db = -21.301
 pitch_scale = 2.35
 
 [node name="close" type="AudioStreamPlayer" parent="Cylinder_1" unique_id=1093486547]
-stream = ExtResource("3_fvqoj")
+stream = ExtResource("3_2wpvg")
 volume_db = -22.554
 
 [node name="CSGBakedMeshInstance3D2" type="MeshInstance3D" parent="Cylinder_1" unique_id=2096256343]
@@ -489,4 +482,3 @@ mesh = SubResource("ArrayMesh_o0g0j")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.61762, 0)
 material_override = SubResource("StandardMaterial3D_xffjr")
 mesh = SubResource("ArrayMesh_7mux6")
-skeleton = NodePath("")
