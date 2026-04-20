@@ -1,5 +1,7 @@
 [gd_scene format=4 uid="uid://b1gs87gef3cfh"]
 
+[ext_resource type="Material" uid="uid://d18osw4gvh4g8" path="res://materials/lamp_emission.tres" id="1_rjycm"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fjvkn"]
 resource_name = "outer"
 cull_mode = 2
@@ -123,11 +125,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_gy6au")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_glafs"]
-emission_enabled = true
-emission = Color(1, 1, 1, 1)
-emission_energy_multiplier = 0.0
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_glafs"]
 size = Vector3(4.341736, 0.21716309, 1.0362549)
 
@@ -144,7 +141,7 @@ mesh = SubResource("ArrayMesh_tcvks")
 [node name="Object_6" type="MeshInstance3D" parent="." unique_id=1870655173]
 transform = Transform3D(-1, -2.83277e-16, -6.290024e-32, 2.83277e-16, -1, -4.4409e-16, 6.29001e-32, -4.4409e-16, 1, -6.991191e-17, -0.246797, 0.0214269)
 mesh = SubResource("ArrayMesh_mgjlm")
-surface_material_override/0 = SubResource("StandardMaterial3D_glafs")
+surface_material_override/0 = ExtResource("1_rjycm")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=358949309]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0038757324, -0.25274658, 0.018127441)
