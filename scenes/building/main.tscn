@@ -24,9 +24,12 @@
 [ext_resource type="PackedScene" uid="uid://bpj8bvie4qwin" path="res://scenes/interactable/projector.tscn" id="20_you3j"]
 [ext_resource type="Texture2D" uid="uid://h2yiw0p6krbu" path="res://textures/room321/sprites/poster2.png" id="21_e6lx5"]
 [ext_resource type="PackedScene" uid="uid://dseg1qh4okite" path="res://scenes/props/room321/radiateur.tscn" id="21_phsit"]
+[ext_resource type="PackedScene" uid="uid://b1204s4lgdsv" path="res://scenes/props/plants/plant_1.tscn" id="21_sevr3"]
 [ext_resource type="Texture2D" uid="uid://bc5eewkyxvdv1" path="res://textures/room321/sprites/poster3.png" id="22_e6lx5"]
+[ext_resource type="PackedScene" uid="uid://qewfkybsjej4" path="res://scenes/props/plants/plant_2.tscn" id="22_mtkjs"]
 [ext_resource type="Material" uid="uid://lxwobt8gmfsr" path="res://materials/posters/multiprocessor_big.tres" id="22_oud7x"]
 [ext_resource type="Texture2D" uid="uid://c5h20vaxiuq7n" path="res://textures/room321/sprites/fireextinguisher.png" id="24_030wa"]
+[ext_resource type="PackedScene" uid="uid://irp4vgi81g3a" path="res://scenes/props/plants/leafs_1.tscn" id="24_clkmh"]
 [ext_resource type="Texture2D" uid="uid://c87on1t0i1v7x" path="res://textures/room321/sprites/poster5.png" id="24_eei83"]
 [ext_resource type="Material" uid="uid://b6rc1eisj24tm" path="res://materials/posters/multiprocessor_very_big.tres" id="24_nii2b"]
 [ext_resource type="Texture2D" uid="uid://b0wb4dyotymf4" path="res://textures/room321/sprites/electricshield.png" id="25_hc3cg"]
@@ -42,6 +45,8 @@
 [ext_resource type="PackedScene" uid="uid://ctap2k2t7dy83" path="res://scenes/props/room321/conditioner.tscn" id="38_wbtfh"]
 [ext_resource type="Material" uid="uid://d18osw4gvh4g8" path="res://materials/lamp_emission.tres" id="39_k2m2y"]
 [ext_resource type="PackedScene" uid="uid://1gfesl0vyx66" path="res://scenes/interactable/switch.tscn" id="40_fh8c4"]
+[ext_resource type="PackedScene" uid="uid://biy447yu8j3id" path="res://scenes/props/plants/plant_3.tscn" id="45_vnpvu"]
+[ext_resource type="PackedScene" uid="uid://c083wmao5ixs3" path="res://scenes/props/plants/leafs_2.tscn" id="47_v7twq"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_a87b0"]
 panorama = ExtResource("1_unbpl")
@@ -303,6 +308,7 @@ parameters/looping = true
 transform = Transform3D(0.95178735, -0.21111988, 0.22255167, 0.088293895, 0.8833341, 0.46035323, -0.29377723, -0.4185084, 0.8593868, 5.540121, 8.514353, 25.486807)
 light_color = Color(1, 0.87141407, 0.66503364, 1)
 shadow_enabled = true
+shadow_blur = 0.198
 
 [node name="Global Floor" type="StaticBody3D" parent="." unique_id=232929963]
 
@@ -415,6 +421,9 @@ transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.405, 0, 0.3, 0, -1.3113417
 
 [node name="shelf_2" parent="props/shelfs" unique_id=856451718 instance=ExtResource("13_sn3iq")]
 transform = Transform3D(-0.3, 0, 5.7263875e-08, 0, 0.405, 0, -4.5298744e-08, 0, -0.3792415, 5.211332, 0.93628025, 6.0442095)
+
+[node name="book_shelf" parent="props/shelfs" unique_id=2117403970 instance=ExtResource("20_k2m2y")]
+transform = Transform3D(-1.2441845, 0, 1.243644e-07, 0, 0.615, 0, -1.8786663e-07, 0, -0.8236282, 4.0281973, 0.6420994, 4.201749)
 
 [node name="cloths_stand" parent="props" unique_id=91366424 instance=ExtResource("15_ptftv")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.161036, 0, 0.85417795)
@@ -545,8 +554,21 @@ transform = Transform3D(-0.1260269, 0, 1.509958e-08, 0, 0.11411204, 0, -1.902953
 [node name="conditioner" parent="props" unique_id=536734981 instance=ExtResource("38_wbtfh")]
 transform = Transform3D(0.023473227, 1.0033858, -0.025908366, 0, 0.017166719, 1.5148441, 1.2746559, -0.018477691, 0.0004771115, -10.324055, 3.7955804, 5.3578224)
 
-[node name="Node3D" parent="props" unique_id=2117403970 instance=ExtResource("20_k2m2y")]
-transform = Transform3D(-1.2441845, 0, 9.286241e-08, 0, 0.615, 0, -1.8786663e-07, 0, -0.6149999, 4.0281973, 0.6420994, 4.516595)
+[node name="plants" type="Node3D" parent="props" unique_id=1607217332]
+
+[node name="StaticBody3D" parent="props/plants" unique_id=1853345499 instance=ExtResource("21_sevr3")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 5.034925, 1.2686428, 4.9755216)
+
+[node name="StaticBody3D2" parent="props/plants" unique_id=818426846 instance=ExtResource("22_mtkjs")]
+transform = Transform3D(0.835, 0, 0, 0, 0.835, 0, 0, 0, 0.835, 4.971945, 1.8582739, 5.7823253)
+
+[node name="StaticBody3D3" parent="props/plants" unique_id=313770794 instance=ExtResource("45_vnpvu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0326014, 1.457563, 4.211597)
+
+[node name="StaticBody3D4" parent="props/plants" unique_id=361738319 instance=ExtResource("45_vnpvu")]
+transform = Transform3D(0.795, 0, 0, 0, 0.795, 0, 0, 0, 0.795, 5.2560816, 2.020116, 6.698772)
+
+[node name="leaves" type="Node3D" parent="props/plants" unique_id=1254431036]
 
 [node name="posters" type="Node3D" parent="." unique_id=982701593]
 
@@ -724,3 +746,18 @@ omni_attenuation = -0.782
 [node name="AnimationPlayer" type="AnimationPlayer" parent="lamps/OmniLight3D" unique_id=1686340254]
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_mtkjs")
+
+[node name="LIVISTONA_CHINENSIS_LIVISTONA_CHINENSIS_Mat_0" parent="." unique_id=1370369474 instance=ExtResource("24_clkmh")]
+transform = Transform3D(0.3538857, 0, 0, 0, -3.012916e-08, 0.006902124, 0, -0.6892749, -3.017014e-10, 5.135016, 1.268739, 3.7215712)
+
+[node name="LIVISTONA_CHINENSIS_LIVISTONA_CHINENSIS_Mat_1" parent="." unique_id=2000857447 instance=ExtResource("24_clkmh")]
+transform = Transform3D(0.3538857, 0, 0, 0, -3.012916e-08, 0.006902124, 0, -0.6892749, -3.017014e-10, 5.135016, 1.268739, 3.7215712)
+
+[node name="Leaves_Mat_1_0" parent="." unique_id=1300179589 instance=ExtResource("47_v7twq")]
+transform = Transform3D(0.0025018763, 0, 1.9489421e-19, 3.0838007e-35, 0.00094224344, -7.7957683e-19, -1.3888204e-19, 2.0922007e-19, 0.003510902, 5.0896206, 1.2587345, 3.7556243)
+
+[node name="Leaves_Mat_1_2" parent="." unique_id=1412122162 instance=ExtResource("47_v7twq")]
+transform = Transform3D(0.0051726843, 0, 3.2129334e-19, 6.3758257e-35, 0.00094224344, -1.2851734e-18, -2.8714166e-19, 2.0922007e-19, 0.0057879062, 5.1386623, 1.2587345, 4.598894)
+
+[node name="Leaves_Mat_1_1" parent="." unique_id=697905027 instance=ExtResource("47_v7twq")]
+transform = Transform3D(0.0038104057, 0, 3.6355335e-19, 4.6966877e-35, 2.0831336e-05, -1.4542134e-18, -2.1152001e-19, 4.6254857e-21, 0.006549195, 5.164047, 1.8864837, 6.3860855)

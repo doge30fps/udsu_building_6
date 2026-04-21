@@ -205,17 +205,21 @@ volume_db = -6.265
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1597783167]
 transform = Transform3D(39.01, 0, 0, 0, 39.01, 0, 0, 0, 39.01, 29.8146, 103.927, 8.87987)
+visible = false
 shape = SubResource("BoxShape3D_1ybv1")
 
 [node name="Object_2" type="MeshInstance3D" parent="StaticBody3D" unique_id=1171072550]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 29.0302, 1.24664e-07, 3.13515)
+cast_shadow = 0
 mesh = SubResource("ArrayMesh_cipss")
 
 [node name="Object_3" type="MeshInstance3D" parent="StaticBody3D" unique_id=1876713058]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 29.0302, 1.24664e-07, 3.13515)
+cast_shadow = 0
 mesh = SubResource("ArrayMesh_0y33b")
 surface_material_override/0 = ExtResource("3_75qd3")
 
 [node name="Object_4" type="MeshInstance3D" parent="StaticBody3D" unique_id=688000318]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 29.0302, 1.24664e-07, 3.13515)
+cast_shadow = 0
 mesh = SubResource("ArrayMesh_53dpk")
