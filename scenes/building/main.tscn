@@ -48,6 +48,7 @@
 [ext_resource type="PackedScene" uid="uid://1gfesl0vyx66" path="res://scenes/interactable/switch.tscn" id="40_fh8c4"]
 [ext_resource type="PackedScene" uid="uid://biy447yu8j3id" path="res://scenes/props/plants/plant_3.tscn" id="45_vnpvu"]
 [ext_resource type="PackedScene" uid="uid://c083wmao5ixs3" path="res://scenes/props/plants/leafs_2.tscn" id="47_v7twq"]
+[ext_resource type="PackedScene" uid="uid://csixtn86piggm" path="res://scenes/windows/window.tscn" id="49_aouio"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_a87b0"]
 panorama = ExtResource("1_unbpl")
@@ -764,3 +765,8 @@ omni_attenuation = -0.782
 [node name="AnimationPlayer" type="AnimationPlayer" parent="lamps/OmniLight3D" unique_id=1686340254]
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_mtkjs")
+
+[node name="windows" type="Node3D" parent="." unique_id=248159441]
+
+[node name="Node3D" parent="windows" unique_id=203735163 instance=ExtResource("49_aouio")]
+transform = Transform3D(-1.4031525, 0, -1.7364516e-07, 0, 1.2621905, 0, 2.1187013e-07, 0, -1.15, 3.5460305, 0.6313522, 8.62941)
