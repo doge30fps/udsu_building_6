@@ -1,0 +1,11 @@
+Model Information:
+* title:	AOC Monitor
+* source:	https://sketchfab.com/3d-models/aoc-monitor-f44301025a364a9bb161417e43e4a325
+* author:	Tancik111 (https://sketchfab.com/Tancik111)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "AOC Monitor" (https://sketchfab.com/3d-models/aoc-monitor-f44301025a364a9bb161417e43e4a325) by Tancik111 (https://sketchfab.com/Tancik111) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
