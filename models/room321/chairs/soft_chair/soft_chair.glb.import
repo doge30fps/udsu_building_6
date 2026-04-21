@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cx7k2ekf7nyci"
-path="res://.godot/imported/soft_chair.fbx-fcacf8a2dc48865a97d0deb63e549341.scn"
+uid="uid://cv2gkkre6k3qm"
+path="res://.godot/imported/soft_chair.glb-e3209f942802017704e45d5b8a6cedcc.scn"
 
 [deps]
 
-source_file="res://models/room321/chairs/soft_chair/soft_chair.fbx"
-dest_files=["res://.godot/imported/soft_chair.fbx-fcacf8a2dc48865a97d0deb63e549341.scn"]
+source_file="res://models/room321/chairs/soft_chair/soft_chair.glb"
+dest_files=["res://.godot/imported/soft_chair.glb-e3209f942802017704e45d5b8a6cedcc.scn"]
 
 [params]
 
@@ -30,7 +30,7 @@ meshes/force_disable_compression=false
 skins/use_named_skins=true
 animation/import=true
 animation/fps=30
-animation/trimming=true
+animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
@@ -57,21 +57,13 @@ _subresources={
 "PATH:Box60/StaticBody3D/CollisionShape3D": {
 "import/skip_import": true
 },
-"PATH:Camera": {
-"import/skip_import": true
-},
 "PATH:Rectangle09/StaticBody3D": {
 "import/skip_import": true
 },
 "PATH:Rectangle09/StaticBody3D/CollisionShape3D": {
 "import/skip_import": true
-},
-"PATH:SunPositioner001": {
-"import/skip_import": true
 }
 }
 }
-fbx/importer=0
-fbx/allow_geometry_helper_nodes=false
-fbx/embedded_image_handling=1
-fbx/naming_version=2
+gltf/naming_version=2
+gltf/embedded_image_handling=1

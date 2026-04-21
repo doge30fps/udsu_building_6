@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dsveiukv2620q"]
 
-[ext_resource type="PackedScene" uid="uid://cx7k2ekf7nyci" path="res://models/room321/chairs/soft_chair/soft_chair.fbx" id="1_ydj6s"]
+[ext_resource type="PackedScene" uid="uid://cv2gkkre6k3qm" path="res://models/room321/chairs/soft_chair/soft_chair.glb" id="1_ydj6s"]
 [ext_resource type="Material" uid="uid://cfxndm1wg0k6g" path="res://materials/room321/black_soft_chair.tres" id="2_ydj6s"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_axfmt"]
@@ -48,15 +48,12 @@ shape = SubResource("BoxShape3D_n6ua3")
 transform = Transform3D(1, 0, 0, 0, 0.34862113, -0.9372637, 0, 0.9372637, 0.34862113, 0.0043973923, 0.6448081, -0.17711443)
 shape = SubResource("BoxShape3D_n6ua3")
 
-[node name="soft_chair" parent="." unique_id=730760219 instance=ExtResource("1_ydj6s")]
+[node name="soft_chair" parent="." unique_id=1251932079 instance=ExtResource("1_ydj6s")]
 
-[node name="Box57" parent="soft_chair" index="0" unique_id=1765359824]
+[node name="Box57" parent="soft_chair" index="0" unique_id=1625567519]
 surface_material_override/0 = ExtResource("2_ydj6s")
 
-[node name="Box58" parent="soft_chair" index="1" unique_id=520437113]
-surface_material_override/0 = ExtResource("2_ydj6s")
-
-[node name="Box60" parent="soft_chair" index="3" unique_id=1271874738]
+[node name="Box60" parent="soft_chair" index="1" unique_id=908115743]
 surface_material_override/0 = ExtResource("2_ydj6s")
 
 [editable path="soft_chair"]

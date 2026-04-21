@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dorme6obndu22"]
+
+[ext_resource type="Texture2D" uid="uid://bpq8xbgns78fv" path="res://textures/room321/fire_extinguisher/Diffuse.png" id="1_apmg3"]
+[ext_resource type="Texture2D" uid="uid://00sxc443m764" path="res://textures/room321/fire_extinguisher/Metalness.png" id="2_oamsd"]
+[ext_resource type="Texture2D" uid="uid://tmrfhh4d0q74" path="res://textures/room321/fire_extinguisher/Roughness.png" id="3_k3vur"]
+
+[resource]
+albedo_texture = ExtResource("1_apmg3")
+metallic = 1.0
+metallic_texture = ExtResource("2_oamsd")
+roughness_texture = ExtResource("3_k3vur")

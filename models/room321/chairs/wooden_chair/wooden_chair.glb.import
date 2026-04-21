@@ -1,0 +1,147 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://b2q5hlh50rnvx"
+path="res://.godot/imported/wooden_chair.glb-4fcb84d293d596903acd827435c5e9ce.scn"
+
+[deps]
+
+source_file="res://models/room321/chairs/wooden_chair/wooden_chair.glb"
+dest_files=["res://.godot/imported/wooden_chair.glb-4fcb84d293d596903acd827435c5e9ce.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"nodes": {
+"PATH:Боковая_Верхняя_Часть/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Боковая_Верхняя_Часть/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:Боковая_Верхняя_Часть_2/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Боковая_Верхняя_Часть_2/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:Боковая_Частб_2/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Боковая_Частб_2/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:Боковая_Часть_1/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Боковая_Часть_1/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:Доска/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Доска/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:Задняя_Часть/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Задняя_Часть/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:Ножка_1/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Ножка_1/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:Ножка_2/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Ножка_2/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:Ножка_3/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Ножка_3/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:Ножка_4/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Ножка_4/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:Округление_1/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Округление_1/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:Округление_2/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Округление_2/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:Передняя_Опора/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Передняя_Опора/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:Передняя_Часть/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:Передняя_Часть/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:ЧастьОпоры_1/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:ЧастьОпоры_1/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:ЧастьОпоры_2/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:ЧастьОпоры_2/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+},
+"PATH:ЧастьОпоры_3/StaticBody3D": {
+"import/skip_import": true
+},
+"PATH:ЧастьОпоры_3/StaticBody3D/CollisionShape3D": {
+"import/skip_import": true
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1
