@@ -4,6 +4,71 @@
 [ext_resource type="AudioStream" uid="uid://cdkkfolxkw0fo" path="res://sounds/interactions/projector/open.mp3" id="2_midoe"]
 [ext_resource type="AudioStream" uid="uid://duoypf8urtirp" path="res://sounds/interactions/projector/close.mp3" id="3_2wpvg"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ans54"]
+size = Vector3(0.112671, 3.7635572, 0.597061)
+
+[sub_resource type="Animation" id="Animation_d3745"]
+resource_name = "close"
+length = 2.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(1, 1, 0.445), Vector3(1, 1.07, 0.445), Vector3(1, 0.055, 0.445)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../close:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_rdjlp"]
+resource_name = "open"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(1, 0.055, 0.445), Vector3(1, 1.07, 0.445), Vector3(1, 1, 0.445)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../open:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1canx"]
+_data = {
+&"close": SubResource("Animation_d3745"),
+&"open": SubResource("Animation_rdjlp")
+}
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fwmcj"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sa477"]
@@ -211,9 +276,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_hm21v")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ans54"]
-size = Vector3(0.112671, 3.7635572, 0.597061)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ngchh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2r5pu"]
@@ -284,68 +346,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_7sahc")
 
-[sub_resource type="Animation" id="Animation_d3745"]
-resource_name = "close"
-length = 2.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("..:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.233333, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(1, 1, 0.445), Vector3(1, 1.07, 0.445), Vector3(1, 0.055, 0.445)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../close:playing")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="Animation" id="Animation_rdjlp"]
-resource_name = "open"
-length = 2.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("..:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 0.666667),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(1, 0.055, 0.445), Vector3(1, 1.07, 0.445), Vector3(1, 1, 0.445)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../open:playing")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_1canx"]
-_data = {
-&"close": SubResource("Animation_d3745"),
-&"open": SubResource("Animation_rdjlp")
-}
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_22rrw"]
 albedo_color = Color(0, 0, 0, 1)
 
@@ -415,6 +415,28 @@ shadow_mesh = SubResource("ArrayMesh_1cm6k")
 
 [node name="StaticBody3D2" type="StaticBody3D" unique_id=1025697756]
 
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=848243137 node_paths=PackedStringArray("animation_player")]
+transform = Transform3D(-1, 0, 1.509958e-07, 0, 1, 0, -1.509958e-07, 0, -1, 0.011796, -2.093623, -1.9069414e-05)
+script = ExtResource("1_bxd6x")
+animation_player = NodePath("../AnimationPlayer")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=732574424]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00768661, 0.49962723, 0.011053995)
+shape = SubResource("BoxShape3D_ans54")
+
+[node name="close" type="AudioStreamPlayer" parent="." unique_id=1093486547]
+stream = ExtResource("3_2wpvg")
+volume_db = -22.554
+
+[node name="open" type="AudioStreamPlayer" parent="." unique_id=1462357325]
+stream = ExtResource("2_midoe")
+volume_db = -21.301
+pitch_scale = 2.35
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=389326059]
+root_node = NodePath("../Cylinder_1/Remesh")
+libraries/ = SubResource("AnimationLibrary_1canx")
+
 [node name="Sweep" type="MeshInstance3D" parent="." unique_id=1205320443]
 transform = Transform3D(-1, 0, 3.71953e-08, 0, 0.659708, 0, -8.74228e-08, 0, -0.425464, -0.13833387, 0.60249156, -1.5770377)
 mesh = SubResource("ArrayMesh_5subi")
@@ -440,15 +462,6 @@ transform = Transform3D(-1, 0, 3.71953e-08, 0, 0.659708, 0, -8.74228e-08, 0, -0.
 material_override = SubResource("StandardMaterial3D_5dul7")
 mesh = SubResource("ArrayMesh_yn0mg")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=848243137 node_paths=PackedStringArray("animation_player")]
-transform = Transform3D(-1, 0, 1.509958e-07, 0, 1, 0, -1.509958e-07, 0, -1, 0.011796, -2.093623, -1.9069414e-05)
-script = ExtResource("1_bxd6x")
-animation_player = NodePath("../Cylinder_1/Remesh/AnimationPlayer")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=732574424]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00768661, 0.49962723, 0.011053995)
-shape = SubResource("BoxShape3D_ans54")
-
 [node name="Cylinder_1" type="MeshInstance3D" parent="." unique_id=142014183]
 transform = Transform3D(-1, 0, 6.719313e-08, 0, 1, 0, -1.509958e-07, 0, -0.445, 0, 0.4074482, 0)
 material_override = SubResource("StandardMaterial3D_ngchh")
@@ -457,18 +470,6 @@ mesh = SubResource("ArrayMesh_3eib4")
 [node name="Remesh" type="MeshInstance3D" parent="Cylinder_1" unique_id=1522678324]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011796, -3.82179, 4.48227e-05)
 mesh = SubResource("ArrayMesh_7kwqq")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Cylinder_1/Remesh" unique_id=389326059]
-libraries/ = SubResource("AnimationLibrary_1canx")
-
-[node name="open" type="AudioStreamPlayer" parent="Cylinder_1" unique_id=1462357325]
-stream = ExtResource("2_midoe")
-volume_db = -21.301
-pitch_scale = 2.35
-
-[node name="close" type="AudioStreamPlayer" parent="Cylinder_1" unique_id=1093486547]
-stream = ExtResource("3_2wpvg")
-volume_db = -22.554
 
 [node name="CSGBakedMeshInstance3D2" type="MeshInstance3D" parent="Cylinder_1" unique_id=2096256343]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0218201, -1.85761, 3.8122)

@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://ckmuuw06jf3nl" path="res://scenes/props/room321/shelf.tscn" id="13_sn3iq"]
 [ext_resource type="PackedScene" uid="uid://ct7v6kem4dtw8" path="res://scenes/props/room321/table3.tscn" id="14_m6ru8"]
 [ext_resource type="PackedScene" uid="uid://bhsnbe2h5epvh" path="res://scenes/props/room321/clothes_stand.tscn" id="15_ptftv"]
+[ext_resource type="PackedScene" uid="uid://nti4bf3uqnba" path="res://models/plants/plant_2/leefs.glb" id="15_uow6x"]
 [ext_resource type="PackedScene" uid="uid://drsgvknyxr3vv" path="res://scenes/props/room321/extinguisher.tscn" id="16_0b882"]
 [ext_resource type="PackedScene" uid="uid://dsveiukv2620q" path="res://scenes/props/room321/chair_soft.tscn" id="17_32x2k"]
 [ext_resource type="PackedScene" uid="uid://dbt41oktgyo4u" path="res://scenes/props/room321/chair_hard_padding.tscn" id="18_jalgn"]
@@ -428,19 +429,19 @@ transform = Transform3D(-1.2441845, 0, 1.243644e-07, 0, 0.615, 0, -1.8786663e-07
 [node name="leaves" type="Node3D" parent="props/shelfs" unique_id=1959112544]
 
 [node name="LIVISTONA_CHINENSIS_LIVISTONA_CHINENSIS_Mat_0" parent="props/shelfs/leaves" unique_id=1370369474 instance=ExtResource("24_clkmh")]
-transform = Transform3D(0.3538857, 0, 0, 0, -3.012916e-08, 0.006902124, 0, -0.6892749, -3.017014e-10, 5.135016, 1.268739, 3.7215712)
+transform = Transform3D(0.3538857, 0, 0, 0, -3.0129158e-08, 0.02032774, 0, -0.68927485, -8.8855373e-10, 5.135016, 1.268739, 3.7215712)
 
 [node name="LIVISTONA_CHINENSIS_LIVISTONA_CHINENSIS_Mat_1" parent="props/shelfs/leaves" unique_id=2000857447 instance=ExtResource("24_clkmh")]
 transform = Transform3D(0.3538857, 0, 0, 0, -3.012916e-08, 0.006902124, 0, -0.6892749, -3.017014e-10, 5.135016, 1.268739, 3.7215712)
 
 [node name="Leaves_Mat_1_0" parent="props/shelfs/leaves" unique_id=1300179589 instance=ExtResource("47_v7twq")]
-transform = Transform3D(0.0025018763, 0, 1.9489421e-19, 3.0838007e-35, 0.00094224344, -7.7957683e-19, -1.3888204e-19, 2.0922007e-19, 0.003510902, 5.0896206, 1.2587345, 3.7556243)
-
-[node name="Leaves_Mat_1_2" parent="props/shelfs/leaves" unique_id=1412122162 instance=ExtResource("47_v7twq")]
-transform = Transform3D(0.0051726843, 0, 3.2129334e-19, 6.3758257e-35, 0.00094224344, -1.2851734e-18, -2.8714166e-19, 2.0922007e-19, 0.0057879062, 5.1386623, 1.2587345, 4.598894)
+transform = Transform3D(0.61654043, 0, 2.5319297e-17, 7.5994476e-33, 0.011263907, -1.0127719e-16, -3.422487e-17, 2.5010898e-18, 0.4561119, 5.246908, 1.2657087, 3.8500423)
 
 [node name="Leaves_Mat_1_1" parent="props/shelfs/leaves" unique_id=697905027 instance=ExtResource("47_v7twq")]
-transform = Transform3D(0.0038104057, 0, 3.6355335e-19, 4.6966877e-35, 2.0831336e-05, -1.4542134e-18, -2.1152001e-19, 4.6254857e-21, 0.006549195, 5.164047, 1.8864837, 6.3860855)
+transform = Transform3D(0.46408343, 0, 3.0927575e-17, 5.72027e-33, 0.035190463, -1.237103e-16, -2.5761806e-17, 7.8138525e-18, 0.55714166, 5.1986403, 1.8864837, 6.3860855)
+
+[node name="leefs" parent="props/shelfs/leaves" unique_id=1017173722 instance=ExtResource("15_uow6x")]
+transform = Transform3D(1, 0, 0, 0, 0.03550899, 0, 0, 0, 1, 5.1909304, 1.266091, 4.6603107)
 
 [node name="cloths_stand" parent="props" unique_id=91366424 instance=ExtResource("15_ptftv")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.161036, 0, 0.85417795)

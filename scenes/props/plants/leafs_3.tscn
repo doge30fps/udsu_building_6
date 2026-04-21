@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://ch0ylhxie4858"]
+
+[ext_resource type="PackedScene" uid="uid://nti4bf3uqnba" path="res://models/plants/plant_2/leefs.glb" id="1_j7vf3"]
+
+[node name="leafs_3" type="Node3D" unique_id=641934889]
+
+[node name="leefs" parent="." unique_id=1017173722 instance=ExtResource("1_j7vf3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.039943337, 1.1920929e-07, -0.054083586)
