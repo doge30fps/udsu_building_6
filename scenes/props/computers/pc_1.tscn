@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://biy3g0wj00k3"]
+
+[ext_resource type="PackedScene" uid="uid://dbadf7k76fbnt" path="res://models/computers/pc/office_pc.glb" id="1_ff3na"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ff3na"]
+size = Vector3(0.25759888, 0.57121277, 0.5952759)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=140048784]
+
+[node name="office_pc" parent="." unique_id=1622779393 instance=ExtResource("1_ff3na")]
+
+[node name="backpanel_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/backpanel_LP" parent_id_path=PackedInt32Array(1622779393, 1529483515) index="0" unique_id=729401519]
+cast_shadow = 0
+
+[node name="backwall_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/backwall_LP" parent_id_path=PackedInt32Array(1622779393, 115643604) index="0" unique_id=1476846046]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -0.31716084, 0, 0)
+cast_shadow = 0
+
+[node name="cooler_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/cooler_LP" parent_id_path=PackedInt32Array(1622779393, 1795393400) index="0" unique_id=991132096]
+cast_shadow = 0
+
+[node name="detalka_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/detalka_LP" parent_id_path=PackedInt32Array(1622779393, 716088947) index="0" unique_id=158983671]
+cast_shadow = 0
+
+[node name="frontpanel_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/frontpanel_LP" parent_id_path=PackedInt32Array(1622779393, 2117681631) index="0" unique_id=443735932]
+cast_shadow = 0
+
+[node name="frontwall_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/frontwall_LP" parent_id_path=PackedInt32Array(1622779393, 1174874415) index="0" unique_id=1903098879]
+cast_shadow = 0
+
+[node name="gpu_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/gpu_LP" parent_id_path=PackedInt32Array(1622779393, 1783856330) index="0" unique_id=427980209]
+cast_shadow = 0
+
+[node name="grid_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/grid_LP" parent_id_path=PackedInt32Array(1622779393, 1326247137) index="0" unique_id=2056446875]
+cast_shadow = 0
+
+[node name="logo_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/logo_LP" parent_id_path=PackedInt32Array(1622779393, 1415918442) index="0" unique_id=926841136]
+cast_shadow = 0
+
+[node name="misc_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/misc_LP" parent_id_path=PackedInt32Array(1622779393, 450272703) index="0" unique_id=2057866675]
+cast_shadow = 0
+
+[node name="motherboard_detail_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/motherboard_detail_LP" parent_id_path=PackedInt32Array(1622779393, 535908054) index="0" unique_id=96179577]
+cast_shadow = 0
+
+[node name="motherboard_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/motherboard_LP" parent_id_path=PackedInt32Array(1622779393, 946448714) index="0" unique_id=452941923]
+cast_shadow = 0
+
+[node name="powersupply_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/powersupply_LP" parent_id_path=PackedInt32Array(1622779393, 1742340920) index="0" unique_id=229526007]
+cast_shadow = 0
+
+[node name="ram2_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/ram2_LP" parent_id_path=PackedInt32Array(1622779393, 1646717631) index="0" unique_id=1131845688]
+cast_shadow = 0
+
+[node name="ram_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/ram_LP" parent_id_path=PackedInt32Array(1622779393, 764900926) index="0" unique_id=1274835199]
+cast_shadow = 0
+
+[node name="skeleton_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/skeleton_LP" parent_id_path=PackedInt32Array(1622779393, 2056699219) index="0" unique_id=766980302]
+cast_shadow = 0
+
+[node name="upperwall_LP_pc_mat_0" parent="office_pc/Sketchfab_model/9fb983667f364c209a68466612cf422d_fbx/RootNode/upperwall_LP" parent_id_path=PackedInt32Array(1622779393, 1614599715) index="0" unique_id=1562350902]
+cast_shadow = 0
+
+[node name="backwall_LP_pc_mat_0_001" parent="office_pc/Sketchfab_model_001/9fb983667f364c209a68466612cf422d_fbx_001/RootNode_001/backwall_LP_001" parent_id_path=PackedInt32Array(1622779393, 264042845) index="0" unique_id=577133430]
+transform = Transform3D(-0.9999999, 0, -1.4238803e-07, 0, 0.9999996, 0, 9.492529e-08, 0, -0.99999905, -5.743623, 0, 1.5300536)
+cast_shadow = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1414257365]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07972717, 1.1323013, 0.11746216)
+shape = SubResource("BoxShape3D_ff3na")
+
+[editable path="office_pc"]

@@ -11,4 +11,6 @@ size = Vector3(0.38793945, 0.36447144, 0.33947754)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004272461, 0.31861877, -0.017150879)
 shape = SubResource("BoxShape3D_5m2sk")
 
-[node name="Sketchfab_Scene" parent="." unique_id=386670483 instance=ExtResource("1_k588c")]
+[node name="Sketchfab_Scene" parent="." unique_id=773305896 instance=ExtResource("1_k588c")]
+
+[editable path="Sketchfab_Scene"]

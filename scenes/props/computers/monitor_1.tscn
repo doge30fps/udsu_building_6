@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://tyeh4a8dqt6p"]
+
+[ext_resource type="PackedScene" uid="uid://ba2av2j0hm7et" path="res://models/computers/monitors/aoc_1/monitor (1).glb" id="1_wl7tg"]
+[ext_resource type="Material" uid="uid://blr8oxus4geb4" path="res://materials/room321/lever.tres" id="2_6ftjf"]
+[ext_resource type="Texture2D" uid="uid://djnll7tbdcosg" path="res://textures/room321/sprites/monitor.webp" id="3_vk1fw"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xo34g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y08ef"]
+albedo_color = Color(0, 0, 0, 1)
+albedo_texture = ExtResource("3_vk1fw")
+metallic = 1.0
+metallic_specular = 1.0
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.12
+backlight_enabled = true
+uv1_scale = Vector3(-1, 0.995, 1)
+uv1_offset = Vector3(-0.505, 0.5, 0)
+uv1_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wl7tg"]
+size = Vector3(3.0246124, 1.4030914, 0.17687988)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1064700850]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1020705181 instance=ExtResource("1_wl7tg")]
+
+[node name="pCube1_lambert1_0" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/pCube1" parent_id_path=PackedInt32Array(1020705181, 510300523) index="0" unique_id=177001621]
+surface_material_override/0 = ExtResource("2_6ftjf")
+
+[node name="pCylinder3_lambert1_0" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/pCylinder3" parent_id_path=PackedInt32Array(1020705181, 1262774416) index="0" unique_id=425182518]
+surface_material_override/0 = ExtResource("2_6ftjf")
+
+[node name="pCube2_lambert1_0" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/pCube2" parent_id_path=PackedInt32Array(1020705181, 1198462428) index="0" unique_id=1533508096]
+cast_shadow = 0
+
+[node name="pCube3_lambert1_0" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/pCube3" parent_id_path=PackedInt32Array(1020705181, 2145126719) index="0" unique_id=1409046269]
+cast_shadow = 0
+
+[node name="pCube4_lambert1_0" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/pCube4" parent_id_path=PackedInt32Array(1020705181, 874099988) index="0" unique_id=2100151172]
+cast_shadow = 0
+
+[node name="pCube5_lambert1_0" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/pCube5" parent_id_path=PackedInt32Array(1020705181, 105081002) index="0" unique_id=210431306]
+cast_shadow = 0
+
+[node name="pCube6_lambert1_0" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/pCube6" parent_id_path=PackedInt32Array(1020705181, 101442751) index="0" unique_id=1189315043]
+cast_shadow = 0
+
+[node name="pPlane2_lambert2_0" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/group1/pPlane2" parent_id_path=PackedInt32Array(1020705181, 1540439554) index="0" unique_id=1413093385]
+cast_shadow = 0
+
+[node name="pPlane1_lambert2_0" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/group1/pPlane1" parent_id_path=PackedInt32Array(1020705181, 195730967) index="0" unique_id=426216871]
+cast_shadow = 0
+
+[node name="pPlane3_lambert2_0" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/group1/pPlane3" parent_id_path=PackedInt32Array(1020705181, 117189795) index="0" unique_id=887151855]
+cast_shadow = 0
+
+[node name="pPlane2_lambert2_02" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/group2/pPlane22" parent_id_path=PackedInt32Array(1020705181, 902918662) index="0" unique_id=1082912088]
+cast_shadow = 0
+
+[node name="pPlane1_lambert2_02" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/group2/pPlane12" parent_id_path=PackedInt32Array(1020705181, 1963603737) index="0" unique_id=681330429]
+cast_shadow = 0
+
+[node name="pPlane3_lambert2_02" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/group2/pPlane32" parent_id_path=PackedInt32Array(1020705181, 1559344915) index="0" unique_id=599714314]
+cast_shadow = 0
+
+[node name="pCube8_lambert1_0" parent="Sketchfab_Scene/Sketchfab_model/b754e1669e8f40398a23400432bab533_fbx/RootNode/monitor1/pCube8" parent_id_path=PackedInt32Array(1020705181, 14040228) index="0" unique_id=310449440]
+surface_material_override/0 = ExtResource("2_6ftjf")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sketchfab_Scene" unique_id=757678803]
+transform = Transform3D(2.7582288, 0, 0, 0, 1.2557659, 0, 0, 0, 0.009608269, 0, 1.0509447, -0.1519934)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_xo34g")
+surface_material_override/0 = SubResource("StandardMaterial3D_y08ef")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2014802177]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00051116943, 1.1017209, -0.10211182)
+shape = SubResource("BoxShape3D_wl7tg")
+
+[editable path="Sketchfab_Scene"]

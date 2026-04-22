@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c6blev5suehlc"]
+
+[ext_resource type="PackedScene" uid="uid://r6rl42ot7r36" path="res://models/computers/monitors/default/monitor.glb" id="1_4e5k2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4e5k2"]
+size = Vector3(1.8371582, 1.0542603, 0.06619263)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=589598319]
+
+[node name="Sketchfab_Scene" parent="." unique_id=14916458 instance=ExtResource("1_4e5k2")]
+transform = Transform3D(0.001, 0, 0, 0, 0.001, 0, 0, 0, 0.001, 0, 0, 0)
+
+[node name="Cube_RenderMonitor_0" parent="Sketchfab_Scene/Sketchfab_model/Monitor_fbx/RootNode/Cube" parent_id_path=PackedInt32Array(14916458, 1906016557) index="1" unique_id=563728119]
+cast_shadow = 0
+
+[node name="Cube_USB_0" parent="Sketchfab_Scene/Sketchfab_model/Monitor_fbx/RootNode/Cube" parent_id_path=PackedInt32Array(14916458, 1906016557) index="2" unique_id=117629637]
+cast_shadow = 0
+
+[node name="Button_Button Material_0" parent="Sketchfab_Scene/Sketchfab_model/Monitor_fbx/RootNode/Button" parent_id_path=PackedInt32Array(14916458, 1502526194) index="0" unique_id=512567805]
+cast_shadow = 0
+
+[node name="Button two_ButtonTwoMaterial_0" parent="Sketchfab_Scene/Sketchfab_model/Monitor_fbx/RootNode/Button two" parent_id_path=PackedInt32Array(14916458, 853828043) index="0" unique_id=1238969089]
+cast_shadow = 0
+
+[node name="Button two_001_ButtonTwoMaterial_001_0" parent="Sketchfab_Scene/Sketchfab_model/Monitor_fbx/RootNode/Button two_001" parent_id_path=PackedInt32Array(14916458, 149276319) index="0" unique_id=2135385371]
+cast_shadow = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=201716676]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5776397, 0.03390503, -0.007828116)
+shape = SubResource("BoxShape3D_4e5k2")
+
+[editable path="Sketchfab_Scene"]

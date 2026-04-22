@@ -8,7 +8,7 @@ size = Vector3(0.30059814, 0.2902832, 0.3020935)
 [node name="StaticBody3D" type="StaticBody3D" unique_id=1207124878]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
 
-[node name="Sketchfab_Scene" parent="." unique_id=2027165062 instance=ExtResource("1_pmykr")]
+[node name="Sketchfab_Scene" parent="." unique_id=921656448 instance=ExtResource("1_pmykr")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.0016174316, 0.010864257, -0.005095243)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2115238174]

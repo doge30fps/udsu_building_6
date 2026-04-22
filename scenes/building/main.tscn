@@ -35,11 +35,16 @@
 [ext_resource type="Material" uid="uid://b6rc1eisj24tm" path="res://materials/posters/multiprocessor_very_big.tres" id="24_nii2b"]
 [ext_resource type="Texture2D" uid="uid://b0wb4dyotymf4" path="res://textures/room321/sprites/electricshield.png" id="25_hc3cg"]
 [ext_resource type="Material" uid="uid://tty6iwhxufs2" path="res://materials/posters/tank.tres" id="26_wbtfh"]
+[ext_resource type="PackedScene" uid="uid://biy3g0wj00k3" path="res://scenes/props/computers/pc_1.tscn" id="27_bcfd0"]
 [ext_resource type="PackedScene" uid="uid://bo0ien07l58u8" path="res://scenes/interactable/door_interactable.tscn" id="27_ewqwr"]
+[ext_resource type="PackedScene" uid="uid://tyeh4a8dqt6p" path="res://scenes/props/computers/monitor_1.tscn" id="28_kgaww"]
 [ext_resource type="Texture2D" uid="uid://dohtn8utdmst5" path="res://textures/wooden_door/wooden_door_only_texture.JPG" id="28_l5dpv"]
 [ext_resource type="Material" uid="uid://g6kg6orx3y7o" path="res://materials/posters/multiprocessor.tres" id="28_you3j"]
 [ext_resource type="Texture2D" uid="uid://cfounh21pxe1y" path="res://textures/wooden_door/blinn1SG_normal.png" id="29_a5omt"]
+[ext_resource type="Texture2D" uid="uid://dy1hksgmqtr0l" path="res://textures/room321/sprites/monitor_0.png" id="29_kckdv"]
 [ext_resource type="Material" uid="uid://lba5bmoc21k1" path="res://materials/posters/extinguisher.tres" id="29_nii2b"]
+[ext_resource type="Texture2D" uid="uid://djnll7tbdcosg" path="res://textures/room321/sprites/monitor.webp" id="30_3xop0"]
+[ext_resource type="Texture2D" uid="uid://brlutv7xnlmi6" path="res://models/computers/monitors/default/monitor_0.png" id="30_mme3m"]
 [ext_resource type="Material" uid="uid://by2buyjdjsl2j" path="res://materials/posters/electricity.tres" id="30_oud7x"]
 [ext_resource type="Texture2D" uid="uid://h4xs1s3htlws" path="res://textures/wooden_door/blinn1SG_metallicRoughness.png" id="30_tgqov"]
 [ext_resource type="PackedScene" uid="uid://b1gs87gef3cfh" path="res://scenes/props/room321/lamp.tscn" id="31_a5omt"]
@@ -75,6 +80,54 @@ size = Vector3(35, 1, 35)
 size = Vector3(35, 1, 35)
 
 [sub_resource type="BoxMesh" id="BoxMesh_4gvlh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3xop0"]
+albedo_texture = ExtResource("30_3xop0")
+metallic = 1.0
+metallic_specular = 1.0
+emission_enabled = true
+emission_energy_multiplier = 0.3
+emission_texture = ExtResource("30_3xop0")
+backlight_enabled = true
+uv1_scale = Vector3(-1, 0.995, 1)
+uv1_offset = Vector3(-0.505, 0.5, 0)
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mme3m"]
+albedo_texture = ExtResource("29_kckdv")
+metallic = 1.0
+metallic_specular = 1.0
+emission_enabled = true
+emission_texture = ExtResource("30_mme3m")
+backlight_enabled = true
+uv1_scale = Vector3(-1, -1.015, 1)
+uv1_offset = Vector3(-0.505, 0.5, 0)
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bhnal"]
+albedo_texture = ExtResource("29_kckdv")
+metallic = 1.0
+metallic_specular = 1.0
+emission_enabled = true
+emission_energy_multiplier = 0.4
+emission_texture = ExtResource("30_mme3m")
+backlight_enabled = true
+uv1_scale = Vector3(-1, -1.015, 1)
+uv1_offset = Vector3(-0.505, 0.5, 0)
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5sj4t"]
+albedo_color = Color(0.8117647, 0.8117647, 0.8117647, 0.43529412)
+albedo_texture = ExtResource("30_3xop0")
+metallic = 1.0
+metallic_specular = 1.0
+emission_enabled = true
+emission_energy_multiplier = 0.3
+emission_texture = ExtResource("30_3xop0")
+backlight_enabled = true
+uv1_scale = Vector3(-1, 0.995, 1)
+uv1_offset = Vector3(-0.505, 0.5, 0)
+uv1_triplanar = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_vifd3"]
 material = ExtResource("20_phsit")
@@ -310,7 +363,6 @@ parameters/looping = true
 transform = Transform3D(0.95178735, -0.21111988, 0.22255167, 0.088293895, 0.8833341, 0.46035323, -0.29377723, -0.4185084, 0.8593868, 5.540121, 8.514353, 25.486807)
 light_color = Color(1, 0.87141407, 0.66503364, 1)
 shadow_enabled = true
-shadow_blur = 0.198
 
 [node name="Global Floor" type="StaticBody3D" parent="." unique_id=232929963]
 
@@ -429,81 +481,81 @@ transform = Transform3D(-1.2441845, 0, 1.243644e-07, 0, 0.615, 0, -1.8786663e-07
 
 [node name="leaves" type="Node3D" parent="props/shelfs" unique_id=1959112544]
 
-[node name="LIVISTONA_CHINENSIS_LIVISTONA_CHINENSIS_Mat_0" parent="props/shelfs/leaves" unique_id=1370369474 instance=ExtResource("24_clkmh")]
+[node name="LIVISTONA_CHINENSIS_LIVISTONA_CHINENSIS_Mat_0" parent="props/shelfs/leaves" unique_id=373200341 instance=ExtResource("24_clkmh")]
 transform = Transform3D(0.3538857, 0, 0, 0, -3.0129158e-08, 0.02032774, 0, -0.68927485, -8.8855373e-10, 5.135016, 1.268739, 3.7215712)
 
-[node name="LIVISTONA_CHINENSIS_LIVISTONA_CHINENSIS_Mat_1" parent="props/shelfs/leaves" unique_id=2000857447 instance=ExtResource("24_clkmh")]
+[node name="LIVISTONA_CHINENSIS_LIVISTONA_CHINENSIS_Mat_1" parent="props/shelfs/leaves" unique_id=430562266 instance=ExtResource("24_clkmh")]
 transform = Transform3D(0.3538857, 0, 0, 0, -3.012916e-08, 0.006902124, 0, -0.6892749, -3.017014e-10, 5.135016, 1.268739, 3.7215712)
 
-[node name="Leaves_Mat_1_0" parent="props/shelfs/leaves" unique_id=1300179589 instance=ExtResource("47_v7twq")]
+[node name="Leaves_Mat_1_0" parent="props/shelfs/leaves" unique_id=482365206 instance=ExtResource("47_v7twq")]
 transform = Transform3D(0.61654043, 0, 2.5319297e-17, 7.5994476e-33, 0.011263907, -1.0127719e-16, -3.422487e-17, 2.5010898e-18, 0.4561119, 5.246908, 1.2657087, 3.8500423)
 
-[node name="Leaves_Mat_1_1" parent="props/shelfs/leaves" unique_id=697905027 instance=ExtResource("47_v7twq")]
+[node name="Leaves_Mat_1_1" parent="props/shelfs/leaves" unique_id=1483645836 instance=ExtResource("47_v7twq")]
 transform = Transform3D(0.46408343, 0, 3.0927575e-17, 5.72027e-33, 0.035190463, -1.237103e-16, -2.5761806e-17, 7.8138525e-18, 0.55714166, 5.1986403, 1.8864837, 6.3860855)
 
-[node name="leefs" parent="props/shelfs/leaves" unique_id=1017173722 instance=ExtResource("15_uow6x")]
+[node name="leefs" parent="props/shelfs/leaves" unique_id=582310872 instance=ExtResource("15_uow6x")]
 transform = Transform3D(1, 0, 0, 0, 0.03550899, 0, 0, 0, 1, 5.1909304, 1.266091, 4.6603107)
 
 [node name="cloths_stand" parent="props" unique_id=91366424 instance=ExtResource("15_ptftv")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.161036, 0, 0.85417795)
 
-[node name="extinguisher" parent="props" unique_id=931220285 instance=ExtResource("16_0b882")]
-transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, -9.887059, 0.28703418, 1.0960262)
+[node name="extinguisher" parent="props" unique_id=1132536550 instance=ExtResource("16_0b882")]
+transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, -9.768079, 0.28703418, 1.0960262)
 
 [node name="black_soft_chairs" type="Node3D" parent="props" unique_id=1473393686]
 
 [node name="StaticBody3D" parent="props/black_soft_chairs" unique_id=1956538834 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.15002672, 0, -1.291314, 0, 1.3, 0, 1.291314, 0, 0.15002672, -6.075579, -0.01, 7.404617)
 
-[node name="StaticBody3D4" parent="props/black_soft_chairs" unique_id=1562883893 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D4" parent="props/black_soft_chairs" unique_id=905625708 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.057203818, 0, -1.2987409, 0, 1.3, 0, 1.2987409, 0, 0.057203818, -4.2666554, -0.01, 7.3479156)
 
-[node name="StaticBody3D7" parent="props/black_soft_chairs" unique_id=279696007 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D7" parent="props/black_soft_chairs" unique_id=1822906693 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.057203818, 0, -1.2987409, 0, 1.3, 0, 1.2987409, 0, 0.057203818, 0.3347327, -0.01, 7.3479156)
 
-[node name="StaticBody3D9" parent="props/black_soft_chairs" unique_id=1331040409 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D9" parent="props/black_soft_chairs" unique_id=1588948156 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.057203818, 0, -1.2987409, 0, 1.3, 0, 1.2987409, 0, 0.057203818, 2.4471283, -0.01, 7.534173)
 
-[node name="StaticBody3D11" parent="props/black_soft_chairs" unique_id=884658192 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D11" parent="props/black_soft_chairs" unique_id=298974882 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.057203818, 0, -1.2987409, 0, 1.3, 0, 1.2987409, 0, 0.057203818, 3.9746566, -0.01, 7.534173)
 
-[node name="StaticBody3D10" parent="props/black_soft_chairs" unique_id=1918260015 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D10" parent="props/black_soft_chairs" unique_id=253069146 instance=ExtResource("17_32x2k")]
 transform = Transform3D(-0.2867296, 0, -1.2679851, 0, 1.3, 0, 1.2679851, 0, -0.2867296, 2.4469824, -0.01, 6.618787)
 
-[node name="StaticBody3D8" parent="props/black_soft_chairs" unique_id=1948165690 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D8" parent="props/black_soft_chairs" unique_id=15946021 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.057203818, 0, -1.2987409, 0, 1.3, 0, 1.2987409, 0, 0.057203818, 0.3347327, -0.01, 6.6366587)
 
-[node name="StaticBody3D12" parent="props/black_soft_chairs" unique_id=779357988 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D12" parent="props/black_soft_chairs" unique_id=12413250 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.057203818, 0, -1.2987409, 0, 1.3, 0, 1.2987409, 0, 0.057203818, 0.81636196, -0.01, 4.3040376)
 
-[node name="StaticBody3D16" parent="props/black_soft_chairs" unique_id=1942233986 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D16" parent="props/black_soft_chairs" unique_id=182583897 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.057203818, 0, -1.2987409, 0, 1.3, 0, 1.2987409, 0, 0.057203818, -2.6930203, -0.01, 1.1401463)
 
-[node name="StaticBody3D17" parent="props/black_soft_chairs" unique_id=1692601953 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D17" parent="props/black_soft_chairs" unique_id=940343130 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.02903976, 0, -1.2996756, 0, 1.3, 0, 1.2996756, 0, 0.02903976, -2.8978524, -0.01, 1.8482311)
 
-[node name="StaticBody3D18" parent="props/black_soft_chairs" unique_id=981055017 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D18" parent="props/black_soft_chairs" unique_id=416388982 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.02903976, 0, -1.2996756, 0, 1.3, 0, 1.2996756, 0, 0.02903976, -4.739455, -0.01, 1.2216542)
 
-[node name="StaticBody3D13" parent="props/black_soft_chairs" unique_id=851376536 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D13" parent="props/black_soft_chairs" unique_id=1882080301 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.057203818, 0, -1.2987409, 0, 1.3, 0, 1.2987409, 0, 0.057203818, 5.1008835, -0.01, 1.0416214)
 
-[node name="StaticBody3D14" parent="props/black_soft_chairs" unique_id=680297042 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D14" parent="props/black_soft_chairs" unique_id=1211324620 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.322, 0, -1.2594904, 0, 1.3, 0, 1.2594904, 0, 0.322, 2.8065028, -0.01, 1.0416214)
 
-[node name="StaticBody3D15" parent="props/black_soft_chairs" unique_id=1105760267 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D15" parent="props/black_soft_chairs" unique_id=1636076616 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.322, 0, -1.2594904, 0, 1.3, 0, 1.2594904, 0, 0.322, 2.9461741, -0.01, 1.8703477)
 
-[node name="StaticBody3D5" parent="props/black_soft_chairs" unique_id=1196139225 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D5" parent="props/black_soft_chairs" unique_id=1699085885 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.16896409, 0, -1.2889729, 0, 1.3, 0, 1.2889729, 0, 0.16896409, -2.7948823, -0.01, 7.3479156)
 
-[node name="StaticBody3D6" parent="props/black_soft_chairs" unique_id=1033622791 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D6" parent="props/black_soft_chairs" unique_id=1415348206 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.16896409, 0, -1.2889729, 0, 1.3, 0, 1.2889729, 0, 0.16896409, -2.5661805, -0.01, 6.5528607)
 
-[node name="StaticBody3D2" parent="props/black_soft_chairs" unique_id=70791178 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D2" parent="props/black_soft_chairs" unique_id=1707410589 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.08581651, 0, -1.2971643, 0, 1.3, 0, 1.2971643, 0, 0.08581651, -6.278743, -0.01, 6.6048374)
 
-[node name="StaticBody3D3" parent="props/black_soft_chairs" unique_id=964785002 instance=ExtResource("17_32x2k")]
+[node name="StaticBody3D3" parent="props/black_soft_chairs" unique_id=1353569399 instance=ExtResource("17_32x2k")]
 transform = Transform3D(0.017152684, 0, 1.2998868, 0, 1.3, 0, -1.2998868, 0, 0.017152684, -8.728615, -0.01, 6.9514422)
 
 [node name="wooden_chairs" type="Node3D" parent="props" unique_id=607055281]
@@ -575,7 +627,7 @@ transform = Transform3D(0.023473227, 1.0033858, -0.025908366, 0, 0.017166719, 1.
 
 [node name="plants" type="Node3D" parent="props" unique_id=1607217332]
 
-[node name="StaticBody3D" parent="props/plants" unique_id=1853345499 instance=ExtResource("21_sevr3")]
+[node name="StaticBody3D" parent="props/plants" unique_id=1207124878 instance=ExtResource("21_sevr3")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 5.034925, 1.2686428, 4.9755216)
 
 [node name="StaticBody3D2" parent="props/plants" unique_id=818426846 instance=ExtResource("22_mtkjs")]
@@ -588,6 +640,112 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0326014, 1.457563, 4.211597
 transform = Transform3D(0.795, 0, 0, 0, 0.795, 0, 0, 0, 0.795, 5.2560816, 2.020116, 6.698772)
 
 [node name="leaves" type="Node3D" parent="props/plants" unique_id=1254431036]
+
+[node name="computers" type="Node3D" parent="props" unique_id=65492847]
+
+[node name="StaticBody3D" parent="props/computers" unique_id=140048784 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.9761114, -0.062316477, 0.7505839)
+
+[node name="StaticBody3D2" parent="props/computers" unique_id=1165391301 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(-0.049407646, 0, -0.9987787, 0, 1, 0, 0.9987787, 0, -0.049407646, -4.97632, -0.062316477, 0.89783764)
+
+[node name="StaticBody3D3" parent="props/computers" unique_id=1819207410 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(0.049180944, 0, -0.9987899, 0, 1, 0, 0.9987899, 0, 0.049180944, -3.0700545, -0.062316477, 0.89783764)
+
+[node name="StaticBody3D4" parent="props/computers" unique_id=715740529 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(0.004537806, 0, -0.9999896, 0, 1, 0, 0.9999896, 0, 0.004537806, -1.0203178, -0.062316477, 1.0362296)
+
+[node name="StaticBody3D5" parent="props/computers" unique_id=1081861042 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(0.004537806, 0, -0.9999896, 0, 1, 0, 0.9999896, 0, 0.004537806, 0.73705983, -0.062316477, 0.88742566)
+
+[node name="StaticBody3D6" parent="props/computers" unique_id=567171228 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(-0.010995387, 0, -0.9999396, 0, 1, 0, 0.9999396, 0, -0.010995387, 2.4828417, -0.062316477, 0.9243213)
+
+[node name="StaticBody3D7" parent="props/computers" unique_id=306023390 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(-0.11894123, 0, -0.9929013, 0, 1, 0, 0.9929013, 0, -0.11894123, 4.099422, -0.062316477, 0.9957359)
+
+[node name="StaticBody3D8" parent="props/computers" unique_id=1455009601 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.495965, -0.062316477, 7.7926755)
+
+[node name="StaticBody3D15" parent="props/computers" unique_id=570914997 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -7.9605184, -0.062316477, 7.530598)
+
+[node name="StaticBody3D9" parent="props/computers" unique_id=1019900582 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(-0.049407646, 0, -0.9987787, 0, 1, 0, 0.9987787, 0, -0.049407646, -4.906906, -0.062316477, 7.9399295)
+
+[node name="StaticBody3D10" parent="props/computers" unique_id=226388209 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(0.049180944, 0, -0.9987899, 0, 1, 0, 0.9987899, 0, 0.049180944, -3.2976742, -0.062316477, 7.6380057)
+
+[node name="StaticBody3D11" parent="props/computers" unique_id=1759095972 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(0.004537806, 0, -0.9999896, 0, 1, 0, 0.9999896, 0, 0.004537806, -1.5706613, -0.062316477, 7.780389)
+
+[node name="StaticBody3D12" parent="props/computers" unique_id=1359450934 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(0.004537806, 0, -0.9999896, 0, 1, 0, 0.9999896, 0, 0.004537806, 0.13160264, -0.062316477, 7.9295173)
+
+[node name="StaticBody3D13" parent="props/computers" unique_id=1316201033 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(-0.010995387, 0, -0.9999396, 0, 1, 0, 0.9999396, 0, -0.010995387, 1.8493819, -0.062316477, 7.966413)
+
+[node name="StaticBody3D14" parent="props/computers" unique_id=2103375655 instance=ExtResource("27_bcfd0")]
+transform = Transform3D(-0.11894123, 0, -0.9929013, 0, 1, 0, 0.9929013, 0, -0.11894123, 3.4910698, -0.062316477, 7.950672)
+
+[node name="monitors" type="Node3D" parent="props" unique_id=1441534565]
+
+[node name="StaticBody3D" parent="props/monitors" unique_id=1064700850 instance=ExtResource("28_kgaww")]
+transform = Transform3D(0.005437064, 0, -0.34495714, 0, 0.345, 0, 0.34495714, 0, 0.005437064, -1.3350294, 0.77823305, 1.7508297)
+
+[node name="MeshInstance3D" parent="props/monitors/StaticBody3D/Sketchfab_Scene" parent_id_path=PackedInt32Array(1064700850, 1020705181) index="1" unique_id=757678803]
+surface_material_override/0 = SubResource("StandardMaterial3D_3xop0")
+
+[node name="StaticBody3D4" parent="props/monitors" unique_id=392346944 instance=ExtResource("28_kgaww")]
+transform = Transform3D(0.005437064, 0, -0.34495714, 0, 0.345, 0, 0.34495714, 0, 0.005437064, -5.146057, 0.77823305, 1.5799274)
+
+[node name="StaticBody3D5" parent="props/monitors" unique_id=1134194299 instance=ExtResource("28_kgaww")]
+transform = Transform3D(-0.026744243, 0, -0.3439618, 0, 0.34499997, 0, 0.3439618, 0, -0.026744243, -7.1921816, 0.77823305, 1.5799274)
+
+[node name="StaticBody3D3" parent="props/monitors" unique_id=300728052 instance=ExtResource("28_kgaww")]
+transform = Transform3D(0.08572216, 0, -0.3341806, 0, 0.34499997, 0, 0.3341806, 0, 0.08572216, -3.4707472, 0.77823305, 1.8678849)
+
+[node name="MeshInstance3D" parent="props/monitors/StaticBody3D3/Sketchfab_Scene" parent_id_path=PackedInt32Array(300728052, 1020705181) index="1" unique_id=757678803]
+surface_material_override/0 = SubResource("StandardMaterial3D_mme3m")
+
+[node name="StaticBody3D2" parent="props/monitors" unique_id=1158406452 instance=ExtResource("28_kgaww")]
+transform = Transform3D(-0.011468648, 0, -0.3448093, 0, 0.34499997, 0, 0.3448093, 0, -0.011468648, 0.40010977, 0.77823305, 1.7508297)
+
+[node name="StaticBody3D6" parent="props/monitors" unique_id=492846451 instance=ExtResource("28_kgaww")]
+transform = Transform3D(0.004353324, 0, -0.3449725, 0, 0.345, 0, 0.3449725, 0, 0.004353324, 2.1129363, 0.77823305, 1.7508297)
+
+[node name="StaticBody3D7" parent="props/monitors" unique_id=1865052904 instance=ExtResource("28_kgaww")]
+transform = Transform3D(0.004353324, 0, -0.3449725, 0, 0.345, 0, 0.3449725, 0, 0.004353324, 3.901209, 0.77823305, 1.8925772)
+
+[node name="StaticBody3D8" parent="props/monitors" unique_id=1126987324 instance=ExtResource("28_kgaww")]
+transform = Transform3D(0.005437064, 0, -0.34495714, 0, 0.345, 0, 0.34495714, 0, 0.005437064, -1.8548859, 0.77823305, 6.9399843)
+
+[node name="StaticBody3D9" parent="props/monitors" unique_id=789103983 instance=ExtResource("28_kgaww")]
+transform = Transform3D(0.005437064, 0, -0.34495714, 0, 0.345, 0, 0.34495714, 0, 0.005437064, -5.146057, 0.77823305, 6.747916)
+
+[node name="StaticBody3D10" parent="props/monitors" unique_id=1949778799 instance=ExtResource("28_kgaww")]
+transform = Transform3D(-0.026744243, 0, -0.3439618, 0, 0.34499997, 0, 0.3439618, 0, -0.026744243, -6.79683, 0.77823305, 6.6545105)
+
+[node name="MeshInstance3D" parent="props/monitors/StaticBody3D10/Sketchfab_Scene" parent_id_path=PackedInt32Array(1949778799, 1020705181) index="1" unique_id=757678803]
+surface_material_override/0 = SubResource("StandardMaterial3D_bhnal")
+
+[node name="StaticBody3D15" parent="props/monitors" unique_id=1232096572 instance=ExtResource("28_kgaww")]
+transform = Transform3D(0.026744215, 0, 0.3439618, 0, 0.34499997, 0, -0.3439618, 0, 0.026744215, -7.6655393, 0.77823305, 6.8993063)
+
+[node name="MeshInstance3D" parent="props/monitors/StaticBody3D15/Sketchfab_Scene" parent_id_path=PackedInt32Array(1232096572, 1020705181) index="1" unique_id=757678803]
+surface_material_override/0 = SubResource("StandardMaterial3D_5sj4t")
+
+[node name="StaticBody3D11" parent="props/monitors" unique_id=109003276 instance=ExtResource("28_kgaww")]
+transform = Transform3D(0.08572216, 0, -0.3341806, 0, 0.34499997, 0, 0.3341806, 0, 0.08572216, -3.4707472, 0.77823305, 6.913634)
+
+[node name="StaticBody3D12" parent="props/monitors" unique_id=444395259 instance=ExtResource("28_kgaww")]
+transform = Transform3D(-0.011468648, 0, -0.3448093, 0, 0.34499997, 0, 0.3448093, 0, -0.011468648, -0.1300652, 0.77823305, 6.8254128)
+
+[node name="StaticBody3D13" parent="props/monitors" unique_id=1549480549 instance=ExtResource("28_kgaww")]
+transform = Transform3D(0.004353324, 0, -0.3449725, 0, 0.345, 0, 0.3449725, 0, 0.004353324, 1.5770514, 0.77823305, 6.8254128)
+
+[node name="StaticBody3D14" parent="props/monitors" unique_id=1781416 instance=ExtResource("28_kgaww")]
+transform = Transform3D(0.004353324, 0, -0.3449725, 0, 0.345, 0, 0.3449725, 0, 0.004353324, 3.2466748, 0.77823305, 6.96716)
 
 [node name="posters" type="Node3D" parent="." unique_id=982701593]
 
@@ -770,3 +928,12 @@ libraries/ = SubResource("AnimationLibrary_mtkjs")
 
 [node name="Node3D" parent="windows" unique_id=203735163 instance=ExtResource("49_aouio")]
 transform = Transform3D(-1.4031525, 0, -1.7364516e-07, 0, 1.2621905, 0, 2.1187013e-07, 0, -1.15, 3.5460305, 0.6313522, 8.62941)
+
+[editable path="props/monitors/StaticBody3D"]
+[editable path="props/monitors/StaticBody3D/Sketchfab_Scene"]
+[editable path="props/monitors/StaticBody3D3"]
+[editable path="props/monitors/StaticBody3D3/Sketchfab_Scene"]
+[editable path="props/monitors/StaticBody3D10"]
+[editable path="props/monitors/StaticBody3D10/Sketchfab_Scene"]
+[editable path="props/monitors/StaticBody3D15"]
+[editable path="props/monitors/StaticBody3D15/Sketchfab_Scene"]
