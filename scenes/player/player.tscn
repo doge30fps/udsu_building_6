@@ -25,6 +25,9 @@ radius = 0.3
 height = 1.1
 
 [sub_resource type="FontFile" id="FontFile_fcs02"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
 cache/0/embolden = 0.0
@@ -96,6 +99,11 @@ font_size = 26
 outline_size = 6
 outline_color = Color(0, 0, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_fcs02"]
+font_color = Color(0.7647059, 1, 1, 0.44313726)
+outline_size = 2
+outline_color = Color(0.7647059, 1, 1, 0.5058824)
+
 [sub_resource type="LabelSettings" id="LabelSettings_xkvt8"]
 font_size = 30
 font_color = Color(0.206496, 0.695845, 0.584443, 1)
@@ -157,6 +165,10 @@ cull_mask = 1048573
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = 5.0
+offset_right = -3.0
+offset_bottom = 5.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -185,6 +197,7 @@ debug_shape_custom_color = Color(1, 0, 0, 1)
 script = ExtResource("5_ugbui")
 
 [node name="interact_label" type="Label" parent="Head/Reach" unique_id=370983241]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -200,6 +213,21 @@ text = "Нажмите E, чтобы взаимодействовать"
 label_settings = SubResource("LabelSettings_myrg7")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="crosshair" type="Label" parent="Head/Reach" unique_id=734588249]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -7.0
+offset_top = -12.0
+offset_right = 7.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "○"
+label_settings = SubResource("LabelSettings_fcs02")
 
 [node name="CharacterStateMachine" type="Node" parent="." unique_id=27252009 node_paths=PackedStringArray("player", "current_state", "viewmodel")]
 script = ExtResource("6_fcs02")
