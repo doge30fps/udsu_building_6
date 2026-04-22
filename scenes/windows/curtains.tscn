@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dvoks7t6802dd"]
+
+[ext_resource type="PackedScene" uid="uid://cc0lfk37lna16" path="res://models/windows/v-form/v-form.glb" id="1_7ttxc"]
+[ext_resource type="Texture2D" uid="uid://b32orlmcjfl3l" path="res://models/windows/v-form/shnur kapron.jpg" id="2_8snqb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kresw"]
+albedo_texture = ExtResource("2_8snqb")
+
+[node name="Node3D" type="Node3D" unique_id=10579080]
+
+[node name="v-form" parent="." unique_id=408980417 instance=ExtResource("1_7ttxc")]
+
+[node name="vform 01" parent="v-form" index="22" unique_id=1356178776]
+surface_material_override/0 = SubResource("StandardMaterial3D_kresw")
+
+[editable path="v-form"]
