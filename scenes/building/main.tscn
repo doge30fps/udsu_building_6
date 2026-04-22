@@ -377,7 +377,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -8.130516)
 shape = SubResource("BoxShape3D_vbb3r")
 
 [node name="Player" parent="." unique_id=480734254 instance=ExtResource("1_vbb3r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.959033, 3.469336, -13.168838)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.915853, 3.469336, -8.054554)
 sprint_speed = 8.0
 
 [node name="room321" parent="." unique_id=604569574 instance=ExtResource("5_jalgn")]
@@ -921,6 +921,7 @@ light_energy = 0.0
 shadow_enabled = true
 omni_range = 10.492
 omni_attenuation = -0.782
+omni_shadow_mode = 0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="lamps/OmniLight3D" unique_id=1686340254]
 root_node = NodePath("../..")

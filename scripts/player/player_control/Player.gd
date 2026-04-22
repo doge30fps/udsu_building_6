@@ -7,6 +7,7 @@ var GRAVITY = ProjectSettings.get_setting("physics/3d/default_gravity")
 # SPRINT/RUNING SPEED.
 @export var sprint_speed : float = 4;
 @export var crouch_speed : float = 1.0;
+@export var walking_speed : float = 1.5;
 # accel_in_air STANDS FOR ACCELERATION IN HANPPENING IN AIR. 
 # accel_nomal STANDS FOR ACCELERATION IN NOT HANPPENING IN AIR BUT INSTEAD ON GROUND.
 @export var accel_nomal : float = 5.5
@@ -34,6 +35,7 @@ var direction : Vector3 = Vector3.ZERO
 var is_forward_moving  : bool = false
 var is_in_crouch : bool = false;
 var is_sprinting : bool = false;
+var is_walking : bool = false;
 var blend_rotation : Vector3;
 
 @export var player_capsule_top : CollisionShape3D
@@ -74,6 +76,12 @@ func _physics_process(delta : float) -> void:
 		speed = sprint_speed
 		step_speed = (sprint_speed / normal_speed) * step_speed_normal;
 		is_sprinting = true; #
+	
+	is_walking = false; #
+	if Input.is_action_pressed("move_walk") and !is_in_crouch:
+		speed = walking_speed
+		step_speed = (walking_speed / normal_speed) * step_speed_normal;
+		is_walking = true; #
 		
 	
 	if Input.is_action_just_pressed("move_jump") and is_on_floor() and !is_in_crouch:
