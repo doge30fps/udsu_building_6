@@ -24,6 +24,78 @@ height = 1.1
 radius = 0.3
 height = 1.1
 
+[sub_resource type="FontFile" id="FontFile_fcs02"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/17/0/ascent = 0.0
+cache/0/17/0/descent = 0.0
+cache/0/17/0/underline_position = 0.0
+cache/0/17/0/underline_thickness = 0.0
+cache/0/17/0/scale = 1.0
+cache/0/18/0/ascent = 0.0
+cache/0/18/0/descent = 0.0
+cache/0/18/0/underline_position = 0.0
+cache/0/18/0/underline_thickness = 0.0
+cache/0/18/0/scale = 1.0
+cache/0/19/0/ascent = 0.0
+cache/0/19/0/descent = 0.0
+cache/0/19/0/underline_position = 0.0
+cache/0/19/0/underline_thickness = 0.0
+cache/0/19/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/21/0/ascent = 0.0
+cache/0/21/0/descent = 0.0
+cache/0/21/0/underline_position = 0.0
+cache/0/21/0/underline_thickness = 0.0
+cache/0/21/0/scale = 1.0
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+cache/0/23/0/ascent = 0.0
+cache/0/23/0/descent = 0.0
+cache/0/23/0/underline_position = 0.0
+cache/0/23/0/underline_thickness = 0.0
+cache/0/23/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_myrg7"]
+font = SubResource("FontFile_fcs02")
+font_size = 26
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
 [sub_resource type="LabelSettings" id="LabelSettings_xkvt8"]
 font_size = 30
 font_color = Color(0.206496, 0.695845, 0.584443, 1)
@@ -112,6 +184,23 @@ collide_with_areas = true
 debug_shape_custom_color = Color(1, 0, 0, 1)
 script = ExtResource("5_ugbui")
 
+[node name="interact_label" type="Label" parent="Head/Reach" unique_id=370983241]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -230.0
+offset_top = -18.0
+offset_right = 226.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Нажмите E, чтобы взаимодействовать"
+label_settings = SubResource("LabelSettings_myrg7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="CharacterStateMachine" type="Node" parent="." unique_id=27252009 node_paths=PackedStringArray("player", "current_state", "viewmodel")]
 script = ExtResource("6_fcs02")
 player = NodePath("..")
@@ -162,10 +251,13 @@ script = ExtResource("13_fcs02")
 posture_machine = NodePath("../CharacterPostureMachine")
 
 [node name="FpsLabel" type="Label" parent="." unique_id=47363627]
-offset_left = 1030.0
-offset_top = 9.0
-offset_right = 1141.0
-offset_bottom = 96.0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -125.0
+offset_right = -14.0
+offset_bottom = 87.0
+grow_horizontal = 0
 text = "1000
 "
 label_settings = SubResource("LabelSettings_xkvt8")
