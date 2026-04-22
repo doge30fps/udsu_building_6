@@ -6,6 +6,7 @@
 [ext_resource type="Material" uid="uid://ct8efwxjjgr1g" path="res://materials/room321/plintus.tres" id="4_7ocg5"]
 [ext_resource type="Material" uid="uid://dd6h0gbyetle2" path="res://materials/room321/electric_shield.tres" id="5_gm5g2"]
 [ext_resource type="Texture2D" uid="uid://bvib4g8arq728" path="res://textures/room321/walls/beige_wall.JPG" id="6_ckrvw"]
+[ext_resource type="Material" uid="uid://bd3se3q6xlrsp" path="res://materials/room321/under_windows.tres" id="7_5jk5x"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4gvlh"]
 albedo_texture = ExtResource("6_ckrvw")
@@ -15,6 +16,51 @@ uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e6lx5"]
 albedo_color = Color(0.7282415, 0.7200367, 0, 1)
+
+[sub_resource type="Gradient" id="Gradient_5jk5x"]
+offsets = PackedFloat32Array(0, 0.10273973)
+colors = PackedColorArray(0.8346142, 0.83461434, 0.8346141, 1, 1, 1, 1, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_m6sil"]
+noise_type = 2
+seed = 42
+frequency = 0.0066
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_7ocg5"]
+noise = SubResource("FastNoiseLite_m6sil")
+color_ramp = SubResource("Gradient_5jk5x")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gm5g2"]
+albedo_color = Color(0.89492244, 0.89492244, 0.8949224, 1)
+albedo_texture = SubResource("NoiseTexture2D_7ocg5")
+
+[sub_resource type="Gradient" id="Gradient_dcyrx"]
+offsets = PackedFloat32Array(0, 0.10273973)
+colors = PackedColorArray(0.8346142, 0.83461434, 0.8346141, 1, 1, 1, 1, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_5jk5x"]
+seed = 101
+frequency = 0.0066
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_m6sil"]
+noise = SubResource("FastNoiseLite_5jk5x")
+color_ramp = SubResource("Gradient_dcyrx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ocg5"]
+albedo_color = Color(0.89492244, 0.89492244, 0.8949224, 1)
+albedo_texture = SubResource("NoiseTexture2D_m6sil")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_gm5g2"]
+seed = 120
+frequency = 0.0066
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ckrvw"]
+noise = SubResource("FastNoiseLite_gm5g2")
+color_ramp = SubResource("Gradient_dcyrx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qnywx"]
+albedo_color = Color(0.89492244, 0.89492244, 0.8949224, 1)
+albedo_texture = SubResource("NoiseTexture2D_ckrvw")
 
 [node name="room321" type="CSGCombiner3D" unique_id=604569574]
 
@@ -544,13 +590,53 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.560288, 1.7730705, 0.40811
 radius = 0.030550133
 
 [node name="CSGBox3D33" type="CSGBox3D" parent="." unique_id=1315346018]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.7689892, -10.669972, 1.2597314, 5.049687)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.7689892, -10.669972, 1.2372292, 5.049687)
 size = Vector3(0.020507813, 0.08679199, 2.318634)
 
 [node name="CSGBox3D34" type="CSGBox3D" parent="." unique_id=693224643]
-transform = Transform3D(0.18223548, -0.9832549, 0, 0.9832549, 0.18223548, 0, 0, 0, 0.7689892, -10.621998, 1.2124974, 5.049687)
+transform = Transform3D(0.18223548, -0.9832549, 0, 0.9832549, 0.18223548, 0, 0, 0, 0.7689892, -10.621998, 1.1899952, 5.049687)
 size = Vector3(0.008001464, 0.08679199, 2.318634)
 
 [node name="CSGBox3D35" type="CSGBox3D" parent="." unique_id=1996024667]
-transform = Transform3D(-0.571344, -0.8207107, 0, 0.8207107, -0.571344, 0, 0, 0, 0.7689892, -10.575672, 1.2152642, 5.049687)
+transform = Transform3D(-0.571344, -0.8207107, 0, 0.8207107, -0.571344, 0, 0, 0, 0.7689892, -10.575672, 1.192762, 5.049687)
 size = Vector3(0.008001464, 0.025817871, 2.318634)
+
+[node name="CSGBox3D37" type="CSGBox3D" parent="." unique_id=1224151194]
+transform = Transform3D(1, 0, 0, 0, 0.20846665, 0, 0, 0, 1, 3.1166587, 0.8438426, 8.225219)
+size = Vector3(3.0465088, 0.5554733, 0.033086915)
+material = ExtResource("7_5jk5x")
+
+[node name="CSGBox3D36" type="CSGBox3D" parent="." unique_id=212307067]
+transform = Transform3D(1, 0, 0, 0, 0.20846665, 0, 0, 0, 1, 3.1163535, 0.86714554, 8.777659)
+size = Vector3(3.047882, 0.34228516, 1.1379318)
+material = ExtResource("7_5jk5x")
+
+[node name="CSGBox3D38" type="CSGBox3D" parent="." unique_id=200750308]
+transform = Transform3D(1, 0, 0, 0, 0.20846665, 0, 0, 0, 1, -0.48334146, 0.8438426, 8.225219)
+size = Vector3(3.0465088, 0.5554733, 0.033086915)
+material = ExtResource("7_5jk5x")
+
+[node name="CSGBox3D39" type="CSGBox3D" parent="." unique_id=428342254]
+transform = Transform3D(1, 0, 0, 0, 0.20846665, 0, 0, 0, 1, -0.48364663, 0.86714554, 8.777171)
+size = Vector3(3.047882, 0.34228516, 1.1369553)
+material = SubResource("StandardMaterial3D_gm5g2")
+
+[node name="CSGBox3D40" type="CSGBox3D" parent="." unique_id=619217242]
+transform = Transform3D(1, 0, 0, 0, 0.20846665, 0, 0, 0, 1, -4.1596146, 0.8438426, 8.225219)
+size = Vector3(3.0465088, 0.5554733, 0.033086915)
+material = ExtResource("7_5jk5x")
+
+[node name="CSGBox3D41" type="CSGBox3D" parent="." unique_id=1827237372]
+transform = Transform3D(1, 0, 0, 0, 0.20846665, 0, 0, 0, 1, -4.1599197, 0.86714554, 8.782054)
+size = Vector3(3.047882, 0.34228516, 1.1467209)
+material = SubResource("StandardMaterial3D_7ocg5")
+
+[node name="CSGBox3D42" type="CSGBox3D" parent="." unique_id=779498079]
+transform = Transform3D(1, 0, 0, 0, 0.20846665, 0, 0, 0, 1, -8.198771, 0.8438426, 8.225219)
+size = Vector3(3.0465088, 0.5554733, 0.033086915)
+material = ExtResource("7_5jk5x")
+
+[node name="CSGBox3D43" type="CSGBox3D" parent="." unique_id=627567508]
+transform = Transform3D(1, 0, 0, 0, 0.20846665, 0, 0, 0, 1, -8.199077, 0.86714554, 8.778209)
+size = Vector3(3.047882, 0.34228516, 1.1390305)
+material = SubResource("StandardMaterial3D_qnywx")

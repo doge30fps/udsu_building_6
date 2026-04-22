@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dnwy10n8j0txx"]
+
+[ext_resource type="Texture2D" uid="uid://bt4p5ismw0c0p" path="res://models/windows/single_window/residential_window_1.png" id="2_p5vk7"]
+[ext_resource type="Texture2D" uid="uid://tl4pmc00vnik" path="res://models/windows/single_window/residential_window_2.png" id="3_ugayg"]
+
+[resource]
+metallic = 1.0
+metallic_texture = ExtResource("2_p5vk7")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_p5vk7")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_ugayg")
+uv1_triplanar = true

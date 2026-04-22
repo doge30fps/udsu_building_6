@@ -926,8 +926,29 @@ libraries/ = SubResource("AnimationLibrary_mtkjs")
 
 [node name="windows" type="Node3D" parent="." unique_id=248159441]
 
-[node name="Node3D" parent="windows" unique_id=203735163 instance=ExtResource("49_aouio")]
-transform = Transform3D(-1.4031525, 0, -1.7364516e-07, 0, 1.2621905, 0, 2.1187013e-07, 0, -1.15, 3.5460305, 0.6313522, 8.62941)
+[node name="Node3D" parent="windows" unique_id=929424496 instance=ExtResource("49_aouio")]
+transform = Transform3D(-1.4141829, 0, -1.4517487e-07, 0, 1.373471, 0, 1.2363179e-07, 0, -1.6606069, 3.5386648, 0.62368554, 9.307663)
+
+[node name="Node3D2" parent="windows" unique_id=2130139109 instance=ExtResource("49_aouio")]
+transform = Transform3D(-1.4141829, 0, -1.4517487e-07, 0, 0.5161168, 0, 1.2363179e-07, 0, -1.6606069, 3.5386648, 2.8590176, 9.307663)
+
+[node name="Node3D3" parent="windows" unique_id=1210067261 instance=ExtResource("49_aouio")]
+transform = Transform3D(-1.4141829, 0, -1.4517487e-07, 0, 1.373471, 0, 1.2363179e-07, 0, -1.6606069, -0.028607965, 0.62368554, 9.307663)
+
+[node name="Node3D4" parent="windows" unique_id=1557455326 instance=ExtResource("49_aouio")]
+transform = Transform3D(-1.4141829, 0, -1.4517487e-07, 0, 0.52098817, 0, 1.2363179e-07, 0, -1.6606069, -0.028607965, 2.8590176, 9.307663)
+
+[node name="Node3D5" parent="windows" unique_id=543035677 instance=ExtResource("49_aouio")]
+transform = Transform3D(-1.4141829, 0, -1.4517487e-07, 0, 1.373471, 0, 1.2363179e-07, 0, -1.6606069, -3.7471821, 0.62368554, 9.307663)
+
+[node name="Node3D6" parent="windows" unique_id=271749991 instance=ExtResource("49_aouio")]
+transform = Transform3D(-1.4141829, 0, -1.4517487e-07, 0, 0.52008015, 0, 1.2363179e-07, 0, -1.6606069, -3.7471821, 2.8590176, 9.307663)
+
+[node name="Node3D7" parent="windows" unique_id=93601693 instance=ExtResource("49_aouio")]
+transform = Transform3D(-1.4141829, 0, -1.4517487e-07, 0, 1.373471, 0, 1.2363179e-07, 0, -1.6606069, -7.7483644, 0.62368554, 9.307663)
+
+[node name="Node3D8" parent="windows" unique_id=1274277915 instance=ExtResource("49_aouio")]
+transform = Transform3D(-1.4141829, 0, -1.4517487e-07, 0, 0.52008015, 0, 1.2363179e-07, 0, -1.6606069, -7.7483644, 2.8590176, 9.307663)
 
 [editable path="props/monitors/StaticBody3D"]
 [editable path="props/monitors/StaticBody3D/Sketchfab_Scene"]

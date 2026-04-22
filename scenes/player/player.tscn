@@ -157,6 +157,7 @@ script = ExtResource("2_fm80t")
 sub_viewport = NodePath("Camera/SubViewportContainer/SubViewport")
 player = NodePath("..")
 MOUSE_SENS = 1.0
+bob_enabled = false
 
 [node name="Camera" type="Camera3D" parent="Head" unique_id=1212332343]
 cull_mask = 1048573
