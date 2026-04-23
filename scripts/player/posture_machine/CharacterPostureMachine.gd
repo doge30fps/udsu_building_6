@@ -24,16 +24,11 @@ func _ready() -> void:
 		else:
 			push_warning("Child " + child.name + " is not a Posture for CharacterPostureMachine!")
 
-			
-
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta : float) -> void:
 	if (current_posture.next_posture != null):
 		switch_postures(current_posture.next_posture)
 	current_posture.posture_process(delta)
-
-
 
 func switch_postures(new_posture : Posture) -> void:
 	if(current_posture != null):

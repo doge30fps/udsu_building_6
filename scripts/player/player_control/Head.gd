@@ -11,6 +11,10 @@ extends Node3D
 @export var CAM_BOB : float = 0.11
 @export var bob_enabled : bool = true
 
+@export var smooth : bool = true
+var target_rot_x: float = 0.0
+var target_rot_y: float = 0.0
+
 var step_speed : float;
 var t : float = 0.0
 var cam_pos : Vector2
@@ -66,17 +70,31 @@ func _ready() -> void:
 	
 	
 func _input(event : InputEvent) -> void:
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion and smooth==false:
 		rotation.x -= event.relative.y * MOUSE_SENS * 0.001
 		rotation.x = clamp(rotation.x, -1.5, 1.5)		
 		player.rotation.y -= event.relative.x * MOUSE_SENS * 0.001
 		player.rotation.y = wrapf(player.rotation.y, 0.0, TAU)
 		viewmodel.sway(Vector2(event.relative.x,event.relative.y))
+	if event is InputEventMouseMotion and smooth==true:
+		target_rot_x -= event.relative.y * MOUSE_SENS * 0.001
+		target_rot_x = clamp(target_rot_x, -1.5, 1.5)
+		target_rot_y -= event.relative.x * MOUSE_SENS * 0.001
+		target_rot_y = wrapf(target_rot_y, 0.0, TAU)   # ← добавить эту строку
+		viewmodel.sway(Vector2(event.relative.x, event.relative.y))
 		
 func _physics_process(delta : float) -> void:
 	reach_ray.rotation_degrees = viewmodel.viewmodel_reach_ray.global_rotation_degrees;
 	viewmodel.global_position = camera.global_position;
 	camera.rotation_degrees = viewmodel.global_rotation_degrees
+	
+	if smooth:
+		rotation.x = lerp(rotation.x, target_rot_x, 15.0 * delta)
+		player.rotation.y = lerp_angle(player.rotation.y, target_rot_y, 15.0 * delta)
+	else:
+		rotation.x = target_rot_x
+		player.rotation.y = target_rot_y
+		player.rotation.y = wrapf(player.rotation.y, 0.0, TAU)
 	
 	step_speed = player.step_speed;
 	
@@ -114,10 +132,8 @@ func _physics_process(delta : float) -> void:
 func sway_camera(sway_amount : Vector3) -> void:
 	camera.global_rotation.z -= sway_amount.z*0.002;
 
-# ------------------------------------------------------------------
-# ИЗМЕНЁННАЯ ФУНКЦИЯ: теперь sounds по умолчанию пустой массив,
-# и если он пуст — берём звуки из step_sounds_map по текущей поверхности
-# ------------------------------------------------------------------
+# sounds по умолчанию пустой массив,
+# и если он пуст берём звуки из step_sounds_map по текущей поверхности
 func play_random_sound(speed : float, sounds : Array = []) -> void:
 	# Если массив не передан (т.е. это обычный шаг)
 	if sounds.is_empty():

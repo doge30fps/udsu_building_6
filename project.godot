@@ -23,7 +23,7 @@ window/vsync/vsync_mode=0
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot_material_footsteps/plugin.cfg", "res://addons/polygon_counter/plugin.cfg")
+enabled=PackedStringArray("res://addons/PathMeshInstance3D-1a1bf96756bc307f5e7e5a87978fb3f3ae54a7ca/addons/path_mesh_instance_3d/plugin.cfg", "res://addons/polygon_counter/plugin.cfg")
 
 [filesystem]
 
