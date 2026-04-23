@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://crdvlwq6cw1ne" path="res://scenes/player/player.tscn" id="1_vbb3r"]
 [ext_resource type="AudioStream" uid="uid://cwiyj8ltdygbi" path="res://sounds/ambient/SummerAmbient.mp3" id="1_vvu1a"]
 [ext_resource type="Material" uid="uid://im036vl3ik65" path="res://materials/placeholder_grid/placeholder_grid.tres" id="3_a87b0"]
-[ext_resource type="PackedScene" uid="uid://dcdanabl2nsli" path="res://scenes/building/room_321.tscn" id="5_jalgn"]
+[ext_resource type="PackedScene" uid="uid://bc7wkjkxe50uf" path="res://scenes/building/room_321_source.tscn" id="5_0txhr"]
 [ext_resource type="Material" uid="uid://blr8oxus4geb4" path="res://materials/room321/lever.tres" id="6_eetaf"]
 [ext_resource type="PackedScene" uid="uid://cssdykjh5j6wm" path="res://scenes/props/room321/table1.tscn" id="8_rod3g"]
 [ext_resource type="PackedScene" uid="uid://cmq8hl3jge44r" path="res://scenes/props/room321/electric_shield.tscn" id="11_e6lx5"]
@@ -394,7 +394,7 @@ shape = SubResource("BoxShape3D_vbb3r")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.915853, 3.469336, -8.054554)
 sprint_speed = 8.0
 
-[node name="room321" parent="." unique_id=2094079029 instance=ExtResource("5_jalgn")]
+[node name="room321" parent="." unique_id=1958238040 instance=ExtResource("5_0txhr")]
 
 [node name="props" type="Node3D" parent="." unique_id=1263931158]
 

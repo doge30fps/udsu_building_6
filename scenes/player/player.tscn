@@ -186,15 +186,20 @@ player = NodePath("../../../../..")
 reach_ray = NodePath("../../../../Reach")
 viewmodel_reach_ray = NodePath("Reach")
 
+[node name="Reach" parent="Head/Camera/SubViewportContainer/SubViewport/viewmodel" index="1" unique_id=1114146089]
+debug_shape_thickness = 5
+
 [node name="HeadCheck" type="RayCast3D" parent="Head" unique_id=1953120378]
 transform = Transform3D(1, 0, 0, 0, -1, -8.9407e-08, 0, 8.9407e-08, -1, 0, 0, 0)
 target_position = Vector3(0, -0.75, 0)
+debug_shape_thickness = 5
 
 [node name="Reach" type="RayCast3D" parent="Head" unique_id=693520299]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
 target_position = Vector3(0, -1.5, 0)
 collide_with_areas = true
 debug_shape_custom_color = Color(1, 0, 0, 1)
+debug_shape_thickness = 5
 script = ExtResource("5_ugbui")
 
 [node name="interact_label" type="Label" parent="Head/Reach" unique_id=370983241]
@@ -303,5 +308,9 @@ autoplay = true
 [node name="Feet" type="AudioStreamPlayer" parent="." unique_id=979506349]
 volume_db = -8.0
 max_polyphony = 3
+
+[node name="feet_check" type="RayCast3D" parent="Feet" unique_id=820283279]
+debug_shape_custom_color = Color(0.3882353, 1, 0.42352942, 1)
+debug_shape_thickness = 5
 
 [editable path="Head/Camera/SubViewportContainer/SubViewport/viewmodel"]
