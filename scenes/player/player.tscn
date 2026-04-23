@@ -15,6 +15,7 @@
 [ext_resource type="Script" uid="uid://d2hlolajvrasv" path="res://scripts/player/posture_machine/PostureDebugLabel.gd" id="13_fcs02"]
 [ext_resource type="Script" uid="uid://q4rll33g3wun" path="res://scripts/player/fps_counter/FPSCounter.gd" id="14_myrg7"]
 [ext_resource type="AudioStream" uid="uid://br2nk4uf6i7hs" path="res://sounds/player/voice/jump.ogg" id="15_myrg7"]
+[ext_resource type="Script" uid="uid://drporp6qe6g4p" path="res://scripts/player/feet_check.gd" id="16_myrg7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2v6pm"]
 radius = 0.3
@@ -309,8 +310,10 @@ autoplay = true
 volume_db = -8.0
 max_polyphony = 3
 
-[node name="feet_check" type="RayCast3D" parent="Feet" unique_id=820283279]
+[node name="feet_check" type="RayCast3D" parent="." unique_id=820283279]
+collide_with_areas = true
 debug_shape_custom_color = Color(0.3882353, 1, 0.42352942, 1)
 debug_shape_thickness = 5
+script = ExtResource("16_myrg7")
 
 [editable path="Head/Camera/SubViewportContainer/SubViewport/viewmodel"]
