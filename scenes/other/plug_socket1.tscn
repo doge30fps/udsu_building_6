@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cjalf36b84thu"]
+
+[ext_resource type="PackedScene" uid="uid://1h5mseipl088" path="res://models/other/plug_socket1.glb" id="1_o1sla"]
+
+[node name="Node3D" type="Node3D" unique_id=1850909300]
+
+[node name="plug_socket1" parent="." unique_id=1620599361 instance=ExtResource("1_o1sla")]

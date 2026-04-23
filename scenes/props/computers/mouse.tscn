@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bfae2uxjqihwm"]
+
+[ext_resource type="PackedScene" uid="uid://dct5ioh04u28f" path="res://models/computers/mouse/mouse_and_keyboard.glb" id="1_kpkrq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aka1v"]
+size = Vector3(0.05505371, 0.028869629, 0.108291626)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=951050465]
+
+[node name="mouse_and_keyboard" parent="." unique_id=1204410679 instance=ExtResource("1_kpkrq")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2090542953]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19403076, 0.018681437, 0.0036955103)
+shape = SubResource("BoxShape3D_aka1v")
+
+[editable path="mouse_and_keyboard"]

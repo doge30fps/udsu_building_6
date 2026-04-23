@@ -108,9 +108,9 @@ func play_random_sound(speed : float, sounds : Array = feet_sounds) -> void:
 	feet.play()
 	
 	if player.is_in_crouch and was_on_floor:
-		feet.volume_db = linear_to_db(speed/5)
+		feet.volume_db = linear_to_db(speed/5)-5
 	else:
-		feet.volume_db = linear_to_db(speed)
+		feet.volume_db = linear_to_db(speed)-5
 	sounds.shuffle()
 	sounds.erase(current)
 	sounds.push_back(current)

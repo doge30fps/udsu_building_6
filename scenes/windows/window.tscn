@@ -54,6 +54,9 @@ noise = SubResource("FastNoiseLite_3ffn5")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ffn5"]
 albedo_texture = SubResource("NoiseTexture2D_t637a")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_3ffn5"]
+size = Vector3(1.9771118, 1.4555054, 0.093688965)
+
 [node name="Node3D" type="Node3D" unique_id=929424496]
 
 [node name="triple_window" parent="." unique_id=1030600919 instance=ExtResource("1_aqdwu")]
@@ -86,6 +89,12 @@ mesh = SubResource("ArrayMesh_u1s21")
 
 [node name="#WIN0003_Handle_#WIN0003_Textures_0" parent="Sketchfab_Scene/Sketchfab_model/#WIN0003_Residential_Plastic_White_142x62x104_fbx/RootNode/#WIN0003_Frame/#WIN0003_Window/#WIN0003_Handle" parent_id_path=PackedInt32Array(1051610623, 754577091) index="0" unique_id=1022628470]
 surface_material_override/0 = SubResource("StandardMaterial3D_3ffn5")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=524955975]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1713774789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3182068, 0.95181274, 0.009918213)
+shape = SubResource("BoxShape3D_3ffn5")
 
 [editable path="triple_window"]
 [editable path="Sketchfab_Scene"]
