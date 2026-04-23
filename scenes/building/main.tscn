@@ -381,6 +381,7 @@ light_energy = 1.792
 shadow_enabled = true
 
 [node name="Global Floor" type="StaticBody3D" parent="." unique_id=232929963]
+metadata/surface_type = &"concrete"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Global Floor" unique_id=820354240]
 transform = Transform3D(0.9999999, 0.00020590068, 0.000477729, -0.00020621777, 0.99999976, 0.0006787495, -0.0004775922, -0.0006788458, 0.99999964, 0.004951, -0.5072117, -8.103571)
@@ -1552,6 +1553,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_0txhr")
 transform = Transform3D(0.09409922, 0, 0, 0, 0.088757694, 0, 0, 0, 0.015743569, 5.004988, 0.56208444, 0.4265971)
 mesh = SubResource("BoxMesh_bhnal")
 surface_material_override/0 = SubResource("StandardMaterial3D_0txhr")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=764173564]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.472931, 0.09667969, -9.013492)
+use_collision = true
+size = Vector3(2.126831, 0.22265625, 3.8515625)
 
 [editable path="props/monitors/StaticBody3D"]
 [editable path="props/monitors/StaticBody3D/Sketchfab_Scene"]

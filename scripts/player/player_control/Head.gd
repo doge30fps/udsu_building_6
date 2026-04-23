@@ -22,18 +22,31 @@ var left_played : bool = false
 var right_played : bool = false
 var was_on_floor : bool = false
 
+@onready var feet = $"../Feet"
 
+# СЛОВАРЬ: для каждого типа поверхности свой массив звуков шагов
+var step_sounds_map = {
+	"wood": [
+		preload("res://sounds/player/steps/wooden_floor/wooden_floor_01.ogg"),
+		preload("res://sounds/player/steps/wooden_floor/wooden_floor_02.ogg"),
+		preload("res://sounds/player/steps/wooden_floor/wooden_floor_03.ogg"),
+		preload("res://sounds/player/steps/wooden_floor/wooden_floor_04.ogg"),
+		preload("res://sounds/player/steps/wooden_floor/wooden_floor_05.ogg"),
+		preload("res://sounds/player/steps/wooden_floor/wooden_floor_06.ogg")
+	],
+	"concrete": [
+		preload("res://sounds/player/steps/concrete/concrete_01.ogg"),
+		preload("res://sounds/player/steps/concrete/concrete_02.ogg"),
+		preload("res://sounds/player/steps/concrete/concrete_03.ogg"),
+		preload("res://sounds/player/steps/concrete/concrete_04.ogg"),
+		preload("res://sounds/player/steps/concrete/concrete_05.ogg"),
+		preload("res://sounds/player/steps/concrete/concrete_06.ogg")
+	]
+}
+# если поверхность не найдена
+var default_step_sounds = step_sounds_map["wood"]
 
-
-@onready var feet = player.get_node("Feet")
-@onready var feet_sounds = [
-	preload("res://sounds/player/steps/wooden_floor/wooden_floor_01.ogg"),
-	preload("res://sounds/player/steps/wooden_floor/wooden_floor_02.ogg"),
-	preload("res://sounds/player/steps/wooden_floor/wooden_floor_03.ogg"),
-	preload("res://sounds/player/steps/wooden_floor/wooden_floor_04.ogg"),
-	preload("res://sounds/player/steps/wooden_floor/wooden_floor_05.ogg"),
-	preload("res://sounds/player/steps/wooden_floor/wooden_floor_06.ogg")
-]
+# Прыжки и приземления пока оставляем бетонными
 @onready var land_sounds = [
 	preload("res://sounds/player/steps/concrete/land_concrete_01.ogg"),
 	preload("res://sounds/player/steps/concrete/land_concrete_02.ogg"),
@@ -46,7 +59,6 @@ var was_on_floor : bool = false
 	preload("res://sounds/player/steps/concrete/jump_concrete_02.ogg"),
 	preload("res://sounds/player/steps/concrete/jump_concrete_03.ogg")
 ]
-
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -84,17 +96,17 @@ func _physics_process(delta : float) -> void:
 	
 		if player.is_on_floor():
 			if cam_pos.y >= 0.04 and !right_played:
-				play_random_sound(speed_clamped)
+				play_random_sound(speed_clamped)    # шаг
 				left_played = false
 				right_played = true
 			if cam_pos.y <= -0.04 and !left_played:
-				play_random_sound(speed_clamped)
+				play_random_sound(speed_clamped)    # шаг
 				left_played = true
 				right_played = false
 		if was_on_floor and !player.is_on_floor():
-			play_random_sound(speed_clamped, jump_sounds)
+			play_random_sound(speed_clamped, jump_sounds)   # прыжок
 		if player.is_on_floor() and !was_on_floor:
-			play_random_sound(speed_clamped, land_sounds)
+			play_random_sound(speed_clamped, land_sounds)   # приземление
 			
 		sway_camera(Vector3(player.blend_rotation.z, player.blend_rotation.y, player.blend_rotation.x));
 		was_on_floor = player.is_on_floor();
@@ -102,7 +114,16 @@ func _physics_process(delta : float) -> void:
 func sway_camera(sway_amount : Vector3) -> void:
 	camera.global_rotation.z -= sway_amount.z*0.002;
 
-func play_random_sound(speed : float, sounds : Array = feet_sounds) -> void:
+# ------------------------------------------------------------------
+# ИЗМЕНЁННАЯ ФУНКЦИЯ: теперь sounds по умолчанию пустой массив,
+# и если он пуст — берём звуки из step_sounds_map по текущей поверхности
+# ------------------------------------------------------------------
+func play_random_sound(speed : float, sounds : Array = []) -> void:
+	# Если массив не передан (т.е. это обычный шаг)
+	if sounds.is_empty():
+		var surface = player.current_surface
+		sounds = step_sounds_map.get(surface, default_step_sounds)
+	
 	var current = sounds[0]
 	feet.stream = current
 	feet.play()

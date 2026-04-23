@@ -2,6 +2,8 @@ extends CharacterBody3D
 
 var GRAVITY = ProjectSettings.get_setting("physics/3d/default_gravity")
 
+var current_surface: StringName = "wood"  # По умолчанию - дерево
+
 # NORMAL SPEED.
 @export var normal_speed : float = 3;
 # SPRINT/RUNING SPEED.
@@ -48,6 +50,8 @@ var blend_rotation : Vector3;
 const EYES_HEAD_DISTANCE : float = 0.12;
 @export var BONUS_GRAVITY : float = 3.0
 
+func _ready():
+	$feet_check.surface_changed.connect(_on_feet_check_surface_changed)
 
 func _physics_process(delta : float) -> void:
 	CROUCH(delta);
@@ -129,3 +133,9 @@ func handle_rush() -> void:
 func handle_bounds() -> void:
 	if global_transform.origin.y <= -100.0:
 		global_transform.origin = Vector3.ONE
+
+func _on_feet_check_surface_changed(surface_name: String):
+	if current_surface != surface_name:
+		current_surface = surface_name
+		# Это для отладки, чтобы убедиться, что всё работает
+		print("Surface changed to: ", current_surface)

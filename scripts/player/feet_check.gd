@@ -18,10 +18,10 @@ func _physics_process(delta):
 			if current_surface != last_surface:
 				last_surface = current_surface
 				surface_changed.emit(current_surface)
-			print_debug("found meta_surface: ", current_surface)
+			#print_debug("found meta_surface: ", current_surface)
 		else:
 			# Если у объекта нет метаданных, можно отправить сигнал о поверхности по умолчанию
 			if last_surface != "unknown":
 				last_surface = "unknown"
 				surface_changed.emit("unknown")
-			print_debug("unknown meta_surface!")
+			#print_debug("unknown meta_surface!")
