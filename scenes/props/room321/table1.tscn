@@ -35,7 +35,7 @@ shape = SubResource("BoxShape3D_4ebdk")
 
 [node name="modern_table" parent="." unique_id=313917486 instance=ExtResource("1_h7p1w")]
 
-[node name="Парта" parent="modern_table" index="0" unique_id=1471414662]
+[node name="Парта" parent="modern_table" index="0" unique_id=2001911257]
 surface_material_override/0 = SubResource("StandardMaterial3D_h7p1w")
 
 [editable path="modern_table"]

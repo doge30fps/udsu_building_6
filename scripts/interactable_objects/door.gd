@@ -1,15 +1,15 @@
-extends StaticBody3D
+extends StaticBody3D # НАСЛЕДОВАНИЕ
 
-var toggle = false
-var interactable = true
-@export var animation_player: AnimationPlayer
+var toggle = false # Переключатель
+var interactable = true # Флаг для взаимодействия
+@export var animation_player: AnimationPlayer # Ссылка на плеер анимации
 
 func interact():
 	if interactable == true:
 		interactable = false
 		toggle = !toggle
 		if toggle == false:
-			animation_player.play("close")
+			animation_player.play("close") # Вызываем анимацию "закрыть"
 		if toggle == true:
-			animation_player.play("open")
+			animation_player.play("open") # Вызываем анимацию "закрыть"
 		interactable = true

@@ -40,55 +40,55 @@ shape = SubResource("BoxShape3D_xafho")
 
 [node name="wooden_chair" parent="." unique_id=932397080 instance=ExtResource("1_7lew4")]
 
-[node name="Округление_1" parent="wooden_chair" index="0" unique_id=1492820737]
+[node name="Округление_1" parent="wooden_chair" index="0" unique_id=1639868083]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="Округление_2" parent="wooden_chair" index="1" unique_id=942773555]
+[node name="Округление_2" parent="wooden_chair" index="1" unique_id=1914404891]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="Передняя_Опора" parent="wooden_chair" index="2" unique_id=710140870]
+[node name="Передняя_Опора" parent="wooden_chair" index="2" unique_id=481007029]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="Боковая_Частб_2" parent="wooden_chair" index="3" unique_id=958734395]
+[node name="Боковая_Частб_2" parent="wooden_chair" index="3" unique_id=1028663617]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="Ножка_4" parent="wooden_chair" index="4" unique_id=1777379771]
+[node name="Ножка_4" parent="wooden_chair" index="4" unique_id=1706982546]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="Боковая_Часть_1" parent="wooden_chair" index="5" unique_id=492125778]
+[node name="Боковая_Часть_1" parent="wooden_chair" index="5" unique_id=144333952]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="Боковая_Верхняя_Часть_2" parent="wooden_chair" index="6" unique_id=1967912572]
+[node name="Боковая_Верхняя_Часть_2" parent="wooden_chair" index="6" unique_id=1483115972]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="Передняя_Часть" parent="wooden_chair" index="7" unique_id=1422965203]
+[node name="Передняя_Часть" parent="wooden_chair" index="7" unique_id=1956560281]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="ЧастьОпоры_2" parent="wooden_chair" index="8" unique_id=2036444020]
+[node name="ЧастьОпоры_2" parent="wooden_chair" index="8" unique_id=532847962]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="Доска" parent="wooden_chair" index="9" unique_id=325488234]
+[node name="Доска" parent="wooden_chair" index="9" unique_id=603976432]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="Боковая_Верхняя_Часть" parent="wooden_chair" index="10" unique_id=1750291994]
+[node name="Боковая_Верхняя_Часть" parent="wooden_chair" index="10" unique_id=289494541]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="Ножка_1" parent="wooden_chair" index="11" unique_id=1278423216]
+[node name="Ножка_1" parent="wooden_chair" index="11" unique_id=844229208]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="Задняя_Часть" parent="wooden_chair" index="12" unique_id=89049112]
+[node name="Задняя_Часть" parent="wooden_chair" index="12" unique_id=676619117]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="ЧастьОпоры_1" parent="wooden_chair" index="13" unique_id=1371416383]
+[node name="ЧастьОпоры_1" parent="wooden_chair" index="13" unique_id=1690987912]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="ЧастьОпоры_3" parent="wooden_chair" index="14" unique_id=970325808]
+[node name="ЧастьОпоры_3" parent="wooden_chair" index="14" unique_id=2093944552]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="Ножка_2" parent="wooden_chair" index="15" unique_id=905557016]
+[node name="Ножка_2" parent="wooden_chair" index="15" unique_id=1772543831]
 surface_material_override/0 = ExtResource("1_q3g77")
 
-[node name="Ножка_3" parent="wooden_chair" index="16" unique_id=1518642117]
+[node name="Ножка_3" parent="wooden_chair" index="16" unique_id=120133541]
 surface_material_override/0 = ExtResource("1_q3g77")
 
 [editable path="wooden_chair"]

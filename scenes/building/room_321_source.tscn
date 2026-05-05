@@ -76,7 +76,7 @@ size = Vector3(13.780243, 3.924759, 0.5074463)
 size = Vector3(2.1657677, 3.924759, 0.5074463)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_u6xf6"]
-size = Vector3(1.2639122, 1.9343204, 0.5074463)
+size = Vector3(1.2639122, 1.960875, 0.5074463)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_hdo2i"]
 _surfaces = [{
@@ -437,7 +437,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5111566, -0.025062561, 0.1
 shape = SubResource("BoxShape3D_hdo2i")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="wall1" unique_id=1040854190]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8067956, 0.95126796, 0.12664795)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8067956, 0.93799067, 0.12664795)
 shape = SubResource("BoxShape3D_u6xf6")
 
 [node name="wall2" type="StaticBody3D" parent="." unique_id=2015185377]
