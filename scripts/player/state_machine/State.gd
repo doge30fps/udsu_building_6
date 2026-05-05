@@ -8,12 +8,10 @@ var player : CharacterBody3D
 var next_state : State
 
 
-signal interrupt_state(new_state : State);
-
-func state_process(delta : float) -> void:
+func state_process(_delta : float) -> void:
 	pass
 
-func state_input(event : InputEvent) -> void:
+func state_input(_event : InputEvent) -> void:
 	pass
 
 func on_enter() -> void:
@@ -26,5 +24,5 @@ func _ready() -> void:
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta : float) -> void:
+func _process(_delta : float) -> void:
 	pass

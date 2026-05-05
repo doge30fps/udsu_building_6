@@ -74,6 +74,7 @@ mesh = SubResource("ArrayMesh_7yfkl")
 
 [node name="ExitSign_Material_0" parent="Sketchfab_Scene/Sketchfab_model/265f242c0def4d35bc5c349c33a09ffd_fbx/RootNode/ExitSign" parent_id_path=PackedInt32Array(1515071339, 1517744336) index="0" unique_id=2089413202]
 transform = Transform3D(1, -4.6409518e-21, 0, -2.3204759e-21, 1, 0, -3.7805352e-28, 0, 1, -0.19733566, 0.031450886, -0.70695686)
+visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1320312326]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0030517578, 1.0042877, -0.020874023)

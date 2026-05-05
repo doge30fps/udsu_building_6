@@ -19,7 +19,7 @@ func _ready() -> void:
 			child.player = player
 			#Connect to interrupt signal
 			
-			child.connect("interrupt_posture", on_posture_interrupt_posture)
+			#child.connect("interrupt_posture", on_posture_interrupt_posture)
 			
 		else:
 			push_warning("Child " + child.name + " is not a Posture for CharacterPostureMachine!")

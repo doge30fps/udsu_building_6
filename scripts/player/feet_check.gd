@@ -6,7 +6,7 @@ signal surface_changed(surface_name: String)
 # Предыдущий тип поверхности, чтобы не спамить сигналами при каждом кадре
 var last_surface: String = ""
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	# Проверяем, есть ли коллизия у луча
 	if is_colliding():
 		# Получаем объект, в который упёрся луч

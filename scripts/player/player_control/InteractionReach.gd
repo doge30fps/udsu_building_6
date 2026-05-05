@@ -3,7 +3,7 @@ extends RayCast3D
 @onready var interact_label : Label = $interact_label
 @onready var crosshair_label : Label = $crosshair
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	interact_label.visible = false
 	crosshair_label.visible = true
 	if is_colliding():

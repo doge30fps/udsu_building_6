@@ -7,12 +7,11 @@ class_name Posture
 var player : CharacterBody3D
 var next_posture : Posture
 
-signal interrupt_posture(new_posture : Posture);
 
-func posture_process(delta : float) -> void:
+func posture_process(_delta : float) -> void:
 	pass
 
-func posture_input(event : InputEvent) -> void:
+func posture_input(_event : InputEvent) -> void:
 	pass
 
 func on_enter() -> void:
@@ -25,5 +24,5 @@ func _ready() -> void:
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta : float) -> void:
+func _process(_delta : float) -> void:
 	pass

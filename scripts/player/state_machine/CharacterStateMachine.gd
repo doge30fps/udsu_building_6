@@ -20,7 +20,7 @@ func _ready() -> void:
 			
 			#Connect to interrupt signal
 			
-			child.connect("interrupt_state", on_state_interrupt_state)
+			#child.connect("interrupt_state", on_state_interrupt_state)
 			
 		else:
 			push_warning("Child " + child.name + " is not a State for CharacterStateMachine!")
