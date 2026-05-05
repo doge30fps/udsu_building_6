@@ -1,6 +1,6 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://ci1y7xg8adqeh"]
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b8ouo15lc1txu"]
 
-[ext_resource type="Texture2D" uid="uid://bbk0g636dkjet" path="res://textures/floor/gpt1.png" id="1_mgbe1"]
+[ext_resource type="Texture2D" uid="uid://clgs3b3yebf2i" path="res://textures/floor/gpt4.png" id="1_xcq8b"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_gn4w6"]
 seed = 16
@@ -11,14 +11,13 @@ height = 2048
 noise = SubResource("FastNoiseLite_gn4w6")
 
 [resource]
-albedo_texture = ExtResource("1_mgbe1")
-metallic = 0.78
+albedo_texture = ExtResource("1_xcq8b")
 metallic_specular = 0.24
 normal_enabled = true
 normal_scale = 0.25
 normal_texture = SubResource("NoiseTexture2D_hbxc2")
-uv1_scale = Vector3(0.285, 0.285, 0.285)
-uv1_offset = Vector3(0.17, 0, 0.05)
+uv1_scale = Vector3(0.16, 0.16, 0.16)
+uv1_offset = Vector3(1.505, 0, 0.05)
 uv1_triplanar = true
 uv1_world_triplanar = true
 texture_filter = 5

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cnb0x7xx6h2gu"]
+
+[ext_resource type="Texture2D" uid="uid://dit4md5ae6ftl" path="res://textures/sprites/no_smoking.webp" id="1_t1pdq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_878dv"]
+albedo_texture = ExtResource("1_t1pdq")
+
+[node name="Sprite3D" type="Sprite3D" unique_id=35702453]
+material_override = SubResource("StandardMaterial3D_878dv")
+texture = ExtResource("1_t1pdq")

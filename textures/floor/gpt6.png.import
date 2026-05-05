@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce8o66oyycip2"
-path.s3tc="res://.godot/imported/hall_floor_texture_UPSCALED.png-b53b18825bef5d8663d18b06220f2a11.s3tc.ctex"
+uid="uid://b0g4tmflva3l6"
+path.s3tc="res://.godot/imported/gpt6.png-c152850454f4d389ae414c2dc7ae21e5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/floor/hall_floor_texture_UPSCALED.png"
-dest_files=["res://.godot/imported/hall_floor_texture_UPSCALED.png-b53b18825bef5d8663d18b06220f2a11.s3tc.ctex"]
+source_file="res://textures/floor/gpt6.png"
+dest_files=["res://.godot/imported/gpt6.png-c152850454f4d389ae414c2dc7ae21e5.s3tc.ctex"]
 
 [params]
 

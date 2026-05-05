@@ -48,7 +48,7 @@ var step_sounds_map = {
 	]
 }
 # если поверхность не найдена
-var default_step_sounds = step_sounds_map["wood"]
+var default_step_sounds = step_sounds_map["concrete"]
 
 # Прыжки и приземления пока оставляем бетонными
 @onready var land_sounds = [
