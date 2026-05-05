@@ -1,0 +1,27 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bc8qtb0alnh8c"]
+
+[ext_resource type="Texture2D" uid="uid://c54w6q1lxbpq5" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_BaseColor.jpg" id="1_egqlx"]
+[ext_resource type="Texture2D" uid="uid://dmmysnvub0vs8" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_AmbientOcclusion.jpg" id="2_hr8uv"]
+[ext_resource type="Texture2D" uid="uid://8n3misa6fn5w" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Displacement.png" id="3_ohwac"]
+[ext_resource type="Texture2D" uid="uid://cudbqxvey3xkn" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Metallic.jpg" id="4_5ewgt"]
+[ext_resource type="Texture2D" uid="uid://cb5sct4py02m7" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Normal.png" id="5_180m4"]
+[ext_resource type="Texture2D" uid="uid://u5ia7a3jidor" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Roughness.jpg" id="6_v8c4a"]
+
+[resource]
+albedo_texture = ExtResource("1_egqlx")
+metallic = 0.5
+metallic_texture = ExtResource("4_5ewgt")
+metallic_texture_channel = 3
+roughness_texture = ExtResource("6_v8c4a")
+roughness_texture_channel = 3
+normal_enabled = true
+normal_texture = ExtResource("5_180m4")
+ao_enabled = true
+ao_texture = ExtResource("2_hr8uv")
+ao_texture_channel = 3
+heightmap_enabled = true
+heightmap_deep_parallax = true
+heightmap_min_layers = 8
+heightmap_max_layers = 32
+heightmap_texture = ExtResource("3_ohwac")
+uv1_world_triplanar = true
