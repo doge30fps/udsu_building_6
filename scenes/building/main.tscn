@@ -64,6 +64,7 @@
 [ext_resource type="Material" uid="uid://bc8qtb0alnh8c" path="res://materials/walls/white_wall/wall.tres" id="60_v8mm6"]
 [ext_resource type="Material" uid="uid://dqmohj4u0ktuw" path="res://materials/walls/white_wall/wall1.tres" id="61_47udc"]
 [ext_resource type="Material" uid="uid://ci1y7xg8adqeh" path="res://materials/floor/hall_floor.tres" id="61_gn4w6"]
+[ext_resource type="Texture2D" uid="uid://bck85o7aq75ok" path="res://textures/walls/marble/marble_01_diff_2k_MORE_WHITE.png" id="61_kvrbf"]
 [ext_resource type="Texture2D" uid="uid://dbja351fjjsy8" path="res://textures/sprites/3rd_floor/poster1.png" id="61_qg0k0"]
 [ext_resource type="Script" uid="uid://mn11vk63682d" path="res://scripts/interactable_objects/door.gd" id="61_qhlmq"]
 [ext_resource type="Texture2D" uid="uid://cudbqxvey3xkn" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Metallic.jpg" id="61_sa80d"]
@@ -84,8 +85,12 @@
 [ext_resource type="Material" uid="uid://5sjdarx7tegs" path="res://materials/walls/column/column.tres" id="72_opg8g"]
 [ext_resource type="Texture2D" uid="uid://bchl3a3p7u3iy" path="res://textures/sprites/3rd_floor/camera.JPG" id="75_on7jx"]
 [ext_resource type="Material" uid="uid://dny6xxb2ni3rt" path="res://materials/walls/marble/marble.tres" id="80_v33lt"]
+[ext_resource type="Texture2D" uid="uid://df167ys4yj1ah" path="res://textures/walls/marble/marble_01_arm_2k.jpg" id="81_47udc"]
 [ext_resource type="Texture2D" uid="uid://d4i1qtagpa3tc" path="res://textures/sprites/3rd_floor/board1.JPG" id="81_c4m8w"]
 [ext_resource type="Texture2D" uid="uid://dutptdx20dud5" path="res://textures/sprites/3rd_floor/board2.JPG" id="82_c8xyf"]
+[ext_resource type="Texture2D" uid="uid://b5t0qrmfq1l23" path="res://textures/walls/marble/marble_01_disp_2k.png" id="82_ijcga"]
+[ext_resource type="Texture2D" uid="uid://d0mikbcnycx3c" path="res://textures/walls/marble/marble_01_rough_2k.jpg" id="82_qw2o4"]
+[ext_resource type="Texture2D" uid="uid://cmwvokt6vagm1" path="res://textures/walls/marble/marble_01_nor_gl_2k.jpg" id="83_iwcqy"]
 [ext_resource type="Texture2D" uid="uid://c7x4g1cxu0oow" path="res://textures/sprites/3rd_floor/internet_center.JPG" id="83_kf0ih"]
 [ext_resource type="Texture2D" uid="uid://bjrrul45t6fyf" path="res://textures/sprites/3rd_floor/poster2.png" id="83_lkhyv"]
 [ext_resource type="Texture2D" uid="uid://woit8w7ev4wp" path="res://textures/sprites/3rd_floor/poster4.png" id="84_krce0"]
@@ -469,6 +474,29 @@ _surfaces = [{
 "vertex_count": 133,
 "vertex_data": PackedByteArray("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")
 }]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_etctj"]
+albedo_color = Color(0.47788018, 0.47788012, 0.47788012, 1)
+albedo_texture = ExtResource("61_kvrbf")
+metallic_specular = 1.0
+metallic_texture = ExtResource("81_47udc")
+roughness_texture = ExtResource("82_qw2o4")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_scale = 1.54
+normal_texture = ExtResource("83_iwcqy")
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource("81_47udc")
+heightmap_enabled = true
+heightmap_scale = 1.746
+heightmap_deep_parallax = true
+heightmap_min_layers = 8
+heightmap_max_layers = 32
+heightmap_texture = ExtResource("82_ijcga")
+uv1_scale = Vector3(1, 1.02, 1)
+uv1_offset = Vector3(0, 0.195, 0)
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0cjeu"]
 albedo_texture = ExtResource("60_q8ijn")
@@ -1928,6 +1956,104 @@ transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.001
 use_collision = true
 size = Vector3(35.290257, 0.09475708, 4.0917377)
 material = ExtResource("60_v8mm6")
+metadata/surface_type = &"concrete"
+
+[node name="bortik1" type="CSGBox3D" parent="floor_3_right_wing" unique_id=1308544483]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -16.482355, 0.025130138, -3.7075841)
+use_collision = true
+size = Vector3(12.579658, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik6" type="CSGBox3D" parent="floor_3_right_wing" unique_id=761001300]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -20.848732, 0.025130138, -0.13690591)
+use_collision = true
+size = Vector3(1.2078333, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik7" type="CSGBox3D" parent="floor_3_right_wing" unique_id=2061636577]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -18.789368, 0.025130138, -0.13690591)
+use_collision = true
+size = Vector3(0.69624543, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik8" type="CSGBox3D" parent="floor_3_right_wing" unique_id=492623244]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -16.835033, 0.025130138, -0.13690591)
+use_collision = true
+size = Vector3(1.0533229, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik9" type="CSGBox3D" parent="floor_3_right_wing" unique_id=1851662209]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -14.426705, 0.025130138, -0.13690591)
+use_collision = true
+size = Vector3(1.6137515, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik10" type="CSGBox3D" parent="floor_3_right_wing" unique_id=92359388]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -11.443412, 0.025130138, -0.13690591)
+use_collision = true
+size = Vector3(1.574759, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik11" type="CSGBox3D" parent="floor_3_right_wing" unique_id=1841599277]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -2.2778711, 0.025130138, -0.13690591)
+use_collision = true
+size = Vector3(13.662971, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik12" type="CSGBox3D" parent="floor_3_right_wing" unique_id=1068667090]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, 6.7022505, 0.025130138, -0.13690591)
+use_collision = true
+size = Vector3(0.7381753, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik13" type="CSGBox3D" parent="floor_3_right_wing" unique_id=398548844]
+transform = Transform3D(-4.3770918e-08, -1.0013618, -4.3770918e-08, 0, -4.3770918e-08, 1.0013618, -1.0013618, 4.3770918e-08, 1.9132876e-15, 7.0170503, 0.025130138, -0.46868917)
+use_collision = true
+size = Vector3(0.64940083, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik14" type="CSGBox3D" parent="floor_3_right_wing" unique_id=1989733031]
+transform = Transform3D(-4.3770918e-08, -1.0013618, -4.3770918e-08, 0, -4.3770918e-08, 1.0013618, -1.0013618, 4.3770918e-08, 1.9132876e-15, 7.0170503, 0.025130138, -3.2911632)
+use_collision = true
+size = Vector3(0.8696223, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik2" type="CSGBox3D" parent="floor_3_right_wing" unique_id=514602729]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -25.340183, 0.025130138, -3.7075841)
+use_collision = true
+size = Vector3(2.4371812, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik3" type="CSGBox3D" parent="floor_3_right_wing" unique_id=2077724905]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -8.208912, 0.025130138, -3.7075841)
+use_collision = true
+size = Vector3(1.7702264, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik4" type="CSGBox3D" parent="floor_3_right_wing" unique_id=2088518293]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -5.319849, 0.025130138, -3.7075841)
+use_collision = true
+size = Vector3(1.8452666, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik5" type="CSGBox3D" parent="floor_3_right_wing" unique_id=1972005216]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, 1.8923517, 0.025130138, -3.7075841)
+use_collision = true
+size = Vector3(10.395033, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
 [node name="right_wall" type="CSGBox3D" parent="floor_3_right_wing" unique_id=817298369]
