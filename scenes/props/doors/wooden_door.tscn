@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://ckdasdmb1gl22"]
+
+[ext_resource type="PackedScene" uid="uid://hexyi5axdthv" path="res://models/room321/interactables/wooden_door.glb" id="4_o7xfw"]
+[ext_resource type="Material" uid="uid://isevhc71gdim" path="res://materials/room321/wooden_door1.tres" id="5_ga468"]
+[ext_resource type="Material" uid="uid://jhbujhwfj4ra" path="res://materials/room321/wooden_door2.tres" id="6_4wry1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1ybv1"]
+size = Vector3(2.6311, 5.25061, 0.379333)
+
+[node name="Node3D" type="Node3D" unique_id=70657082]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=779912183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.4189, -0.273104, -2.75831)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1597783167]
+transform = Transform3D(39.01, 0, 0, 0, 39.01, 0, 0, 0, 39.01, 29.8146, 103.927, 8.87987)
+visible = false
+shape = SubResource("BoxShape3D_1ybv1")
+
+[node name="wooden_door" parent="StaticBody3D" unique_id=1811911216 instance=ExtResource("4_o7xfw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.090866, 0, 2.683854)
+
+[node name="Object_2" parent="StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1811911216, 2019368991) index="0" unique_id=1837209678]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, -0.7974205, -0.56920654, -2.0861626e-07)
+cast_shadow = 0
+surface_material_override/0 = ExtResource("5_ga468")
+
+[node name="Object_3" parent="StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1811911216, 2019368991) index="1" unique_id=443636773]
+cast_shadow = 0
+surface_material_override/0 = ExtResource("6_4wry1")
+
+[node name="Object_4" parent="StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1811911216, 2019368991) index="2" unique_id=165990579]
+cast_shadow = 0
+surface_material_override/0 = ExtResource("6_4wry1")
+
+[editable path="StaticBody3D/wooden_door"]

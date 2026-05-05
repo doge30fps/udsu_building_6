@@ -17,5 +17,4 @@ ao_enabled = true
 ao_light_affect = 1.0
 ao_texture = ExtResource("2_4dq00")
 ao_texture_channel = 3
-uv1_scale = Vector3(3.535, 1, 1)
 uv1_triplanar = true

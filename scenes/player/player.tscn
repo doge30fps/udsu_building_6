@@ -161,7 +161,6 @@ MOUSE_SENS = 1.0
 
 [node name="Camera" type="Camera3D" parent="Head" unique_id=1212332343]
 cull_mask = 1048573
-fov = 87.0
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="Head/Camera" unique_id=989864991]
 anchors_preset = 15

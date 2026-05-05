@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://ci1y7xg8adqeh"]
 
-[ext_resource type="Texture2D" uid="uid://ce8o66oyycip2" path="res://textures/floor/hall_floor_texture_UPSCALED.png" id="1_mgbe1"]
+[ext_resource type="Texture2D" uid="uid://dsbb6i2il6vtg" path="res://textures/floor/hall_floor_highres.png" id="1_mgbe1"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_gn4w6"]
 seed = 16
@@ -17,7 +17,8 @@ metallic_specular = 0.24
 normal_enabled = true
 normal_scale = 0.25
 normal_texture = SubResource("NoiseTexture2D_hbxc2")
-uv1_scale = Vector3(8.16, 1, 1)
-uv1_offset = Vector3(1.385, 0, 0.505)
+uv1_scale = Vector3(0.285, 0.285, 0.285)
+uv1_offset = Vector3(0, 0, 0.035)
 uv1_triplanar = true
+uv1_world_triplanar = true
 texture_filter = 5
