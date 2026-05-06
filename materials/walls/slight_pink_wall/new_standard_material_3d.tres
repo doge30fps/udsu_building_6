@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://u5ia7a3jidor" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Roughness.jpg" id="6_v8iy1"]
 
 [resource]
-albedo_color = Color(0.9797633, 0.93704873, 0.926609, 1)
+albedo_color = Color(0.96389705, 0.88448095, 0.8627976, 1)
 albedo_texture = ExtResource("1_joeoo")
 metallic = 0.5
 metallic_texture = ExtResource("4_mcel1")
@@ -20,6 +20,6 @@ normal_texture = ExtResource("5_fkd3u")
 ao_enabled = true
 ao_texture = ExtResource("2_soe2q")
 ao_texture_channel = 3
-heightmap_enabled = true
 heightmap_texture = ExtResource("3_7pbbv")
+uv1_triplanar = true
 uv1_world_triplanar = true
