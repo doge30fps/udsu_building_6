@@ -113,6 +113,10 @@
 [ext_resource type="Texture2D" uid="uid://dvpnbogm8lhcj" path="res://textures/sprites/3rd_floor/exit_label.JPG" id="111_r32w8"]
 [ext_resource type="Texture2D" uid="uid://c5wuw27pvjkb1" path="res://textures/sprites/3rd_floor/billboard_texture.png" id="112_nns2a"]
 [ext_resource type="Texture2D" uid="uid://cmvwqybifuy1p" path="res://textures/sprites/3rd_floor/billboard_papers.png" id="113_1xypv"]
+[ext_resource type="Material" uid="uid://bfduhrv4fmrf5" path="res://materials/room321/laminate.tres" id="114_2nev8"]
+[ext_resource type="Texture2D" uid="uid://bv1k2yf42rpco" path="res://textures/sprites/3rd_floor/ipsub.png" id="114_s5ugr"]
+[ext_resource type="Texture2D" uid="uid://bdey3icys3ytd" path="res://textures/sprites/3rd_floor/ipsub_billboard_right_side.png" id="115_jdjsi"]
+[ext_resource type="Texture2D" uid="uid://c8qoa0hu6dc8u" path="res://textures/sprites/3rd_floor/ipsub_billboard_left_side.png" id="116_vet4s"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_a87b0"]
 panorama = ExtResource("1_unbpl")
@@ -791,6 +795,107 @@ albedo_texture = ExtResource("112_nns2a")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1xypv"]
 load_path = "res://.godot/imported/billboard_papers.png-705e4130e9ddbac6adcaa02e4ea6ff8c.s3tc.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_2nev8"]
+noise_type = 0
+frequency = 1.0
+offset = Vector3(187.5, 0, 0)
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_jdjsi"]
+width = 2048
+height = 2048
+noise = SubResource("FastNoiseLite_2nev8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xu6ow"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.1764706)
+albedo_texture = SubResource("NoiseTexture2D_jdjsi")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s68mc"]
+transparency = 1
+albedo_texture = ExtResource("115_jdjsi")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m7d5r"]
+transparency = 1
+albedo_texture = ExtResource("116_vet4s")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xyy7t"]
+albedo_texture = ExtResource("107_kis2j")
+
+[sub_resource type="FontFile" id="FontFile_vet4s"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/80/0/ascent = 0.0
+cache/0/80/0/descent = 0.0
+cache/0/80/0/underline_position = 0.0
+cache/0/80/0/underline_thickness = 0.0
+cache/0/80/0/scale = 1.0
+cache/0/77/0/ascent = 0.0
+cache/0/77/0/descent = 0.0
+cache/0/77/0/underline_position = 0.0
+cache/0/77/0/underline_thickness = 0.0
+cache/0/77/0/scale = 1.0
+cache/0/76/0/ascent = 0.0
+cache/0/76/0/descent = 0.0
+cache/0/76/0/underline_position = 0.0
+cache/0/76/0/underline_thickness = 0.0
+cache/0/76/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
+cache/0/74/0/ascent = 0.0
+cache/0/74/0/descent = 0.0
+cache/0/74/0/underline_position = 0.0
+cache/0/74/0/underline_thickness = 0.0
+cache/0/74/0/scale = 1.0
+cache/0/73/0/ascent = 0.0
+cache/0/73/0/descent = 0.0
+cache/0/73/0/underline_position = 0.0
+cache/0/73/0/underline_thickness = 0.0
+cache/0/73/0/scale = 1.0
+cache/0/72/0/ascent = 0.0
+cache/0/72/0/descent = 0.0
+cache/0/72/0/underline_position = 0.0
+cache/0/72/0/underline_thickness = 0.0
+cache/0/72/0/scale = 1.0
+cache/0/71/0/ascent = 0.0
+cache/0/71/0/descent = 0.0
+cache/0/71/0/underline_position = 0.0
+cache/0/71/0/underline_thickness = 0.0
+cache/0/71/0/scale = 1.0
+cache/0/70/0/ascent = 0.0
+cache/0/70/0/descent = 0.0
+cache/0/70/0/underline_position = 0.0
+cache/0/70/0/underline_thickness = 0.0
+cache/0/70/0/scale = 1.0
+cache/0/69/0/ascent = 0.0
+cache/0/69/0/descent = 0.0
+cache/0/69/0/underline_position = 0.0
+cache/0/69/0/underline_thickness = 0.0
+cache/0/69/0/scale = 1.0
+cache/0/68/0/ascent = 0.0
+cache/0/68/0/descent = 0.0
+cache/0/68/0/underline_position = 0.0
+cache/0/68/0/underline_thickness = 0.0
+cache/0/68/0/scale = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xjd8w"]
+transparency = 1
+albedo_texture = ExtResource("114_s5ugr")
 
 [node name="MAIN_NODE" type="Node3D" unique_id=1503407360]
 
@@ -3368,7 +3473,7 @@ material_override = SubResource("StandardMaterial3D_2nev8")
 texture = ExtResource("89_unoq1")
 
 [node name="Sprite3D9" type="Sprite3D" parent="left" unique_id=970998978]
-transform = Transform3D(0.11014648, 2.993737e-10, 3.2546062e-08, -2.3544655e-10, 0.0778586, -0.0033103633, 9.62355e-09, -0.00069169217, -0.37262273, -22.112751, 2.6373172, 55.88066)
+transform = Transform3D(0.086370006, 2.993737e-10, 3.2546062e-08, -1.8462253e-10, 0.0778586, -0.0033103633, 7.546189e-09, -0.00069169217, -0.37262273, -21.65928, 2.3283067, 55.88066)
 material_override = SubResource("StandardMaterial3D_2nev8")
 texture = ExtResource("89_unoq1")
 
@@ -3432,6 +3537,162 @@ material = ExtResource("6_eetaf")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8892221, 1.4465417, 52.53096)
 size = Vector3(1.5596924, 0.0390625, 0.053222656)
 material = ExtResource("6_eetaf")
+
+[node name="board" type="CSGCombiner3D" parent="left" unique_id=460692480]
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="left/board" unique_id=1586044851]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1.4814869, 0, 8.742278e-08, 0, -1, -19.911453, 2.2004476, 55.885838)
+size = Vector3(2.034027, 1, 0.06982422)
+material = SubResource("StandardMaterial3D_jdjsi")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="left/board" unique_id=230127796]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1.4814869, 0, 8.742278e-08, 0, -1, -17.8699, 2.2004476, 55.885838)
+size = Vector3(2.034027, 1, 0.06982422)
+material = SubResource("StandardMaterial3D_jdjsi")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="left/board" unique_id=737238645]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1.4814869, 0, 8.742278e-08, 0, -1, -15.823151, 2.2004476, 55.885838)
+size = Vector3(2.034027, 1, 0.06982422)
+material = SubResource("StandardMaterial3D_jdjsi")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="left/board" unique_id=1140033275]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1.4814869, 0, 8.742278e-08, 0, -1, -18.866652, 2.2004476, 55.85892)
+size = Vector3(0.07538986, 1, 0.12365723)
+material = ExtResource("114_2nev8")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="left/board" unique_id=1483639513]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1.4814869, 0, 8.742278e-08, 0, -1, -20.939812, 2.2075007, 55.85892)
+size = Vector3(0.07538986, 1.0095215, 0.12365723)
+material = ExtResource("114_2nev8")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="left/board" unique_id=1113207260]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1.4814869, 0, 8.742278e-08, 0, -1, -16.879906, 2.2004476, 55.85892)
+size = Vector3(0.07538986, 1, 0.12365723)
+material = ExtResource("114_2nev8")
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="left/board" unique_id=1007314199]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1.4814869, 0, 8.742278e-08, 0, -1, -14.839754, 2.2076814, 55.85892)
+size = Vector3(0.07538986, 1.0097656, 0.12365723)
+material = ExtResource("114_2nev8")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="left/board" unique_id=243326385]
+transform = Transform3D(4.371139e-08, -1.4814869, 3.821371e-15, -1, -6.475785e-08, -8.742278e-08, 8.742278e-08, 0, -1, -17.875872, 2.9161577, 55.85892)
+size = Vector3(0.07538986, 1.385498, 0.12365723)
+material = ExtResource("114_2nev8")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="left/board" unique_id=919081181]
+transform = Transform3D(4.371139e-08, -1.4814869, 3.821371e-15, -1, -6.475785e-08, -8.742278e-08, 8.742278e-08, 0, -1, -15.86704, 2.9161577, 55.85892)
+size = Vector3(0.07538986, 1.4100342, 0.12365723)
+material = ExtResource("114_2nev8")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="left/board" unique_id=1198554831]
+transform = Transform3D(4.371139e-08, -1.4814869, 3.821371e-15, -1, -6.475785e-08, -8.742278e-08, 8.742278e-08, 0, -1, -19.876602, 2.9161577, 55.85892)
+size = Vector3(0.07538986, 1.385498, 0.12365723)
+material = ExtResource("114_2nev8")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="left/board" unique_id=1937667679]
+transform = Transform3D(4.371139e-08, -1.4814869, 3.821371e-15, -1, -6.475785e-08, -8.742278e-08, 8.742278e-08, 0, -1, -17.875872, 1.4934845, 55.85892)
+size = Vector3(0.07538986, 1.385498, 0.12365723)
+material = ExtResource("114_2nev8")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="left/board" unique_id=439506424]
+transform = Transform3D(4.371139e-08, -1.4814869, 3.821371e-15, -1, -6.475785e-08, -8.742278e-08, 8.742278e-08, 0, -1, -15.82976, 1.4934845, 55.85892)
+size = Vector3(0.07538986, 1.3807373, 0.12365723)
+material = ExtResource("114_2nev8")
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="left/board" unique_id=937175378]
+transform = Transform3D(4.371139e-08, -1.4814869, 3.821371e-15, -1, -6.475785e-08, -8.742278e-08, 8.742278e-08, 0, -1, -19.928896, 1.4934845, 55.85892)
+size = Vector3(0.07538986, 1.4047852, 0.12365723)
+material = ExtResource("114_2nev8")
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="left/board" unique_id=1415987881]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1.4814869, 0, 8.742278e-08, 0, -1, -17.866806, 2.2004476, 55.793747)
+size = Vector3(2.034027, 1, 0.001)
+material = SubResource("StandardMaterial3D_xu6ow")
+
+[node name="Sprite3D" type="Sprite3D" parent="left/board" unique_id=1346965816]
+transform = Transform3D(-0.13031816, 0, -8.7422784e-08, 0, 0.14001115, 0, 1.1392776e-08, 0, -1.0000001, -19.911453, 2.2004476, 55.848724)
+material_override = SubResource("StandardMaterial3D_s68mc")
+texture = ExtResource("115_jdjsi")
+
+[node name="Sprite3D2" type="Sprite3D" parent="left/board" unique_id=266132498]
+transform = Transform3D(-0.14270976, 0, -8.7422784e-08, 0, 0.14001115, 0, 1.2476085e-08, 0, -1.0000001, -17.862219, 2.2004476, 55.848724)
+material_override = SubResource("StandardMaterial3D_m7d5r")
+texture = ExtResource("116_vet4s")
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="left/board" unique_id=1446688265]
+transform = Transform3D(4.371139e-08, -1.4814869, 3.821371e-15, -1, -6.475785e-08, -8.742278e-08, 8.742278e-08, 0, -1, -18.904219, 3.275322, 55.85892)
+size = Vector3(0.44075918, 2.8052673, 0.12365723)
+material = SubResource("StandardMaterial3D_xyy7t")
+
+[node name="Label3D" type="Label3D" parent="left/board/CSGBox3D16" unique_id=159359744]
+transform = Transform3D(-3.4823138e-08, -1.1698549, -8.742278e-08, 0.7966608, -5.1135974e-08, 8.742278e-08, -6.964629e-08, -1.0227196e-07, 1, 0, 0.11619377, 0.06266022)
+shaded = true
+modulate = Color(8.4228816e-08, 0.11851188, 0.3435297, 1)
+outline_modulate = Color(0, 0.11764706, 0.34509805, 1)
+text = "ИПСУБ"
+font_size = 80
+outline_size = 5
+
+[node name="Label3D3" type="Label3D" parent="left/board/CSGBox3D16" unique_id=27073086]
+transform = Transform3D(-1.1833151e-08, -0.44357863, -8.742277e-08, 0.27071053, -1.9389432e-08, 8.742276e-08, -2.3666269e-08, -3.8778875e-08, 0.99999994, 0.06909442, 1.0982971, 0.062675476)
+shaded = true
+modulate = Color(0.26588807, 0.5312818, 1, 1)
+outline_modulate = Color(0.26666668, 0.5294118, 1, 1)
+text = "ЛЮДИ
+"
+font = SubResource("FontFile_vet4s")
+font_size = 80
+outline_size = 0
+
+[node name="Label3D5" type="Label3D" parent="left/board/CSGBox3D16" unique_id=1999660752]
+transform = Transform3D(-1.1833164e-08, -0.44357863, -8.742277e-08, 0.27071053, -1.9389432e-08, 8.742276e-08, -2.3666269e-08, -3.8778875e-08, 0.99999994, 0.06998372, 0.06791401, 0.070961)
+shaded = true
+modulate = Color(0.26588807, 0.5312818, 1, 1)
+outline_modulate = Color(0.26666668, 0.5294118, 1, 1)
+text = "И
+"
+font = SubResource("FontFile_vet4s")
+font_size = 80
+outline_size = 0
+
+[node name="Label3D4" type="Label3D" parent="left/board/CSGBox3D16" unique_id=782127063]
+transform = Transform3D(-1.1833146e-08, -0.44357863, -8.742277e-08, 0.27071053, -1.9389432e-08, 8.742276e-08, -2.3666269e-08, -3.8778875e-08, 0.99999994, 0.041636944, -0.80848503, 0.062675476)
+shaded = true
+modulate = Color(0.26588807, 0.5312818, 1, 1)
+outline_modulate = Color(0.26666668, 0.5294118, 1, 1)
+text = "СОБЫТИЯ"
+font = SubResource("FontFile_vet4s")
+font_size = 80
+outline_size = 0
+
+[node name="Node3D2" parent="left/board" unique_id=843445645 instance=ExtResource("60_gn4w6")]
+transform = Transform3D(-0.012753831, 0, 8.7422775e-10, 0, 0.0116581, 0, -1.1149752e-09, 0, -0.01, -24.253302, 0.013713972, 55.999302)
+
+[node name="Sprite3D4" type="Sprite3D" parent="left/board/Node3D2" unique_id=1466241851]
+transform = Transform3D(7.5129657, 0, 2.700246e-06, 0, 17.3766, 0, -5.048854e-06, 0, 9.999995, -151.99109, 164.02763, 12.131836)
+material_override = SubResource("StandardMaterial3D_bfalx")
+texture = ExtResource("108_0x7p3")
+
+[node name="Label3D" type="Label3D" parent="left/board/Node3D2/Sprite3D4" unique_id=670090010]
+transform = Transform3D(4.651855, 0, -1.4210855e-13, 0, 2.9074483, 0, 4.5474735e-13, 0, 1.0000004, 0, -0.48764706, 0.012023926)
+shaded = true
+modulate = Color(0.62352943, 0.49411765, 0.050980393, 1)
+text = "ИНСТИТУТ ПРАВА,
+СОЦИАЛЬНОГО УПРАВЛЕНИЯ
+И БЕЗОПАСНОСТИ"
+font_size = 20
+outline_size = 2
+
+[node name="Sprite3D13" type="Sprite3D" parent="left/board/Node3D2" unique_id=1914141228]
+transform = Transform3D(9.515691, -2.5489161e-08, 2.161155e-07, 2.2252294e-08, 12.311499, -0.28380495, 5.661127e-08, 0.12751026, 37.242725, 26.98999, 244.3709, 11.657227)
+material_override = SubResource("StandardMaterial3D_3p4xl")
+texture = ExtResource("24_030wa")
+
+[node name="Sprite3D14" type="Sprite3D" parent="left/board/Node3D2" unique_id=1927238274]
+transform = Transform3D(17.01729, -3.9438866e-08, 2.1398614e-07, 3.9794667e-08, 19.049334, -0.281007, 1.0124597e-07, 0.19729409, 36.875584, -152.49927, 175.4892, 12.555176)
+material_override = SubResource("StandardMaterial3D_xjd8w")
+texture = ExtResource("114_s5ugr")
 
 [editable path="room321/props/monitors/StaticBody3D"]
 [editable path="room321/props/monitors/StaticBody3D/Sketchfab_Scene"]
