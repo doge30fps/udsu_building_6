@@ -2190,98 +2190,170 @@ size = Vector3(11.387098, 0.09475708, 4.0917377)
 material = ExtResource("60_v8mm6")
 metadata/surface_type = &"concrete"
 
-[node name="bortik1" type="CSGBox3D" parent="floor_3_right_wing" unique_id=1308544483]
-transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -16.482355, 0.025130138, -3.7075841)
+[node name="bortiki" type="Node3D" parent="floor_3_right_wing" unique_id=1596105238]
+
+[node name="bortik1" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=1308544483]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -16.482355, 0.025130138, -3.7075844)
 use_collision = true
 size = Vector3(12.579658, 0.064468384, 0.20823717)
 material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
-[node name="bortik6" type="CSGBox3D" parent="floor_3_right_wing" unique_id=761001300]
-transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -20.848732, 0.025130138, -0.13690591)
+[node name="bortik6" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=761001300]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -20.848732, 0.025130138, -0.13690567)
 use_collision = true
 size = Vector3(1.2078333, 0.064468384, 0.20823717)
 material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
-[node name="bortik7" type="CSGBox3D" parent="floor_3_right_wing" unique_id=2061636577]
-transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -18.789368, 0.025130138, -0.13690591)
+[node name="bortik15" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=1124473212]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -20.848732, 0.025130138, -0.13690567)
+use_collision = true
+size = Vector3(1.2078333, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik16" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=605293305]
+transform = Transform3D(-4.3770918e-08, -1.0013618, -4.3770918e-08, 0, -4.3770918e-08, 1.0013618, -1.0013618, 4.3770918e-08, 1.9132876e-15, -21.475723, 0.025130138, 4.5267544)
+use_collision = true
+size = Vector3(9.377642, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik17" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=1431123105]
+transform = Transform3D(-4.3770918e-08, -1.0013618, -4.3770918e-08, 0, -4.3770918e-08, 1.0013618, -1.0013618, 4.3770918e-08, 1.9132876e-15, -21.475723, 0.025130138, 10.923241)
+use_collision = true
+size = Vector3(0.7804456, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik18" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=1233088431]
+transform = Transform3D(-4.3770918e-08, -1.0013618, -4.3770918e-08, 0, -4.3770918e-08, 1.0013618, -1.0013618, 4.3770918e-08, 1.9132876e-15, -21.475723, 0.025130138, 13.508917)
+use_collision = true
+size = Vector3(1.8135626, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik19" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=1077530644]
+transform = Transform3D(-4.3770918e-08, -1.0013618, -4.3770918e-08, 0, -4.3770918e-08, 1.0013618, -1.0013618, 4.3770918e-08, 1.9132876e-15, -21.475723, 0.025130138, 21.318077)
+use_collision = true
+size = Vector3(10.473187, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik23" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=323089665]
+transform = Transform3D(1.0013618, 0, -2.1175824e-22, 2.120466e-22, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -21.85111, 0.025130138, 26.43235)
+use_collision = true
+size = Vector3(0.8628414, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik24" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=1112765686]
+transform = Transform3D(1.0013618, 0, -2.1175824e-22, 2.120466e-22, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -24.916945, 0.027509794, 26.43056)
+use_collision = true
+size = Vector3(0.8628414, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik20" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=326755132]
+transform = Transform3D(-4.3770918e-08, -1.0013618, -4.3770918e-08, 0, -4.3770918e-08, 1.0013618, -1.0013618, 4.3770918e-08, 1.9132876e-15, -25.289452, 0.025130138, 21.682903)
+use_collision = true
+size = Vector3(9.744528, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik21" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=694302030]
+transform = Transform3D(-4.3770918e-08, -1.0013618, -4.3770918e-08, 0, -4.3770918e-08, 1.0013618, -1.0013618, 4.3770918e-08, 1.9132876e-15, -25.289452, 0.025130138, 14.111804)
+use_collision = true
+size = Vector3(1.918658, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik22" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=1496368098]
+transform = Transform3D(-4.3770918e-08, -1.0013618, -4.3770918e-08, 0, -4.3770918e-08, 1.0013618, -1.0013618, 4.3770918e-08, 1.9132876e-15, -25.289452, 0.025130138, 7.3120327)
+use_collision = true
+size = Vector3(8.244973, 0.064468384, 0.20823717)
+material = SubResource("StandardMaterial3D_etctj")
+metadata/surface_type = &"concrete"
+
+[node name="bortik7" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=2061636577]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -18.789368, 0.025130138, -0.13690567)
 use_collision = true
 size = Vector3(0.69624543, 0.064468384, 0.20823717)
 material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
-[node name="bortik8" type="CSGBox3D" parent="floor_3_right_wing" unique_id=492623244]
-transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -16.835033, 0.025130138, -0.13690591)
+[node name="bortik8" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=492623244]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -16.835033, 0.025130138, -0.13690567)
 use_collision = true
 size = Vector3(1.0533229, 0.064468384, 0.20823717)
 material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
-[node name="bortik9" type="CSGBox3D" parent="floor_3_right_wing" unique_id=1851662209]
-transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -14.426705, 0.025130138, -0.13690591)
+[node name="bortik9" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=1851662209]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -14.426705, 0.025130138, -0.13690567)
 use_collision = true
 size = Vector3(1.6137515, 0.064468384, 0.20823717)
 material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
-[node name="bortik10" type="CSGBox3D" parent="floor_3_right_wing" unique_id=92359388]
-transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -11.443412, 0.025130138, -0.13690591)
+[node name="bortik10" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=92359388]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -11.443412, 0.025130138, -0.13690567)
 use_collision = true
 size = Vector3(1.574759, 0.064468384, 0.20823717)
 material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
-[node name="bortik11" type="CSGBox3D" parent="floor_3_right_wing" unique_id=1841599277]
-transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -2.2778711, 0.025130138, -0.13690591)
+[node name="bortik11" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=1841599277]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -2.2778711, 0.025130138, -0.13690567)
 use_collision = true
 size = Vector3(13.662971, 0.064468384, 0.20823717)
 material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
-[node name="bortik12" type="CSGBox3D" parent="floor_3_right_wing" unique_id=1068667090]
-transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, 6.7022505, 0.025130138, -0.13690591)
+[node name="bortik12" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=1068667090]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, 6.7022505, 0.025130138, -0.13690567)
 use_collision = true
 size = Vector3(0.7381753, 0.064468384, 0.20823717)
 material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
-[node name="bortik13" type="CSGBox3D" parent="floor_3_right_wing" unique_id=398548844]
-transform = Transform3D(-4.3770918e-08, -1.0013618, -4.3770918e-08, 0, -4.3770918e-08, 1.0013618, -1.0013618, 4.3770918e-08, 1.9132876e-15, 7.0170503, 0.025130138, -0.46868917)
+[node name="bortik13" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=398548844]
+transform = Transform3D(-4.3770918e-08, -1.0013618, -4.3770918e-08, 0, -4.3770918e-08, 1.0013618, -1.0013618, 4.3770918e-08, 1.9132876e-15, 7.0170503, 0.025130138, -0.46868896)
 use_collision = true
 size = Vector3(0.64940083, 0.064468384, 0.20823717)
 material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
-[node name="bortik14" type="CSGBox3D" parent="floor_3_right_wing" unique_id=1989733031]
-transform = Transform3D(-4.3770918e-08, -1.0013618, -4.3770918e-08, 0, -4.3770918e-08, 1.0013618, -1.0013618, 4.3770918e-08, 1.9132876e-15, 7.0170503, 0.025130138, -3.2911632)
+[node name="bortik14" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=1989733031]
+transform = Transform3D(-4.3770918e-08, -1.0013618, -4.3770918e-08, 0, -4.3770918e-08, 1.0013618, -1.0013618, 4.3770918e-08, 1.9132876e-15, 7.0170503, 0.025130138, -3.2911634)
 use_collision = true
 size = Vector3(0.8696223, 0.064468384, 0.20823717)
 material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
-[node name="bortik2" type="CSGBox3D" parent="floor_3_right_wing" unique_id=514602729]
-transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -25.340183, 0.025130138, -3.7075841)
+[node name="bortik2" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=514602729]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -25.340183, 0.025130138, -3.7075844)
 use_collision = true
 size = Vector3(2.4371812, 0.064468384, 0.20823717)
 material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
-[node name="bortik3" type="CSGBox3D" parent="floor_3_right_wing" unique_id=2077724905]
-transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -8.208912, 0.025130138, -3.7075841)
+[node name="bortik3" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=2077724905]
+transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -8.208912, 0.025130138, -3.7075844)
 use_collision = true
 size = Vector3(1.7702264, 0.064468384, 0.20823717)
 material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
-[node name="bortik4" type="CSGBox3D" parent="floor_3_right_wing" unique_id=2088518293]
+[node name="bortik4" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=2088518293]
 transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, -5.594257, 0.025130138, -3.7075844)
 use_collision = true
 size = Vector3(2.3933363, 0.064468384, 0.20823717)
 material = SubResource("StandardMaterial3D_etctj")
 metadata/surface_type = &"concrete"
 
-[node name="bortik5" type="CSGBox3D" parent="floor_3_right_wing" unique_id=1972005216]
+[node name="bortik5" type="CSGBox3D" parent="floor_3_right_wing/bortiki" unique_id=1972005216]
 transform = Transform3D(1.0013618, 0, 0, 0, -4.3770918e-08, 1.0013618, 0, -1.0013618, -4.3770918e-08, 2.0215592, 0.025130138, -3.7075844)
 use_collision = true
 size = Vector3(10.13697, 0.064468384, 0.20823717)
@@ -2948,6 +3020,11 @@ texture = ExtResource("24_030wa")
 
 [node name="Sprite3D8" parent="floor_3_right_wing" unique_id=1353684131 instance=ExtResource("70_us7ko")]
 transform = Transform3D(0.10234473, 0.013241796, -2.7872926e-09, -0.01241952, 0.109120816, 2.0995194e-09, 1.5566997e-08, -9.609624e-09, 0.019999994, -4.6323123, 2.353406, -3.7161617)
+material_override = SubResource("StandardMaterial3D_xnney")
+texture = ExtResource("24_030wa")
+
+[node name="Sprite3D9" parent="floor_3_right_wing" unique_id=1716131337 instance=ExtResource("70_us7ko")]
+transform = Transform3D(-0.102954514, 0.0057470826, 1.7380289e-09, 0.0053902054, 0.10977096, 1.8296968e-09, -7.4505793e-09, 1.1641531e-08, -0.01999999, -10.533302, 2.6810575, -0.1726265)
 material_override = SubResource("StandardMaterial3D_xnney")
 texture = ExtResource("24_030wa")
 
@@ -3761,14 +3838,14 @@ transform = Transform3D(1, -8.742278e-08, 0, 8.742278e-08, 1, -1.5285485e-14, 0,
 use_collision = true
 size = Vector3(15.31147, 0.09475708, 3.5954742)
 material = ExtResource("103_xnney")
-metadata/surface_type = &"concrete"
+metadata/surface_type = &"wood"
 
 [node name="floor7" type="CSGBox3D" parent="left" unique_id=1050121887]
 transform = Transform3D(1, -8.742278e-08, 0, 8.742278e-08, 1, -1.5285485e-14, 0, 1.5285485e-14, 1, 5.0755587, -0.036479462, 50.3321)
 use_collision = true
 size = Vector3(4.091404, 0.09475708, 4.294319)
 material = ExtResource("103_xnney")
-metadata/surface_type = &"concrete"
+metadata/surface_type = &"wood"
 
 [node name="wall4" type="CSGBox3D" parent="left" unique_id=729294079]
 transform = Transform3D(1.3113419e-07, -1, -1.3113416e-07, -3.821371e-15, -1.3113416e-07, 1, 1, 1.3113419e-07, 2.1017542e-14, -24.988745, 1.9661297, 25.291054)
