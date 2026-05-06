@@ -13,7 +13,6 @@ albedo_texture = ExtResource("1_bo32h")
 metallic = 0.5
 metallic_texture = ExtResource("4_ybb4f")
 metallic_texture_channel = 3
-roughness = 0.8
 roughness_texture = ExtResource("6_5rxux")
 roughness_texture_channel = 3
 normal_enabled = true

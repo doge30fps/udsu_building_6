@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c3u26lcpu6nb6"]
+
+[ext_resource type="PackedScene" uid="uid://cfqpkbh7ofumu" path="res://models/doors/wooden_doors/door__white__wooden__old_-_4mb.glb" id="1_gbgqv"]
+
+[node name="Node3D" type="Node3D" unique_id=21330175]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1119436341 instance=ExtResource("1_gbgqv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17422652, 1.1920929e-07, 0.04118848)
+
+[node name="Null_1" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode" parent_id_path=PackedInt32Array(1119436341, 164261793) index="1" unique_id=1153116242]
+visible = false
+
+[node name="f_2" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1" index="0" unique_id=2078414677]
+visible = false
+
+[node name="f_2_Mat_0" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1/f_2" index="0" unique_id=1545411442]
+visible = false
+
+[node name="door_2" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1" index="1" unique_id=1416834023]
+visible = false
+
+[node name="door_2_Mat_0" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1/door_2" index="0" unique_id=12943599]
+visible = false
+
+[node name="handel_2" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1/door_2" index="1" unique_id=1676813619]
+visible = false
+
+[editable path="Sketchfab_Scene"]

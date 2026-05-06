@@ -1,0 +1,25 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c3yw2gc7dvhts"]
+
+[ext_resource type="Texture2D" uid="uid://c54w6q1lxbpq5" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_BaseColor.jpg" id="1_joeoo"]
+[ext_resource type="Texture2D" uid="uid://dmmysnvub0vs8" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_AmbientOcclusion.jpg" id="2_soe2q"]
+[ext_resource type="Texture2D" uid="uid://8n3misa6fn5w" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Displacement.png" id="3_7pbbv"]
+[ext_resource type="Texture2D" uid="uid://cudbqxvey3xkn" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Metallic.jpg" id="4_mcel1"]
+[ext_resource type="Texture2D" uid="uid://cb5sct4py02m7" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Normal.png" id="5_fkd3u"]
+[ext_resource type="Texture2D" uid="uid://u5ia7a3jidor" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Roughness.jpg" id="6_v8iy1"]
+
+[resource]
+albedo_color = Color(0.9797633, 0.93704873, 0.926609, 1)
+albedo_texture = ExtResource("1_joeoo")
+metallic = 0.5
+metallic_texture = ExtResource("4_mcel1")
+metallic_texture_channel = 3
+roughness_texture = ExtResource("6_v8iy1")
+roughness_texture_channel = 3
+normal_enabled = true
+normal_texture = ExtResource("5_fkd3u")
+ao_enabled = true
+ao_texture = ExtResource("2_soe2q")
+ao_texture_channel = 3
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_7pbbv")
+uv1_world_triplanar = true
