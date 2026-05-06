@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bnvbper831gl4"]
+
+[ext_resource type="PackedScene" uid="uid://cetuqu2hg3i7s" path="res://models/doors/plastic_door/plastic_door.glb" id="1_kuex6"]
+[ext_resource type="Material" uid="uid://dnwy10n8j0txx" path="res://materials/room321/plastic_window.tres" id="2_1esvr"]
+
+[node name="Node3D" type="Node3D" unique_id=1093011166]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1844965288 instance=ExtResource("1_kuex6")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0056734, 1.1920929e-07, 1.114121)
+
+[node name="Cube_Plastic_0" parent="Sketchfab_Scene/Sketchfab_model/6452a489a7ef44f8b9f70629fd3c358c_fbx/RootNode/Cube" parent_id_path=PackedInt32Array(1844965288, 1440772015) index="0" unique_id=823639896]
+surface_material_override/0 = ExtResource("2_1esvr")
+
+[editable path="Sketchfab_Scene"]
