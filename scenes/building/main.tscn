@@ -131,6 +131,7 @@
 [ext_resource type="Texture2D" uid="uid://bvib4g8arq728" path="res://textures/room321/walls/beige_wall.JPG" id="116_wfq0u"]
 [ext_resource type="Texture2D" uid="uid://nxb0kdnek2qs" path="res://textures/sprites/3rd_floor/information_from_decan.png" id="117_snk1j"]
 [ext_resource type="Texture2D" uid="uid://pvwvi5g6t8no" path="res://textures/sprites/3rd_floor/information_from_decan_2.png" id="118_s0vfq"]
+[ext_resource type="PackedScene" uid="uid://cjxmivhkixq1s" path="res://scenes/props/puff_bench.tscn" id="121_rsydx"]
 [ext_resource type="PackedScene" uid="uid://cgol4j0c37glp" path="res://scenes/building/decanat2.tscn" id="122_s68mc"]
 [ext_resource type="Texture2D" uid="uid://b2duwl1n21v3h" path="res://models/doors/metal_door/low_poly_metal_door_with_exit_sign_0.png" id="138_53bfh"]
 [ext_resource type="Texture2D" uid="uid://crdcy0udxjmr2" path="res://textures/sprites/3rd_floor/PRIORITET.png" id="138_uxxlq"]
@@ -839,6 +840,14 @@ albedo_texture = ExtResource("86_ijcga")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c4m8w"]
 albedo_texture = ExtResource("87_iwcqy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7xedq"]
+albedo_color = Color(0.13974324, 0.19437751, 0.39730662, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p8g7w"]
+albedo_color = Color(0.14117648, 0.19607843, 0.39607844, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ifu2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bfalx"]
 albedo_texture = ExtResource("108_0x7p3")
@@ -3846,15 +3855,15 @@ size = Vector3(1.0162053, 4.1768866, 2.102529)
 material = ExtResource("61_47udc")
 
 [node name="thick_wall10" type="CSGBox3D" parent="floor_3_center" unique_id=2123409829]
-transform = Transform3D(-0.7225813, 0, -0.37688395, 0, 0.99999994, 0, 0.69128615, 0, -0.39394578, -14.263376, 2.137101, -5.0320034)
+transform = Transform3D(-0.7225813, 0, -0.37688395, 0, 0.99999994, 0, 0.69128615, 0, -0.39394578, -14.0780735, 2.137101, -5.2137012)
 use_collision = true
-size = Vector3(0.6810763, 4.1768866, 2.102529)
+size = Vector3(1.331747, 4.1768866, 2.0908153)
 material = ExtResource("61_47udc")
 
 [node name="thick_wall11" type="CSGBox3D" parent="floor_3_center" unique_id=254952408]
-transform = Transform3D(-0.85474896, 0, 0.28297764, 0, 0.9999999, 0, -0.5190419, 0, -0.46600264, -14.263376, 2.137101, 2.7048092)
+transform = Transform3D(-0.71063995, 0, 0.38357335, 0, 0.99999976, 0, -0.7035559, 0, -0.3874355, -14.368719, 2.137101, 2.721693)
 use_collision = true
-size = Vector3(0.6810763, 4.1768866, 2.102529)
+size = Vector3(0.80704886, 4.1768866, 2.097411)
 material = ExtResource("61_47udc")
 
 [node name="thick_wall3" type="CSGBox3D" parent="floor_3_center" unique_id=356425553]
@@ -3912,9 +3921,9 @@ size = Vector3(6.4634542, 4.164117, 0.30924988)
 material = ExtResource("61_47udc")
 
 [node name="floor" type="CSGBox3D" parent="floor_3_center" unique_id=1523084741]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1965294, -0.02388063, -1.5444107)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.910307, -0.02388063, -1.5444107)
 use_collision = true
-size = Vector3(18.605827, 0.15411377, 16.368637)
+size = Vector3(20.033382, 0.15411377, 16.368637)
 material = ExtResource("71_o58na")
 
 [node name="floor2" type="CSGBox3D" parent="floor_3_center" unique_id=1887112052]
@@ -4071,6 +4080,77 @@ texture = ExtResource("86_ijcga")
 transform = Transform3D(0.2816142, 0, 0, 0, 0.29193878, 0, 0, 0, 0.26, 2.8107548, 1.9772089, -9.72135)
 material_override = SubResource("StandardMaterial3D_c4m8w")
 texture = ExtResource("87_iwcqy")
+
+[node name="benches" type="Node3D" parent="floor_3_center" unique_id=2066382779]
+
+[node name="bench_1" parent="floor_3_center/benches" unique_id=1903936747 instance=ExtResource("121_rsydx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5319805, 0, 4.8964386)
+
+[node name="bench_2" parent="floor_3_center/benches" unique_id=797551241 instance=ExtResource("121_rsydx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.482595, 0, -8.625326)
+
+[node name="CSGBakedMeshInstance3D" parent="floor_3_center/benches/bench_2" index="0" unique_id=1903936747]
+surface_material_override/0 = SubResource("StandardMaterial3D_7xedq")
+
+[node name="bench_3" parent="floor_3_center/benches" unique_id=827739790 instance=ExtResource("121_rsydx")]
+transform = Transform3D(0.6905417, 0, -0.72329265, 0, 1, 0, 0.72329265, 0, 0.6905417, -15.576117, 0, -2.3932648)
+
+[node name="CSGBakedMeshInstance3D" parent="floor_3_center/benches/bench_3" index="0" unique_id=1903936747]
+surface_material_override/0 = SubResource("StandardMaterial3D_p8g7w")
+
+[node name="underwindows" type="Node3D" parent="floor_3_center" unique_id=81923239]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="floor_3_center/underwindows" unique_id=237994989]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.483297, 1.0759016, 5.621727)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="floor_3_center/underwindows/CSGCombiner3D" unique_id=1710559868]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00016403198, 0.09134495, -0.075660706)
+size = Vector3(1.3684998, 0.083618164, 1.9968262)
+material = SubResource("StandardMaterial3D_5ifu2")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="floor_3_center/underwindows/CSGCombiner3D" unique_id=1682460758]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.6989937, 0.048684835, -0.075660706)
+size = Vector3(0.16945648, 0.047668457, 1.9968262)
+material = SubResource("StandardMaterial3D_5ifu2")
+
+[node name="CSGCombiner3D4" type="CSGCombiner3D" parent="floor_3_center/underwindows" unique_id=379808263]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.0877144, -11.483297, 1.0759016, -8.459469)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="floor_3_center/underwindows/CSGCombiner3D4" unique_id=745667785]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00016403198, 0.09134495, -0.075660706)
+size = Vector3(1.3684998, 0.083618164, 1.9968262)
+material = SubResource("StandardMaterial3D_5ifu2")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="floor_3_center/underwindows/CSGCombiner3D4" unique_id=1549865294]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.6989937, 0.048684835, -0.075660706)
+size = Vector3(0.16945648, 0.047668457, 1.9968262)
+material = SubResource("StandardMaterial3D_5ifu2")
+
+[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="floor_3_center/underwindows" unique_id=2129163875]
+transform = Transform3D(0.74689907, 0, 1.6164303, 0, 1, 0, -0.7521579, 0, 1.6051283, -16.104368, 1.1014558, 0.936388)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="floor_3_center/underwindows/CSGCombiner3D2" unique_id=1068153324]
+transform = Transform3D(1, 0, 3.5762787e-07, 0, 1, 0, 1.4901161e-08, 0, 0.99999976, -0.00016784668, 0.09134495, -0.075660706)
+size = Vector3(1.3684998, 0.083618164, 1.9968262)
+material = SubResource("StandardMaterial3D_5ifu2")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="floor_3_center/underwindows/CSGCombiner3D2" unique_id=1712481000]
+transform = Transform3D(-4.371139e-08, 1, 3.5762787e-07, -1, -4.371139e-08, 0, -8.881784e-16, 1.4901161e-08, 0.99999976, 0.6989937, 0.048684835, -0.075660706)
+size = Vector3(0.16945648, 0.047668457, 1.9968262)
+material = SubResource("StandardMaterial3D_5ifu2")
+
+[node name="CSGCombiner3D3" type="CSGCombiner3D" parent="floor_3_center/underwindows" unique_id=1098774937]
+transform = Transform3D(0.7412859, 0, -1.6283191, 0, 0.9999999, 0, 0.7576901, 0, 1.5930656, -16.259417, 1.1014558, -2.9835052)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="floor_3_center/underwindows/CSGCombiner3D3" unique_id=366530906]
+transform = Transform3D(1, 0, 3.5762787e-07, 0, 1, 0, 1.4901161e-08, 0, 0.99999976, -0.00016784668, 0.09134495, -0.075660706)
+size = Vector3(1.3684998, 0.083618164, 1.9968262)
+material = SubResource("StandardMaterial3D_5ifu2")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="floor_3_center/underwindows/CSGCombiner3D3" unique_id=276424679]
+transform = Transform3D(-4.371139e-08, 1, 3.5762787e-07, -1, -4.371139e-08, 0, -8.881784e-16, 1.4901161e-08, 0.99999976, 0.6989937, 0.048684835, -0.075660706)
+size = Vector3(0.16945648, 0.047668457, 1.9968262)
+material = SubResource("StandardMaterial3D_5ifu2")
 
 [node name="left" type="Node3D" parent="." unique_id=850367490]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9)
@@ -5499,6 +5579,8 @@ material = SubResource("StandardMaterial3D_qhanc")
 [editable path="room321/windows/curtains/Node3D4/v-form"]
 [editable path="floor_3_right_wing/doors/double_door/right_door/StaticBody3D/wooden_door"]
 [editable path="floor_3_right_wing/doors/double_door/left_door2/StaticBody3D/wooden_door"]
+[editable path="floor_3_center/benches/bench_2"]
+[editable path="floor_3_center/benches/bench_3"]
 [editable path="left/doors/double_door/right_door/StaticBody3D/wooden_door"]
 [editable path="left/doors/double_door/left_door2/StaticBody3D/wooden_door"]
 [editable path="left/board/doors3/Node3D5"]

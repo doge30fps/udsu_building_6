@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://u5ia7a3jidor" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Roughness.jpg" id="6_5rxux"]
 
 [resource]
-albedo_color = Color(0.9901466, 0.96845204, 0.963069, 1)
+albedo_color = Color(0.9683023, 0.9620567, 0.9471205, 1)
 albedo_texture = ExtResource("1_bo32h")
 metallic = 0.5
 metallic_texture = ExtResource("4_ybb4f")
