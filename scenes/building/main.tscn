@@ -146,6 +146,14 @@
 [ext_resource type="Texture2D" uid="uid://um2knrn1i0js" path="res://textures/sprites/3rd_floor/309_cabinet+PRIORITET.png" id="142_vccyt"]
 [ext_resource type="Material" uid="uid://bx027ih1cgy52" path="res://materials/room321/wooden_chair.tres" id="145_3afw3"]
 [ext_resource type="Material" uid="uid://ghpoh7jjiucs" path="res://materials/wooden_board.tres" id="146_16bcn"]
+[ext_resource type="Texture2D" uid="uid://dv4kndfmnyeof" path="res://textures/room321/chairs/wooden_chair.jpg" id="146_nuahh"]
+[ext_resource type="Texture2D" uid="uid://x01ypa460vh4" path="res://textures/sprites/3rd_floor/MCHS_BOARDS/4.png" id="148_kd0ax"]
+[ext_resource type="Texture2D" uid="uid://df4dfbn5fq1f" path="res://textures/sprites/3rd_floor/MCHS_BOARDS/1.png" id="148_nuahh"]
+[ext_resource type="Texture2D" uid="uid://jxwoxb4w313x" path="res://textures/sprites/3rd_floor/MCHS_BOARDS/1part2.png" id="149_rsydx"]
+[ext_resource type="Texture2D" uid="uid://bo43ll08mativ" path="res://textures/sprites/3rd_floor/MCHS_BOARDS/2.png" id="149_shhh2"]
+[ext_resource type="Texture2D" uid="uid://bjipocosiuxs4" path="res://textures/sprites/3rd_floor/MCHS_BOARDS/3.png" id="150_3080d"]
+[ext_resource type="Texture2D" uid="uid://buf3jfaiqpjcx" path="res://textures/sprites/3rd_floor/MCHS_BOARDS/5.png" id="153_3jtbr"]
+[ext_resource type="Texture2D" uid="uid://b20o6dxc5nk8o" path="res://textures/sprites/3rd_floor/MCHS_BOARDS/6.png" id="154_v5vq5"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_a87b0"]
 panorama = ExtResource("1_unbpl")
@@ -1037,6 +1045,55 @@ shadow_mesh = SubResource("ArrayMesh_hqroc")
 transparency = 1
 albedo_texture = ExtResource("142_vccyt")
 uv1_scale = Vector3(-1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rsydx"]
+albedo_color = Color(0.62967587, 0.6296742, 0.6296746, 1)
+albedo_texture = ExtResource("146_nuahh")
+metallic = 0.65
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v5vq5"]
+transparency = 1
+blend_mode = 1
+albedo_texture = ExtResource("148_nuahh")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wqbuf"]
+load_path = "res://.godot/imported/1.png-19aacdafe7d2a07c06d9ec18553610cc.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0fg23"]
+transparency = 1
+blend_mode = 1
+albedo_texture = ExtResource("148_nuahh")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kd0ax"]
+transparency = 1
+blend_mode = 1
+albedo_texture = ExtResource("149_shhh2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3jtbr"]
+transparency = 1
+blend_mode = 1
+albedo_texture = ExtResource("150_3080d")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_shhh2"]
+transparency = 1
+blend_mode = 1
+albedo_texture = ExtResource("148_kd0ax")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3080d"]
+transparency = 1
+blend_mode = 1
+albedo_texture = ExtResource("149_rsydx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wqbuf"]
+transparency = 1
+albedo_texture = ExtResource("153_3jtbr")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0fg23"]
+load_path = "res://.godot/imported/5.png-957af2dae7a072853de520c97d3a60e1.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vi5nb"]
+transparency = 1
+albedo_texture = ExtResource("154_v5vq5")
 
 [node name="MAIN_NODE" type="Node3D" unique_id=1503407360]
 
@@ -4793,7 +4850,7 @@ text = "308
 transform = Transform3D(0.98731023, 0, 2.0291004e-08, 0, 0.99999994, 0, 2.37697e-08, 0, 1.0749376, -0.11328125, 0, -0.9243164)
 
 [node name="Node3D5" parent="left/board/doors3" unique_id=1601254896 instance=ExtResource("60_gn4w6")]
-transform = Transform3D(1.4375988e-09, 0, 0.00093937095, 0, 0.0116581, 0, -0.010962811, 0, 1.2318363e-10, -21.482498, 0.013713972, 35.37651)
+transform = Transform3D(1.4375988e-09, 0, 0.00093937095, 0, 0.0116581, 0, -0.010962811, 0, 1.2318363e-10, -21.482498, 0.013713972, 37.156628)
 
 [node name="Object_2" parent="left/board/doors3/Node3D5/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1601254896, 1811911216, 2019368991) index="0" unique_id=1837209678]
 transform = Transform3D(0.72149915, 0, -4.2351647e-22, -1.1368684e-13, 0.9999998, 6.1498277e-21, -5.421011e-20, 6.149827e-21, 0.99999994, -0.7973633, -0.5683594, -2.3841858e-07)
@@ -4900,7 +4957,7 @@ region_enabled = true
 region_rect = Rect2(0, 56, 248, 120)
 
 [node name="Node3D7" parent="left/board/doors3" unique_id=927708326 instance=ExtResource("60_gn4w6")]
-transform = Transform3D(-2.3959987e-09, 0, -0.01, 0, 0.0116580995, 0, 0.010962812, 0, -2.1855695e-09, -21.350231, 0.013713972, 40.26516)
+transform = Transform3D(-2.3959987e-09, 0, -0.01, 0, 0.0116580995, 0, 0.010962812, 0, -2.1855695e-09, -21.350231, 0.013713972, 42.94484)
 
 [node name="353" type="Sprite3D" parent="left/board/doors3/Node3D7" unique_id=1880088291]
 transform = Transform3D(5.5283036, 0, 7.325655e-06, 0, 5.205313, 0, -2.932436e-06, 0, 10.000003, -51.277832, 197.58609, 13.575928)
@@ -4926,7 +4983,7 @@ texture = ExtResource("138_uxxlq")
 transform = Transform3D(0.98415244, 0, -2.842171e-14, 0, 1, 0, 2.7000624e-13, 0, 1.0749376, -0.9711914, 0, -2.0322266)
 
 [node name="Node3D8" parent="left/board/doors3" unique_id=460427678 instance=ExtResource("60_gn4w6")]
-transform = Transform3D(-2.3959987e-09, 0, -0.01, 0, 0.0116580995, 0, 0.010962812, 0, -2.1855695e-09, -21.350231, 0.013713972, 42.96102)
+transform = Transform3D(-2.3959987e-09, 0, -0.01, 0, 0.0116580995, 0, 0.010962812, 0, -2.1855695e-09, -21.350231, 0.013713972, 46.724087)
 
 [node name="354" type="Sprite3D" parent="left/board/doors3/Node3D8" unique_id=1429709665]
 transform = Transform3D(5.5283036, 0, 7.325655e-06, 0, 5.205313, 0, -2.932436e-06, 0, 10.000003, -50.473633, 197.58609, 13.575928)
@@ -4969,39 +5026,360 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1438456, 0, 50.39994)
 [node name="electric_shields" type="Node3D" parent="left" unique_id=1478439318]
 
 [node name="electric_shield" parent="left/electric_shields" unique_id=1852465668 instance=ExtResource("111_7441i")]
-transform = Transform3D(-1, 0, -1.0408875e-07, 0, 0.9834938, 0, 8.742278e-08, 0, -1.1906365, -46.787846, -0.23441505, 31.12761)
+transform = Transform3D(-1, 0, -1.0941176e-07, 0, 1.1777974, 0, 8.742278e-08, 0, -1.2515246, -46.787846, -0.23441505, 31.12761)
 
 [node name="electric_shield2" parent="left/electric_shields" unique_id=1816191682 instance=ExtResource("115_ie8eo")]
-transform = Transform3D(-1, 0, -9.6084456e-08, 0, 1, 0, 8.742278e-08, 0, -1.099078, -46.783, -0.285, 32.632)
+transform = Transform3D(-1, 0, -1.0864421e-07, 0, 1.2005433, 0, 8.742278e-08, 0, -1.2427448, -46.783, -0.285, 32.632)
+
+[node name="electric_shield3" parent="left/electric_shields" unique_id=753877417 instance=ExtResource("111_7441i")]
+transform = Transform3D(1, 0, 1.957851e-07, 0, 1.0671754, 0, -1.7484554e-07, 0, 1.1197603, 0.043, 0.20397997, 50.691845)
+
+[node name="electric_shield4" parent="left/electric_shields" unique_id=365357859 instance=ExtResource("115_ie8eo")]
+transform = Transform3D(1, 0, 1.9216891e-07, 0, 1.0587677, 0, -1.7484555e-07, 0, 1.099078, 0.043, 0.24314961, 49.187454)
 
 [node name="boards" type="Node3D" parent="left" unique_id=1863739517]
 
 [node name="CSGCombiner3D6" type="CSGCombiner3D" parent="left" unique_id=469075659]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4159794)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="left/CSGCombiner3D6" unique_id=1524215531]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.37622, 2.2150116, 28.603363)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.345013, 2.2150116, 28.603363)
 size = Vector3(0.40478516, 1.8477783, 2.3628235)
 material = ExtResource("145_3afw3")
 
+[node name="CSGBox3D6" type="CSGBox3D" parent="left/CSGCombiner3D6" unique_id=1082719426]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.52505, 2.8815749, 28.613716)
+size = Vector3(0.13342285, 0.30751038, 2.2285805)
+material = SubResource("StandardMaterial3D_rsydx")
+
 [node name="CSGBox3D" type="CSGBox3D" parent="left/CSGCombiner3D6" unique_id=317561291]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.564234, 2.2146962, 27.40281)
+transform = Transform3D(2.0526404, 0, 0, 0, 1, 0, 0, 0, 1, -21.52912, 2.2146962, 27.40281)
 size = Vector3(0.069885254, 1.8475494, 0.06359863)
 material = ExtResource("146_16bcn")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="left/CSGCombiner3D6" unique_id=255904881]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.564234, 2.2146962, 29.813667)
+transform = Transform3D(2.0526404, 0, 0, 0, 1, 0, 0, 0, 1, -21.52912, 2.2146962, 29.813667)
 size = Vector3(0.069885254, 1.8475494, 0.06359863)
 material = ExtResource("146_16bcn")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="left/CSGCombiner3D6" unique_id=166618243]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.564234, 3.1707373, 28.605965)
+transform = Transform3D(2.0526404, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.52912, 3.1707373, 28.605965)
 size = Vector3(0.069885254, 2.469225, 0.06359863)
 material = ExtResource("146_16bcn")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="left/CSGCombiner3D6" unique_id=1292370952]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.564234, 1.2669394, 28.609447)
+transform = Transform3D(2.0526404, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.52912, 1.2669394, 28.609447)
 size = Vector3(0.069885254, 2.4761946, 0.06359863)
 material = ExtResource("146_16bcn")
+
+[node name="Sprite3D" type="Sprite3D" parent="left/CSGCombiner3D6" unique_id=1495187188]
+transform = Transform3D(-6.8880066e-09, 0, -1, 0, 0.16697147, 0, 0.15757926, 0, -4.371139e-08, -21.560246, 2.2795403, 28.617334)
+material_override = SubResource("StandardMaterial3D_v5vq5")
+texture = SubResource("CompressedTexture2D_wqbuf")
+region_rect = Rect2(0, 328, 1448, 576)
+
+[node name="Sprite3D2" type="Sprite3D" parent="left/CSGCombiner3D6" unique_id=1624488516]
+transform = Transform3D(-6.131686e-09, 0, -1, 0, 0.1343219, 0, 0.14027666, 0, -4.371139e-08, -21.593449, 2.8865845, 28.617336)
+material_override = SubResource("StandardMaterial3D_0fg23")
+texture = ExtResource("148_nuahh")
+region_enabled = true
+region_rect = Rect2(0, 0, 1424, 184)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="left/CSGCombiner3D6" unique_id=1307527720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.617973, 2.2155838, 28.61903)
+size = Vector3(0.027282715, 1.8449707, 2.3857422)
+material = ExtResource("96_xu6ow")
+
+[node name="CSGCombiner3D8" type="CSGCombiner3D" parent="left" unique_id=1789821361]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.9726715)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="left/CSGCombiner3D8" unique_id=1157557223]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.345013, 2.2150116, 28.603363)
+size = Vector3(0.40478516, 1.8477783, 2.3628235)
+material = ExtResource("145_3afw3")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="left/CSGCombiner3D8" unique_id=2070605015]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.52505, 2.8815749, 28.613716)
+size = Vector3(0.13342285, 0.30751038, 2.2285805)
+material = SubResource("StandardMaterial3D_rsydx")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="left/CSGCombiner3D8" unique_id=175414283]
+transform = Transform3D(2.0526404, 0, 0, 0, 1, 0, 0, 0, 1, -21.52912, 2.2146962, 27.40281)
+size = Vector3(0.069885254, 1.8475494, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="left/CSGCombiner3D8" unique_id=1563665245]
+transform = Transform3D(2.0526404, 0, 0, 0, 1, 0, 0, 0, 1, -21.52912, 2.2146962, 29.813667)
+size = Vector3(0.069885254, 1.8475494, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="left/CSGCombiner3D8" unique_id=575138817]
+transform = Transform3D(2.0526404, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.52912, 3.1707373, 28.605965)
+size = Vector3(0.069885254, 2.469225, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="left/CSGCombiner3D8" unique_id=1679007230]
+transform = Transform3D(2.0526404, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.52912, 1.2669394, 28.609447)
+size = Vector3(0.069885254, 2.4761946, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="Sprite3D" type="Sprite3D" parent="left/CSGCombiner3D8" unique_id=424481096]
+transform = Transform3D(-4.1192854e-09, 0, -1, 0, 0.10575724, 0, 0.09423829, 0, -4.371139e-08, -21.560246, 2.1570287, 28.617336)
+material_override = SubResource("StandardMaterial3D_kd0ax")
+texture = ExtResource("149_shhh2")
+region_rect = Rect2(0, 328, 1448, 576)
+
+[node name="Sprite3D2" type="Sprite3D" parent="left/CSGCombiner3D8" unique_id=1136899961]
+transform = Transform3D(-4.3768646e-09, 0, -1, -0.002430695, 0.10572607, 1.0611003e-09, 0.10010151, 0.0025672722, -4.3698506e-08, -21.595543, 2.847044, 28.665894)
+material_override = SubResource("StandardMaterial3D_kd0ax")
+texture = ExtResource("149_shhh2")
+region_enabled = true
+region_rect = Rect2(-16, 0, 2432, 248)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="left/CSGCombiner3D8" unique_id=2025044787]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.617973, 2.2155838, 28.61903)
+size = Vector3(0.027282715, 1.8449707, 2.3857422)
+material = ExtResource("96_xu6ow")
+
+[node name="CSGCombiner3D9" type="CSGCombiner3D" parent="left" unique_id=1533916063]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.548622)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="left/CSGCombiner3D9" unique_id=1717109488]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.345013, 2.2150116, 28.603363)
+size = Vector3(0.40478516, 1.8477783, 2.3628235)
+material = ExtResource("145_3afw3")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="left/CSGCombiner3D9" unique_id=1055324778]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.52505, 2.8815749, 28.613716)
+size = Vector3(0.13342285, 0.30751038, 2.2285805)
+material = SubResource("StandardMaterial3D_rsydx")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="left/CSGCombiner3D9" unique_id=556533223]
+transform = Transform3D(2.0526404, 0, 0, 0, 1, 0, 0, 0, 1, -21.52912, 2.2146962, 27.40281)
+size = Vector3(0.069885254, 1.8475494, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="left/CSGCombiner3D9" unique_id=1229037223]
+transform = Transform3D(2.0526404, 0, 0, 0, 1, 0, 0, 0, 1, -21.52912, 2.2146962, 29.813667)
+size = Vector3(0.069885254, 1.8475494, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="left/CSGCombiner3D9" unique_id=1143913101]
+transform = Transform3D(2.0526404, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.52912, 3.1707373, 28.605965)
+size = Vector3(0.069885254, 2.469225, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="left/CSGCombiner3D9" unique_id=972234143]
+transform = Transform3D(2.0526404, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.52912, 1.2669394, 28.609447)
+size = Vector3(0.069885254, 2.4761946, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="Sprite3D" type="Sprite3D" parent="left/CSGCombiner3D9" unique_id=1089818015]
+transform = Transform3D(-3.850417e-09, 0, -1, 0, 0.10277655, 0, 0.08808729, 0, -4.371139e-08, -21.560246, 2.1671476, 28.617336)
+material_override = SubResource("StandardMaterial3D_3jtbr")
+texture = ExtResource("150_3080d")
+region_rect = Rect2(0, 328, 1448, 576)
+
+[node name="Sprite3D2" type="Sprite3D" parent="left/CSGCombiner3D9" unique_id=966054773]
+transform = Transform3D(-3.850417e-09, 0, -1, -0.0017325531, 0.10275669, 8.5974156e-10, 0.08807025, 0.00202147, -4.3702933e-08, -21.606333, 2.866583, 28.617336)
+material_override = SubResource("StandardMaterial3D_3jtbr")
+texture = ExtResource("150_3080d")
+region_enabled = true
+region_rect = Rect2(56, 0, 2200, 232)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="left/CSGCombiner3D9" unique_id=283889324]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.617973, 2.2155838, 28.61903)
+size = Vector3(0.027282715, 1.8449707, 2.3857422)
+material = ExtResource("96_xu6ow")
+
+[node name="CSGCombiner3D10" type="CSGCombiner3D" parent="left" unique_id=193166248]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.1561832)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="left/CSGCombiner3D10" unique_id=96314210]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.345013, 2.2150116, 28.603363)
+size = Vector3(0.40478516, 1.8477783, 2.3628235)
+material = ExtResource("145_3afw3")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="left/CSGCombiner3D10" unique_id=881882925]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.52505, 2.8815749, 28.613716)
+size = Vector3(0.13342285, 0.30751038, 2.2285805)
+material = SubResource("StandardMaterial3D_rsydx")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="left/CSGCombiner3D10" unique_id=1138184465]
+transform = Transform3D(2.0526404, 0, 0, 0, 1, 0, 0, 0, 1, -21.52912, 2.2146962, 27.40281)
+size = Vector3(0.069885254, 1.8475494, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="left/CSGCombiner3D10" unique_id=1178980531]
+transform = Transform3D(2.0526404, 0, 0, 0, 1, 0, 0, 0, 1, -21.52912, 2.2146962, 29.813667)
+size = Vector3(0.069885254, 1.8475494, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="left/CSGCombiner3D10" unique_id=1002989199]
+transform = Transform3D(2.0526404, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.52912, 3.1707373, 28.605965)
+size = Vector3(0.069885254, 2.469225, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="left/CSGCombiner3D10" unique_id=325368635]
+transform = Transform3D(2.0526404, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.52912, 1.2669394, 28.609447)
+size = Vector3(0.069885254, 2.4761946, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="Sprite3D" type="Sprite3D" parent="left/CSGCombiner3D10" unique_id=618773954]
+transform = Transform3D(-4.322241e-09, 0, -1, 0, 0.111725904, 0, 0.09888137, 0, -4.371139e-08, -21.560246, 2.1106393, 28.617338)
+material_override = SubResource("StandardMaterial3D_shhh2")
+texture = ExtResource("148_kd0ax")
+region_enabled = true
+region_rect = Rect2(0, 328, 2304, 1152)
+
+[node name="Sprite3D2" type="Sprite3D" parent="left/CSGCombiner3D10" unique_id=2000511412]
+transform = Transform3D(-4.135439e-09, 0, -1, 0, 0.103424884, 0, 0.09460785, 0, -4.371139e-08, -21.595402, 2.867686, 28.627111)
+material_override = SubResource("StandardMaterial3D_shhh2")
+texture = ExtResource("148_kd0ax")
+region_enabled = true
+region_rect = Rect2(0, 0, 2296, 248)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="left/CSGCombiner3D10" unique_id=662825545]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.617973, 2.2155838, 28.61903)
+size = Vector3(0.027282715, 1.8449707, 2.3857422)
+material = ExtResource("96_xu6ow")
+
+[node name="CSGCombiner3D7" type="CSGCombiner3D" parent="left" unique_id=1441540043]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.8173084, 0, 0, 6.237316)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="left/CSGCombiner3D7" unique_id=341748109]
+transform = Transform3D(1.5708923, 0, 0, 0, 1.3600693, 0, 0, 0, 0.38156754, -21.322096, 2.2145557, 27.692081)
+size = Vector3(0.40478516, 1.8477783, 2.3628235)
+material = ExtResource("145_3afw3")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="left/CSGCombiner3D7" unique_id=1918178880]
+transform = Transform3D(3.224477, 0, 0, 0, 1.3600693, 0, 0, 0, 0.38156754, -21.61131, 2.2141268, 27.23399)
+size = Vector3(0.069885254, 1.8475494, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="left/CSGCombiner3D7" unique_id=778084911]
+transform = Transform3D(3.224477, 0, 0, 0, 1.3600693, 0, 0, 0, 0.38156754, -21.61131, 2.2141268, 28.153896)
+size = Vector3(0.069885254, 1.8475494, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="left/CSGCombiner3D7" unique_id=305284362]
+transform = Transform3D(3.224477, 0, 0, 0, -1.6678847e-08, -1.3600693, 0, 0.38156754, -5.9450517e-08, -21.61131, 3.514409, 27.693077)
+size = Vector3(0.069885254, 2.469225, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="left/CSGCombiner3D7" unique_id=45239191]
+transform = Transform3D(3.224477, 0, 0, 0, -1.6678847e-08, -1.3600693, 0, 0.38156754, -5.9450517e-08, -21.61131, 0.925112, 27.694405)
+size = Vector3(0.069885254, 2.4761946, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="left/CSGCombiner3D7" unique_id=406020081]
+transform = Transform3D(1.5708923, 0, 0, 0, 1.3600693, 0, 0, 0, 0.38156754, -21.750889, 2.2153342, 27.698063)
+size = Vector3(0.027282715, 1.8449707, 2.3857422)
+material = ExtResource("96_xu6ow")
+
+[node name="Sprite3D" type="Sprite3D" parent="left/CSGCombiner3D7" unique_id=1524339999]
+transform = Transform3D(-6.6442207e-09, 0, -1, 0, 0.1582307, 0, 0.15200205, 0, -4.371139e-08, -21.64031, 2.2829468, 27.670773)
+material_override = SubResource("StandardMaterial3D_3080d")
+texture = ExtResource("149_rsydx")
+
+[node name="CSGCombiner3D11" type="CSGCombiner3D" parent="left" unique_id=117991824]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.86440545, 0, 0, 15.759363)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="left/CSGCombiner3D11" unique_id=17195869]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.345013, 2.2150116, 28.603363)
+size = Vector3(0.40478516, 1.8477783, 2.3628235)
+material = ExtResource("145_3afw3")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="left/CSGCombiner3D11" unique_id=426124524]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.52505, 2.8815749, 28.613716)
+size = Vector3(0.13342285, 0.30751038, 2.2285805)
+material = SubResource("StandardMaterial3D_rsydx")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="left/CSGCombiner3D11" unique_id=1762734800]
+transform = Transform3D(2.0526404, 0, 0, 0, 1, 0, 0, 0, 1, -21.52912, 2.2146962, 27.40281)
+size = Vector3(0.069885254, 1.8475494, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="left/CSGCombiner3D11" unique_id=1255990740]
+transform = Transform3D(2.0526404, 0, 0, 0, 1, 0, 0, 0, 1, -21.52912, 2.2146962, 29.813667)
+size = Vector3(0.069885254, 1.8475494, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="left/CSGCombiner3D11" unique_id=1306594710]
+transform = Transform3D(2.0526404, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.52912, 3.1707373, 28.605965)
+size = Vector3(0.069885254, 2.469225, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="left/CSGCombiner3D11" unique_id=2037359428]
+transform = Transform3D(2.0526404, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.52912, 1.2669394, 28.609447)
+size = Vector3(0.069885254, 2.4761946, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="Sprite3D" type="Sprite3D" parent="left/CSGCombiner3D11" unique_id=1107270199]
+transform = Transform3D(-4.6734305e-09, 0, -1, 0, 0.123977795, 0, 0.10691566, 0, -4.3711392e-08, -21.560246, 2.0178885, 28.617338)
+material_override = SubResource("StandardMaterial3D_wqbuf")
+texture = ExtResource("153_3jtbr")
+region_enabled = true
+region_rect = Rect2(0, 264, 2040, 1088)
+
+[node name="Sprite3D2" type="Sprite3D" parent="left/CSGCombiner3D11" unique_id=1902131774]
+transform = Transform3D(-4.67343e-09, 0, -1, -0.007858224, 0.12364247, 3.2127558e-09, 0.10662647, 0.009112279, -4.359316e-08, -21.595377, 2.8251834, 28.617338)
+material_override = SubResource("StandardMaterial3D_wqbuf")
+texture = SubResource("CompressedTexture2D_0fg23")
+region_enabled = true
+region_rect = Rect2(0, -8, 2056, 280)
+
+[node name="Sprite3D14" type="Sprite3D" parent="left" unique_id=1936100730]
+transform = Transform3D(-1.792167e-09, 0, -0.025, 0, 0.044, 0, 0.041, 0, -1.0927848e-09, -21.447771, 1.808501, 48.020096)
+material_override = SubResource("StandardMaterial3D_x7115")
+texture = ExtResource("97_xu6ow")
+
+[node name="CSGCombiner3D12" type="CSGCombiner3D" parent="left" unique_id=879802131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.86440545, 0, 0, 19.460337)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="left/CSGCombiner3D12" unique_id=2075137593]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.345013, 2.2150116, 28.603363)
+size = Vector3(0.40478516, 1.8477783, 2.3628235)
+material = ExtResource("145_3afw3")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="left/CSGCombiner3D12" unique_id=1481791156]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.52505, 2.8815749, 28.613716)
+size = Vector3(0.13342285, 0.30751038, 2.2285805)
+material = SubResource("StandardMaterial3D_rsydx")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="left/CSGCombiner3D12" unique_id=1498936538]
+transform = Transform3D(2.0526404, 0, 0, 0, 1, 0, 0, 0, 1, -21.52912, 2.2146962, 27.40281)
+size = Vector3(0.069885254, 1.8475494, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="left/CSGCombiner3D12" unique_id=101819581]
+transform = Transform3D(2.0526404, 0, 0, 0, 1, 0, 0, 0, 1, -21.52912, 2.2146962, 29.813667)
+size = Vector3(0.069885254, 1.8475494, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="left/CSGCombiner3D12" unique_id=2018394347]
+transform = Transform3D(2.0526404, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.52912, 3.1707373, 28.605965)
+size = Vector3(0.069885254, 2.469225, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="left/CSGCombiner3D12" unique_id=709032859]
+transform = Transform3D(2.0526404, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -21.52912, 1.2669394, 28.609447)
+size = Vector3(0.069885254, 2.4761946, 0.06359863)
+material = ExtResource("146_16bcn")
+
+[node name="Sprite3D" type="Sprite3D" parent="left/CSGCombiner3D12" unique_id=413482638]
+transform = Transform3D(-5.378429e-09, 0, -1, 0, 0.123977795, 0, 0.12304415, 0, -4.3711392e-08, -21.560246, 2.0069695, 28.617336)
+material_override = SubResource("StandardMaterial3D_vi5nb")
+texture = ExtResource("154_v5vq5")
+region_enabled = true
+region_rect = Rect2(0, 224, 1864, 912)
+
+[node name="Sprite3D2" type="Sprite3D" parent="left/CSGCombiner3D12" unique_id=514422585]
+transform = Transform3D(-5.378429e-09, 0, -1, 0, 0.123977795, 0, 0.12304415, 0, -4.3711392e-08, -21.59531, 2.8529403, 28.6455)
+material_override = SubResource("StandardMaterial3D_vi5nb")
+texture = ExtResource("154_v5vq5")
+region_enabled = true
+region_rect = Rect2(0, 0, 1864, 200)
 
 [editable path="room321/props/monitors/StaticBody3D"]
 [editable path="room321/props/monitors/StaticBody3D/Sketchfab_Scene"]
