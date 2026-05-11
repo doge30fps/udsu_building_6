@@ -112,6 +112,7 @@
 [ext_resource type="Texture2D" uid="uid://t0ksjsiex87v" path="res://textures/sprites/3rd_floor/poster_new_9.png" id="98_ie0rk"]
 [ext_resource type="Texture2D" uid="uid://c2e2oeeufuwpp" path="res://textures/sprites/3rd_floor/heal.JPG" id="98_xjd8w"]
 [ext_resource type="Texture2D" uid="uid://dvlwbec2tujpi" path="res://textures/sprites/3rd_floor/poster_new_12.png" id="99_c3hej"]
+[ext_resource type="Texture2D" uid="uid://de536m5qruq8l" path="res://textures/sprites/3rd_floor/poster_new_10.png" id="100_yx3yi"]
 [ext_resource type="Material" uid="uid://c3yw2gc7dvhts" path="res://materials/walls/slight_pink_wall/new_standard_material_3d.tres" id="102_vi64m"]
 [ext_resource type="Material" uid="uid://d7b5jsg37ouc" path="res://materials/linoleum/linoleum.tres" id="103_xnney"]
 [ext_resource type="PackedScene" uid="uid://c3u26lcpu6nb6" path="res://scenes/props/doors/white_wooden_door.tscn" id="104_etctj"]
@@ -122,11 +123,15 @@
 [ext_resource type="PackedScene" uid="uid://ci8v5r0i6idvn" path="res://scenes/props/board.tscn" id="109_54qoj"]
 [ext_resource type="Texture2D" uid="uid://drvwxk5voys4" path="res://textures/sprites/3rd_floor/double_paper.png" id="109_bfalx"]
 [ext_resource type="Texture2D" uid="uid://bwxu7rrsmfuxl" path="res://textures/sprites/3rd_floor/work_schedule.png" id="110_jo3sp"]
+[ext_resource type="PackedScene" uid="uid://c5do5er6o6qfy" path="res://scenes/props/electric_shield.tscn" id="111_7441i"]
 [ext_resource type="Texture2D" uid="uid://dvpnbogm8lhcj" path="res://textures/sprites/3rd_floor/exit_label.JPG" id="111_r32w8"]
 [ext_resource type="Texture2D" uid="uid://c5wuw27pvjkb1" path="res://textures/sprites/3rd_floor/billboard_texture.png" id="112_nns2a"]
 [ext_resource type="Texture2D" uid="uid://cmvwqybifuy1p" path="res://textures/sprites/3rd_floor/billboard_papers.png" id="113_1xypv"]
+[ext_resource type="PackedScene" uid="uid://bgigoqp86tdfi" path="res://scenes/props/electric_shield_small.tscn" id="113_jcj7p"]
 [ext_resource type="Material" uid="uid://bfduhrv4fmrf5" path="res://materials/room321/laminate.tres" id="114_2nev8"]
+[ext_resource type="PackedScene" uid="uid://bqex2kq026ghb" path="res://scenes/props/electric_shield_small2.tscn" id="114_47uqa"]
 [ext_resource type="Texture2D" uid="uid://bv1k2yf42rpco" path="res://textures/sprites/3rd_floor/ipsub.png" id="114_s5ugr"]
+[ext_resource type="PackedScene" uid="uid://bqhgawkwxjhg3" path="res://scenes/props/electric_shield_2.tscn" id="115_ie8eo"]
 [ext_resource type="Texture2D" uid="uid://bdey3icys3ytd" path="res://textures/sprites/3rd_floor/ipsub_billboard_right_side.png" id="115_jdjsi"]
 [ext_resource type="Texture2D" uid="uid://c8qoa0hu6dc8u" path="res://textures/sprites/3rd_floor/ipsub_billboard_left_side.png" id="116_vet4s"]
 [ext_resource type="PackedScene" uid="uid://cgol4j0c37glp" path="res://scenes/building/decanat2.tscn" id="122_s68mc"]
@@ -734,6 +739,12 @@ albedo_texture = ExtResource("95_xyy7t")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_54qoj"]
 albedo_texture = ExtResource("96_85l7j")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s0vfq"]
+albedo_texture = ExtResource("100_yx3yi")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wfq0u"]
+load_path = "res://.godot/imported/poster_new_10.png-b512b87f4c98cde9f7158fba3e9dfefb.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7441i"]
 albedo_texture = ExtResource("98_ie0rk")
@@ -2921,7 +2932,7 @@ transform = Transform3D(9.500364, 0.002941346, 5.3290705e-15, -0.06450212, 0.433
 mesh = SubResource("BoxMesh_vifd3")
 
 [node name="poster_10" type="Sprite3D" parent="floor_3_right_wing" unique_id=920998078]
-transform = Transform3D(-3.5291523e-09, 3.2846416e-16, -0.37050408, 0, 0.08237704, -1.7763573e-15, 0.08073761, -5.541841e-23, -1.619525e-08, -21.460487, 2.5016317, 2.4104738)
+transform = Transform3D(-3.5291523e-09, 3.2846416e-16, -0.37050408, 0, 0.08237704, -1.7763573e-15, 0.08073761, -5.541841e-23, -1.619525e-08, -21.460487, 2.5016317, 2.9428296)
 material_override = SubResource("StandardMaterial3D_c3hej")
 texture = ExtResource("94_m7d5r")
 
@@ -2947,7 +2958,7 @@ transform = Transform3D(16.729156, 0.005830016, -1.4210855e-14, -0.113581486, 0.
 mesh = SubResource("BoxMesh_vifd3")
 
 [node name="poster_11" type="Sprite3D" parent="floor_3_right_wing" unique_id=1942054664]
-transform = Transform3D(-4.682612e-09, 5.240626e-16, -0.37050405, 0, 0.13143207, -1.776357e-15, 0.1071257, -8.841974e-23, -1.6195248e-08, -21.460487, 2.4944463, 5.311242)
+transform = Transform3D(-4.682612e-09, 5.240626e-16, -0.37050405, 0, 0.13143207, -1.776357e-15, 0.1071257, -8.841974e-23, -1.6195248e-08, -21.460487, 2.4944463, 5.4276)
 material_override = SubResource("StandardMaterial3D_pa3cr")
 texture = ExtResource("95_xyy7t")
 
@@ -2960,7 +2971,7 @@ transform = Transform3D(22.703127, 0.005846694, -1.5987212e-14, -0.15414135, 0.8
 mesh = SubResource("BoxMesh_vifd3")
 
 [node name="poster_12" type="Sprite3D" parent="floor_3_right_wing" unique_id=947434569]
-transform = Transform3D(-5.0245066e-09, 5.296849e-16, -0.37050405, 0, 0.1328421, -1.776357e-15, 0.11494736, -8.936834e-23, -1.6195248e-08, -21.460487, 2.4827664, 7.8575993)
+transform = Transform3D(-5.0245066e-09, 5.296849e-16, -0.37050405, 0, 0.1328421, -1.776357e-15, 0.11494736, -8.936834e-23, -1.6195248e-08, -21.460487, 2.4827664, 7.934462)
 material_override = SubResource("StandardMaterial3D_54qoj")
 texture = ExtResource("96_85l7j")
 
@@ -2969,6 +2980,19 @@ transform = Transform3D(21.717848, 0.0058451, -1.7763568e-14, -0.1474519, 0.8609
 mesh = SubResource("BoxMesh_vifd3")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="floor_3_right_wing/poster_12" unique_id=1529146352]
+transform = Transform3D(21.214424, 0.005843787, -1.687539e-14, -0.14403391, 0.8607178, -1.0587912e-22, -8.526513e-14, -2.7755576e-17, 0.058683943, -0.13116455, -8.5186825, 0.03154373)
+mesh = SubResource("BoxMesh_vifd3")
+
+[node name="poster_16" type="Sprite3D" parent="floor_3_right_wing" unique_id=2030388224]
+transform = Transform3D(-4.4842823e-09, -5.0066005e-16, 0.37050405, 1.2948476e-30, 0.12556283, -1.776357e-15, -0.1025884, 1.2824038e-22, -1.6195246e-08, -25.294794, 2.423153, 10.280947)
+material_override = SubResource("StandardMaterial3D_s0vfq")
+texture = SubResource("CompressedTexture2D_wfq0u")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="floor_3_right_wing/poster_16" unique_id=1660592799]
+transform = Transform3D(21.717848, 0.0058451, -1.7763568e-14, -0.1474519, 0.8609113, -1.0587912e-22, -5.684342e-14, -6.938894e-18, 0.058683943, -0.13116455, 8.89485, 0.03154373)
+mesh = SubResource("BoxMesh_vifd3")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="floor_3_right_wing/poster_16" unique_id=342333423]
 transform = Transform3D(21.214424, 0.005843787, -1.687539e-14, -0.14403391, 0.8607178, -1.0587912e-22, -8.526513e-14, -2.7755576e-17, 0.058683943, -0.13116455, -8.5186825, 0.03154373)
 mesh = SubResource("BoxMesh_vifd3")
 
@@ -3520,6 +3544,32 @@ material = ExtResource("61_47udc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.448979, 1.8822387, -0.24851418)
 size = Vector3(1.4765015, 1.1260986, 0.008300781)
 material = ExtResource("96_xu6ow")
+
+[node name="electric_shields" type="Node3D" parent="floor_3_right_wing" unique_id=1814901669]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.131758, 0.9218073, 0)
+
+[node name="electric_shield2" parent="floor_3_right_wing/electric_shields" unique_id=2055376833 instance=ExtResource("111_7441i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.135, -0.92, 1.105)
+
+[node name="electric_shield4" parent="floor_3_right_wing/electric_shields" unique_id=586193270 instance=ExtResource("111_7441i")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -24.626001, -0.877, 9.1173935)
+
+[node name="electric_shield6" parent="floor_3_right_wing/electric_shields" unique_id=485558617 instance=ExtResource("111_7441i")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -24.626001, -0.877, 25.373379)
+
+[node name="Node3D" parent="floor_3_right_wing/electric_shields" unique_id=928251650 instance=ExtResource("113_jcj7p")]
+
+[node name="Node3D2" parent="floor_3_right_wing/electric_shields" unique_id=73809631 instance=ExtResource("114_47uqa")]
+transform = Transform3D(1.37, 0, 0, 0, 1.37, 0, 0, 0, 1.37, 1.189, -0.34, 5.905)
+
+[node name="electric_shield7" parent="floor_3_right_wing/electric_shields" unique_id=1102568662 instance=ExtResource("115_ie8eo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.115, -0.92, 0)
+
+[node name="electric_shield8" parent="floor_3_right_wing/electric_shields" unique_id=2045431376 instance=ExtResource("115_ie8eo")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -24.629, -0.88, 7.791)
+
+[node name="electric_shield9" parent="floor_3_right_wing/electric_shields" unique_id=401115260 instance=ExtResource("115_ie8eo")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -24.629, -0.88, 23.956526)
 
 [node name="floor_3_center" type="Node3D" parent="." unique_id=1635291646]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.190115, 0, 27.508423)

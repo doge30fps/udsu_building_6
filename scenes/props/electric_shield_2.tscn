@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bqhgawkwxjhg3"]
+
+[ext_resource type="Material" uid="uid://bbtqsnl2cpkcn" path="res://materials/electric_shield.tres" id="1_joi3t"]
+[ext_resource type="Texture2D" uid="uid://d4lf8p1fwpyo0" path="res://textures/sprites/electric_shields/1.png" id="2_jc1py"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ff8e"]
+albedo_color = Color(0.933932, 0.85095644, 0.6937816, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hxi3b"]
+transparency = 1
+albedo_texture = ExtResource("2_jc1py")
+
+[node name="electric_shield" type="Node3D" unique_id=1102568662]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=945356678]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.192183, -21.495285, 1.5275164, 0.92700195)
+material_override = ExtResource("1_joi3t")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=400330286]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0128593445, 0.12701416, -0.3187828)
+material_override = ExtResource("1_joi3t")
+size = Vector3(0.042938232, 2.05188, 0.83081055)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=774754089]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.39999998, -0.02031517, 0.13440013, -0.30519676)
+material_override = ExtResource("1_joi3t")
+operation = 2
+size = Vector3(0.052001953, 1.7973022, 1.5265503)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGCombiner3D" unique_id=472654438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.39999998, -0.026540756, 0.13275981, -0.30594397)
+material_override = ExtResource("1_joi3t")
+operation = 2
+size = Vector3(0.03955078, 1.8362885, 1.6378632)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=119832447]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.465645, 1.6588676, 0.3678131)
+material_override = ExtResource("1_joi3t")
+size = Vector3(0.05883789, 1.8774414, 0.40489197)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1959920080]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.465645, 1.6588676, 0.76654434)
+material_override = ExtResource("1_joi3t")
+size = Vector3(0.05883789, 1.8774414, 0.38171387)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=1519501847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.470837, 1.6593254, 0.5670662)
+material_override = SubResource("StandardMaterial3D_2ff8e")
+size = Vector3(0.05227661, 1.8396606, 0.03366089)
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1676336794]
+transform = Transform3D(-4.964729e-09, 0, -0.13, 0, 0.11835452, 0, 0.113579765, 0, -5.6824803e-09, -21.503, 1.6510491, 0.5651844)
+material_override = SubResource("StandardMaterial3D_hxi3b")
+texture = ExtResource("2_jc1py")
