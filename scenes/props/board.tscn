@@ -22,10 +22,13 @@ _surfaces = [{
 transparency = 1
 albedo_texture = ExtResource("2_ycs21")
 
-[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" unique_id=1409204346]
+[node name="Node3D" type="Node3D" unique_id=1964055043]
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="." unique_id=1409204346]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.493713, 0, 0)
 mesh = SubResource("ArrayMesh_7441i")
 
-[node name="Sprite3D" type="Sprite3D" parent="." unique_id=74008241]
+[node name="Sprite3D" type="Sprite3D" parent="CSGBakedMeshInstance3D" unique_id=74008241]
 transform = Transform3D(-0.078087315, 0, 8.742277e-08, 0, 0.0832365, 0, -6.826611e-09, 0, -0.99999994, -11.439601, 1.9088292, -0.128088)
 material_override = SubResource("StandardMaterial3D_s0vfq")
 texture = ExtResource("2_ycs21")
