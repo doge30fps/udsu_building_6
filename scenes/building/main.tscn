@@ -153,6 +153,7 @@
 [ext_resource type="Texture2D" uid="uid://buf3jfaiqpjcx" path="res://textures/sprites/3rd_floor/MCHS_BOARDS/5.png" id="153_3jtbr"]
 [ext_resource type="Texture2D" uid="uid://bjobb1kfuijfq" path="res://textures/sprites/3rd_floor/paints/4floor_paint.png" id="153_v5vq5"]
 [ext_resource type="Texture2D" uid="uid://b20o6dxc5nk8o" path="res://textures/sprites/3rd_floor/MCHS_BOARDS/6.png" id="154_v5vq5"]
+[ext_resource type="PackedScene" uid="uid://khyhwpta247p" path="res://scenes/windows/underwindow_1.tscn" id="154_wqbuf"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_a87b0"]
 panorama = ExtResource("1_unbpl")
@@ -4438,13 +4439,13 @@ size = Vector3(3.189392, 4.0284424, 0.020065308)
 material = ExtResource("124_3jtbr")
 
 [node name="CSGBox3D21" type="CSGBox3D" parent="floor_3_center/lifts" unique_id=327888656]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.965719, 3.3154602, -7.1754074)
-size = Vector3(5.7165375, 6.694397, 1.0888786)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.965719, 2.0036774, -7.1754074)
+size = Vector3(5.7165375, 4.0708313, 1.0888786)
 material = ExtResource("61_47udc")
 
 [node name="CSGBox3D22" type="CSGBox3D" parent="floor_3_center/lifts" unique_id=879498810]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.965719, 3.3154602, 3.850626)
-size = Vector3(5.7165375, 6.694397, 1.0888786)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.965719, 2.0034332, 3.850626)
+size = Vector3(5.7165375, 4.070343, 1.0888786)
 material = ExtResource("61_47udc")
 
 [node name="CSGBox3D19" type="CSGBox3D" parent="floor_3_center/lifts" unique_id=947696919]
@@ -5981,8 +5982,8 @@ size = Vector3(3.5157852, 3.1628113, 0.67297363)
 material = ExtResource("61_47udc")
 
 [node name="CSGBox3D54" type="CSGBox3D" parent="stairs_to_floor4" unique_id=381183580]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.126523, 3.4421597, 4.2198505)
-size = Vector3(3.5212655, 3.163, 0.679)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.124009, 3.4421597, 4.2198505)
+size = Vector3(3.5212655, 3.163, 0.67397267)
 material = ExtResource("61_47udc")
 
 [node name="stairs_main" parent="stairs_to_floor4" unique_id=965854218 instance=ExtResource("150_kd0ax")]
@@ -6033,6 +6034,12 @@ material = ExtResource("146_16bcn")
 transform = Transform3D(1, 0, -1.1262102e-12, 0, 1, 0, 1.1262102e-12, 0, 1, -0.057281494, 8.558228, 0.0778656)
 size = Vector3(27.638245, 0.5263672, 0.8442383)
 material = ExtResource("146_16bcn")
+
+[node name="underwindow_1" parent="stairs_to_floor4" unique_id=206718611 instance=ExtResource("154_wqbuf")]
+transform = Transform3D(1.3627371e-07, 0, 0.84, 0, 1, 0, -1.805, 0, 6.3418234e-08, 1.628, 1.87, 0.476)
+
+[node name="underwindow_2" parent="stairs_to_floor4" unique_id=593345183 instance=ExtResource("154_wqbuf")]
+transform = Transform3D(1.3627371e-07, 0, 0.84, 0, 1, 0, -1.805, 0, 6.3418234e-08, 1.628, 1.87, 10.596)
 
 [node name="windows" type="Node3D" parent="." unique_id=1365838430]
 
