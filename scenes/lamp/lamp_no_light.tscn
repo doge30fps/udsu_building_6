@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dcuh4gr2xpyyi"]
+
+[ext_resource type="PackedScene" uid="uid://c5otuomsjbhwa" path="res://models/lamp/ceiling_lamp-10mb.glb" id="1_3nl0m"]
+
+[node name="Node3D" type="Node3D" unique_id=1568199734]
+
+[node name="Sketchfab_Scene" parent="." unique_id=723961739 instance=ExtResource("1_3nl0m")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=2106030100]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.092399746, 0)
+visible = false
+shadow_enabled = true
+omni_range = 17.055918

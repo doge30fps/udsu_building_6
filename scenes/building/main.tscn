@@ -112,6 +112,7 @@
 [ext_resource type="Texture2D" uid="uid://dmdwbt0iqctxe" path="res://textures/sprites/3rd_floor/cabinet_table1.png" id="108_0x7p3"]
 [ext_resource type="PackedScene" uid="uid://ci8v5r0i6idvn" path="res://scenes/props/board.tscn" id="109_54qoj"]
 [ext_resource type="Texture2D" uid="uid://drvwxk5voys4" path="res://textures/sprites/3rd_floor/double_paper.png" id="109_bfalx"]
+[ext_resource type="PackedScene" uid="uid://bg06fsxp7p1ek" path="res://scenes/lamp/lamp.tscn" id="109_wqbuf"]
 [ext_resource type="Texture2D" uid="uid://bwxu7rrsmfuxl" path="res://textures/sprites/3rd_floor/work_schedule.png" id="110_jo3sp"]
 [ext_resource type="PackedScene" uid="uid://c5do5er6o6qfy" path="res://scenes/props/electric_shield.tscn" id="111_7441i"]
 [ext_resource type="Texture2D" uid="uid://dvpnbogm8lhcj" path="res://textures/sprites/3rd_floor/exit_label.JPG" id="111_r32w8"]
@@ -130,6 +131,7 @@
 [ext_resource type="PackedScene" uid="uid://cjxmivhkixq1s" path="res://scenes/props/puff_bench.tscn" id="121_rsydx"]
 [ext_resource type="PackedScene" uid="uid://cgol4j0c37glp" path="res://scenes/building/decanat2.tscn" id="122_s68mc"]
 [ext_resource type="PackedScene" uid="uid://bnvbper831gl4" path="res://scenes/props/doors/plastic_door.tscn" id="122_shhh2"]
+[ext_resource type="PackedScene" uid="uid://dcuh4gr2xpyyi" path="res://scenes/lamp/lamp_no_light.tscn" id="123_0fg23"]
 [ext_resource type="PackedScene" uid="uid://dnqxekjahu61o" path="res://scenes/windows/window_single.tscn" id="123_3080d"]
 [ext_resource type="Material" uid="uid://bv1sqc36iy6xn" path="res://materials/walls/marble/marble_3rd_floor_elevator.tres" id="124_3jtbr"]
 [ext_resource type="PackedScene" uid="uid://v3mlhhm808m7" path="res://models/elevators/old_ussr_elevator_entrance_game_ready_remade.glb" id="124_kd0ax"]
@@ -1115,7 +1117,8 @@ albedo_texture = ExtResource("153_v5vq5")
 
 [node name="Sun" type="DirectionalLight3D" parent="." unique_id=1764951405]
 transform = Transform3D(-0.20780504, 0.22357039, -0.9522779, 0.02582884, 0.97444457, 0.22313821, 0.9778291, 0.021773003, -0.208269, -55.863007, 3.9962826, 25.486807)
-visible = false
+light_energy = 2.426
+light_indirect_energy = 1.634
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=387344912]
@@ -1142,6 +1145,7 @@ shape = SubResource("BoxShape3D_vbb3r")
 
 [node name="room321" parent="." unique_id=1958238040 instance=ExtResource("5_0txhr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.484, 16.401, -9.196)
+visible = false
 
 [node name="props" type="Node3D" parent="room321" unique_id=1263931158]
 
@@ -1852,328 +1856,328 @@ transform = Transform3D(-1.4141829, 0, -1.4517487e-07, 0, 0.52008015, 0, 1.23631
 [node name="Node3D" parent="room321/windows/curtains" unique_id=10579080 instance=ExtResource("55_mme3m")]
 transform = Transform3D(1.6631391, 0, 0, 0, 1.6825496, 0, 0, 0, 1.43, 3.0991511, 2.3404276, 8.327824)
 
-[node name="vform lam009" parent="room321/windows/curtains/Node3D/v-form/vform lam z008" parent_id_path=PackedInt32Array(10579080, 408980417, 578739750) index="1" unique_id=1336948919]
+[node name="vform lam009" parent="room321/windows/curtains/Node3D/v-form/vform lam z008" parent_id_path=PackedInt32Array(10579080, 408980417, 814918141) index="1" unique_id=200129718]
 transform = Transform3D(-0.7696448, 7.053012e-07, -0.6384723, 0, 1, 1.10467e-06, -0.6384724, -8.5020355e-07, 0.7696448, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam013" parent="room321/windows/curtains/Node3D/v-form/vform lam z012" parent_id_path=PackedInt32Array(10579080, 408980417, 370874905) index="1" unique_id=1522575373]
+[node name="vform lam013" parent="room321/windows/curtains/Node3D/v-form/vform lam z012" parent_id_path=PackedInt32Array(10579080, 408980417, 921613692) index="1" unique_id=739672823]
 transform = Transform3D(-0.9603083, 3.0813754e-07, -0.27894083, 0, 1, 1.10467e-06, -0.27894086, -1.0608239e-06, 0.9603084, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam014" parent="room321/windows/curtains/Node3D/v-form/vform lam z013" parent_id_path=PackedInt32Array(10579080, 408980417, 1093769502) index="1" unique_id=1646767536]
+[node name="vform lam014" parent="room321/windows/curtains/Node3D/v-form/vform lam z013" parent_id_path=PackedInt32Array(10579080, 408980417, 1629431812) index="1" unique_id=1327232910]
 transform = Transform3D(-0.7760794, 6.966438e-07, -0.6306352, 0, 1, 1.10467e-06, -0.63063526, -8.573117e-07, 0.7760795, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam020" parent="room321/windows/curtains/Node3D/v-form/vform lam z019" parent_id_path=PackedInt32Array(10579080, 408980417, 634239719) index="1" unique_id=98630221]
+[node name="vform lam020" parent="room321/windows/curtains/Node3D/v-form/vform lam z019" parent_id_path=PackedInt32Array(10579080, 408980417, 1380606847) index="1" unique_id=555246779]
 transform = Transform3D(-0.96771795, 2.7841614e-07, -0.25203556, 0, 1, 1.10467e-06, -0.25203556, -1.069009e-06, 0.96771795, 3.7556534, 86.85907, -0.02166748)
 
-[node name="vform lam021" parent="room321/windows/curtains/Node3D/v-form/vform lam z020" parent_id_path=PackedInt32Array(10579080, 408980417, 225560919) index="1" unique_id=787475722]
+[node name="vform lam021" parent="room321/windows/curtains/Node3D/v-form/vform lam z020" parent_id_path=PackedInt32Array(10579080, 408980417, 691322478) index="1" unique_id=754176593]
 transform = Transform3D(-0.76040596, 7.1742573e-07, -0.64944804, 0, 1, 1.10467e-06, -0.64944804, -8.3999765e-07, 0.760406, 3.7556534, 86.85907, -0.02166748)
 
-[node name="vform lam016" parent="room321/windows/curtains/Node3D/v-form/vform lam z015" parent_id_path=PackedInt32Array(10579080, 408980417, 1817758626) index="1" unique_id=1958302613]
+[node name="vform lam016" parent="room321/windows/curtains/Node3D/v-form/vform lam z015" parent_id_path=PackedInt32Array(10579080, 408980417, 1951853041) index="1" unique_id=952065059]
 transform = Transform3D(-0.90556145, 4.6861794e-07, -0.4242153, -5.187425e-16, 1, 1.1046701e-06, -0.4242152, -1.0003465e-06, 0.90556145, 3.755661, 86.859055, -0.02166748)
 
-[node name="vform lam017" parent="room321/windows/curtains/Node3D/v-form/vform lam z016" parent_id_path=PackedInt32Array(10579080, 408980417, 2070516144) index="1" unique_id=1493097123]
+[node name="vform lam017" parent="room321/windows/curtains/Node3D/v-form/vform lam z016" parent_id_path=PackedInt32Array(10579080, 408980417, 1687351968) index="1" unique_id=1065870072]
 transform = Transform3D(-0.9143387, 4.473362e-07, -0.40495008, 0, 1, 1.10467e-06, -0.4049501, -1.0100426e-06, 0.91433877, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam008" parent="room321/windows/curtains/Node3D/v-form/vform lam z007" parent_id_path=PackedInt32Array(10579080, 408980417, 1080463284) index="1" unique_id=91711948]
+[node name="vform lam008" parent="room321/windows/curtains/Node3D/v-form/vform lam z007" parent_id_path=PackedInt32Array(10579080, 408980417, 1274881524) index="1" unique_id=1788035235]
 transform = Transform3D(-0.30639318, 1.0515408e-06, -0.95190495, 0, 1, 1.10467e-06, -0.951905, -3.3846337e-07, 0.3063932, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam006" parent="room321/windows/curtains/Node3D/v-form/vform lam z005" parent_id_path=PackedInt32Array(10579080, 408980417, 1729492539) index="1" unique_id=1740496914]
+[node name="vform lam006" parent="room321/windows/curtains/Node3D/v-form/vform lam z005" parent_id_path=PackedInt32Array(10579080, 408980417, 595897552) index="1" unique_id=782012800]
 transform = Transform3D(-0.57996386, 8.999108e-07, -0.8146422, 0, 1, 1.10467e-06, -0.8146422, -6.406687e-07, 0.57996386, 3.7556763, 86.85907, -0.02166748)
 
-[node name="vform lam004" parent="room321/windows/curtains/Node3D/v-form/vform lam z003" parent_id_path=PackedInt32Array(10579080, 408980417, 152288492) index="1" unique_id=268828277]
+[node name="vform lam004" parent="room321/windows/curtains/Node3D/v-form/vform lam z003" parent_id_path=PackedInt32Array(10579080, 408980417, 1394968063) index="1" unique_id=1850225125]
 transform = Transform3D(-0.49085817, 9.624321e-07, -0.8712394, 0, 1, 1.10467e-06, -0.87123954, -5.4223625e-07, 0.49085817, 3.7556763, 86.85907, -0.02166748)
 
-[node name="vform lam005" parent="room321/windows/curtains/Node3D/v-form/vform lam z004" parent_id_path=PackedInt32Array(10579080, 408980417, 299863029) index="1" unique_id=1499097629]
+[node name="vform lam005" parent="room321/windows/curtains/Node3D/v-form/vform lam z004" parent_id_path=PackedInt32Array(10579080, 408980417, 821453515) index="1" unique_id=1308931671]
 transform = Transform3D(-0.736416, 7.473413e-07, -0.676529, 0, 1, 1.10467e-06, -0.676529, -8.134966e-07, 0.736416, 3.7556763, 86.85907, -0.02166748)
 
-[node name="vform lam003" parent="room321/windows/curtains/Node3D/v-form/vform lam z002" parent_id_path=PackedInt32Array(10579080, 408980417, 978706555) index="1" unique_id=1869689333]
+[node name="vform lam003" parent="room321/windows/curtains/Node3D/v-form/vform lam z002" parent_id_path=PackedInt32Array(10579080, 408980417, 1230700806) index="1" unique_id=52865926]
 transform = Transform3D(-0.8885772, 5.06742e-07, -0.4587271, 0, 1, 1.10467e-06, -0.45872712, -9.815845e-07, 0.8885772, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam015" parent="room321/windows/curtains/Node3D/v-form/vform lam z014" parent_id_path=PackedInt32Array(10579080, 408980417, 1404123485) index="1" unique_id=1632782695]
+[node name="vform lam015" parent="room321/windows/curtains/Node3D/v-form/vform lam z014" parent_id_path=PackedInt32Array(10579080, 408980417, 27104031) index="1" unique_id=397411266]
 transform = Transform3D(-0.9252627, 4.190311e-07, -0.37932694, 0, 1, 1.10467e-06, -0.37932697, -1.0221099e-06, 0.9252627, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam007" parent="room321/windows/curtains/Node3D/v-form/vform lam z006" parent_id_path=PackedInt32Array(10579080, 408980417, 661260449) index="1" unique_id=1596000227]
+[node name="vform lam007" parent="room321/windows/curtains/Node3D/v-form/vform lam z006" parent_id_path=PackedInt32Array(10579080, 408980417, 17467089) index="1" unique_id=269991171]
 transform = Transform3D(-0.77787036, 6.9420196e-07, -0.62842476, 0, 1, 1.10467e-06, -0.62842476, -8.592901e-07, 0.77787036, 3.7556763, 86.85907, -0.02166748)
 
-[node name="vform lam002" parent="room321/windows/curtains/Node3D/v-form/vform lam z001" parent_id_path=PackedInt32Array(10579080, 408980417, 1583294091) index="1" unique_id=1938912497]
+[node name="vform lam002" parent="room321/windows/curtains/Node3D/v-form/vform lam z001" parent_id_path=PackedInt32Array(10579080, 408980417, 1604566829) index="1" unique_id=2025471283]
 transform = Transform3D(-0.364828, 1.0285305e-06, -0.9310749, 0, 1, 1.10467e-06, -0.9310749, -4.030146e-07, 0.36482805, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam018" parent="room321/windows/curtains/Node3D/v-form/vform lam z017" parent_id_path=PackedInt32Array(10579080, 408980417, 478247912) index="1" unique_id=54938331]
+[node name="vform lam018" parent="room321/windows/curtains/Node3D/v-form/vform lam z017" parent_id_path=PackedInt32Array(10579080, 408980417, 182120369) index="1" unique_id=885902681]
 transform = Transform3D(-0.83472294, 6.0830877e-07, -0.55067015, 0, 1, 1.10467e-06, -0.5506702, -9.2209336e-07, 0.83472294, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam010" parent="room321/windows/curtains/Node3D/v-form/vform lam z009" parent_id_path=PackedInt32Array(10579080, 408980417, 1517425320) index="1" unique_id=2045741026]
+[node name="vform lam010" parent="room321/windows/curtains/Node3D/v-form/vform lam z009" parent_id_path=PackedInt32Array(10579080, 408980417, 1615980125) index="1" unique_id=582439331]
 transform = Transform3D(-0.8613455, 5.6119393e-07, -0.5080195, 0, 1, 1.10467e-06, -0.5080195, -9.515026e-07, 0.8613455, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam011" parent="room321/windows/curtains/Node3D/v-form/vform lam z010" parent_id_path=PackedInt32Array(10579080, 408980417, 786119646) index="1" unique_id=1618103103]
+[node name="vform lam011" parent="room321/windows/curtains/Node3D/v-form/vform lam z010" parent_id_path=PackedInt32Array(10579080, 408980417, 1803679478) index="1" unique_id=1363680689]
 transform = Transform3D(-0.86590314, 5.525687e-07, -0.50021154, 0, 1, 1.10467e-06, -0.5002116, -9.565373e-07, 0.86590326, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam019" parent="room321/windows/curtains/Node3D/v-form/vform lam z018" parent_id_path=PackedInt32Array(10579080, 408980417, 785679444) index="1" unique_id=189056136]
+[node name="vform lam019" parent="room321/windows/curtains/Node3D/v-form/vform lam z018" parent_id_path=PackedInt32Array(10579080, 408980417, 277487186) index="1" unique_id=1844207954]
 transform = Transform3D(-0.9366783, 3.8684553e-07, -0.35019103, 0, 1, 1.10467e-06, -0.35019103, -1.0347204e-06, 0.9366783, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam012" parent="room321/windows/curtains/Node3D/v-form/vform lam z011" parent_id_path=PackedInt32Array(10579080, 408980417, 680470039) index="1" unique_id=438761643]
+[node name="vform lam012" parent="room321/windows/curtains/Node3D/v-form/vform lam z011" parent_id_path=PackedInt32Array(10579080, 408980417, 1244817690) index="1" unique_id=1504423227]
 transform = Transform3D(-0.6507344, 8.387819e-07, -0.75930536, 0, 1, 1.10467e-06, -0.7593054, -7.1884676e-07, 0.6507344, 3.755661, 86.85907, -0.02166748)
 
 [node name="Node3D2" parent="room321/windows/curtains" unique_id=1784900059 instance=ExtResource("55_mme3m")]
 transform = Transform3D(1.6631391, 0, 0, 0, 1.6825496, 0, 0, 0, 1.43, -0.43474102, 2.3404276, 8.327824)
 
-[node name="vform lam z008" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="0" unique_id=578739750]
+[node name="vform lam z008" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="0" unique_id=814918141]
 transform = Transform3D(0.010000002, 0, 0, 0, 0.010000002, 0, 0, 0, 0.010000002, -0.5525975, -0.004046917, 0)
 
-[node name="vform lam009" parent="room321/windows/curtains/Node3D2/v-form/vform lam z008" index="1" unique_id=1336948919]
+[node name="vform lam009" parent="room321/windows/curtains/Node3D2/v-form/vform lam z008" index="1" unique_id=200129718]
 transform = Transform3D(-0.7696448, 7.053012e-07, -0.6384723, 0, 1, 1.10467e-06, -0.6384724, -8.5020355e-07, 0.7696448, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam z012" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="1" unique_id=370874905]
+[node name="vform lam z012" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="1" unique_id=921613692]
 transform = Transform3D(0.010000001, 0, 0, 0, 0.010000001, 0, 0, 0, 0.010000001, -0.4838798, -0.004046917, 0)
 
-[node name="vform lam013" parent="room321/windows/curtains/Node3D2/v-form/vform lam z012" index="1" unique_id=1522575373]
+[node name="vform lam013" parent="room321/windows/curtains/Node3D2/v-form/vform lam z012" index="1" unique_id=739672823]
 transform = Transform3D(-0.7202728, 7.6629976e-07, -0.693691, 0, 1, 1.10467e-06, -0.69369113, -7.956638e-07, 0.72027284, 3.7556686, 86.85907, -0.021728516)
 
-[node name="vform lam z013" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="2" unique_id=1093769502]
+[node name="vform lam z013" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="2" unique_id=1629431812]
 transform = Transform3D(0.010000001, 0, 0, 0, 0.010000001, 0, 0, 0, 0.010000001, -0.7278759, -0.004046917, 0)
 
-[node name="vform lam014" parent="room321/windows/curtains/Node3D2/v-form/vform lam z013" index="1" unique_id=1646767536]
+[node name="vform lam014" parent="room321/windows/curtains/Node3D2/v-form/vform lam z013" index="1" unique_id=1327232910]
 transform = Transform3D(-0.7760794, 6.966438e-07, -0.6306352, 0, 1, 1.10467e-06, -0.63063526, -8.573117e-07, 0.7760795, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam020" parent="room321/windows/curtains/Node3D2/v-form/vform lam z019" parent_id_path=PackedInt32Array(1784900059, 408980417, 634239719) index="1" unique_id=98630221]
+[node name="vform lam020" parent="room321/windows/curtains/Node3D2/v-form/vform lam z019" parent_id_path=PackedInt32Array(1784900059, 408980417, 1380606847) index="1" unique_id=555246779]
 transform = Transform3D(-0.96771795, 2.7841614e-07, -0.25203556, 0, 1, 1.10467e-06, -0.25203556, -1.069009e-06, 0.96771795, 3.7556534, 86.85907, -0.02166748)
 
-[node name="vform lam021" parent="room321/windows/curtains/Node3D2/v-form/vform lam z020" parent_id_path=PackedInt32Array(1784900059, 408980417, 225560919) index="1" unique_id=787475722]
+[node name="vform lam021" parent="room321/windows/curtains/Node3D2/v-form/vform lam z020" parent_id_path=PackedInt32Array(1784900059, 408980417, 691322478) index="1" unique_id=754176593]
 transform = Transform3D(-0.76040596, 7.1742573e-07, -0.64944804, 0, 1, 1.10467e-06, -0.64944804, -8.3999765e-07, 0.760406, 3.7556534, 86.85907, -0.02166748)
 
-[node name="vform lam016" parent="room321/windows/curtains/Node3D2/v-form/vform lam z015" parent_id_path=PackedInt32Array(1784900059, 408980417, 1817758626) index="1" unique_id=1958302613]
+[node name="vform lam016" parent="room321/windows/curtains/Node3D2/v-form/vform lam z015" parent_id_path=PackedInt32Array(1784900059, 408980417, 1951853041) index="1" unique_id=952065059]
 transform = Transform3D(-0.90556145, 4.6861794e-07, -0.4242153, -5.187425e-16, 1, 1.1046701e-06, -0.4242152, -1.0003465e-06, 0.90556145, 3.755661, 86.859055, -0.02166748)
 
-[node name="vform lam017" parent="room321/windows/curtains/Node3D2/v-form/vform lam z016" parent_id_path=PackedInt32Array(1784900059, 408980417, 2070516144) index="1" unique_id=1493097123]
+[node name="vform lam017" parent="room321/windows/curtains/Node3D2/v-form/vform lam z016" parent_id_path=PackedInt32Array(1784900059, 408980417, 1687351968) index="1" unique_id=1065870072]
 transform = Transform3D(-0.80744433, 6.5169286e-07, -0.5899435, -4.7355305e-14, 1, 1.1046701e-06, -0.5899435, -8.9195976e-07, 0.80744463, 3.7556534, 86.859055, -0.02166748)
 
-[node name="vform z034" parent="room321/windows/curtains/Node3D2/v-form/vform lam z016" parent_id_path=PackedInt32Array(1784900059, 408980417, 2070516144) index="3" unique_id=339087257]
+[node name="vform z034" parent="room321/windows/curtains/Node3D2/v-form/vform lam z016" parent_id_path=PackedInt32Array(1784900059, 408980417, 1687351968) index="3" unique_id=903904994]
 transform = Transform3D(-1, 0, 8.662515e-07, 0, 1, 0, -8.662515e-07, 0, -1, -7.5041428, -84.893936, -5.025879)
 
-[node name="vform lam z007" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="7" unique_id=1080463284]
+[node name="vform lam z007" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="7" unique_id=1274881524]
 transform = Transform3D(0.010000003, 0, 0, 0, 0.010000003, 0, 0, 0, 0.010000003, -0.30981207, -0.004046917, 0)
 
-[node name="vform lam008" parent="room321/windows/curtains/Node3D2/v-form/vform lam z007" index="1" unique_id=91711948]
+[node name="vform lam008" parent="room321/windows/curtains/Node3D2/v-form/vform lam z007" index="1" unique_id=1788035235]
 transform = Transform3D(-0.30639315, 1.0515407e-06, -0.9519049, 0, 1, 1.10467e-06, -0.951905, -3.3846337e-07, 0.3063932, -7.5051174, 86.859055, -0.02166748)
 
-[node name="vform lam z005" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="8" unique_id=1729492539]
+[node name="vform lam z005" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="8" unique_id=595897552]
 transform = Transform3D(0.010000003, 0, 0, 0, 0.010000003, 0, 0, 0, 0.010000003, -0.2965055, -0.004046917, 0)
 
-[node name="vform lam006" parent="room321/windows/curtains/Node3D2/v-form/vform lam z005" index="1" unique_id=1740496914]
+[node name="vform lam006" parent="room321/windows/curtains/Node3D2/v-form/vform lam z005" index="1" unique_id=782012800]
 transform = Transform3D(-0.8252712, 6.238474e-07, -0.56473655, 0, 0.9999998, 1.1046698e-06, -0.5647365, -9.116523e-07, 0.82527125, 3.7556725, 86.859055, -0.02166748)
 
-[node name="vform lam z003" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="9" unique_id=152288492]
+[node name="vform lam z003" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="9" unique_id=1394968063]
 transform = Transform3D(0.010000003, 0, 0, 0, 0.010000003, 0, 0, 0, 0.010000003, -0.21431518, -0.004046917, 0)
 
-[node name="vform lam004" parent="room321/windows/curtains/Node3D2/v-form/vform lam z003" index="1" unique_id=268828277]
+[node name="vform lam004" parent="room321/windows/curtains/Node3D2/v-form/vform lam z003" index="1" unique_id=1850225125]
 transform = Transform3D(-0.75498426, 7.243794e-07, -0.65574276, 2.2241095e-14, 0.9999998, 1.1046698e-06, -0.65574276, -8.340082e-07, 0.75498414, 3.7556725, 86.859055, -0.02166748)
 
-[node name="vform lam z004" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="10" unique_id=299863029]
+[node name="vform lam z004" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="10" unique_id=821453515]
 transform = Transform3D(0.010000002, 0, 0, 0, 0.010000002, 0, 0, 0, 0.010000002, -0.14019018, -0.004046917, 0)
 
-[node name="vform lam005" parent="room321/windows/curtains/Node3D2/v-form/vform lam z004" index="1" unique_id=1499097629]
+[node name="vform lam005" parent="room321/windows/curtains/Node3D2/v-form/vform lam z004" index="1" unique_id=1308931671]
 transform = Transform3D(-0.9749865, 2.455276e-07, -0.22226317, 3.9557008e-14, 0.99999994, 1.1046699e-06, -0.22226314, -1.0770384e-06, 0.9749866, 3.7556725, 86.85907, -0.02166748)
 
-[node name="vform lam z002" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="11" unique_id=978706555]
+[node name="vform lam z002" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="11" unique_id=1230700806]
 transform = Transform3D(0.010000002, 0, 0, 0, 0.010000002, 0, 0, 0, 0.010000002, 0.019809932, -0.004046917, 0)
 
-[node name="vform lam003" parent="room321/windows/curtains/Node3D2/v-form/vform lam z002" index="1" unique_id=1869689333]
+[node name="vform lam003" parent="room321/windows/curtains/Node3D2/v-form/vform lam z002" index="1" unique_id=52865926]
 transform = Transform3D(-0.9857916, 1.8555501e-07, -0.1679733, 0, 0.99999994, 1.1046699e-06, -0.16797325, -1.0889743e-06, 0.9857915, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam015" parent="room321/windows/curtains/Node3D2/v-form/vform lam z014" parent_id_path=PackedInt32Array(1784900059, 408980417, 1404123485) index="1" unique_id=1632782695]
+[node name="vform lam015" parent="room321/windows/curtains/Node3D2/v-form/vform lam z014" parent_id_path=PackedInt32Array(1784900059, 408980417, 27104031) index="1" unique_id=397411266]
 transform = Transform3D(-0.9252627, 4.190311e-07, -0.37932694, 0, 1, 1.10467e-06, -0.37932697, -1.0221099e-06, 0.9252627, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam z006" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="15" unique_id=661260449]
+[node name="vform lam z006" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="15" unique_id=17467089]
 transform = Transform3D(0.010000001, 0, 0, 0, 0.010000001, 0, 0, 0, 0.010000001, 0.16715984, -0.004046917, 0)
 
-[node name="vform lam007" parent="room321/windows/curtains/Node3D2/v-form/vform lam z006" index="1" unique_id=1596000227]
+[node name="vform lam007" parent="room321/windows/curtains/Node3D2/v-form/vform lam z006" index="1" unique_id=269991171]
 transform = Transform3D(-0.9381068, 3.8259842e-07, -0.34634635, 8.738164e-15, 1, 1.10467e-06, -0.34634635, -1.0362984e-06, 0.9381067, 3.7556763, 86.85907, -0.021728516)
 
-[node name="vform lam z001" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="16" unique_id=1583294091]
+[node name="vform lam z001" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="16" unique_id=1604566829]
 transform = Transform3D(0.010000002, 0, 0, 0, 0.010000002, 0, 0, 0, 0.010000002, 0.09980993, -0.004046917, 0)
 
-[node name="vform lam002" parent="room321/windows/curtains/Node3D2/v-form/vform lam z001" index="1" unique_id=1938912497]
+[node name="vform lam002" parent="room321/windows/curtains/Node3D2/v-form/vform lam z001" index="1" unique_id=2025471283]
 transform = Transform3D(-0.87452644, 5.357402e-07, -0.48497757, 9.504563e-14, 0.99999994, 1.1046698e-06, -0.4849774, -9.660631e-07, 0.87452644, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam018" parent="room321/windows/curtains/Node3D2/v-form/vform lam z017" parent_id_path=PackedInt32Array(1784900059, 408980417, 478247912) index="1" unique_id=54938331]
+[node name="vform lam018" parent="room321/windows/curtains/Node3D2/v-form/vform lam z017" parent_id_path=PackedInt32Array(1784900059, 408980417, 182120369) index="1" unique_id=885902681]
 transform = Transform3D(-0.83472294, 6.0830877e-07, -0.55067015, 0, 1, 1.10467e-06, -0.5506702, -9.2209336e-07, 0.83472294, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam z009" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="18" unique_id=1517425320]
+[node name="vform lam z009" parent="room321/windows/curtains/Node3D2/v-form" parent_id_path=PackedInt32Array(1784900059, 408980417) index="18" unique_id=1615980125]
 transform = Transform3D(0.010000001, 0, 0, 0, 0.010000001, 0, 0, 0, 0.010000001, -0.072840184, -0.004046917, 0)
 
-[node name="vform lam010" parent="room321/windows/curtains/Node3D2/v-form/vform lam z009" index="1" unique_id=2045741026]
+[node name="vform lam010" parent="room321/windows/curtains/Node3D2/v-form/vform lam z009" index="1" unique_id=582439331]
 transform = Transform3D(-0.9929035, 1.3137159e-07, -0.11892389, -2.970417e-14, 1, 1.10467e-06, -0.1189239, -1.0968307e-06, 0.9929035, 3.7556648, 86.85907, -0.021728516)
 
-[node name="vform lam011" parent="room321/windows/curtains/Node3D2/v-form/vform lam z010" parent_id_path=PackedInt32Array(1784900059, 408980417, 786119646) index="1" unique_id=1618103103]
+[node name="vform lam011" parent="room321/windows/curtains/Node3D2/v-form/vform lam z010" parent_id_path=PackedInt32Array(1784900059, 408980417, 1803679478) index="1" unique_id=1363680689]
 transform = Transform3D(-0.98876137, 1.6514906e-07, -0.14950074, -7.865461e-15, 1, 1.1046701e-06, -0.14950083, -1.0922554e-06, 0.9887617, 3.755661, 86.859055, -0.02166748)
 
-[node name="vform lam019" parent="room321/windows/curtains/Node3D2/v-form/vform lam z018" parent_id_path=PackedInt32Array(1784900059, 408980417, 785679444) index="1" unique_id=189056136]
+[node name="vform lam019" parent="room321/windows/curtains/Node3D2/v-form/vform lam z018" parent_id_path=PackedInt32Array(1784900059, 408980417, 277487186) index="1" unique_id=1844207954]
 transform = Transform3D(-0.9366783, 3.8684553e-07, -0.35019103, 0, 1, 1.10467e-06, -0.35019103, -1.0347204e-06, 0.9366783, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam012" parent="room321/windows/curtains/Node3D2/v-form/vform lam z011" parent_id_path=PackedInt32Array(1784900059, 408980417, 680470039) index="1" unique_id=438761643]
+[node name="vform lam012" parent="room321/windows/curtains/Node3D2/v-form/vform lam z011" parent_id_path=PackedInt32Array(1784900059, 408980417, 1244817690) index="1" unique_id=1504423227]
 transform = Transform3D(-0.90005285, 4.8139407e-07, -0.43578097, 3.170059e-14, 1, 1.1046701e-06, -0.43578106, -9.942613e-07, 0.90005285, 3.755661, 86.859055, -0.02166748)
 
 [node name="Node3D3" parent="room321/windows/curtains" unique_id=1955434270 instance=ExtResource("55_mme3m")]
 transform = Transform3D(1.6631391, 0, 0, 0, 1.6825496, 0, 0, 0, 1.43, -4.1554837, 2.3404276, 8.327824)
 
-[node name="vform lam z008" parent="room321/windows/curtains/Node3D3/v-form" parent_id_path=PackedInt32Array(1955434270, 408980417) index="0" unique_id=578739750]
+[node name="vform lam z008" parent="room321/windows/curtains/Node3D3/v-form" parent_id_path=PackedInt32Array(1955434270, 408980417) index="0" unique_id=814918141]
 transform = Transform3D(0.010000002, 0, 0, 0, 0.010000002, 0, 0, 0, 0.010000002, 0.18223071, -0.004046917, 0)
 
-[node name="vform lam009" parent="room321/windows/curtains/Node3D3/v-form/vform lam z008" index="1" unique_id=1336948919]
+[node name="vform lam009" parent="room321/windows/curtains/Node3D3/v-form/vform lam z008" index="1" unique_id=200129718]
 transform = Transform3D(-0.7696448, 7.053012e-07, -0.6384723, 0, 1, 1.10467e-06, -0.6384724, -8.5020355e-07, 0.7696448, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam013" parent="room321/windows/curtains/Node3D3/v-form/vform lam z012" parent_id_path=PackedInt32Array(1955434270, 408980417, 370874905) index="1" unique_id=1522575373]
+[node name="vform lam013" parent="room321/windows/curtains/Node3D3/v-form/vform lam z012" parent_id_path=PackedInt32Array(1955434270, 408980417, 921613692) index="1" unique_id=739672823]
 transform = Transform3D(-0.9603083, 3.0813754e-07, -0.27894083, 0, 1, 1.10467e-06, -0.27894086, -1.0608239e-06, 0.9603084, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam014" parent="room321/windows/curtains/Node3D3/v-form/vform lam z013" parent_id_path=PackedInt32Array(1955434270, 408980417, 1093769502) index="1" unique_id=1646767536]
+[node name="vform lam014" parent="room321/windows/curtains/Node3D3/v-form/vform lam z013" parent_id_path=PackedInt32Array(1955434270, 408980417, 1629431812) index="1" unique_id=1327232910]
 transform = Transform3D(-0.7760794, 6.966438e-07, -0.6306352, 0, 1, 1.10467e-06, -0.63063526, -8.573117e-07, 0.7760795, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam020" parent="room321/windows/curtains/Node3D3/v-form/vform lam z019" parent_id_path=PackedInt32Array(1955434270, 408980417, 634239719) index="1" unique_id=98630221]
+[node name="vform lam020" parent="room321/windows/curtains/Node3D3/v-form/vform lam z019" parent_id_path=PackedInt32Array(1955434270, 408980417, 1380606847) index="1" unique_id=555246779]
 transform = Transform3D(-0.96771795, 2.7841614e-07, -0.25203556, 0, 1, 1.10467e-06, -0.25203556, -1.069009e-06, 0.96771795, 3.7556534, 86.85907, -0.02166748)
 
-[node name="vform lam021" parent="room321/windows/curtains/Node3D3/v-form/vform lam z020" parent_id_path=PackedInt32Array(1955434270, 408980417, 225560919) index="1" unique_id=787475722]
+[node name="vform lam021" parent="room321/windows/curtains/Node3D3/v-form/vform lam z020" parent_id_path=PackedInt32Array(1955434270, 408980417, 691322478) index="1" unique_id=754176593]
 transform = Transform3D(-0.76040596, 7.1742573e-07, -0.64944804, 0, 1, 1.10467e-06, -0.64944804, -8.3999765e-07, 0.760406, 3.7556534, 86.85907, -0.02166748)
 
-[node name="vform lam016" parent="room321/windows/curtains/Node3D3/v-form/vform lam z015" parent_id_path=PackedInt32Array(1955434270, 408980417, 1817758626) index="1" unique_id=1958302613]
+[node name="vform lam016" parent="room321/windows/curtains/Node3D3/v-form/vform lam z015" parent_id_path=PackedInt32Array(1955434270, 408980417, 1951853041) index="1" unique_id=952065059]
 transform = Transform3D(-0.90556145, 4.6861794e-07, -0.4242153, -5.187425e-16, 1, 1.1046701e-06, -0.4242152, -1.0003465e-06, 0.90556145, 3.755661, 86.859055, -0.02166748)
 
-[node name="vform lam017" parent="room321/windows/curtains/Node3D3/v-form/vform lam z016" parent_id_path=PackedInt32Array(1955434270, 408980417, 2070516144) index="1" unique_id=1493097123]
+[node name="vform lam017" parent="room321/windows/curtains/Node3D3/v-form/vform lam z016" parent_id_path=PackedInt32Array(1955434270, 408980417, 1687351968) index="1" unique_id=1065870072]
 transform = Transform3D(-0.9143387, 4.473362e-07, -0.40495008, 0, 1, 1.10467e-06, -0.4049501, -1.0100426e-06, 0.91433877, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam008" parent="room321/windows/curtains/Node3D3/v-form/vform lam z007" parent_id_path=PackedInt32Array(1955434270, 408980417, 1080463284) index="1" unique_id=91711948]
+[node name="vform lam008" parent="room321/windows/curtains/Node3D3/v-form/vform lam z007" parent_id_path=PackedInt32Array(1955434270, 408980417, 1274881524) index="1" unique_id=1788035235]
 transform = Transform3D(-0.30639318, 1.0515408e-06, -0.95190495, 0, 1, 1.10467e-06, -0.951905, -3.3846337e-07, 0.3063932, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam006" parent="room321/windows/curtains/Node3D3/v-form/vform lam z005" parent_id_path=PackedInt32Array(1955434270, 408980417, 1729492539) index="1" unique_id=1740496914]
+[node name="vform lam006" parent="room321/windows/curtains/Node3D3/v-form/vform lam z005" parent_id_path=PackedInt32Array(1955434270, 408980417, 595897552) index="1" unique_id=782012800]
 transform = Transform3D(-0.57996386, 8.999108e-07, -0.8146422, 0, 1, 1.10467e-06, -0.8146422, -6.406687e-07, 0.57996386, 3.7556763, 86.85907, -0.02166748)
 
-[node name="vform lam004" parent="room321/windows/curtains/Node3D3/v-form/vform lam z003" parent_id_path=PackedInt32Array(1955434270, 408980417, 152288492) index="1" unique_id=268828277]
+[node name="vform lam004" parent="room321/windows/curtains/Node3D3/v-form/vform lam z003" parent_id_path=PackedInt32Array(1955434270, 408980417, 1394968063) index="1" unique_id=1850225125]
 transform = Transform3D(-0.49085817, 9.624321e-07, -0.8712394, 0, 1, 1.10467e-06, -0.87123954, -5.4223625e-07, 0.49085817, 3.7556763, 86.85907, -0.02166748)
 
-[node name="vform lam005" parent="room321/windows/curtains/Node3D3/v-form/vform lam z004" parent_id_path=PackedInt32Array(1955434270, 408980417, 299863029) index="1" unique_id=1499097629]
+[node name="vform lam005" parent="room321/windows/curtains/Node3D3/v-form/vform lam z004" parent_id_path=PackedInt32Array(1955434270, 408980417, 821453515) index="1" unique_id=1308931671]
 transform = Transform3D(-0.736416, 7.473413e-07, -0.676529, 0, 1, 1.10467e-06, -0.676529, -8.134966e-07, 0.736416, 3.7556763, 86.85907, -0.02166748)
 
-[node name="vform lam003" parent="room321/windows/curtains/Node3D3/v-form/vform lam z002" parent_id_path=PackedInt32Array(1955434270, 408980417, 978706555) index="1" unique_id=1869689333]
+[node name="vform lam003" parent="room321/windows/curtains/Node3D3/v-form/vform lam z002" parent_id_path=PackedInt32Array(1955434270, 408980417, 1230700806) index="1" unique_id=52865926]
 transform = Transform3D(-0.8885772, 5.06742e-07, -0.4587271, 0, 1, 1.10467e-06, -0.45872712, -9.815845e-07, 0.8885772, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam015" parent="room321/windows/curtains/Node3D3/v-form/vform lam z014" parent_id_path=PackedInt32Array(1955434270, 408980417, 1404123485) index="1" unique_id=1632782695]
+[node name="vform lam015" parent="room321/windows/curtains/Node3D3/v-form/vform lam z014" parent_id_path=PackedInt32Array(1955434270, 408980417, 27104031) index="1" unique_id=397411266]
 transform = Transform3D(-0.9252627, 4.190311e-07, -0.37932694, 0, 1, 1.10467e-06, -0.37932697, -1.0221099e-06, 0.9252627, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam007" parent="room321/windows/curtains/Node3D3/v-form/vform lam z006" parent_id_path=PackedInt32Array(1955434270, 408980417, 661260449) index="1" unique_id=1596000227]
+[node name="vform lam007" parent="room321/windows/curtains/Node3D3/v-form/vform lam z006" parent_id_path=PackedInt32Array(1955434270, 408980417, 17467089) index="1" unique_id=269991171]
 transform = Transform3D(-0.77787036, 6.9420196e-07, -0.62842476, 0, 1, 1.10467e-06, -0.62842476, -8.592901e-07, 0.77787036, 3.7556763, 86.85907, -0.02166748)
 
-[node name="vform lam002" parent="room321/windows/curtains/Node3D3/v-form/vform lam z001" parent_id_path=PackedInt32Array(1955434270, 408980417, 1583294091) index="1" unique_id=1938912497]
+[node name="vform lam002" parent="room321/windows/curtains/Node3D3/v-form/vform lam z001" parent_id_path=PackedInt32Array(1955434270, 408980417, 1604566829) index="1" unique_id=2025471283]
 transform = Transform3D(-0.364828, 1.0285305e-06, -0.9310749, 0, 1, 1.10467e-06, -0.9310749, -4.030146e-07, 0.36482805, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam018" parent="room321/windows/curtains/Node3D3/v-form/vform lam z017" parent_id_path=PackedInt32Array(1955434270, 408980417, 478247912) index="1" unique_id=54938331]
+[node name="vform lam018" parent="room321/windows/curtains/Node3D3/v-form/vform lam z017" parent_id_path=PackedInt32Array(1955434270, 408980417, 182120369) index="1" unique_id=885902681]
 transform = Transform3D(-0.83472294, 6.0830877e-07, -0.55067015, 0, 1, 1.10467e-06, -0.5506702, -9.2209336e-07, 0.83472294, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam010" parent="room321/windows/curtains/Node3D3/v-form/vform lam z009" parent_id_path=PackedInt32Array(1955434270, 408980417, 1517425320) index="1" unique_id=2045741026]
+[node name="vform lam010" parent="room321/windows/curtains/Node3D3/v-form/vform lam z009" parent_id_path=PackedInt32Array(1955434270, 408980417, 1615980125) index="1" unique_id=582439331]
 transform = Transform3D(-0.8613455, 5.6119393e-07, -0.5080195, 0, 1, 1.10467e-06, -0.5080195, -9.515026e-07, 0.8613455, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam011" parent="room321/windows/curtains/Node3D3/v-form/vform lam z010" parent_id_path=PackedInt32Array(1955434270, 408980417, 786119646) index="1" unique_id=1618103103]
+[node name="vform lam011" parent="room321/windows/curtains/Node3D3/v-form/vform lam z010" parent_id_path=PackedInt32Array(1955434270, 408980417, 1803679478) index="1" unique_id=1363680689]
 transform = Transform3D(-0.86590314, 5.525687e-07, -0.50021154, 0, 1, 1.10467e-06, -0.5002116, -9.565373e-07, 0.86590326, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam019" parent="room321/windows/curtains/Node3D3/v-form/vform lam z018" parent_id_path=PackedInt32Array(1955434270, 408980417, 785679444) index="1" unique_id=189056136]
+[node name="vform lam019" parent="room321/windows/curtains/Node3D3/v-form/vform lam z018" parent_id_path=PackedInt32Array(1955434270, 408980417, 277487186) index="1" unique_id=1844207954]
 transform = Transform3D(-0.9366783, 3.8684553e-07, -0.35019103, 0, 1, 1.10467e-06, -0.35019103, -1.0347204e-06, 0.9366783, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam012" parent="room321/windows/curtains/Node3D3/v-form/vform lam z011" parent_id_path=PackedInt32Array(1955434270, 408980417, 680470039) index="1" unique_id=438761643]
+[node name="vform lam012" parent="room321/windows/curtains/Node3D3/v-form/vform lam z011" parent_id_path=PackedInt32Array(1955434270, 408980417, 1244817690) index="1" unique_id=1504423227]
 transform = Transform3D(-0.6507344, 8.387819e-07, -0.75930536, 0, 1, 1.10467e-06, -0.7593054, -7.1884676e-07, 0.6507344, 3.755661, 86.85907, -0.02166748)
 
 [node name="Node3D4" parent="room321/windows/curtains" unique_id=1052506469 instance=ExtResource("55_mme3m")]
 transform = Transform3D(1.6631391, 0, 0, 0, 1.6825496, 0, 0, 0, 1.43, -8.174822, 2.3404276, 8.327824)
 
-[node name="vform lam z008" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="0" unique_id=578739750]
+[node name="vform lam z008" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="0" unique_id=814918141]
 transform = Transform3D(0.009239734, 0, 0.0038245781, 0, 0.0100000035, 0, -0.0038245781, 0, 0.009239733, 0.18223095, -0.004046917, 0)
 
-[node name="vform 010" parent="room321/windows/curtains/Node3D4/v-form/vform lam z008" index="0" unique_id=2083668879]
+[node name="vform 010" parent="room321/windows/curtains/Node3D4/v-form/vform lam z008" index="0" unique_id=1553959294]
 transform = Transform3D(-1, 2.842171e-14, 0, 0, 1, 1.10467e-06, 0, -1.10467e-06, 1, -1.6854858, 88.20227, -2.2542725)
 
-[node name="vform lam009" parent="room321/windows/curtains/Node3D4/v-form/vform lam z008" index="1" unique_id=1336948919]
+[node name="vform lam009" parent="room321/windows/curtains/Node3D4/v-form/vform lam z008" index="1" unique_id=200129718]
 transform = Transform3D(-0.7696448, 7.053012e-07, -0.6384723, 0, 1, 1.10467e-06, -0.63847244, -8.5020355e-07, 0.7696448, -1.7485352, 86.85907, -2.2999878)
 
-[node name="vform lam z012" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="1" unique_id=370874905]
+[node name="vform lam z012" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="1" unique_id=921613692]
 transform = Transform3D(0.009834137, 0, -0.0018137742, 0, 0.010000001, 0, 0.001813774, 0, 0.009834136, -0.2002325, -0.004046917, 0)
 
-[node name="vform lam013" parent="room321/windows/curtains/Node3D4/v-form/vform lam z012" index="1" unique_id=1522575373]
+[node name="vform lam013" parent="room321/windows/curtains/Node3D4/v-form/vform lam z012" index="1" unique_id=739672823]
 transform = Transform3D(-0.9603083, 3.0813754e-07, -0.27894083, 0, 1, 1.10467e-06, -0.27894086, -1.0608239e-06, 0.9603084, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam z013" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="2" unique_id=1093769502]
+[node name="vform lam z013" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="2" unique_id=1629431812]
 transform = Transform3D(0.009622323, 0, 0.0027222987, 0, 0.010000001, 0, -0.0027222985, 0, 0.009622322, -0.28023243, -0.004046917, 0)
 
-[node name="vform lam014" parent="room321/windows/curtains/Node3D4/v-form/vform lam z013" index="1" unique_id=1646767536]
+[node name="vform lam014" parent="room321/windows/curtains/Node3D4/v-form/vform lam z013" index="1" unique_id=1327232910]
 transform = Transform3D(-0.7760794, 6.966438e-07, -0.6306352, 0, 1, 1.10467e-06, -0.63063526, -8.573117e-07, 0.7760795, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam z019" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="3" unique_id=634239719]
+[node name="vform lam z019" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="3" unique_id=1380606847]
 transform = Transform3D(0.008328248, 0, -0.0055353697, 0, 0.010000001, 0, 0.0055353697, 0, 0.008328247, -0.760232, -0.004046917, 0)
 
-[node name="vform lam020" parent="room321/windows/curtains/Node3D4/v-form/vform lam z019" index="1" unique_id=98630221]
+[node name="vform lam020" parent="room321/windows/curtains/Node3D4/v-form/vform lam z019" index="1" unique_id=555246779]
 transform = Transform3D(-0.96771795, 2.7841614e-07, -0.25203556, 0, 1, 1.10467e-06, -0.25203556, -1.069009e-06, 0.96771795, 3.7556534, 86.85907, -0.02166748)
 
-[node name="vform lam z020" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="4" unique_id=225560919]
+[node name="vform lam z020" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="4" unique_id=691322478]
 transform = Transform3D(0.009921846, 0, -0.0012477912, 0, 0.010000001, 0, 0.0012477911, 0, 0.009921846, -0.8402324, -0.004046917, 0)
 
-[node name="vform lam021" parent="room321/windows/curtains/Node3D4/v-form/vform lam z020" index="1" unique_id=787475722]
+[node name="vform lam021" parent="room321/windows/curtains/Node3D4/v-form/vform lam z020" index="1" unique_id=754176593]
 transform = Transform3D(-0.76040596, 7.1742573e-07, -0.64944804, 0, 1, 1.10467e-06, -0.64944804, -8.3999765e-07, 0.760406, 3.7556534, 86.85907, -0.02166748)
 
-[node name="vform lam z015" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="5" unique_id=1817758626]
+[node name="vform lam z015" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="5" unique_id=1951853041]
 transform = Transform3D(0.009415354, 0, -0.0033691453, 0, 0.010000001, 0, 0.0033691453, 0, 0.009415353, -0.44023228, -0.004046917, 0)
 
-[node name="vform lam016" parent="room321/windows/curtains/Node3D4/v-form/vform lam z015" index="1" unique_id=1958302613]
+[node name="vform lam016" parent="room321/windows/curtains/Node3D4/v-form/vform lam z015" index="1" unique_id=952065059]
 transform = Transform3D(-0.90556145, 4.6861794e-07, -0.4242153, -5.187425e-16, 1, 1.1046701e-06, -0.4242152, -1.0003465e-06, 0.90556145, 3.755661, 86.859055, -0.02166748)
 
-[node name="vform lam z016" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="6" unique_id=2070516144]
+[node name="vform lam z016" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="6" unique_id=1687351968]
 transform = Transform3D(0.009453595, 0, -0.0032603021, 0, 0.010000001, 0, 0.0032603021, 0, 0.009453594, -0.5202327, -0.004046917, 0)
 
-[node name="vform lam017" parent="room321/windows/curtains/Node3D4/v-form/vform lam z016" index="1" unique_id=1493097123]
+[node name="vform lam017" parent="room321/windows/curtains/Node3D4/v-form/vform lam z016" index="1" unique_id=1065870072]
 transform = Transform3D(-0.9143387, 4.473362e-07, -0.40495008, 0, 1, 1.10467e-06, -0.4049501, -1.0100426e-06, 0.91433877, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam z007" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="7" unique_id=1080463284]
+[node name="vform lam z007" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="7" unique_id=1274881524]
 transform = Transform3D(0.0069472124, 0, 0.007192792, 0, 0.010000001, 0, -0.0071927924, 0, 0.006947212, 0.19976759, -0.004046917, 0)
 
-[node name="vform 009" parent="room321/windows/curtains/Node3D4/v-form/vform lam z007" index="0" unique_id=613955922]
+[node name="vform 009" parent="room321/windows/curtains/Node3D4/v-form/vform lam z007" index="0" unique_id=2095806463]
 transform = Transform3D(-0.67336094, 8.166978e-07, -0.7393138, 0, 1, 1.10467e-06, -0.73931384, -7.4384167e-07, 0.673361, 3.760559, 88.202286, 0)
 
-[node name="vform lam008" parent="room321/windows/curtains/Node3D4/v-form/vform lam z007" index="1" unique_id=91711948]
+[node name="vform lam008" parent="room321/windows/curtains/Node3D4/v-form/vform lam z007" index="1" unique_id=1788035235]
 transform = Transform3D(-0.59403676, 8.8863817e-07, -0.80443764, -2.7829198e-14, 1, 1.10467e-06, -0.8044378, -6.5621447e-07, 0.59403676, 3.7556763, 86.85907, -0.021697998)
 
-[node name="vform lam006" parent="room321/windows/curtains/Node3D4/v-form/vform lam z005" parent_id_path=PackedInt32Array(1052506469, 408980417, 1729492539) index="1" unique_id=1740496914]
+[node name="vform lam006" parent="room321/windows/curtains/Node3D4/v-form/vform lam z005" parent_id_path=PackedInt32Array(1052506469, 408980417, 595897552) index="1" unique_id=782012800]
 transform = Transform3D(-0.8920739, 4.9918907e-07, -0.4518898, 3.39108e-14, 1, 1.10467e-06, -0.4518898, -9.854473e-07, 0.89207387, 3.7556763, 86.859055, -0.02166748)
 
-[node name="vform lam004" parent="room321/windows/curtains/Node3D4/v-form/vform lam z003" parent_id_path=PackedInt32Array(1052506469, 408980417, 152288492) index="1" unique_id=268828277]
+[node name="vform lam004" parent="room321/windows/curtains/Node3D4/v-form/vform lam z003" parent_id_path=PackedInt32Array(1052506469, 408980417, 1394968063) index="1" unique_id=1850225125]
 transform = Transform3D(-0.90638155, 4.6667887e-07, -0.42246002, -5.094185e-14, 1, 1.10467e-06, -0.42246008, -1.0012524e-06, 0.9063814, 3.7556763, 86.859055, -0.02166748)
 
-[node name="vform lam005" parent="room321/windows/curtains/Node3D4/v-form/vform lam z004" parent_id_path=PackedInt32Array(1052506469, 408980417, 299863029) index="1" unique_id=1499097629]
+[node name="vform lam005" parent="room321/windows/curtains/Node3D4/v-form/vform lam z004" parent_id_path=PackedInt32Array(1052506469, 408980417, 821453515) index="1" unique_id=1308931671]
 transform = Transform3D(-0.90786535, 4.6314614e-07, -0.41926196, -3.9557018e-14, 1, 1.10467e-06, -0.41926193, -1.0028916e-06, 0.90786535, 3.7556763, 86.859055, -0.02166748)
 
-[node name="vform lam003" parent="room321/windows/curtains/Node3D4/v-form/vform lam z002" parent_id_path=PackedInt32Array(1052506469, 408980417, 978706555) index="1" unique_id=1869689333]
+[node name="vform lam003" parent="room321/windows/curtains/Node3D4/v-form/vform lam z002" parent_id_path=PackedInt32Array(1052506469, 408980417, 1230700806) index="1" unique_id=52865926]
 transform = Transform3D(-0.9506337, -0.009277336, -0.3101772, -0.00893078, 0.9999569, -0.0025373849, -0.31018746, -0.00035800136, 0.9506755, 3.7556458, 86.859055, -0.02166748)
 
-[node name="vform lam015" parent="room321/windows/curtains/Node3D4/v-form/vform lam z014" parent_id_path=PackedInt32Array(1052506469, 408980417, 1404123485) index="1" unique_id=1632782695]
+[node name="vform lam015" parent="room321/windows/curtains/Node3D4/v-form/vform lam z014" parent_id_path=PackedInt32Array(1052506469, 408980417, 27104031) index="1" unique_id=397411266]
 transform = Transform3D(-0.9252627, 4.190311e-07, -0.37932694, 0, 1, 1.10467e-06, -0.37932697, -1.0221099e-06, 0.9252627, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam007" parent="room321/windows/curtains/Node3D4/v-form/vform lam z006" parent_id_path=PackedInt32Array(1052506469, 408980417, 661260449) index="1" unique_id=1596000227]
+[node name="vform lam007" parent="room321/windows/curtains/Node3D4/v-form/vform lam z006" parent_id_path=PackedInt32Array(1052506469, 408980417, 17467089) index="1" unique_id=269991171]
 transform = Transform3D(-0.77787036, 6.9420196e-07, -0.62842476, 0, 1, 1.10467e-06, -0.62842476, -8.592901e-07, 0.77787036, 3.7556763, 86.85907, -0.02166748)
 
-[node name="vform lam z001" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="16" unique_id=1583294091]
+[node name="vform lam z001" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="16" unique_id=1604566829]
 transform = Transform3D(0.010000001, 0, 0, 0, 0.010000001, 0, 0, 0, 0.010000001, 0.72857237, -0.004046917, 0)
 
-[node name="vform lam002" parent="room321/windows/curtains/Node3D4/v-form/vform lam z001" index="1" unique_id=1938912497]
+[node name="vform lam002" parent="room321/windows/curtains/Node3D4/v-form/vform lam z001" index="1" unique_id=2025471283]
 transform = Transform3D(-0.9479187, 3.5185136e-07, -0.3185127, -5.472632e-14, 1, 1.10467e-06, -0.31851265, -1.0471374e-06, 0.9479187, 3.7557068, 86.85907, -0.02178955)
 
-[node name="vform lam018" parent="room321/windows/curtains/Node3D4/v-form/vform lam z017" parent_id_path=PackedInt32Array(1052506469, 408980417, 478247912) index="1" unique_id=54938331]
+[node name="vform lam018" parent="room321/windows/curtains/Node3D4/v-form/vform lam z017" parent_id_path=PackedInt32Array(1052506469, 408980417, 182120369) index="1" unique_id=885902681]
 transform = Transform3D(-0.83472294, 6.0830877e-07, -0.55067015, 0, 1, 1.10467e-06, -0.5506702, -9.2209336e-07, 0.83472294, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam010" parent="room321/windows/curtains/Node3D4/v-form/vform lam z009" parent_id_path=PackedInt32Array(1052506469, 408980417, 1517425320) index="1" unique_id=2045741026]
+[node name="vform lam010" parent="room321/windows/curtains/Node3D4/v-form/vform lam z009" parent_id_path=PackedInt32Array(1052506469, 408980417, 1615980125) index="1" unique_id=582439331]
 transform = Transform3D(-0.8613455, 5.6119393e-07, -0.5080195, 0, 1, 1.10467e-06, -0.5080195, -9.515026e-07, 0.8613455, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam011" parent="room321/windows/curtains/Node3D4/v-form/vform lam z010" parent_id_path=PackedInt32Array(1052506469, 408980417, 786119646) index="1" unique_id=1618103103]
+[node name="vform lam011" parent="room321/windows/curtains/Node3D4/v-form/vform lam z010" parent_id_path=PackedInt32Array(1052506469, 408980417, 1803679478) index="1" unique_id=1363680689]
 transform = Transform3D(-0.86590314, 5.525687e-07, -0.50021154, 0, 1, 1.10467e-06, -0.5002116, -9.565373e-07, 0.86590326, 3.755661, 86.85907, -0.02166748)
 
-[node name="vform lam019" parent="room321/windows/curtains/Node3D4/v-form/vform lam z018" parent_id_path=PackedInt32Array(1052506469, 408980417, 785679444) index="1" unique_id=189056136]
+[node name="vform lam019" parent="room321/windows/curtains/Node3D4/v-form/vform lam z018" parent_id_path=PackedInt32Array(1052506469, 408980417, 277487186) index="1" unique_id=1844207954]
 transform = Transform3D(-0.9366783, 3.8684553e-07, -0.35019103, 0, 1, 1.10467e-06, -0.35019103, -1.0347204e-06, 0.9366783, 3.7556458, 86.85907, -0.02166748)
 
-[node name="vform lam z011" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="21" unique_id=680470039]
+[node name="vform lam z011" parent="room321/windows/curtains/Node3D4/v-form" parent_id_path=PackedInt32Array(1052506469, 408980417) index="21" unique_id=1244817690]
 transform = Transform3D(0.010000001, 0, 0, 0, 0.010000001, 0, 0, 0, 0.010000001, 0.6640892, -0.004046917, 0)
 
-[node name="vform lam012" parent="room321/windows/curtains/Node3D4/v-form/vform lam z011" index="1" unique_id=438761643]
+[node name="vform lam012" parent="room321/windows/curtains/Node3D4/v-form/vform lam z011" index="1" unique_id=1504423227]
 transform = Transform3D(-0.9616889, 3.0283846e-07, -0.27414384, 3.804879e-14, 1, 1.10467e-06, -0.27414393, -1.0623488e-06, 0.9616888, 3.7556458, 86.85907, -0.021728516)
 
 [node name="sockets" type="Node3D" parent="room321" unique_id=1439663887]
@@ -2721,16 +2725,16 @@ shape = SubResource("BoxShape3D_1ybv1")
 [node name="wooden_door" parent="floor_3_right_wing/doors/double_door/right_door/StaticBody3D" unique_id=1214508826 instance=ExtResource("64_878dv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.090866, 0, 2.683854)
 
-[node name="Object_2" parent="floor_3_right_wing/doors/double_door/right_door/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1214508826, 511315042) index="0" unique_id=1124566790]
+[node name="Object_2" parent="floor_3_right_wing/doors/double_door/right_door/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1214508826, 78859700) index="0" unique_id=1254181418]
 transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, -0.7974205, -0.56920654, -2.0861626e-07)
 cast_shadow = 0
 surface_material_override/0 = ExtResource("65_us7ko")
 
-[node name="Object_3" parent="floor_3_right_wing/doors/double_door/right_door/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1214508826, 511315042) index="1" unique_id=195183159]
+[node name="Object_3" parent="floor_3_right_wing/doors/double_door/right_door/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1214508826, 78859700) index="1" unique_id=1159921508]
 cast_shadow = 0
 surface_material_override/0 = ExtResource("66_o58na")
 
-[node name="Object_4" parent="floor_3_right_wing/doors/double_door/right_door/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1214508826, 511315042) index="2" unique_id=1022133997]
+[node name="Object_4" parent="floor_3_right_wing/doors/double_door/right_door/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1214508826, 78859700) index="2" unique_id=1434118588]
 cast_shadow = 0
 surface_material_override/0 = ExtResource("66_o58na")
 
@@ -2749,16 +2753,16 @@ shape = SubResource("BoxShape3D_1ybv1")
 [node name="wooden_door" parent="floor_3_right_wing/doors/double_door/left_door2/StaticBody3D" unique_id=865382385 instance=ExtResource("64_878dv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.090866, 0, 2.683854)
 
-[node name="Object_2" parent="floor_3_right_wing/doors/double_door/left_door2/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(865382385, 511315042) index="0" unique_id=1124566790]
+[node name="Object_2" parent="floor_3_right_wing/doors/double_door/left_door2/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(865382385, 78859700) index="0" unique_id=1254181418]
 cast_shadow = 0
 surface_material_override/0 = ExtResource("65_us7ko")
 
-[node name="Object_3" parent="floor_3_right_wing/doors/double_door/left_door2/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(865382385, 511315042) index="1" unique_id=195183159]
+[node name="Object_3" parent="floor_3_right_wing/doors/double_door/left_door2/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(865382385, 78859700) index="1" unique_id=1159921508]
 visible = false
 cast_shadow = 0
 surface_material_override/0 = ExtResource("66_o58na")
 
-[node name="Object_4" parent="floor_3_right_wing/doors/double_door/left_door2/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(865382385, 511315042) index="2" unique_id=1022133997]
+[node name="Object_4" parent="floor_3_right_wing/doors/double_door/left_door2/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(865382385, 78859700) index="2" unique_id=1434118588]
 visible = false
 cast_shadow = 0
 surface_material_override/0 = ExtResource("66_o58na")
@@ -3820,6 +3824,50 @@ transform = Transform3D(-4.736294e-09, 0, 1, 0, 0.13521476, 0, -0.10835378, 0, -
 material_override = SubResource("StandardMaterial3D_yw3it")
 texture = ExtResource("118_s0vfq")
 
+[node name="lamps" type="Node3D" parent="floor_3_right_wing" unique_id=1888657249]
+
+[node name="Node3D2" parent="floor_3_right_wing/lamps" unique_id=1568199734 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.0122337, 3.8856773, -2.0201397)
+
+[node name="Node3D3" parent="floor_3_right_wing/lamps" unique_id=1970578789 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -3.7909853, 3.8856773, -2.0201397)
+
+[node name="Node3D4" parent="floor_3_right_wing/lamps" unique_id=1560351597 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -7.3608594, 3.8856773, -2.0201397)
+
+[node name="Node3D5" parent="floor_3_right_wing/lamps" unique_id=1645784984 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -11.599031, 3.8856773, -2.0201397)
+
+[node name="Node3D6" parent="floor_3_right_wing/lamps" unique_id=1139838848 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -15.927907, 3.8856773, -2.0201397)
+
+[node name="Node3D7" parent="floor_3_right_wing/lamps" unique_id=510044091 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -20.522652, 3.8856773, -2.0201397)
+
+[node name="Node3D9" parent="floor_3_right_wing/lamps" unique_id=980613079 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -23.413542, 3.8856773, -2.0201397)
+
+[node name="Node3D10" parent="floor_3_right_wing/lamps" unique_id=783058370 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -23.413542, 3.8856773, 2.9717832)
+
+[node name="Node3D11" parent="floor_3_right_wing/lamps" unique_id=1840574871 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -23.413542, 3.8856773, 7.655196)
+
+[node name="Node3D12" parent="floor_3_right_wing/lamps" unique_id=1363194293 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -23.413542, 3.8856773, 10.932568)
+
+[node name="Node3D13" parent="floor_3_right_wing/lamps" unique_id=823090187 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -23.413542, 3.8856773, 14.084473)
+
+[node name="Node3D14" parent="floor_3_right_wing/lamps" unique_id=1979822675 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -23.413542, 3.8856773, 17.745483)
+
+[node name="Node3D15" parent="floor_3_right_wing/lamps" unique_id=2074268105 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -23.413542, 3.8856773, 22.696815)
+
+[node name="Node3D8" parent="floor_3_right_wing/lamps" unique_id=790777655 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.042608, 3.8856773, -2.2305336)
+
 [node name="floor_3_center" type="Node3D" parent="." unique_id=1635291646]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.190115, 16.401337, 27.508423)
 
@@ -3914,9 +3962,9 @@ size = Vector3(7.1795006, 4.145338, 0.30924988)
 material = ExtResource("61_47udc")
 
 [node name="right_wall2" type="CSGBox3D" parent="floor_3_center" unique_id=1139814822]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.5451924, 8.123167, 1.9930453, -10.014772)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.5451924, 8.123167, 2.5828152, -10.014772)
 use_collision = true
-size = Vector3(14.9451065, 4.164117, 0.30924988)
+size = Vector3(14.9451065, 5.343655, 0.30924988)
 material = ExtResource("61_47udc")
 
 [node name="right_wall4" type="CSGBox3D" parent="floor_3_center" unique_id=1752593260]
@@ -3932,9 +3980,9 @@ size = Vector3(0.070441544, 0.054202147, 0.056316376)
 material = SubResource("StandardMaterial3D_ie0rk")
 
 [node name="left_wall1" type="CSGBox3D" parent="floor_3_center" unique_id=1014980767]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.5451924, 8.592886, 1.9895756, 6.688328)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.5451924, 8.592886, 2.5625324, 6.688328)
 use_collision = true
-size = Vector3(15.885675, 4.164117, 0.30924988)
+size = Vector3(15.885675, 5.3100314, 0.30924988)
 material = ExtResource("61_47udc")
 
 [node name="floor" type="CSGBox3D" parent="floor_3_center" unique_id=1523084741]
@@ -3944,7 +3992,7 @@ size = Vector3(20.033382, 0.15411377, 16.738155)
 material = ExtResource("71_o58na")
 
 [node name="floor2" type="CSGBox3D" parent="floor_3_center" unique_id=1887112052]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.196268, 3.9771729, -1.727642)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5710297, 3.9771729, -1.727642)
 use_collision = true
 size = Vector3(18.606352, 0.15411377, 16.7351)
 material = ExtResource("61_47udc")
@@ -4043,9 +4091,9 @@ size = Vector3(0.665707, 12.114223, 0.227)
 material = ExtResource("61_47udc")
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="floor_3_center/columns" unique_id=513294771]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 14.504501, 5.1178436, -1.7117195)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 14.504501, 5.5364914, -1.7117195)
 use_collision = true
-size = Vector3(4.0767784, 16.760107, 0.22710371)
+size = Vector3(4.0767784, 16.760107, 1.0643988)
 material = ExtResource("61_47udc")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="floor_3_center/columns" unique_id=1512741847]
@@ -4214,7 +4262,7 @@ material = SubResource("StandardMaterial3D_5ifu2")
 [node name="Node3D" parent="floor_3_center/windows/Node3D2" unique_id=1093011166 instance=ExtResource("122_shhh2")]
 transform = Transform3D(-8.97587e-09, 0, 0.215, 0, 0.215, 0, -0.20534398, 0, -9.397948e-09, -12.370562, 0.071134806, 4.162546)
 
-[node name="BezierCurve_Plastic_0" parent="floor_3_center/windows/Node3D2/Node3D/Sketchfab_Scene/Sketchfab_model/6452a489a7ef44f8b9f70629fd3c358c_fbx/RootNode/BezierCurve" parent_id_path=PackedInt32Array(1093011166, 1844965288, 696358036) index="0" unique_id=981955462]
+[node name="BezierCurve_Plastic_0" parent="floor_3_center/windows/Node3D2/Node3D/Sketchfab_Scene/Sketchfab_model/6452a489a7ef44f8b9f70629fd3c358c_fbx/RootNode/BezierCurve" parent_id_path=PackedInt32Array(1093011166, 1844965288, 1165811243) index="0" unique_id=1779036438]
 visible = false
 
 [node name="CSGBakedMeshInstance3D" parent="floor_3_center/windows/Node3D2" unique_id=1538721364 instance=ExtResource("123_3080d")]
@@ -4231,7 +4279,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, -2.963)
 [node name="Node3D" parent="floor_3_center/windows/Node3D3" unique_id=1821142866 instance=ExtResource("122_shhh2")]
 transform = Transform3D(-9.51604e-09, 0, 0.215, 0, 0.215, 0, -0.21770164, 0, -9.397948e-09, -12.370562, 0.071134806, 3.7383232)
 
-[node name="BezierCurve_Plastic_0" parent="floor_3_center/windows/Node3D3/Node3D/Sketchfab_Scene/Sketchfab_model/6452a489a7ef44f8b9f70629fd3c358c_fbx/RootNode/BezierCurve" parent_id_path=PackedInt32Array(1821142866, 1844965288, 696358036) index="0" unique_id=981955462]
+[node name="BezierCurve_Plastic_0" parent="floor_3_center/windows/Node3D3/Node3D/Sketchfab_Scene/Sketchfab_model/6452a489a7ef44f8b9f70629fd3c358c_fbx/RootNode/BezierCurve" parent_id_path=PackedInt32Array(1821142866, 1844965288, 1165811243) index="0" unique_id=1779036438]
 visible = false
 
 [node name="CSGBakedMeshInstance3D" parent="floor_3_center/windows/Node3D3" unique_id=1700163482 instance=ExtResource("123_3080d")]
@@ -4461,6 +4509,12 @@ use_collision = true
 size = Vector3(5.7165375, 4.0708313, 1.0888786)
 material = ExtResource("61_47udc")
 
+[node name="CSGBox3D23" type="CSGBox3D" parent="floor_3_center/lifts" unique_id=1428269908]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.965719, 2.0036774, -7.1754074)
+use_collision = true
+size = Vector3(5.7165375, 4.0708313, 1.0888786)
+material = ExtResource("61_47udc")
+
 [node name="CSGBox3D22" type="CSGBox3D" parent="floor_3_center/lifts" unique_id=879498810]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.965719, 2.0034332, 3.850626)
 use_collision = true
@@ -4540,6 +4594,41 @@ transform = Transform3D(-3.211987e-08, 0, -0.465, 0, 0.577991, 0, 0.734817, 0, -
 transform = Transform3D(0.7531272, 0, -0.6578749, 0, 1, 0, 0.6578749, 0, 0.7531272, 1.8377628, 1.6105969, -3.6938896)
 sprint_speed = 8.0
 
+[node name="lamps" type="Node3D" parent="floor_3_center" unique_id=844977954]
+
+[node name="Node3D" parent="floor_3_center/lamps" unique_id=759029414 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(1, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1, 14.050161, 4.9814434, -1.7632637)
+
+[node name="Node3D2" parent="floor_3_center/lamps" unique_id=2126437220 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(1, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1, 14.050161, 4.9814434, -5.981516)
+
+[node name="Node3D3" parent="floor_3_center/lamps" unique_id=1174144989 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(1, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1, 14.050161, 4.9814434, 2.8151016)
+
+[node name="Node3D4" parent="floor_3_center/lamps" unique_id=457040267 instance=ExtResource("123_0fg23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2244015, 3.8910294, 1.0676594)
+
+[node name="Node3D5" parent="floor_3_center/lamps" unique_id=1493099904 instance=ExtResource("123_0fg23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1886654, 3.8910294, 4.0595837)
+
+[node name="Node3D6" parent="floor_3_center/lamps" unique_id=1193187363 instance=ExtResource("123_0fg23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1886654, 3.8910294, -4.249098)
+
+[node name="Node3D7" parent="floor_3_center/lamps" unique_id=1320954071 instance=ExtResource("123_0fg23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1886654, 3.8910294, -7.6722507)
+
+[node name="Node3D8" parent="floor_3_center/lamps" unique_id=2116992454 instance=ExtResource("123_0fg23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2636623, 3.8910294, 1.0676594)
+
+[node name="Node3D9" parent="floor_3_center/lamps" unique_id=547973750 instance=ExtResource("123_0fg23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2636623, 3.8910294, 4.0595837)
+
+[node name="Node3D10" parent="floor_3_center/lamps" unique_id=1082270707 instance=ExtResource("123_0fg23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2636623, 3.8910294, -4.249098)
+
+[node name="Node3D11" parent="floor_3_center/lamps" unique_id=367640700 instance=ExtResource("123_0fg23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2636623, 3.8910294, -7.6722507)
+
 [node name="left" type="Node3D" parent="." unique_id=850367490]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16.401337, 9)
 
@@ -4571,7 +4660,7 @@ operation = 2
 size = Vector3(1.8344727, 2.9746704, 1.3549805)
 
 [node name="floor4" type="CSGBox3D" parent="left" unique_id=2009066470]
-transform = Transform3D(1, -8.742278e-08, 0, 8.742278e-08, 1, -1.5285485e-14, 0, 1.5285485e-14, 1, -16.771889, -0.036481373, 54.169872)
+transform = Transform3D(1, -8.742278e-08, 0, 8.742278e-08, 1, -1.5285485e-14, 0, 1.5285485e-14, 1, -16.771889, -0.036481857, 54.169872)
 use_collision = true
 size = Vector3(17.127012, 0.09475708, 3.5954742)
 material = ExtResource("61_gn4w6")
@@ -4689,16 +4778,16 @@ shape = SubResource("BoxShape3D_1ybv1")
 [node name="wooden_door" parent="left/doors/double_door/right_door/StaticBody3D" unique_id=3402094 instance=ExtResource("64_878dv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.090866, 0, 2.683854)
 
-[node name="Object_2" parent="left/doors/double_door/right_door/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(3402094, 511315042) index="0" unique_id=1124566790]
+[node name="Object_2" parent="left/doors/double_door/right_door/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(3402094, 78859700) index="0" unique_id=1254181418]
 transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, -0.7974205, -0.56920654, -2.0861626e-07)
 cast_shadow = 0
 surface_material_override/0 = ExtResource("65_us7ko")
 
-[node name="Object_3" parent="left/doors/double_door/right_door/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(3402094, 511315042) index="1" unique_id=195183159]
+[node name="Object_3" parent="left/doors/double_door/right_door/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(3402094, 78859700) index="1" unique_id=1159921508]
 cast_shadow = 0
 surface_material_override/0 = ExtResource("66_o58na")
 
-[node name="Object_4" parent="left/doors/double_door/right_door/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(3402094, 511315042) index="2" unique_id=1022133997]
+[node name="Object_4" parent="left/doors/double_door/right_door/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(3402094, 78859700) index="2" unique_id=1434118588]
 cast_shadow = 0
 surface_material_override/0 = ExtResource("66_o58na")
 
@@ -4717,16 +4806,16 @@ shape = SubResource("BoxShape3D_1ybv1")
 [node name="wooden_door" parent="left/doors/double_door/left_door2/StaticBody3D" unique_id=1068224532 instance=ExtResource("64_878dv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.090866, 0, 2.683854)
 
-[node name="Object_2" parent="left/doors/double_door/left_door2/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1068224532, 511315042) index="0" unique_id=1124566790]
+[node name="Object_2" parent="left/doors/double_door/left_door2/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1068224532, 78859700) index="0" unique_id=1254181418]
 cast_shadow = 0
 surface_material_override/0 = ExtResource("65_us7ko")
 
-[node name="Object_3" parent="left/doors/double_door/left_door2/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1068224532, 511315042) index="1" unique_id=195183159]
+[node name="Object_3" parent="left/doors/double_door/left_door2/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1068224532, 78859700) index="1" unique_id=1159921508]
 visible = false
 cast_shadow = 0
 surface_material_override/0 = ExtResource("66_o58na")
 
-[node name="Object_4" parent="left/doors/double_door/left_door2/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1068224532, 511315042) index="2" unique_id=1022133997]
+[node name="Object_4" parent="left/doors/double_door/left_door2/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1068224532, 78859700) index="2" unique_id=1434118588]
 visible = false
 cast_shadow = 0
 surface_material_override/0 = ExtResource("66_o58na")
@@ -5389,13 +5478,13 @@ transform = Transform3D(0.98731023, 0, 2.0291004e-08, 0, 0.99999994, 0, 2.37697e
 [node name="Node3D5" parent="left/board/doors3" unique_id=1601254896 instance=ExtResource("60_gn4w6")]
 transform = Transform3D(1.4375988e-09, 0, 0.00093937095, 0, 0.0116581, 0, -0.010962811, 0, 1.2318363e-10, -21.482498, 0.013713972, 37.156628)
 
-[node name="Object_2" parent="left/board/doors3/Node3D5/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1601254896, 1811911216, 511315042) index="0" unique_id=1124566790]
+[node name="Object_2" parent="left/board/doors3/Node3D5/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1601254896, 1811911216, 78859700) index="0" unique_id=1254181418]
 transform = Transform3D(0.72149915, 0, -4.2351647e-22, -1.1368684e-13, 0.9999998, 6.1498277e-21, -5.421011e-20, 6.149827e-21, 0.99999994, -0.7973633, -0.5683594, -2.3841858e-07)
 
-[node name="Object_3" parent="left/board/doors3/Node3D5/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1601254896, 1811911216, 511315042) index="1" unique_id=195183159]
+[node name="Object_3" parent="left/board/doors3/Node3D5/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1601254896, 1811911216, 78859700) index="1" unique_id=1159921508]
 visible = false
 
-[node name="Object_4" parent="left/board/doors3/Node3D5/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1601254896, 1811911216, 511315042) index="2" unique_id=1022133997]
+[node name="Object_4" parent="left/board/doors3/Node3D5/StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1601254896, 1811911216, 78859700) index="2" unique_id=1434118588]
 visible = false
 
 [node name="Node3D6" parent="left/board/doors3/Node3D5" unique_id=719954248 instance=ExtResource("60_gn4w6")]
@@ -5473,11 +5562,11 @@ transform = Transform3D(-1.5858486, 0, 8.572077e-08, 0, 0.99999994, 0, -1.617979
 [node name="StaticBody3D" parent="left/board/doors3" unique_id=1616530236 instance=ExtResource("67_f7lh1")]
 transform = Transform3D(4.371139e-08, 0, -1.4124545, 0, 1.1106131, 0, -1, 0, -6.1740344e-08, -25.33036, 0, 33.84386)
 
-[node name="SindleDoor_Material_0" parent="left/board/doors3/StaticBody3D/Sketchfab_Scene/Sketchfab_model/265f242c0def4d35bc5c349c33a09ffd_fbx/RootNode/SindleDoor" parent_id_path=PackedInt32Array(1616530236, 1515071339, 545019612) index="0" unique_id=1734575168]
+[node name="SindleDoor_Material_0" parent="left/board/doors3/StaticBody3D/Sketchfab_Scene/Sketchfab_model/265f242c0def4d35bc5c349c33a09ffd_fbx/RootNode/SindleDoor" parent_id_path=PackedInt32Array(1616530236, 1515071339, 1933140572) index="0" unique_id=2143983335]
 transform = Transform3D(1, 7.1054274e-15, 0, -3.5527137e-15, 1.2226121, -2.842171e-14, -8.4703295e-22, 4.2632564e-14, 1.1080916, 0, 0.23535156, -3.8343387e-08)
 mesh = SubResource("ArrayMesh_16bcn")
 
-[node name="SindleDoor_Material_1" type="MeshInstance3D" parent="left/board/doors3/StaticBody3D/Sketchfab_Scene/Sketchfab_model/265f242c0def4d35bc5c349c33a09ffd_fbx/RootNode/SindleDoor" parent_id_path=PackedInt32Array(1616530236, 1515071339, 545019612) index="1" unique_id=380051045]
+[node name="SindleDoor_Material_1" type="MeshInstance3D" parent="left/board/doors3/StaticBody3D/Sketchfab_Scene/Sketchfab_model/265f242c0def4d35bc5c349c33a09ffd_fbx/RootNode/SindleDoor" parent_id_path=PackedInt32Array(1616530236, 1515071339, 1933140572) index="1" unique_id=380051045]
 transform = Transform3D(-0.0072638383, 3.8084494e-08, -1.627462e-14, -6.350249e-10, -0.43563592, 3.6106212e-07, 1.00232975e-16, 1.4194825e-07, 1.1080917, 0.02705574, -0.6770897, 1.1031261e-07)
 mesh = SubResource("ArrayMesh_16bcn")
 
@@ -5966,10 +6055,58 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26662827, 0.42148614, 2.01
 size = Vector3(0.048339844, 1.2919922, 1.7730713)
 material = SubResource("StandardMaterial3D_qhanc")
 
+[node name="lamps" type="Node3D" parent="left" unique_id=1238936802]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -46.732265, 0, 32.876213)
+
+[node name="Node3D23" parent="left/lamps" unique_id=2005685867 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -49.44541, 3.5301666, -21.652702)
+
+[node name="Node3D24" parent="left/lamps" unique_id=1660874603 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -44.642193, 3.5301666, -21.652702)
+
+[node name="Node3D25" parent="left/lamps" unique_id=1603391409 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -39.878563, 3.553215, -21.652706)
+
+[node name="Node3D26" parent="left/lamps" unique_id=648272203 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -35.133232, 3.8856773, -21.175423)
+
+[node name="Node3D27" parent="left/lamps" unique_id=905001927 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -30.80436, 3.8856773, -21.175423)
+
+[node name="Node3D28" parent="left/lamps" unique_id=107048817 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -26.209614, 3.8856773, -21.175423)
+
+[node name="Node3D16" parent="left/lamps" unique_id=2064646147 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -23.413542, 3.8856773, -21.39888)
+
+[node name="Node3D17" parent="left/lamps" unique_id=1890388457 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -23.413542, 3.8856773, -15.228216)
+
+[node name="Node3D18" parent="left/lamps" unique_id=1029082543 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -23.413542, 3.8856773, -10.544804)
+
+[node name="Node3D19" parent="left/lamps" unique_id=27090674 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -23.413542, 3.8856773, -7.267432)
+
+[node name="Node3D20" parent="left/lamps" unique_id=1657833722 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -23.413542, 3.8856773, -4.115527)
+
+[node name="Node3D21" parent="left/lamps" unique_id=1476596283 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -23.413542, 3.8856773, -0.4545164)
+
+[node name="Node3D22" parent="left/lamps" unique_id=568199581 instance=ExtResource("109_wqbuf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -23.413542, 3.8856773, 4.4968157)
+
 [node name="stairs_to_floor4" type="Node3D" parent="." unique_id=1322303325]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.1697235, 16.401337, 25.922655)
 
 [node name="floor6" type="CSGBox3D" parent="stairs_to_floor4" unique_id=855883040]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.617796, 1.9856265, -0.0974102)
+use_collision = true
+size = Vector3(3.9828143, 0.15411377, 16.745697)
+material = ExtResource("71_o58na")
+
+[node name="floor7" type="CSGBox3D" parent="stairs_to_floor4" unique_id=773043030]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.617796, 1.9856265, -0.0974102)
 use_collision = true
 size = Vector3(3.9828143, 0.15411377, 16.745697)
@@ -6000,7 +6137,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7857599, 0, 0)
 use_collision = true
 
 [node name="CSGBox3D54" type="CSGBox3D" parent="stairs_to_floor4/CSGCombiner3D" unique_id=1138610738]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.273535, 3.4421601, 5.0512676)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.273535, 3.4421597, 5.0512676)
 size = Vector3(6.4380836, 3.1628113, 0.92144775)
 material = ExtResource("61_47udc")
 
@@ -6076,144 +6213,200 @@ transform = Transform3D(1.3627371e-07, 0, 0.84, 0, 1, 0, -1.805, 0, 6.3418234e-0
 [node name="underwindow_2" parent="stairs_to_floor4" unique_id=593345183 instance=ExtResource("154_wqbuf")]
 transform = Transform3D(1.3627371e-07, 0, 0.84, 0, 1, 0, -1.805, 0, 6.3418234e-08, 1.628, 1.87, 10.596)
 
-[node name="windows" type="Node3D" parent="." unique_id=1365838430]
+[node name="floor8" type="CSGBox3D" parent="stairs_to_floor4" unique_id=641287356]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.617796, -2.0220013, -0.0974102)
+use_collision = true
+size = Vector3(3.9828143, 0.15411377, 16.745697)
+material = ExtResource("71_o58na")
 
-[node name="Node3D" type="Node3D" parent="windows" unique_id=118546011]
+[node name="CSGBox3D55" type="CSGBox3D" parent="stairs_to_floor4" unique_id=456046150]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9.057616, -0.56546783, -0.052362442)
+use_collision = true
+size = Vector3(3.7729795, 3.1628113, 0.9180908)
+material = ExtResource("61_47udc")
 
-[node name="CSGBakedMeshInstance3D2" parent="windows/Node3D" unique_id=283339957 instance=ExtResource("123_3080d")]
+[node name="CSGCombiner3D3" type="CSGCombiner3D" parent="stairs_to_floor4" unique_id=979833469]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7857599, -4.0076275, 0)
+use_collision = true
+
+[node name="CSGBox3D54" type="CSGBox3D" parent="stairs_to_floor4/CSGCombiner3D3" unique_id=1720278008]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.271856, 3.4421601, -5.222994)
+size = Vector3(6.590397, 3.1628113, 0.9180908)
+material = ExtResource("61_47udc")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="stairs_to_floor4/CSGCombiner3D3" unique_id=130286023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.54659, 3.687374, -5.133295)
+operation = 2
+size = Vector3(1.6444092, 1.9987946, 5.15213)
+
+[node name="CSGCombiner3D4" type="CSGCombiner3D" parent="stairs_to_floor4" unique_id=85697738]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7857599, -4.0076275, 0)
+use_collision = true
+
+[node name="CSGBox3D54" type="CSGBox3D" parent="stairs_to_floor4/CSGCombiner3D4" unique_id=571822160]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.273535, 3.4421601, 5.0512676)
+size = Vector3(6.4380836, 3.1628113, 0.92144775)
+material = ExtResource("61_47udc")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="stairs_to_floor4/CSGCombiner3D4" unique_id=849440086]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.54659, 3.687374, 4.9663696)
+operation = 2
+size = Vector3(1.6444092, 1.9987946, 5.15213)
+
+[node name="CSGBox3D56" type="CSGBox3D" parent="stairs_to_floor4" unique_id=1279354204]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.1213408, -0.56546783, -4.376005)
+use_collision = true
+size = Vector3(3.5157852, 3.1628113, 0.67297363)
+material = ExtResource("61_47udc")
+
+[node name="CSGBox3D57" type="CSGBox3D" parent="stairs_to_floor4" unique_id=88772969]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.124009, -0.56546783, 4.2198505)
+use_collision = true
+size = Vector3(3.5212655, 3.163, 0.67397267)
+material = ExtResource("61_47udc")
+
+[node name="stairs_main2" parent="stairs_to_floor4" unique_id=134225155 instance=ExtResource("150_kd0ax")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.0076275, 0)
+
+[node name="underwindow_3" parent="stairs_to_floor4" unique_id=1866773445 instance=ExtResource("154_wqbuf")]
+transform = Transform3D(1.3627371e-07, 0, 0.84, 0, 1, 0, -1.805, 0, 6.3418234e-08, 1.6280003, -2.1376266, 0.47599983)
+
+[node name="underwindow_4" parent="stairs_to_floor4" unique_id=860513460 instance=ExtResource("154_wqbuf")]
+transform = Transform3D(1.3627371e-07, 0, 0.84, 0, 1, 0, -1.805, 0, 6.3418234e-08, 1.6280003, -2.1376266, 10.595999)
+
+[node name="windows" type="Node3D" parent="stairs_to_floor4" unique_id=1365838430]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1697235, -16.401337, -25.922655)
+
+[node name="Node3D" type="Node3D" parent="stairs_to_floor4/windows" unique_id=118546011]
+
+[node name="CSGBakedMeshInstance3D2" parent="stairs_to_floor4/windows/Node3D" unique_id=283339957 instance=ExtResource("123_3080d")]
 transform = Transform3D(-1, 0, -9.9657235e-08, 0, 1.465, 0, 1.509958e-07, 0, -0.66, -17.812, 17.229, 32.525)
 
-[node name="CSGBakedMeshInstance3D3" parent="windows/Node3D" unique_id=1598723855 instance=ExtResource("123_3080d")]
+[node name="CSGBakedMeshInstance3D3" parent="stairs_to_floor4/windows/Node3D" unique_id=1598723855 instance=ExtResource("123_3080d")]
 transform = Transform3D(-1, 0, -9.4372375e-08, 0, 1.295, 0, 1.509958e-07, 0, -0.625, -17.862, 17.574, 32.34)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="windows/Node3D/CSGBakedMeshInstance3D3" unique_id=1145799289]
+[node name="CSGBox3D" type="CSGBox3D" parent="stairs_to_floor4/windows/Node3D/CSGBakedMeshInstance3D3" unique_id=1145799289]
 transform = Transform3D(0.9999845, 0, -3.673506e-12, 0, 0.9999999, 0, -3.723244e-12, 0, 0.99999976, -12.092596, 1.9231977, 4.6136665)
 size = Vector3(0.021240234, 0.018066406, 0.04296875)
 material = ExtResource("6_eetaf")
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="windows/Node3D/CSGBakedMeshInstance3D3" unique_id=1635071170]
+[node name="CSGBox3D4" type="CSGBox3D" parent="stairs_to_floor4/windows/Node3D/CSGBakedMeshInstance3D3" unique_id=1635071170]
 transform = Transform3D(0.9999751, 0, -5.918821e-12, 0, 0.9999999, 0, -5.9969807e-12, 0, 0.99999976, -12.096502, 1.9546003, 4.612438)
 size = Vector3(0.013427734, 0.10028076, 0.07470703)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="windows/Node3D/CSGBakedMeshInstance3D3" unique_id=1956740508]
+[node name="CSGBox3D2" type="CSGBox3D" parent="stairs_to_floor4/windows/Node3D/CSGBakedMeshInstance3D3" unique_id=1956740508]
 transform = Transform3D(0.99998444, 0, -3.687717e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9541588, 4.6136627)
 size = Vector3(0.021240234, 0.018066406, 0.04296875)
 material = ExtResource("6_eetaf")
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="windows/Node3D/CSGBakedMeshInstance3D3" unique_id=1131633373]
+[node name="CSGBox3D3" type="CSGBox3D" parent="stairs_to_floor4/windows/Node3D/CSGBakedMeshInstance3D3" unique_id=1131633373]
 transform = Transform3D(0.9999844, 0, -3.7019277e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9827042, 4.613659)
 size = Vector3(0.021240234, 0.018066406, 0.04296875)
 material = ExtResource("6_eetaf")
 
-[node name="Node3D2" type="Node3D" parent="windows" unique_id=525746102]
+[node name="Node3D2" type="Node3D" parent="stairs_to_floor4/windows" unique_id=525746102]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 61.783)
 
-[node name="CSGBakedMeshInstance3D2" parent="windows/Node3D2" unique_id=1727877225 instance=ExtResource("123_3080d")]
+[node name="CSGBakedMeshInstance3D2" parent="stairs_to_floor4/windows/Node3D2" unique_id=1727877225 instance=ExtResource("123_3080d")]
 transform = Transform3D(-1, 0, -9.9657235e-08, 0, 1.465, 0, 1.509958e-07, 0, -0.66, -17.812, 17.229, 32.525)
 
-[node name="CSGBakedMeshInstance3D3" parent="windows/Node3D2" unique_id=1558469519 instance=ExtResource("123_3080d")]
+[node name="CSGBakedMeshInstance3D3" parent="stairs_to_floor4/windows/Node3D2" unique_id=1558469519 instance=ExtResource("123_3080d")]
 transform = Transform3D(-1, 0, -9.4372375e-08, 0, 1.295, 0, 1.509958e-07, 0, -0.625, -17.862, 17.574, 32.34)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="windows/Node3D2/CSGBakedMeshInstance3D3" unique_id=1498041309]
+[node name="CSGBox3D" type="CSGBox3D" parent="stairs_to_floor4/windows/Node3D2/CSGBakedMeshInstance3D3" unique_id=1498041309]
 transform = Transform3D(0.9999845, 0, -3.673506e-12, 0, 0.9999999, 0, -3.723244e-12, 0, 0.99999976, -12.092596, 1.9231977, 4.6136665)
 size = Vector3(0.021240234, 0.018066406, 0.04296875)
 material = ExtResource("6_eetaf")
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="windows/Node3D2/CSGBakedMeshInstance3D3" unique_id=65558814]
+[node name="CSGBox3D4" type="CSGBox3D" parent="stairs_to_floor4/windows/Node3D2/CSGBakedMeshInstance3D3" unique_id=65558814]
 transform = Transform3D(0.9999751, 0, -5.918821e-12, 0, 0.9999999, 0, -5.9969807e-12, 0, 0.99999976, -12.096502, 1.9546003, 4.612438)
 size = Vector3(0.013427734, 0.10028076, 0.07470703)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="windows/Node3D2/CSGBakedMeshInstance3D3" unique_id=33634879]
+[node name="CSGBox3D2" type="CSGBox3D" parent="stairs_to_floor4/windows/Node3D2/CSGBakedMeshInstance3D3" unique_id=33634879]
 transform = Transform3D(0.99998444, 0, -3.687717e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9541588, 4.6136627)
 size = Vector3(0.021240234, 0.018066406, 0.04296875)
 material = ExtResource("6_eetaf")
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="windows/Node3D2/CSGBakedMeshInstance3D3" unique_id=529703487]
+[node name="CSGBox3D3" type="CSGBox3D" parent="stairs_to_floor4/windows/Node3D2/CSGBakedMeshInstance3D3" unique_id=529703487]
 transform = Transform3D(0.9999844, 0, -3.7019277e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9827042, 4.613659)
 size = Vector3(0.021240234, 0.018066406, 0.04296875)
 material = ExtResource("6_eetaf")
 
-[node name="Node3D3" type="Node3D" parent="windows" unique_id=2147025127]
+[node name="Node3D3" type="Node3D" parent="stairs_to_floor4/windows" unique_id=2147025127]
 
-[node name="CSGBakedMeshInstance3D2" parent="windows/Node3D3" unique_id=789777717 instance=ExtResource("123_3080d")]
+[node name="CSGBakedMeshInstance3D2" parent="stairs_to_floor4/windows/Node3D3" unique_id=789777717 instance=ExtResource("123_3080d")]
 transform = Transform3D(1, 0, 0, 0, 1.3845499, 0, 0, 0, 0.7512081, 6.444, 17.4024, 27.449219)
 
-[node name="CSGBakedMeshInstance3D3" parent="windows/Node3D3" unique_id=1239436946 instance=ExtResource("123_3080d")]
+[node name="CSGBakedMeshInstance3D3" parent="stairs_to_floor4/windows/Node3D3" unique_id=1239436946 instance=ExtResource("123_3080d")]
 transform = Transform3D(1, 0, 0, 0, 1.3845499, 0, 0, 0, 0.7512081, 6.444, 17.4024, 26.066744)
 
-[node name="windows2" type="Node3D" parent="." unique_id=1678382538]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.116)
+[node name="windows2" type="Node3D" parent="stairs_to_floor4" unique_id=1678382538]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1697235, -16.401337, -36.038654)
 
-[node name="Node3D" type="Node3D" parent="windows2" unique_id=1354545967]
+[node name="Node3D" type="Node3D" parent="stairs_to_floor4/windows2" unique_id=1354545967]
 
-[node name="CSGBakedMeshInstance3D2" parent="windows2/Node3D" unique_id=1439026179 instance=ExtResource("123_3080d")]
+[node name="CSGBakedMeshInstance3D2" parent="stairs_to_floor4/windows2/Node3D" unique_id=1439026179 instance=ExtResource("123_3080d")]
 transform = Transform3D(-1, 0, -9.9657235e-08, 0, 1.465, 0, 1.509958e-07, 0, -0.66, -17.812, 17.229, 32.525)
 
-[node name="CSGBakedMeshInstance3D3" parent="windows2/Node3D" unique_id=1247546449 instance=ExtResource("123_3080d")]
+[node name="CSGBakedMeshInstance3D3" parent="stairs_to_floor4/windows2/Node3D" unique_id=1247546449 instance=ExtResource("123_3080d")]
 transform = Transform3D(-1, 0, -9.4372375e-08, 0, 1.295, 0, 1.509958e-07, 0, -0.625, -17.862, 17.574, 32.34)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="windows2/Node3D/CSGBakedMeshInstance3D3" unique_id=641486440]
+[node name="CSGBox3D" type="CSGBox3D" parent="stairs_to_floor4/windows2/Node3D/CSGBakedMeshInstance3D3" unique_id=641486440]
 transform = Transform3D(0.9999845, 0, -3.673506e-12, 0, 0.9999999, 0, -3.723244e-12, 0, 0.99999976, -12.092596, 1.9231977, 4.6136665)
 size = Vector3(0.021240234, 0.018066406, 0.04296875)
 material = ExtResource("6_eetaf")
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="windows2/Node3D/CSGBakedMeshInstance3D3" unique_id=1315665852]
+[node name="CSGBox3D4" type="CSGBox3D" parent="stairs_to_floor4/windows2/Node3D/CSGBakedMeshInstance3D3" unique_id=1315665852]
 transform = Transform3D(0.9999751, 0, -5.918821e-12, 0, 0.9999999, 0, -5.9969807e-12, 0, 0.99999976, -12.096502, 1.9546003, 4.612438)
 size = Vector3(0.013427734, 0.10028076, 0.07470703)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="windows2/Node3D/CSGBakedMeshInstance3D3" unique_id=1466589273]
+[node name="CSGBox3D2" type="CSGBox3D" parent="stairs_to_floor4/windows2/Node3D/CSGBakedMeshInstance3D3" unique_id=1466589273]
 transform = Transform3D(0.99998444, 0, -3.687717e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9541588, 4.6136627)
 size = Vector3(0.021240234, 0.018066406, 0.04296875)
 material = ExtResource("6_eetaf")
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="windows2/Node3D/CSGBakedMeshInstance3D3" unique_id=1802815332]
+[node name="CSGBox3D3" type="CSGBox3D" parent="stairs_to_floor4/windows2/Node3D/CSGBakedMeshInstance3D3" unique_id=1802815332]
 transform = Transform3D(0.9999844, 0, -3.7019277e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9827042, 4.613659)
 size = Vector3(0.021240234, 0.018066406, 0.04296875)
 material = ExtResource("6_eetaf")
 
-[node name="Node3D2" type="Node3D" parent="windows2" unique_id=2087375303]
+[node name="Node3D2" type="Node3D" parent="stairs_to_floor4/windows2" unique_id=2087375303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 61.783)
 
-[node name="CSGBakedMeshInstance3D2" parent="windows2/Node3D2" unique_id=390636851 instance=ExtResource("123_3080d")]
+[node name="CSGBakedMeshInstance3D2" parent="stairs_to_floor4/windows2/Node3D2" unique_id=390636851 instance=ExtResource("123_3080d")]
 transform = Transform3D(-1, 0, -9.9657235e-08, 0, 1.465, 0, 1.509958e-07, 0, -0.66, -17.812, 17.229, 32.525)
 
-[node name="CSGBakedMeshInstance3D3" parent="windows2/Node3D2" unique_id=1388152534 instance=ExtResource("123_3080d")]
+[node name="CSGBakedMeshInstance3D3" parent="stairs_to_floor4/windows2/Node3D2" unique_id=1388152534 instance=ExtResource("123_3080d")]
 transform = Transform3D(-1, 0, -9.4372375e-08, 0, 1.295, 0, 1.509958e-07, 0, -0.625, -17.862, 17.574, 32.34)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="windows2/Node3D2/CSGBakedMeshInstance3D3" unique_id=1922208497]
+[node name="CSGBox3D" type="CSGBox3D" parent="stairs_to_floor4/windows2/Node3D2/CSGBakedMeshInstance3D3" unique_id=1922208497]
 transform = Transform3D(0.9999845, 0, -3.673506e-12, 0, 0.9999999, 0, -3.723244e-12, 0, 0.99999976, -12.092596, 1.9231977, 4.6136665)
 size = Vector3(0.021240234, 0.018066406, 0.04296875)
 material = ExtResource("6_eetaf")
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="windows2/Node3D2/CSGBakedMeshInstance3D3" unique_id=1446122465]
+[node name="CSGBox3D4" type="CSGBox3D" parent="stairs_to_floor4/windows2/Node3D2/CSGBakedMeshInstance3D3" unique_id=1446122465]
 transform = Transform3D(0.9999751, 0, -5.918821e-12, 0, 0.9999999, 0, -5.9969807e-12, 0, 0.99999976, -12.096502, 1.9546003, 4.612438)
 size = Vector3(0.013427734, 0.10028076, 0.07470703)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="windows2/Node3D2/CSGBakedMeshInstance3D3" unique_id=1128650495]
+[node name="CSGBox3D2" type="CSGBox3D" parent="stairs_to_floor4/windows2/Node3D2/CSGBakedMeshInstance3D3" unique_id=1128650495]
 transform = Transform3D(0.99998444, 0, -3.687717e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9541588, 4.6136627)
 size = Vector3(0.021240234, 0.018066406, 0.04296875)
 material = ExtResource("6_eetaf")
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="windows2/Node3D2/CSGBakedMeshInstance3D3" unique_id=704728861]
+[node name="CSGBox3D3" type="CSGBox3D" parent="stairs_to_floor4/windows2/Node3D2/CSGBakedMeshInstance3D3" unique_id=704728861]
 transform = Transform3D(0.9999844, 0, -3.7019277e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9827042, 4.613659)
 size = Vector3(0.021240234, 0.018066406, 0.04296875)
 material = ExtResource("6_eetaf")
 
-[node name="Node3D3" type="Node3D" parent="windows2" unique_id=1227267686]
+[node name="Node3D3" type="Node3D" parent="stairs_to_floor4/windows2" unique_id=1227267686]
 
-[node name="CSGBakedMeshInstance3D2" parent="windows2/Node3D3" unique_id=1806756596 instance=ExtResource("123_3080d")]
+[node name="CSGBakedMeshInstance3D2" parent="stairs_to_floor4/windows2/Node3D3" unique_id=1806756596 instance=ExtResource("123_3080d")]
 transform = Transform3D(1, 0, 0, 0, 1.3845499, 0, 0, 0, 0.7512081, 6.444, 17.4024, 27.449219)
 
-[node name="CSGBakedMeshInstance3D3" parent="windows2/Node3D3" unique_id=567295772 instance=ExtResource("123_3080d")]
+[node name="CSGBakedMeshInstance3D3" parent="stairs_to_floor4/windows2/Node3D3" unique_id=567295772 instance=ExtResource("123_3080d")]
 transform = Transform3D(1, 0, 0, 0, 1.3845499, 0, 0, 0, 0.7512081, 6.444, 17.4024, 26.066744)
 
 [node name="floor_2" type="Node3D" parent="." unique_id=1941168174]
-
-[node name="stairs_side3" parent="floor_2" unique_id=813012734 instance=ExtResource("151_3080d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.185, 12.388, 25.923)
-
-[node name="stairs_side4" parent="floor_2" unique_id=1032693518 instance=ExtResource("151_3080d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.0094316, -15.185, 12.388, 40.315)
 
 [node name="right_wall6" type="CSGBox3D" parent="floor_2" unique_id=26516952]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.5451924, -14.066948, 14.211227, 17.49365)
@@ -6227,21 +6420,220 @@ use_collision = true
 size = Vector3(15.885675, 4.164117, 0.30924988)
 material = ExtResource("61_47udc")
 
+[node name="stairt_to_floor_3" type="Node3D" parent="floor_2" unique_id=1821275807]
+
+[node name="stairs_side3" parent="floor_2/stairt_to_floor_3" unique_id=813012734 instance=ExtResource("151_3080d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.185, 12.388, 25.923)
+
+[node name="stairs_side4" parent="floor_2/stairt_to_floor_3" unique_id=1032693518 instance=ExtResource("151_3080d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.0094316, -15.185, 12.388, 40.315)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="floor_2/stairt_to_floor_3" unique_id=1705662291]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -8.104294, 17.89659, 25.796703)
+use_collision = true
+size = Vector3(4.9141383, 16.760107, 0.97921073)
+material = ExtResource("61_47udc")
+
+[node name="windows3" type="Node3D" parent="floor_2/stairt_to_floor_3" unique_id=614232100]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.018815, 0)
+
+[node name="Node3D" type="Node3D" parent="floor_2/stairt_to_floor_3/windows3" unique_id=423680080]
+
+[node name="CSGBakedMeshInstance3D2" parent="floor_2/stairt_to_floor_3/windows3/Node3D" unique_id=258273256 instance=ExtResource("123_3080d")]
+transform = Transform3D(-1, 0, -9.9657235e-08, 0, 1.465, 0, 1.509958e-07, 0, -0.66, -17.812, 17.229, 32.525)
+
+[node name="CSGBakedMeshInstance3D3" parent="floor_2/stairt_to_floor_3/windows3/Node3D" unique_id=781078351 instance=ExtResource("123_3080d")]
+transform = Transform3D(-1, 0, -9.4372375e-08, 0, 1.295, 0, 1.509958e-07, 0, -0.625, -17.862, 17.574, 32.34)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows3/Node3D/CSGBakedMeshInstance3D3" unique_id=744569306]
+transform = Transform3D(0.9999845, 0, -3.673506e-12, 0, 0.9999999, 0, -3.723244e-12, 0, 0.99999976, -12.092596, 1.9231977, 4.6136665)
+size = Vector3(0.021240234, 0.018066406, 0.04296875)
+material = ExtResource("6_eetaf")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows3/Node3D/CSGBakedMeshInstance3D3" unique_id=82077571]
+transform = Transform3D(0.9999751, 0, -5.918821e-12, 0, 0.9999999, 0, -5.9969807e-12, 0, 0.99999976, -12.096502, 1.9546003, 4.612438)
+size = Vector3(0.013427734, 0.10028076, 0.07470703)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows3/Node3D/CSGBakedMeshInstance3D3" unique_id=696682235]
+transform = Transform3D(0.99998444, 0, -3.687717e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9541588, 4.6136627)
+size = Vector3(0.021240234, 0.018066406, 0.04296875)
+material = ExtResource("6_eetaf")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows3/Node3D/CSGBakedMeshInstance3D3" unique_id=1482463972]
+transform = Transform3D(0.9999844, 0, -3.7019277e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9827042, 4.613659)
+size = Vector3(0.021240234, 0.018066406, 0.04296875)
+material = ExtResource("6_eetaf")
+
+[node name="Node3D2" type="Node3D" parent="floor_2/stairt_to_floor_3/windows3" unique_id=1331995553]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 61.783)
+
+[node name="CSGBakedMeshInstance3D2" parent="floor_2/stairt_to_floor_3/windows3/Node3D2" unique_id=2001515580 instance=ExtResource("123_3080d")]
+transform = Transform3D(-1, 0, -9.9657235e-08, 0, 1.465, 0, 1.509958e-07, 0, -0.66, -17.812, 17.229, 32.525)
+
+[node name="CSGBakedMeshInstance3D3" parent="floor_2/stairt_to_floor_3/windows3/Node3D2" unique_id=1221033935 instance=ExtResource("123_3080d")]
+transform = Transform3D(-1, 0, -9.4372375e-08, 0, 1.295, 0, 1.509958e-07, 0, -0.625, -17.862, 17.574, 32.34)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows3/Node3D2/CSGBakedMeshInstance3D3" unique_id=1227247972]
+transform = Transform3D(0.9999845, 0, -3.673506e-12, 0, 0.9999999, 0, -3.723244e-12, 0, 0.99999976, -12.092596, 1.9231977, 4.6136665)
+size = Vector3(0.021240234, 0.018066406, 0.04296875)
+material = ExtResource("6_eetaf")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows3/Node3D2/CSGBakedMeshInstance3D3" unique_id=1833896994]
+transform = Transform3D(0.9999751, 0, -5.918821e-12, 0, 0.9999999, 0, -5.9969807e-12, 0, 0.99999976, -12.096502, 1.9546003, 4.612438)
+size = Vector3(0.013427734, 0.10028076, 0.07470703)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows3/Node3D2/CSGBakedMeshInstance3D3" unique_id=30256190]
+transform = Transform3D(0.99998444, 0, -3.687717e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9541588, 4.6136627)
+size = Vector3(0.021240234, 0.018066406, 0.04296875)
+material = ExtResource("6_eetaf")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows3/Node3D2/CSGBakedMeshInstance3D3" unique_id=992721042]
+transform = Transform3D(0.9999844, 0, -3.7019277e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9827042, 4.613659)
+size = Vector3(0.021240234, 0.018066406, 0.04296875)
+material = ExtResource("6_eetaf")
+
+[node name="Node3D3" type="Node3D" parent="floor_2/stairt_to_floor_3/windows3" unique_id=373385312]
+
+[node name="CSGBakedMeshInstance3D2" parent="floor_2/stairt_to_floor_3/windows3/Node3D3" unique_id=2076065184 instance=ExtResource("123_3080d")]
+transform = Transform3D(1, 0, 0, 0, 1.3845499, 0, 0, 0, 0.7512081, 6.444, 17.4024, 27.449219)
+
+[node name="CSGBakedMeshInstance3D3" parent="floor_2/stairt_to_floor_3/windows3/Node3D3" unique_id=382076011 instance=ExtResource("123_3080d")]
+transform = Transform3D(1, 0, 0, 0, 1.3845499, 0, 0, 0, 0.7512081, 6.444, 17.4024, 26.066744)
+
+[node name="windows4" type="Node3D" parent="floor_2/stairt_to_floor_3" unique_id=953336074]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.018815, -10.116)
+
+[node name="Node3D" type="Node3D" parent="floor_2/stairt_to_floor_3/windows4" unique_id=1287075647]
+
+[node name="CSGBakedMeshInstance3D2" parent="floor_2/stairt_to_floor_3/windows4/Node3D" unique_id=546235903 instance=ExtResource("123_3080d")]
+transform = Transform3D(-1, 0, -9.9657235e-08, 0, 1.465, 0, 1.509958e-07, 0, -0.66, -17.812, 17.229, 32.525)
+
+[node name="CSGBakedMeshInstance3D3" parent="floor_2/stairt_to_floor_3/windows4/Node3D" unique_id=1703713136 instance=ExtResource("123_3080d")]
+transform = Transform3D(-1, 0, -9.4372375e-08, 0, 1.295, 0, 1.509958e-07, 0, -0.625, -17.862, 17.574, 32.34)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows4/Node3D/CSGBakedMeshInstance3D3" unique_id=243579313]
+transform = Transform3D(0.9999845, 0, -3.673506e-12, 0, 0.9999999, 0, -3.723244e-12, 0, 0.99999976, -12.092596, 1.9231977, 4.6136665)
+size = Vector3(0.021240234, 0.018066406, 0.04296875)
+material = ExtResource("6_eetaf")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows4/Node3D/CSGBakedMeshInstance3D3" unique_id=1832175747]
+transform = Transform3D(0.9999751, 0, -5.918821e-12, 0, 0.9999999, 0, -5.9969807e-12, 0, 0.99999976, -12.096502, 1.9546003, 4.612438)
+size = Vector3(0.013427734, 0.10028076, 0.07470703)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows4/Node3D/CSGBakedMeshInstance3D3" unique_id=1323553973]
+transform = Transform3D(0.99998444, 0, -3.687717e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9541588, 4.6136627)
+size = Vector3(0.021240234, 0.018066406, 0.04296875)
+material = ExtResource("6_eetaf")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows4/Node3D/CSGBakedMeshInstance3D3" unique_id=1948812334]
+transform = Transform3D(0.9999844, 0, -3.7019277e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9827042, 4.613659)
+size = Vector3(0.021240234, 0.018066406, 0.04296875)
+material = ExtResource("6_eetaf")
+
+[node name="Node3D2" type="Node3D" parent="floor_2/stairt_to_floor_3/windows4" unique_id=1158635336]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 61.783)
+
+[node name="CSGBakedMeshInstance3D2" parent="floor_2/stairt_to_floor_3/windows4/Node3D2" unique_id=1953872064 instance=ExtResource("123_3080d")]
+transform = Transform3D(-1, 0, -9.9657235e-08, 0, 1.465, 0, 1.509958e-07, 0, -0.66, -17.812, 17.229, 32.525)
+
+[node name="CSGBakedMeshInstance3D3" parent="floor_2/stairt_to_floor_3/windows4/Node3D2" unique_id=1344220094 instance=ExtResource("123_3080d")]
+transform = Transform3D(-1, 0, -9.4372375e-08, 0, 1.295, 0, 1.509958e-07, 0, -0.625, -17.862, 17.574, 32.34)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows4/Node3D2/CSGBakedMeshInstance3D3" unique_id=1081023653]
+transform = Transform3D(0.9999845, 0, -3.673506e-12, 0, 0.9999999, 0, -3.723244e-12, 0, 0.99999976, -12.092596, 1.9231977, 4.6136665)
+size = Vector3(0.021240234, 0.018066406, 0.04296875)
+material = ExtResource("6_eetaf")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows4/Node3D2/CSGBakedMeshInstance3D3" unique_id=840937532]
+transform = Transform3D(0.9999751, 0, -5.918821e-12, 0, 0.9999999, 0, -5.9969807e-12, 0, 0.99999976, -12.096502, 1.9546003, 4.612438)
+size = Vector3(0.013427734, 0.10028076, 0.07470703)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows4/Node3D2/CSGBakedMeshInstance3D3" unique_id=1166762297]
+transform = Transform3D(0.99998444, 0, -3.687717e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9541588, 4.6136627)
+size = Vector3(0.021240234, 0.018066406, 0.04296875)
+material = ExtResource("6_eetaf")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="floor_2/stairt_to_floor_3/windows4/Node3D2/CSGBakedMeshInstance3D3" unique_id=1734983599]
+transform = Transform3D(0.9999844, 0, -3.7019277e-12, 0, 0.9999999, 0, -3.7516656e-12, 0, 0.99999976, -12.092596, 1.9827042, 4.613659)
+size = Vector3(0.021240234, 0.018066406, 0.04296875)
+material = ExtResource("6_eetaf")
+
+[node name="Node3D3" type="Node3D" parent="floor_2/stairt_to_floor_3/windows4" unique_id=445246700]
+
+[node name="CSGBakedMeshInstance3D2" parent="floor_2/stairt_to_floor_3/windows4/Node3D3" unique_id=1084977905 instance=ExtResource("123_3080d")]
+transform = Transform3D(1, 0, 0, 0, 1.3845499, 0, 0, 0, 0.7512081, 6.444, 17.4024, 27.449219)
+
+[node name="CSGBakedMeshInstance3D3" parent="floor_2/stairt_to_floor_3/windows4/Node3D3" unique_id=1074910548 instance=ExtResource("123_3080d")]
+transform = Transform3D(1, 0, 0, 0, 1.3845499, 0, 0, 0, 0.7512081, 6.444, 17.4024, 26.066744)
+
+[node name="Sprite3D7" type="Sprite3D" parent="floor_2/stairt_to_floor_3" unique_id=675598891]
+transform = Transform3D(5.5879354e-09, 0, -0.25999996, 0, 0.06473334, 0, 0.063312985, 0, 3.7252903e-08, -6.573806, 17.01155, 25.776138)
+material_override = SubResource("StandardMaterial3D_fo1kk")
+texture = ExtResource("108_0x7p3")
+
+[node name="Label3D" type="Label3D" parent="floor_2/stairt_to_floor_3/Sprite3D7" unique_id=1921542323]
+transform = Transform3D(7.5014133, 0, 1.7053026e-13, 0, 9.090072, 0, 0, 0, 0.99999934, 0, 0, 0.023345947)
+modulate = Color(0.53333336, 0.43137255, 0.039215688, 1)
+text = "III ЭТАЖ"
+font = SubResource("FontFile_7xedq")
+outline_size = 0
+
+[node name="Sprite3D" type="Sprite3D" parent="floor_2/stairt_to_floor_3/Sprite3D7" unique_id=429685701]
+transform = Transform3D(2.1281097, 0, 3.410605e-13, 0, 2.1516423, 0, 3.5527137e-15, 0, 0.99999946, 0, 0, 0.022766113)
+material_override = SubResource("StandardMaterial3D_mao1a")
+texture = ExtResource("152_kd0ax")
+
+[node name="CSGBox3D24" type="CSGBox3D" parent="floor_2" unique_id=1693843271]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.895758, 13.864031, 23.63419)
+use_collision = true
+size = Vector3(6.3687477, 5.0505676, 0.67333984)
+material = ExtResource("61_47udc")
+
+[node name="CSGBox3D26" type="CSGBox3D" parent="floor_2" unique_id=1626118974]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.895758, 13.864031, 20.130924)
+use_collision = true
+size = Vector3(6.3687477, 5.0505676, 0.67333984)
+material = ExtResource("61_47udc")
+
+[node name="CSGBox3D25" type="CSGBox3D" parent="floor_2" unique_id=544059920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.895758, 13.864031, 28.075167)
+use_collision = true
+size = Vector3(6.3687477, 5.0505676, 0.67333984)
+material = ExtResource("61_47udc")
+
+[node name="CSGBox3D27" type="CSGBox3D" parent="floor_2" unique_id=585437748]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.895758, 13.864031, 28.075167)
+use_collision = true
+size = Vector3(6.3687477, 5.0505676, 0.67333984)
+material = ExtResource("61_47udc")
+
+[node name="CSGBox3D28" type="CSGBox3D" parent="floor_2" unique_id=1316454306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.895758, 13.864031, 31.565002)
+use_collision = true
+size = Vector3(6.3687477, 5.0505676, 0.67333984)
+material = ExtResource("61_47udc")
+
+[node name="floor3" type="CSGBox3D" parent="floor_2" unique_id=298865786]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.100422, 12.38766, 25.779253)
+use_collision = true
+size = Vector3(20.033382, 0.15411377, 16.738155)
+material = ExtResource("71_o58na")
+
 [node name="floor_4" type="Node3D" parent="." unique_id=569568654]
 
 [node name="right_wall6" type="CSGBox3D" parent="floor_4" unique_id=381525599]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.5451924, -14.050147, 22.554373, 17.49365)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.5451924, -14.050147, 23.701782, 17.49365)
 use_collision = true
 size = Vector3(14.979, 4.164, 0.309)
 material = ExtResource("61_47udc")
 
 [node name="left_wall2" type="CSGBox3D" parent="floor_4" unique_id=297536919]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.5451924, -13.597115, 22.555336, 34.196423)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.5451924, -13.597115, 23.686861, 34.196423)
 use_collision = true
 size = Vector3(15.885675, 4.164117, 0.30924988)
 material = ExtResource("61_47udc")
 
-[node name="stairs_main2" parent="floor_4" unique_id=134225155 instance=ExtResource("150_kd0ax")]
+[node name="stairs_main2" parent="floor_4" unique_id=2115499613 instance=ExtResource("150_kd0ax")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.1697235, 20.412315, 25.922655)
 
 [editable path="room321/props/monitors/StaticBody3D"]
