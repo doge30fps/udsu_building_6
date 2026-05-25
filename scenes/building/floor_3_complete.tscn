@@ -1127,7 +1127,6 @@ albedo_color = Color(0, 0.2784314, 0.38039216, 1)
 
 [node name="room321" parent="." unique_id=1958238040 instance=ExtResource("1_ya13o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.484, 16.401, -9.196)
-visible = false
 
 [node name="props" type="Node3D" parent="room321" unique_id=511759886]
 
