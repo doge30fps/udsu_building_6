@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drijutifq1ty"
-path.s3tc="res://.godot/imported/information_from_decan.png-02cb24440ff5a8e5b25ce380d1e1ec38.s3tc.ctex"
+uid="uid://b5o6k872l75j1"
+path.s3tc="res://.godot/imported/information_from_decan_EMPTY.png-0d6e0bec97b5b0b236792def14d978ab.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://scenes/props/information_from_decan.png"
-dest_files=["res://.godot/imported/information_from_decan.png-02cb24440ff5a8e5b25ce380d1e1ec38.s3tc.ctex"]
+source_file="res://textures/sprites/3rd_floor/information_from_decan_EMPTY.png"
+dest_files=["res://.godot/imported/information_from_decan_EMPTY.png-0d6e0bec97b5b0b236792def14d978ab.s3tc.ctex"]
 
 [params]
 
