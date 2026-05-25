@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qbg3lyu4jljn"
-path.s3tc="res://.godot/imported/close-up-marble-textured-tiles.jpg-949876c3a40b16dc5430232032bb3263.s3tc.ctex"
+uid="uid://dnme5ik6y43hb"
+path.s3tc="res://.godot/imported/interior_tiles_nor_gl_1k.png-bca168ead9bbc0fd9d03ad310d1a9ba3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/floor2/floor/close-up-marble-textured-tiles.jpg"
-dest_files=["res://.godot/imported/close-up-marble-textured-tiles.jpg-949876c3a40b16dc5430232032bb3263.s3tc.ctex"]
+source_file="res://textures/floor2/floor/interior_tiles_nor_gl_1k.png"
+dest_files=["res://.godot/imported/interior_tiles_nor_gl_1k.png-bca168ead9bbc0fd9d03ad310d1a9ba3.s3tc.ctex"]
 
 [params]
 
@@ -22,12 +22,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://textures/floor2/floor/interior_tiles_nor_gl_1k.png"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
