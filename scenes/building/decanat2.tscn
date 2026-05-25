@@ -60,6 +60,10 @@ _surfaces = [{
 [node name="CSGBakedMeshInstance3D3" parent="." unique_id=544325974 instance=ExtResource("1_qoqcp")]
 transform = Transform3D(0.8738849, 0, 0.010257304, 0, 1.3060614, 0, -0.009029519, 0, 0.9927059, -28.442547, 0, -0.6944885)
 
+[node name="CSGBakedMeshInstance3D13" parent="." unique_id=156456633 instance=ExtResource("1_qoqcp")]
+transform = Transform3D(1.1204901, 0, 0.008305198, 0, 1.5024376, 0, -0.011577596, 0, 0.8037804, -28.50357, 2.6587265, 0.5681317)
+surface_material_override/0 = ExtResource("8_k00ki")
+
 [node name="CSGBakedMeshInstance3D8" parent="." unique_id=1752154824 instance=ExtResource("1_qoqcp")]
 transform = Transform3D(0.8738849, 0, 0.010257304, 0, 1.7398793, 0, -0.009029519, 0, 0.9927059, -28.463215, 1.140822, -0.6944885)
 
@@ -138,10 +142,6 @@ outline_size = 2
 transform = Transform3D(1.124591, 0, 0.0043316633, 0, 1.5735986, 0, -0.29852924, 0, 1.0851023, -28.506378, 1.2573851, 1.9292221)
 mesh = SubResource("ArrayMesh_xyy7t")
 
-[node name="CSGBakedMeshInstance3D13" type="MeshInstance3D" parent="." unique_id=701647946]
-transform = Transform3D(1.1271793, 0, 0.0035748943, 0, 2.2426484, 0, -0.29921633, 0, 0.8955281, -28.506378, 0.1540519, 0.5795288)
-mesh = SubResource("ArrayMesh_xyy7t")
-
 [node name="CSGBakedMeshInstance3D14" type="MeshInstance3D" parent="." unique_id=1345669575]
 transform = Transform3D(1.1240971, 0, 0.004355225, 0, 1.5735986, 0, -0.29839814, 0, 1.0910045, -28.506378, 1.2573851, -0.70412064)
 mesh = SubResource("ArrayMesh_xyy7t")
@@ -153,3 +153,23 @@ mesh = SubResource("ArrayMesh_xyy7t")
 [node name="CSGBakedMeshInstance3D12" type="MeshInstance3D" parent="." unique_id=883168039]
 transform = Transform3D(1.124591, 0, 0.0043316633, 0, 1.5735986, 0, -0.29852924, 0, 1.0851023, -28.506378, 1.2573851, 4.883003)
 mesh = SubResource("ArrayMesh_xyy7t")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=879458568]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.590494, 4.084509, 0.4584031)
+size = Vector3(0.25256348, 0.44667053, 1.1672668)
+material = ExtResource("7_gcqux")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1101593652]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.590494, 2.7773032, 0.4584031)
+size = Vector3(0.25256348, 0.27345276, 1.1672668)
+material = ExtResource("7_gcqux")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=855142591]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -28.590494, 3.531368, 0.9895911)
+size = Vector3(0.25256348, 0.108522415, 1.3204498)
+material = ExtResource("7_gcqux")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=1598963078]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -28.590494, 3.531368, -0.064736485)
+size = Vector3(0.25256348, 0.108522415, 1.3204498)
+material = ExtResource("7_gcqux")
