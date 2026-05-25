@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://dpytkpgl12i4t"]
+
+[ext_resource type="Material" uid="uid://cfxndm1wg0k6g" path="res://materials/room321/black_soft_chair.tres" id="1_km6d0"]
+[ext_resource type="Material" uid="uid://gfq0n5qq0h6y" path="res://materials/room321/cafedra_table.tres" id="2_5yx1w"]
+[ext_resource type="Material" uid="uid://b8bq4rft1svfr" path="res://materials/room321/metal_part_lowres.tres" id="3_k86iw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5u366"]
+size = Vector3(1.0953522, 0.54141235, 1.1687622)
+
+[node name="Node3D" type="Node3D" unique_id=240031531]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1760632459]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1176427366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.054283142, 0.4596405, -0.14120483)
+shape = SubResource("BoxShape3D_5u366")
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=59227919]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=851720873]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06665039, 0.45125115, -0.1116333)
+size = Vector3(1.1333008, 0.5004883, 1.2452393)
+material = ExtResource("1_km6d0")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=72612891]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.064086914, 0.6871033, -0.10882568)
+size = Vector3(1.1560059, 0.040100098, 1.2520752)
+material = ExtResource("2_5yx1w")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D" unique_id=877392567]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.404518, 0.16606033, 0.39882696)
+radius = 0.06738281
+height = 0.16635132
+material = ExtResource("3_k86iw")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCombiner3D" unique_id=762798345]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.404518, 0.16606033, -0.6331899)
+radius = 0.06738281
+height = 0.16635132
+material = ExtResource("3_k86iw")
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="CSGCombiner3D" unique_id=156939126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.53426564, 0.16606033, 0.39882696)
+radius = 0.06738281
+height = 0.16635132
+material = ExtResource("3_k86iw")
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="CSGCombiner3D" unique_id=78911757]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.53426564, 0.16606033, -0.6331899)
+radius = 0.06738281
+height = 0.16635132
+material = ExtResource("3_k86iw")

@@ -4245,7 +4245,7 @@ texture = ExtResource("113_j7qdw")
 [node name="benches" type="Node3D" parent="floor_3_center" unique_id=1985257552]
 
 [node name="bench_1" parent="floor_3_center/benches" unique_id=240031531 instance=ExtResource("114_5deyo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.460588, 0, 4.8964386)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.207224, 0, 4.8964386)
 
 [node name="bench_4" parent="floor_3_center/benches" unique_id=2075855350 instance=ExtResource("114_5deyo")]
 transform = Transform3D(-0.07863313, 0, -0.9969036, 0, 1, 0, 0.9969036, 0, -0.07863313, -5.0187244, 0, -9.486572)
@@ -4260,7 +4260,7 @@ transform = Transform3D(-0.0031940117, 0, -0.999995, 0, 1, 0, 0.999995, 0, -0.00
 mesh = SubResource("ArrayMesh_mgxca")
 
 [node name="bench_2" parent="floor_3_center/benches" unique_id=2046535268 instance=ExtResource("114_5deyo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.482595, 0, -8.625326)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.179697, 0, -8.625326)
 
 [node name="CSGBakedMeshInstance3D" parent="floor_3_center/benches/bench_2" index="0" unique_id=1903936747]
 surface_material_override/0 = SubResource("StandardMaterial3D_7xedq")
