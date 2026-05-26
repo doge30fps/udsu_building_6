@@ -2903,6 +2903,9 @@ transform = Transform3D(-0.98391676, 0, -2.6315251e-07, 0, 0.9985675, 0, 7.78683
 [node name="StaticBody3D" parent="floor_3_right_wing/doors/metal_door" unique_id=463699195 instance=ExtResource("72_gb736")]
 transform = Transform3D(-6.2970074e-08, 0, 1, 0, 1.4509451, 0, -1.4405873, 0, -4.371139e-08, 7.043782, 0.0109063415, -2.0472817)
 
+[node name="StaticBody3D3" parent="floor_3_right_wing/doors/metal_door" unique_id=859239347 instance=ExtResource("72_gb736")]
+transform = Transform3D(1.6434824, 0, -3.5527137e-15, 0, 1.4509451, 0, 0, 0, 1, 5.456526, 0.0109062195, -0.1328764)
+
 [node name="StaticBody3D2" parent="floor_3_right_wing/doors/metal_door" unique_id=1329363632 instance=ExtResource("72_gb736")]
 transform = Transform3D(-1.9132758e-08, 0, -1, 0, 1.4509451, 0, 0.43770647, 0, -4.371139e-08, 6.9746227, 0.0109063415, -1.0426961)
 
@@ -5282,6 +5285,9 @@ metadata/surface_type = &"concrete"
 
 [node name="StaticBody3D3" parent="left" unique_id=894639209 instance=ExtResource("72_gb736")]
 transform = Transform3D(1.2522405, -1.2279723e-07, -0.10515466, 1.0878654e-07, 1.4263664, 2.1998797e-08, 0.06446557, -2.1683375e-08, 2.0426276, -8.477874, 0.003592126, 55.44214)
+
+[node name="StaticBody3D6" parent="left" unique_id=1440313089 instance=ExtResource("72_gb736")]
+transform = Transform3D(-1.6556753, 1.2672693e-07, -0.0035161674, 1.4364436e-07, 1.4603701, 2.166525e-08, 0.002889976, 1.5485986e-08, -2.014318, -10.268799, 0.0035915375, 52.25094)
 
 [node name="StaticBody3D4" parent="left" unique_id=618044134 instance=ExtResource("72_gb736")]
 transform = Transform3D(-1.9132756e-08, -1.2684565e-07, -1, -8.363194e-15, 1.4509451, -8.742278e-08, 0.43770647, 2.2178407e-14, -4.371138e-08, -7.79549, 0.013459188, 53.805283)

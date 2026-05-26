@@ -1585,7 +1585,6 @@ height = 1.3131104
 material = ExtResource("129_p8g7w")
 
 [node name="floor_3" parent="." unique_id=347852145 instance=ExtResource("4_xu6ow")]
-visible = false
 
 [node name="RADIATORS2" type="Node3D" parent="floor_3" unique_id=116803150]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.19, 16.27, 27.508)
@@ -5553,6 +5552,12 @@ metadata/surface_type = &"concrete"
 
 [node name="StaticBody3D3" parent="floor_2/left2" unique_id=1855076692 instance=ExtResource("67_f7lh1")]
 transform = Transform3D(1.2522405, -1.2279723e-07, -0.10515466, 1.0878654e-07, 1.4263664, 2.1998797e-08, 0.06446557, -2.1683375e-08, 2.0426276, -8.477874, 0.003592126, 55.44214)
+
+[node name="StaticBody3D6" parent="floor_2/left2" unique_id=463699195 instance=ExtResource("67_f7lh1")]
+transform = Transform3D(-1.6275405, -1.2844754e-07, 0.015349753, -1.4030222e-07, 1.4919986, -2.9770451e-08, -0.012214805, -2.26811e-08, -2.045275, -10.2615, 0.0035919182, 51.849518)
+
+[node name="StaticBody3D7" parent="floor_2/left2" unique_id=1356812205 instance=ExtResource("67_f7lh1")]
+transform = Transform3D(1.6275405, -1.3216801e-07, -0.015349574, 1.4030209e-07, 1.5352141, 2.9770437e-08, 0.0122146625, -2.3338055e-08, 2.045275, 5.468449, -0.13876085, -18.17359)
 
 [node name="StaticBody3D4" parent="floor_2/left2" unique_id=687046894 instance=ExtResource("67_f7lh1")]
 transform = Transform3D(-1.9132756e-08, -1.2684565e-07, -1, -8.363194e-15, 1.4509451, -8.742278e-08, 0.43770647, 2.2178407e-14, -4.371138e-08, -7.79549, 0.013459188, 53.805283)
