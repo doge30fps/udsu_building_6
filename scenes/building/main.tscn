@@ -67,6 +67,7 @@
 [ext_resource type="Material" uid="uid://bfduhrv4fmrf5" path="res://materials/room321/laminate.tres" id="86_8i4lt"]
 [ext_resource type="Texture2D" uid="uid://cauwl44gp8j4e" path="res://textures/sprites/3rd_floor/stairs_down2.png" id="86_ijcga"]
 [ext_resource type="Texture2D" uid="uid://cqb3j3ni5siuo" path="res://textures/sprites/3rd_floor/alarm_sticker.JPG" id="87_iwcqy"]
+[ext_resource type="Texture2D" uid="uid://cirqtcr780d0h" path="res://textures/floor2/right_wing/decanat.png" id="88_42f8a"]
 [ext_resource type="Texture2D" uid="uid://c2ktimlbwdfvi" path="res://textures/sprites/3rd_floor/arrow.png" id="89_unoq1"]
 [ext_resource type="Material" uid="uid://bkjuhcvdbgj3" path="res://materials/glass.tres" id="96_xu6ow"]
 [ext_resource type="Texture2D" uid="uid://cjreht00csfvs" path="res://textures/sprites/3rd_floor/evacuation_plan.png" id="97_xu6ow"]
@@ -103,8 +104,10 @@
 [ext_resource type="Texture2D" uid="uid://tl4pmc00vnik" path="res://models/windows/single_window/residential_window_2.png" id="119_k1jd7"]
 [ext_resource type="Texture2D" uid="uid://cudbqxvey3xkn" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Metallic.jpg" id="119_pa3cr"]
 [ext_resource type="Texture2D" uid="uid://cb5sct4py02m7" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Normal.png" id="120_54qoj"]
+[ext_resource type="Texture2D" uid="uid://da24cuknpwrtl" path="res://textures/floor2/right_wing/decanat_poster1.png" id="120_qc4w1"]
 [ext_resource type="Texture2D" uid="uid://isebdgriehem" path="res://textures/floor2/floor/interior_tiles_diff_1k.png" id="121_1hksu"]
 [ext_resource type="Texture2D" uid="uid://u5ia7a3jidor" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Roughness.jpg" id="121_7441i"]
+[ext_resource type="Texture2D" uid="uid://mi02kxmqtjxi" path="res://textures/floor2/right_wing/decanat_poster2.png" id="121_g7xqj"]
 [ext_resource type="Texture2D" uid="uid://cfmnbksp17tfe" path="res://textures/floor2/right_wing/paintings/paintings2_left.png" id="121_k1jd7"]
 [ext_resource type="PackedScene" uid="uid://cjxmivhkixq1s" path="res://scenes/props/puff_bench.tscn" id="121_rsydx"]
 [ext_resource type="Texture2D" uid="uid://cxy6wta7h2dms" path="res://textures/floor2/right_wing/paintings/paintings2_right.png" id="122_jw26d"]
@@ -743,8 +746,27 @@ _surfaces = [{
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xu6ow"]
 albedo_texture = ExtResource("109_bfalx")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e81i6"]
+transparency = 1
+albedo_texture = ExtResource("88_42f8a")
+uv1_scale = Vector3(0.195, 0.265, 1)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_v5vq5"]
 size = Vector3(0.22570801, 3.9021149, 3.2398071)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wao0j"]
+albedo_color = Color(0.24121189, 0.40732843, 0.9127892, 1)
+albedo_texture = ExtResource("156_fo1kk")
+roughness = 0.89
+roughness_texture = ExtResource("159_5ifu2")
+normal_enabled = true
+normal_texture = ExtResource("158_p8g7w")
+heightmap_enabled = true
+heightmap_scale = 0.932
+heightmap_texture = ExtResource("157_7xedq")
+uv1_scale = Vector3(0.465, 1, 1)
+uv1_triplanar = true
+uv1_world_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_81i0w"]
 albedo_texture = ExtResource("116_wfq0u")
@@ -852,6 +874,12 @@ albedo_texture = ExtResource("97_xu6ow")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jb6ci"]
 transparency = 1
 albedo_texture = ExtResource("124_irn06")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hcbip"]
+albedo_texture = ExtResource("120_qc4w1")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_46qtb"]
+albedo_texture = ExtResource("121_g7xqj")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ie0rk"]
 load_path = "res://.godot/imported/Poliigon_PlasterPainted_7664_BaseColor.jpg-ec1c3228366184fcfdc292942e3ba6c2.s3tc.ctex"
@@ -4257,9 +4285,16 @@ size = Vector3(1, 3.236206, 3.0778809)
 material = ExtResource("86_8i4lt")
 
 [node name="Sprite3D3" type="Sprite3D" parent="floor_2/floor_3_right_wing2/decanat" unique_id=1536094855]
-transform = Transform3D(-0.00032731798, 0, 0.18762358, 0, 0.065113135, 0, -0.053069025, 0, -0.004069794, -28.106842, 1.7615759, -3.325384)
+transform = Transform3D(-0.00032731798, -0.0004181986, 0.1876197, 2.2737368e-13, 0.06511179, 0.0012052009, -0.053069025, 2.579356e-06, -0.00406977, -28.107138, 1.8914642, -3.325382)
 material_override = SubResource("StandardMaterial3D_xu6ow")
 texture = ExtResource("109_bfalx")
+region_enabled = true
+region_rect = Rect2(584, 8, 551, 750)
+
+[node name="Sprite3D6" type="Sprite3D" parent="floor_2/floor_3_right_wing2/decanat" unique_id=1883855156]
+transform = Transform3D(-0.0005335766, -0.0007174571, 0.1876197, 3.7065262e-13, 0.11170511, 0.0012052009, -0.08651034, 4.4251165e-06, -0.00406977, -28.096622, 2.4136052, -2.6252546)
+material_override = SubResource("StandardMaterial3D_e81i6")
+texture = ExtResource("88_42f8a")
 region_enabled = true
 region_rect = Rect2(584, 8, 551, 750)
 
@@ -4298,6 +4333,54 @@ shape = SubResource("BoxShape3D_v5vq5")
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="floor_2/floor_3_right_wing2/decanat/StaticBody3D" unique_id=863485212]
 transform = Transform3D(0.7071067, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.7071067, -26.846254, 1.9352036, -1.1323452)
 shape = SubResource("BoxShape3D_v5vq5")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="floor_2/floor_3_right_wing2/decanat" unique_id=102733341]
+transform = Transform3D(0.67165595, 0, 0.7408632, 0, 1, 0, -0.7408632, 0, 0.67165595, -26.70372, 1.3816786, -1.0116948)
+size = Vector3(0.022460938, 0.40722656, 1)
+material = SubResource("StandardMaterial3D_wao0j")
+
+[node name="Label3D" type="Label3D" parent="floor_2/floor_3_right_wing2/decanat/CSGBox3D" unique_id=1791217682]
+transform = Transform3D(0.006756963, 0, 0.999899, 0, 0.79610646, 0, -0.4755768, 0, 0.014206499, 0.01891089, 0, -0.006129551)
+shaded = true
+text = "предметный дизайн"
+
+[node name="Label3D2" type="Label3D" parent="floor_2/floor_3_right_wing2/decanat/CSGBox3D" unique_id=523073637]
+transform = Transform3D(0.006756963, 0, 0.999899, 0, 0.79610646, 0, -0.4755768, 0, 0.014206499, 0.03652277, 0, -1.2457101)
+shaded = true
+text = "дизайн среды"
+
+[node name="Label3D3" type="Label3D" parent="floor_2/floor_3_right_wing2/decanat/CSGBox3D" unique_id=1407910008]
+transform = Transform3D(0.23672111, 0, 0.7054882, 0, 0.79610646, 0, -0.23564108, 0, 0.7087217, 0.2984049, 0.87578785, -2.09231)
+shaded = true
+modulate = Color(0.101960786, 0.1882353, 0.32941177, 1)
+text = "кафедра дизайна"
+outline_size = 0
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="floor_2/floor_3_right_wing2/decanat" unique_id=220984142]
+transform = Transform3D(0.6352833, 0, 0.77227914, 0, 1, 0, -0.77227914, 0, 0.6352833, -25.697468, 1.5256958, -0.32975703)
+size = Vector3(0.022460938, 0.40722656, 1)
+material = SubResource("StandardMaterial3D_wao0j")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="floor_2/floor_3_right_wing2/decanat" unique_id=1289682638]
+transform = Transform3D(0.67165595, 0, 0.7408632, 0, 1, 0, -0.7408632, 0, 0.67165595, -27.6631, 1.3816786, -1.8814548)
+size = Vector3(0.022460938, 0.40722656, 1)
+material = SubResource("StandardMaterial3D_wao0j")
+
+[node name="Label3D" type="Label3D" parent="floor_2/floor_3_right_wing2/decanat/CSGBox3D2" unique_id=1462238690]
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="floor_2/floor_3_right_wing2/decanat" unique_id=495664375]
+transform = Transform3D(0.9995201, 0, 0.03097464, 0, 1, 0, -0.03097464, 0, 0.9995201, -28.101479, 1.3816786, -2.6571474)
+size = Vector3(0.022460938, 0.40722656, 0.6821289)
+material = SubResource("StandardMaterial3D_wao0j")
+
+[node name="Label3D" type="Label3D" parent="floor_2/floor_3_right_wing2/decanat/CSGBox3D4" unique_id=449051639]
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="floor_2/floor_3_right_wing2/decanat" unique_id=594335157]
+transform = Transform3D(0.9995201, 0, 0.03097464, 0, 1, 0, -0.03097464, 0, 0.9995201, -28.110537, 1.3816786, -3.3169107)
+size = Vector3(0.022460938, 0.40722656, 0.6821289)
+material = SubResource("StandardMaterial3D_wao0j")
+
+[node name="Label3D" type="Label3D" parent="floor_2/floor_3_right_wing2/decanat/CSGBox3D5" unique_id=863600340]
 
 [node name="wires" type="Node3D" parent="floor_2/floor_3_right_wing2" unique_id=1954129984]
 
@@ -4394,7 +4477,7 @@ material = ExtResource("6_eetaf")
 [node name="board_decan" type="Node3D" parent="floor_2/floor_3_right_wing2" unique_id=519234244]
 
 [node name="CSGBox3D19" type="CSGBox3D" parent="floor_2/floor_3_right_wing2/board_decan" unique_id=1850105564]
-transform = Transform3D(-8.940698e-08, 0, 0.2850692, 0, 1.4814869, 0, -1, 0, -2.5487175e-08, -25.283308, 1.7584586, 20.622688)
+transform = Transform3D(-8.940698e-08, 0, 0.2850692, 0, 1.4814869, 0, -1, 0, -2.5487175e-08, -25.283308, 1.7584591, 20.622688)
 size = Vector3(1.3177948, 1, 0.06982422)
 material = SubResource("StandardMaterial3D_wfq0u")
 
@@ -4980,6 +5063,16 @@ material_override = SubResource("StandardMaterial3D_fsae3")
 texture = ExtResource("122_jw26d")
 region_enabled = true
 region_rect = Rect2(364.8286, 906.57135, 830.3086, 2197.8765)
+
+[node name="Sprite3D" type="Sprite3D" parent="floor_2/floor_3_right_wing2" unique_id=1481747940]
+transform = Transform3D(-9.446832e-09, 0, 0.99999994, 0, 0.16779876, 0, -0.23058923, 0, -2.9802322e-08, -25.27999, 2.1837492, 1.6092393)
+material_override = SubResource("StandardMaterial3D_hcbip")
+texture = ExtResource("120_qc4w1")
+
+[node name="Sprite3D2" type="Sprite3D" parent="floor_2/floor_3_right_wing2" unique_id=467098538]
+transform = Transform3D(-0.14316837, 0, 0.66426533, 0, 0.22776864, 0, -0.12722707, 0, -0.7474967, -27.105179, 2.3453207, -1.5361913)
+material_override = SubResource("StandardMaterial3D_46qtb")
+texture = ExtResource("121_g7xqj")
 
 [node name="left2" type="Node3D" parent="floor_2" unique_id=231988098]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.391, 9)
