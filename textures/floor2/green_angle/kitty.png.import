@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://58csp65eion8"
-path.s3tc="res://.godot/imported/lowres1.png-b5a644d2defea3520a69e88bd94b4aae.s3tc.ctex"
+uid="uid://c5k4lvkaunstm"
+path.s3tc="res://.godot/imported/kitty.png-3ce48e21cfd6141d19372dbe3cc24263.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/floor2/green_angle/lowres1.png"
-dest_files=["res://.godot/imported/lowres1.png-b5a644d2defea3520a69e88bd94b4aae.s3tc.ctex"]
+source_file="res://textures/floor2/green_angle/kitty.png"
+dest_files=["res://.godot/imported/kitty.png-3ce48e21cfd6141d19372dbe3cc24263.s3tc.ctex"]
 
 [params]
 

@@ -151,8 +151,12 @@
 [ext_resource type="Texture2D" uid="uid://cehfxif0enrh6" path="res://textures/sprites/next_floor_table_arrows.png" id="152_kd0ax"]
 [ext_resource type="Texture2D" uid="uid://wsa28x51h58a" path="res://textures/floor2/green_angle/big_oaw.png" id="152_mgxca"]
 [ext_resource type="Texture2D" uid="uid://j3chnpd68a6g" path="res://textures/floor2/green_angle/paws_white.png" id="153_3jtbr"]
+[ext_resource type="Texture2D" uid="uid://b2pr5unpmrlci" path="res://textures/floor2/green_angle/yellow_table.png" id="153_8i4lt"]
+[ext_resource type="Texture2D" uid="uid://58csp65eion8" path="res://textures/floor2/green_angle/lowres1.png" id="153_fp5ot"]
 [ext_resource type="Texture2D" uid="uid://ccfhsc12ijfwh" path="res://textures/floor2/green_angle/eco_sled.png" id="153_r2v2x"]
 [ext_resource type="Texture2D" uid="uid://bjobb1kfuijfq" path="res://textures/sprites/3rd_floor/paints/4floor_paint.png" id="153_v5vq5"]
+[ext_resource type="Texture2D" uid="uid://dwq1y2hcukp1d" path="res://textures/floor2/green_angle/lowres2.png" id="154_8i4lt"]
+[ext_resource type="Texture2D" uid="uid://c5k4lvkaunstm" path="res://textures/floor2/green_angle/kitty.png" id="154_al538"]
 [ext_resource type="Texture2D" uid="uid://bttonjsidgd8a" path="res://textures/floor2/green_angle/arrow.png" id="154_v5vq5"]
 [ext_resource type="PackedScene" uid="uid://khyhwpta247p" path="res://scenes/windows/underwindow_1.tscn" id="154_wqbuf"]
 [ext_resource type="Material" uid="uid://d7b5jsg37ouc" path="res://materials/linoleum/linoleum.tres" id="155_qhanc"]
@@ -963,9 +967,25 @@ albedo_texture = ExtResource("151_kd0ax")
 transparency = 1
 albedo_texture = ExtResource("152_mgxca")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x8lwr"]
+transparency = 1
+albedo_texture = ExtResource("153_8i4lt")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7wbpd"]
+transparency = 1
+albedo_texture = ExtResource("153_fp5ot")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cg30r"]
+transparency = 1
+albedo_texture = ExtResource("154_8i4lt")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_io7ym"]
 transparency = 1
 albedo_texture = ExtResource("153_r2v2x")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kbgq3"]
+transparency = 1
+albedo_texture = ExtResource("154_al538")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3lbls"]
 transparency = 1
@@ -4780,17 +4800,17 @@ metadata/surface_type = &"concrete"
 use_collision = true
 
 [node name="right_wall9" type="CSGBox3D" parent="floor_2/left2/CSGCombiner3D4" unique_id=1741789372]
-transform = Transform3D(1, 0, -8.742278e-08, 8.742278e-08, -4.3711374e-08, 1, 0, -1, -4.3711374e-08, 8.364116, 2.2595725, 49.930237)
+transform = Transform3D(1, 0, -8.742278e-08, 8.742278e-08, -4.3711374e-08, 1, 0, -1, -4.3711374e-08, 8.364116, 2.259572, 49.930237)
 use_collision = true
 size = Vector3(1.7120551, 3.4354877, 3.5048532)
 material = SubResource("StandardMaterial3D_nl0f6")
 metadata/surface_type = &"concrete"
 
 [node name="right_wall10" type="CSGBox3D" parent="floor_2/left2/CSGCombiner3D4" unique_id=207287703]
-transform = Transform3D(1, 0, -8.742278e-08, 8.742278e-08, -4.3711374e-08, 1, 0, -1, -4.3711374e-08, 8.939313, 1.9381725, 50.14028)
+transform = Transform3D(1, 0, -8.742278e-08, 8.742278e-08, -4.3711374e-08, 1, 0, -1, -4.3711374e-08, 8.939313, 1.9381723, 50.443546)
 operation = 2
 use_collision = true
-size = Vector3(3.163134, 2.042893, 2.8620532)
+size = Vector3(3.163134, 1.4363635, 2.8620532)
 material = ExtResource("60_v8mm6")
 metadata/surface_type = &"concrete"
 
@@ -4859,7 +4879,7 @@ transform = Transform3D(0.026436053, 3.1569408e-16, 3.330669e-16, -5.051097e-16,
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.097, 0.42, 51.97)
 
 [node name="StaticBody3D6" parent="floor_2/left2/Node3D" unique_id=1128833600 instance=ExtResource("67_f7lh1")]
-transform = Transform3D(-6.2970074e-08, 0, 1, 0, 1.4509451, 0, -1.4405873, 0, -4.371139e-08, 7.043782, 0.0109063415, -2.0472817)
+transform = Transform3D(-6.2970074e-08, 0, 1, 0, 1.4509451, 0, -1.4405873, 0, -4.371139e-08, 7.043782, 0.0109063415, -1.5784783)
 
 [node name="StaticBody3D7" parent="floor_2/left2/Node3D" unique_id=1653716270 instance=ExtResource("67_f7lh1")]
 transform = Transform3D(-1.9132758e-08, 0, -1, 0, 1.4509451, 0, 0.43770647, 0, -4.371139e-08, 6.9746227, 0.0109063415, -1.0426961)
@@ -5075,7 +5095,7 @@ material_override = SubResource("StandardMaterial3D_s5ugr")
 texture = ExtResource("85_qw2o4")
 
 [node name="Sprite3D19" type="Sprite3D" parent="floor_2/left2" unique_id=325207828]
-transform = Transform3D(-9.711709e-09, -0.0019891167, -0.36998543, 4.754914e-10, 0.22389995, -0.0032869335, 0.22244418, -5.6544636e-10, -1.6146197e-08, 7.5044923, 2.6068347, 48.759815)
+transform = Transform3D(-9.711709e-09, -0.0019891167, -0.36998543, 4.754914e-10, 0.22389995, -0.0032869335, 0.22244418, -5.6544636e-10, -1.6146197e-08, 7.4985294, 3.278027, 49.403297)
 material_override = SubResource("StandardMaterial3D_s5ugr")
 texture = ExtResource("85_qw2o4")
 
@@ -6662,10 +6682,35 @@ transform = Transform3D(0.2965965, 0, 1.7484555e-07, 0, 0.29458308, 0, -5.185858
 material_override = SubResource("StandardMaterial3D_gt7yi")
 texture = ExtResource("152_mgxca")
 
+[node name="Sprite3D32" type="Sprite3D" parent="floor_2/left2/green_angle/posters" unique_id=1155422886]
+transform = Transform3D(-4.045037e-08, 0, 1, 0, 0.17522655, 0, -0.18507932, 0, -2.1855695e-07, 3.4313853, 0.5468884, -4.1335034)
+material_override = SubResource("StandardMaterial3D_gt7yi")
+texture = ExtResource("152_mgxca")
+
+[node name="Sprite3D33" type="Sprite3D" parent="floor_2/left2/green_angle/posters" unique_id=1237552546]
+transform = Transform3D(-4.045037e-08, 0, 1, 0, 0.12188012, 0, -0.18507932, 0, -2.1855695e-07, 4.4233713, 0.23152551, -2.9222116)
+material_override = SubResource("StandardMaterial3D_x8lwr")
+texture = ExtResource("153_8i4lt")
+
+[node name="Sprite3D30" type="Sprite3D" parent="floor_2/left2/green_angle/posters" unique_id=773669021]
+transform = Transform3D(-1.07734685e-07, 0, 1, 0, 0.29458308, 0, -0.49293643, 0, -2.1855695e-07, 3.444279, 1.0238916, -5.6061444)
+material_override = SubResource("StandardMaterial3D_7wbpd")
+texture = ExtResource("153_fp5ot")
+
+[node name="Sprite3D31" type="Sprite3D" parent="floor_2/left2/green_angle/posters" unique_id=819481774]
+transform = Transform3D(-1.1438595e-07, 0, 1, 0, 0.33034787, 0, -0.5233691, 0, -2.1855695e-07, 3.444279, 0.024789814, -5.6061444)
+material_override = SubResource("StandardMaterial3D_cg30r")
+texture = ExtResource("154_8i4lt")
+
 [node name="Sprite3D23" type="Sprite3D" parent="floor_2/left2/green_angle/posters" unique_id=48976436]
 transform = Transform3D(0.2965965, 0, 1.7484555e-07, 0, 0.29458308, 0, -5.185858e-08, 0, 1, 6.521889, 0.6358109, -6.6377006)
 material_override = SubResource("StandardMaterial3D_io7ym")
 texture = ExtResource("153_r2v2x")
+
+[node name="Sprite3D29" type="Sprite3D" parent="floor_2/left2/green_angle/posters" unique_id=1033056552]
+transform = Transform3D(2.7735476e-08, 0, -1, 0, 0.1957774, 0, 0.18401797, 0, 1.7881393e-07, 7.8991084, 0.54614645, -5.973898)
+material_override = SubResource("StandardMaterial3D_kbgq3")
+texture = ExtResource("154_al538")
 
 [node name="Sprite3D7" type="Sprite3D" parent="floor_2/left2/green_angle/posters" unique_id=1352517416]
 transform = Transform3D(3.8255386e-08, 0, -1, 0, 0.19230348, 0, 0.19513059, 0, 1.7881393e-07, 7.2258177, 0.3518038, -0.7941936)
@@ -6679,6 +6724,31 @@ texture = ExtResource("153_3jtbr")
 
 [node name="Sprite3D11" type="Sprite3D" parent="floor_2/left2/green_angle/posters" unique_id=1646477478]
 transform = Transform3D(0.34801245, 0, 2.2252533e-07, 0, 0.2779561, 0, -8.344001e-08, 0, 1, 5.750841, -1.401783, -6.633194)
+material_override = SubResource("StandardMaterial3D_yjwvt")
+texture = ExtResource("153_3jtbr")
+
+[node name="Sprite3D24" type="Sprite3D" parent="floor_2/left2/green_angle/posters" unique_id=1248900029]
+transform = Transform3D(0.3325814, -0.08185085, 2.2252533e-07, 0.10248062, 0.26563138, 0, -8.000621e-08, 1.8213887e-08, 1, 6.2204914, -1.1177814, -6.633194)
+material_override = SubResource("StandardMaterial3D_yjwvt")
+texture = ExtResource("153_3jtbr")
+
+[node name="Sprite3D25" type="Sprite3D" parent="floor_2/left2/green_angle/posters" unique_id=936322613]
+transform = Transform3D(0.3325814, -0.08185085, 2.2252533e-07, 0.10248062, 0.26563138, 0, -8.000621e-08, 1.8213887e-08, 1, 6.6223817, -0.8682013, -6.633194)
+material_override = SubResource("StandardMaterial3D_yjwvt")
+texture = ExtResource("153_3jtbr")
+
+[node name="Sprite3D26" type="Sprite3D" parent="floor_2/left2/green_angle/posters" unique_id=1526623517]
+transform = Transform3D(0.3472445, -0.018455122, 2.2252533e-07, 0.02310656, 0.27734274, 0, -8.326912e-08, 4.106731e-09, 1, 7.1565285, -0.6859077, -6.633194)
+material_override = SubResource("StandardMaterial3D_yjwvt")
+texture = ExtResource("153_3jtbr")
+
+[node name="Sprite3D27" type="Sprite3D" parent="floor_2/left2/green_angle/posters" unique_id=1922274730]
+transform = Transform3D(0.3472445, -0.018455122, 2.2252533e-07, 0.02310656, 0.27734274, 0, -8.326912e-08, 4.106731e-09, 1, 7.6666675, -0.65196174, -6.633194)
+material_override = SubResource("StandardMaterial3D_yjwvt")
+texture = ExtResource("153_3jtbr")
+
+[node name="Sprite3D28" type="Sprite3D" parent="floor_2/left2/green_angle/posters" unique_id=1581729410]
+transform = Transform3D(6.899912e-08, -0.018455118, -0.9977933, -7.509796e-09, 0.2773427, -0.06639581, 0.34801245, 3.72529e-09, 1.7832289e-07, 7.8919897, -0.6369682, -6.298214)
 material_override = SubResource("StandardMaterial3D_yjwvt")
 texture = ExtResource("153_3jtbr")
 
