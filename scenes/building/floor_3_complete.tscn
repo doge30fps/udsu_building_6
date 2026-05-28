@@ -432,6 +432,7 @@ _data = {
 }
 
 [sub_resource type="BoxMesh" id="BoxMesh_bhnal"]
+lightmap_size_hint = Vector2i(14, 21)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0txhr"]
 albedo_texture = ExtResource("56_eth63")
