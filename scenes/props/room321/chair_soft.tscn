@@ -48,12 +48,12 @@ shape = SubResource("BoxShape3D_n6ua3")
 transform = Transform3D(1, 0, 0, 0, 0.34862113, -0.9372637, 0, 0.9372637, 0.34862113, 0.0043973923, 0.6448081, -0.17711443)
 shape = SubResource("BoxShape3D_n6ua3")
 
-[node name="soft_chair" parent="." unique_id=1251932079 instance=ExtResource("1_ydj6s")]
+[node name="soft_chair" parent="." unique_id=1286629335 instance=ExtResource("1_ydj6s")]
 
-[node name="Box57" parent="soft_chair" index="0" unique_id=1625567519]
+[node name="Box57" parent="soft_chair" index="0" unique_id=2131810492]
 surface_material_override/0 = ExtResource("2_ydj6s")
 
-[node name="Box60" parent="soft_chair" index="1" unique_id=908115743]
+[node name="Box60" parent="soft_chair" index="1" unique_id=263024707]
 surface_material_override/0 = ExtResource("2_ydj6s")
 
 [editable path="soft_chair"]

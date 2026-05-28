@@ -25,20 +25,20 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_u1s21"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_3ffn5"]
 resource_name = "triple_window_Object_0"
+lightmap_size_hint = Vector2i(34, 34)
 _surfaces = [{
 "aabb": AABB(-299.51245, -695.0515, -15.124247, 599.0249, 1390.103, 30.248493),
-"attribute_data": PackedByteArray("/////wAAAAD//wAAAAD//wAA/////wAA/////wAAAAAAAP////8AAP////8AAAAAAAD/////AAD/////AAAAAAAA/////wAA/////wAAAAAAAP////8AAP////8AAAAA"),
-"format": 34896613399,
+"attribute_data": PackedByteArray("AACAPwAAgD88PHw/Hh5ePwAAAAAAAAAAtbR0P3h4+D4AAIA/AAAAALW0dD8eHl4/AAAAAAAAgD88PHw/eHj4PgAAAAAAAIA/PDx8P0tLyz4AAIA/AAAAALW0dD/x8HA8AACAPwAAgD88PHw/8fBwPAAAAAAAAAAAtbR0P0tLyz4AAAAAAACAP0tLyz7x8HA8AACAPwAAAADx8HA8AABAPwAAgD8AAIA/8fBwPPHwcDwAAAAAAAAAAEtLyz4AAEA/AAAAAAAAgD8AAEA/Hh5ePwAAgD8AAAAA8fBwPJeWVj8AAIA/AACAPwAAQD+XllY/AAAAAAAAAADx8HA8Hh5ePwAAAAAAAIA/eHj4PvHwcDwAAIA/AAAAAB4eXj8AAEA/AACAPwAAgD8eHl4/8fBwPAAAAAAAAAAAeHj4PgAAQD8AAAAAAACAP/HwcDy1tHQ/AACAPwAAAAAAAEA/PDx8PwAAgD8AAIA/8fBwPDw8fD8AAAAAAAAAAAAAQD+1tHQ/"),
+"format": 34359742519,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
 "material": SubResource("StandardMaterial3D_tm0hb"),
-"name": "glass",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
-"vertex_data": PackedByteArray("AAAAAP///////wAAAAD//wAAAAAAAP////8AAP////8AAP//////v/////8AAP+//////////78AAP//AAD/vwAAAAD//wCA////////AID//wAA//8AgAAA/////wCA//8AAP///7//////AAD/v///AAAAAP+//////////7///wAAAAD//wAA//8AAP//AAAAAAAA////////AAD//wAAAAAAAP+/AAD//////78AAAAA////vwAA//8AAP+//3//P/9//z//f/8//3//P////3////9/////f////3//f////3////9/////f////38AAP9/AAD/fwAA/38AAP9/////f////3////9/////f////3////9/////f///")
+"vertex_data": PackedByteArray("mMGVw0zDLcTq/HFBmMGVQ0zDLcTq/HHBmMGVw0zDLcTq/HHBmMGVQ0zDLcTq/HFBmMGVw0zDLUTq/HFBmMGVQ0zDLUTq/HHBmMGVQ0zDLUTq/HFBmMGVw0zDLUTq/HHBmMGVw0zDLcTq/HFBmMGVQ0zDLUTq/HFBmMGVQ0zDLcTq/HFBmMGVw0zDLUTq/HFBmMGVQ0zDLcTq/HFBmMGVQ0zDLUTq/HHBmMGVQ0zDLcTq/HHBmMGVQ0zDLUTq/HFBmMGVQ0zDLcTq/HHBmMGVw0zDLUTq/HHBmMGVw0zDLcTq/HHBmMGVQ0zDLUTq/HHBmMGVw0zDLcTq/HHBmMGVw0zDLUTq/HFBmMGVw0zDLcTq/HFBmMGVw0zDLUTq/HHB+n8BAAEAAMD6fwEAAQAAwPp/AQABAADA+n8BAAEAAMD/f/3//v//v/9//f/+//+//3/9//7//7//f/3//v//v/1//3/9//+//X//f/3//7/9f/9//f//v/1//3/9//+//f8AgP7//v/9/wCA/v/+//3/AID+//7//f8AgP7//v/+/wAAAAD/v/7/AAAAAP+//v8AAAAA/7/+/wAAAAD/vwEA/38AgP+/AQD/fwCA/78BAP9/AID/vwEA/38AgP+/")
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ucxwj")
@@ -59,35 +59,35 @@ size = Vector3(1.9771118, 1.4555054, 0.093688965)
 
 [node name="Node3D" type="Node3D" unique_id=929424496]
 
-[node name="triple_window" parent="." unique_id=1030600919 instance=ExtResource("1_aqdwu")]
+[node name="triple_window" parent="." unique_id=1186695733 instance=ExtResource("1_aqdwu")]
 
-[node name="Object_12" parent="triple_window/Sketchfab_model/root/GLTF_SceneRootNode/3_4" parent_id_path=PackedInt32Array(1030600919, 1919037501) index="0" unique_id=1174433857]
+[node name="Object_12" parent="triple_window/Sketchfab_model/root/GLTF_SceneRootNode/3_4" parent_id_path=PackedInt32Array(1186695733, 161586490) index="0" unique_id=359591043]
 surface_material_override/0 = ExtResource("2_3ffn5")
 
-[node name="Object_10" parent="triple_window/Sketchfab_model/root/GLTF_SceneRootNode/center_3" parent_id_path=PackedInt32Array(1030600919, 1457173289) index="0" unique_id=1439261674]
+[node name="Object_10" parent="triple_window/Sketchfab_model/root/GLTF_SceneRootNode/center_3" parent_id_path=PackedInt32Array(1186695733, 65369640) index="0" unique_id=763853078]
 visible = false
 
-[node name="Object_8" parent="triple_window/Sketchfab_model/root/GLTF_SceneRootNode/window 1_2" parent_id_path=PackedInt32Array(1030600919, 149709029) index="0" unique_id=449245025]
+[node name="Object_8" parent="triple_window/Sketchfab_model/root/GLTF_SceneRootNode/window 1_2" parent_id_path=PackedInt32Array(1186695733, 1017409776) index="0" unique_id=38716183]
 cast_shadow = 0
 
-[node name="Object_6" parent="triple_window/Sketchfab_model/root/GLTF_SceneRootNode/window 2_1" parent_id_path=PackedInt32Array(1030600919, 1783672070) index="0" unique_id=1995274187]
+[node name="Object_6" parent="triple_window/Sketchfab_model/root/GLTF_SceneRootNode/window 2_1" parent_id_path=PackedInt32Array(1186695733, 518556293) index="0" unique_id=1919228033]
 visible = false
 
-[node name="Object_4" parent="triple_window/Sketchfab_model/root/GLTF_SceneRootNode/window 3_0" parent_id_path=PackedInt32Array(1030600919, 1451199056) index="0" unique_id=551204850]
+[node name="Object_4" parent="triple_window/Sketchfab_model/root/GLTF_SceneRootNode/window 3_0" parent_id_path=PackedInt32Array(1186695733, 1942078687) index="0" unique_id=932003714]
 cast_shadow = 0
 
-[node name="Sketchfab_Scene" parent="." unique_id=1051610623 instance=ExtResource("5_vk5v3")]
+[node name="Sketchfab_Scene" parent="." unique_id=152392201 instance=ExtResource("5_vk5v3")]
 transform = Transform3D(0.7328663, 0, 0, 0, 1.0541852, 0, 0, 0, 1, 0.32140315, 0.21385068, 0.015307546)
 
-[node name="#WIN0003_Frame_#WIN0003_Textures_0" parent="Sketchfab_Scene/Sketchfab_model/#WIN0003_Residential_Plastic_White_142x62x104_fbx/RootNode/#WIN0003_Frame" parent_id_path=PackedInt32Array(1051610623, 182729173) index="0" unique_id=1390565316]
+[node name="#WIN0003_Frame_#WIN0003_Textures_0" parent="Sketchfab_Scene/Sketchfab_model/#WIN0003_Residential_Plastic_White_142x62x104_fbx/RootNode/#WIN0003_Frame" parent_id_path=PackedInt32Array(152392201, 1526752482) index="0" unique_id=1430648659]
 surface_material_override/0 = ExtResource("2_3ffn5")
 
-[node name="Object_5" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/#WIN0003_Residential_Plastic_White_142x62x104_fbx/RootNode/#WIN0003_Frame/#WIN0003_Window/#WIN0003_Window_#WIN0003_Textures_0" parent_id_path=PackedInt32Array(1051610623, 1631316598) index="0" unique_id=530916401]
+[node name="Object_5" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/#WIN0003_Residential_Plastic_White_142x62x104_fbx/RootNode/#WIN0003_Frame/#WIN0003_Window/#WIN0003_Window_#WIN0003_Textures_0" parent_id_path=PackedInt32Array(152392201, 1141395706) index="0" unique_id=530916401]
 transform = Transform3D(0.0012940497, 0, 0, 0, -1.3446742e-10, -0.0009999983, 0, 0.0008253551, -1.6292041e-10, -0.4286501, -0.0022740364, 0.6119829)
 cast_shadow = 0
-mesh = SubResource("ArrayMesh_u1s21")
+mesh = SubResource("ArrayMesh_3ffn5")
 
-[node name="#WIN0003_Handle_#WIN0003_Textures_0" parent="Sketchfab_Scene/Sketchfab_model/#WIN0003_Residential_Plastic_White_142x62x104_fbx/RootNode/#WIN0003_Frame/#WIN0003_Window/#WIN0003_Handle" parent_id_path=PackedInt32Array(1051610623, 754577091) index="0" unique_id=1022628470]
+[node name="#WIN0003_Handle_#WIN0003_Textures_0" parent="Sketchfab_Scene/Sketchfab_model/#WIN0003_Residential_Plastic_White_142x62x104_fbx/RootNode/#WIN0003_Frame/#WIN0003_Window/#WIN0003_Handle" parent_id_path=PackedInt32Array(152392201, 1582844315) index="0" unique_id=259351466]
 surface_material_override/0 = SubResource("StandardMaterial3D_3ffn5")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=524955975]

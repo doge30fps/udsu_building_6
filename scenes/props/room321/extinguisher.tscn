@@ -12,9 +12,9 @@ size = Vector3(1.3809204, 5.420349, 1.442627)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.031196177, -0.3599701, 0.7394732)
 shape = SubResource("BoxShape3D_ud3ht")
 
-[node name="extinguisher2" parent="." unique_id=75208989 instance=ExtResource("1_ap1s0")]
+[node name="extinguisher2" parent="." unique_id=313343454 instance=ExtResource("1_ap1s0")]
 
-[node name="extinguisher" parent="extinguisher2" index="0" unique_id=353224511]
+[node name="extinguisher" parent="extinguisher2" index="0" unique_id=1904979728]
 material_override = ExtResource("2_ud3ht")
 
 [editable path="extinguisher2"]

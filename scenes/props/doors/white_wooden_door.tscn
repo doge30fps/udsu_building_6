@@ -4,25 +4,25 @@
 
 [node name="Node3D" type="Node3D" unique_id=21330175]
 
-[node name="Sketchfab_Scene" parent="." unique_id=1119436341 instance=ExtResource("1_gbgqv")]
+[node name="Sketchfab_Scene" parent="." unique_id=46577918 instance=ExtResource("1_gbgqv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17422652, 1.1920929e-07, 0.04118848)
 
-[node name="Null_1" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode" parent_id_path=PackedInt32Array(1119436341, 164261793) index="1" unique_id=1153116242]
+[node name="Null_1" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode" parent_id_path=PackedInt32Array(46577918, 347414012) index="1" unique_id=1469253397]
 visible = false
 
-[node name="f_2" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1" index="0" unique_id=2078414677]
+[node name="f_2" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1" index="0" unique_id=1275341627]
 visible = false
 
-[node name="f_2_Mat_0" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1/f_2" index="0" unique_id=1545411442]
+[node name="f_2_Mat_0" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1/f_2" index="0" unique_id=133906441]
 visible = false
 
-[node name="door_2" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1" index="1" unique_id=1416834023]
+[node name="door_2" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1" index="1" unique_id=342071208]
 visible = false
 
-[node name="door_2_Mat_0" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1/door_2" index="0" unique_id=12943599]
+[node name="door_2_Mat_0" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1/door_2" index="0" unique_id=1765068212]
 visible = false
 
-[node name="handel_2" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1/door_2" index="1" unique_id=1676813619]
+[node name="handel_2" parent="Sketchfab_Scene/Sketchfab_model/3e3e89c6913b4beb88bbe1ee8a741778_fbx/RootNode/Null_1/door_2" index="1" unique_id=1406360214]
 visible = false
 
 [editable path="Sketchfab_Scene"]

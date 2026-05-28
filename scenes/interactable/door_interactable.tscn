@@ -96,20 +96,17 @@ volume_db = -6.265
 transform = Transform3D(39.01, 0, 0, 0, 39.01, 0, 0, 0, 39.01, 29.8146, 103.927, 8.87987)
 shape = SubResource("BoxShape3D_1ybv1")
 
-[node name="wooden_door" parent="StaticBody3D" unique_id=1811911216 instance=ExtResource("4_vhll4")]
+[node name="wooden_door" parent="StaticBody3D" unique_id=1062444628 instance=ExtResource("4_vhll4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.090866, 0, 2.683854)
 
-[node name="Object_2" parent="StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1811911216, 2019368991) index="0" unique_id=1837209678]
+[node name="Object_2" parent="StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1062444628, 1716769334) index="0" unique_id=275901278]
 transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, -0.7974205, -0.56920654, -2.0861626e-07)
-cast_shadow = 0
 surface_material_override/0 = ExtResource("1_orfw7")
 
-[node name="Object_3" parent="StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1811911216, 2019368991) index="1" unique_id=443636773]
-cast_shadow = 0
+[node name="Object_3" parent="StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1062444628, 1716769334) index="1" unique_id=1577361173]
 surface_material_override/0 = ExtResource("3_75qd3")
 
-[node name="Object_4" parent="StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1811911216, 2019368991) index="2" unique_id=165990579]
-cast_shadow = 0
+[node name="Object_4" parent="StaticBody3D/wooden_door/Sketchfab_model/ee7b6c8a9a114ef39f858a3c4bea5d67_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(1062444628, 1716769334) index="2" unique_id=679049316]
 surface_material_override/0 = ExtResource("3_75qd3")
 
 [editable path="StaticBody3D/wooden_door"]

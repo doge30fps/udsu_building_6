@@ -4,16 +4,19 @@
 [ext_resource type="PackedScene" uid="uid://b2q5hlh50rnvx" path="res://models/room321/chairs/wooden_chair/wooden_chair.glb" id="1_rcluw"]
 [ext_resource type="Material" uid="uid://b32kqy7j4cxev" path="res://materials/room321/soft_red_padding.tres" id="2_rcluw"]
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_xafho"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_rcluw"]
+lightmap_size_hint = Vector2i(38, 38)
 _surfaces = [{
 "aabb": AABB(-1.1577841, 0.9368454, -0.1963355, 0.22948778, 0.66990817, 0.980469),
-"attribute_data": PackedByteArray("AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/9ggEPAAAAAAAAAAAAAAAAAAAAADc730/AACAP9zvfT8AAAAAAACAPwAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAgD8AAIA/AACAPwAAAAAAAAAAAACAPwAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAP9zvfT8AAIA/AACAPwAAAAAAAAAAAAAAAAAAgD/c730/AACAP9zvfT8AAAAAAAAAAAAAgD8AAIA/AAAAAAAAAAAUxeo7AACAPwAAgD8AAIA/FMXqOwAAAAAAAIA/9ggEPAAAgD8AAAAAAAAAAAAAAAAAAIA/9ggEPBTF6jsAAAAAAACAPwAAgD8AAIA/dip+PwAAAAAAAIA/AAAAAAAAgD8AAIA/dip+PwAAAAB2Kn4/AAAAAAAAAAAAAIA/AACAPwAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPxTF6jsAAIA/AACAPwAAAADSv3w/nLF8PwAAgD9N2n8/AACAPwAAAAA3yhY6AAAAADfKFjoAAIA/AACAPwAAAAAAAAAAAAAAANK/fD+csXw/AACAPwAAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAMDbCzsAAIA/AAAAAAAAAAAAAAAAJHR/P9K/fD+csXw/AACAPwAAgD8AAIA/N8oWOtK/fD8CmVM8AACAPwAAgD/Sv3w/AplTPAAAAADA2ws7AACAPwAAAAA3yhY6AACAPwAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAAAAAAIA/AACAPwAAgD8AAAAAwNsLOwAAAAAAAIA/AACAPwAAAADA2ws7AAAAAMDbCzsAAIA/"),
-"format": 34359738391,
+"attribute_data": PackedByteArray("AACAPwAAgD+U1xA/KK9hPwAAgD8AAAAAlNcQP4fyWj8AAAAAAAAAADaUVzyH8lo/AACAPwAAgD95DSU/AABAPwAAgD/2CAQ8ETJhPwEAQD8AAAAAAAAAACivYT+ivEY/AAAAAAAAAAD2vFc8NpRXPNzvfT8AAIA/lNcQP/xHkT7c730/AAAAANGUWDz8R5E+AAAAAAAAgD96DSU/obxGPwAAAAAAAIA/KK9hP5TXED8AAIA/AACAP3kNJT+U1xA/AAAAAAAAAAAor2E/NpRXPAAAAAAAAIA/NpRXPCivYT8AAAAAAACAPzTUED82lFc8AACAPwAAAACvoXw/9gNkPAAAAAAAAAAAand4PzaUVzwAAIA/3O99Pw0Nej8ADZE+AACAPwAAgD+vB3o/3iuSPhTF6jsAAIA/DeV1PxTJkT4Uxeo7AAAAALAlJT8byis/AACAP/YIBDx5DSU/eQ0lPwAAgD8AAAAAH80lP2AjJT8AAIA/AAAAAHkNJT82lFc8AACAPwAAAAAor2E/eQ0lP9K/fD+csXw/H80lP2AjJT8AAIA/Tdp/P3kNJT95DSU/AACAPwAAAAA2lFc8G8rrPjfKFjoAAAAA0ZRYPPxHkT43yhY6AACAP5TXED/8R5E+AAAAAAAAAAAnr2E/GsorPwAAgD8AAAAAlNcQP6+hfD8AAAAAAAAAADaUVzyvoXw/AACAPwAAgD+U1xA/DeV1PwAAgD8AAIA/lNcQP6K8Rj8AAIA/AAAAADaUVzyivEY/wNsLOwAAgD+U1xA/8xoKPwAAAAAkdH8/sCUlPxvKKz8AAIA/AACAP6+hfD8IMus+AACAPzfKFjoNDXo/AA2RPtK/fD8CmVM8rwd6P94rkj4AAAAAwNsLOw3ldT8UyZE+AACAPwAAgD+S0xA/G8rrPgAAAAAAAIA/NpRXPA3ldT8AAAAAAACAP6d4eD8byus+wNsLOwAAAAA2lFc88xoKPw=="),
+"format": 34359742519,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgAAwAFAAkACgALAAwAAAACAA0ABgAOAAcADwAQABEAEQAQABIAEAATABIAFAAVABYADAALABcAGAAZABoAGwAcAB0AGAAeABkAHwAgACEAIgAjACQAHgAlABkAJgAnACgAJgAoACkAGwAdACoAIQAgACsAJgApACwAIwAtACQA"),
 "material": ExtResource("2_rcluw"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 84,
-"vertex_data": PackedByteArray("RTKUvyx3zD8sDEm+vcqQvxqqzT8sDEm+vcqQvxqqzT/5vEg/RTKUvyx3zD8sDEm+XGuCv+b8mT8sDEm+tr19v9jGmj8sDEm+RTKUvyx3zD8sDEm+XGuCv+b8mT/5vEg/XGuCv+b8mT8sDEm+RTKUvyx3zD8sDEm+tr19v9jGmj8sDEm+vcqQvxqqzT8sDEm+vcqQvxqqzT8sDEm+tr19v9jGmj8sDEm+vcqQvxqqzT/5vEg/RTKUvyx3zD8sDEm+vcqQvxqqzT/5vEg/RTKUvyx3zD/5vEg/RTKUvyx3zD8sDEm+RTKUvyx3zD/5vEg/XGuCv+b8mT/5vEg/RTKUvyx3zD/5vEg/vcqQvxqqzT/5vEg/XGuCv+b8mT/5vEg/XGuCv+b8mT/5vEg/vcqQvxqqzT/5vEg/Y0aCv+qTmT/5vEg/vcqQvxqqzT/5vEg/M8p9v6XEmj/5vEg/Y0aCv+qTmT/5vEg/M8p9v6XEmj8sDEm+XGuCv+b8mT8sDEm+Y0aCv+qTmT8sDEm+tr19v9jGmj8sDEm+XGuCv+b8mT8sDEm+M8p9v6XEmj8sDEm+tr19v9jGmj8sDEm+M8p9v6XEmj8sDEm+tr19v9jGmj/5vEg/tr19v9jGmj/5vEg/M8p9v6XEmj8sDEm+M8p9v6XEmj/5vEg/vcqQvxqqzT/5vEg/tr19v9jGmj8sDEm+tr19v9jGmj/5vEg/vcqQvxqqzT/5vEg/tr19v9jGmj/5vEg/M8p9v6XEmj/5vEg/5Kp0vxrVbz8sDEm+Y0aCv+qTmT8sDEm+XGuCv+b8mT8sDEm+5Kp0vxrVbz8sDEm+XGuCv+b8mT8sDEm+XGuCv+b8mT/5vEg/5Kp0vxrVbz8sDEm+1KRtv85/cT8sDEm+Y0aCv+qTmT8sDEm+5Kp0vxrVbz8sDEm+5Kp0vxrVbz/5vEg/1KRtv85/cT8sDEm+1KRtv85/cT8sDEm+1KRtv85/cT/5vEg/M8p9v6XEmj8sDEm+1KRtv85/cT8sDEm+M8p9v6XEmj8sDEm+Y0aCv+qTmT8sDEm+5Kp0vxrVbz/5vEg/XGuCv+b8mT/5vEg/Y0aCv+qTmT/5vEg/5Kp0vxrVbz/5vEg/Y0aCv+qTmT/5vEg/M8p9v6XEmj/5vEg/5Kp0vxrVbz8sDEm+XGuCv+b8mT/5vEg/5Kp0vxrVbz/5vEg/1KRtv85/cT8sDEm+5Kp0vxrVbz/5vEg/1KRtv85/cT/5vEg/5Kp0vxrVbz/5vEg/M8p9v6XEmj/5vEg/1KRtv85/cT/5vEg/1KRtv85/cT/5vEg/M8p9v6XEmj/5vEg/M8p9v6XEmj8sDEm+qV6o3v//AACpXqje//8AAKleqN7//wAA/////1YhqlD/////ViGqUP////9WIapQViGpXlWhVG9WIaleVaFUb1YhqV5VoVRv/////1YhqlD/////ViGqUP////9WIapQqN5VoVWhVG+o3lWhVaFUb6jeVaFVoVRvqV6o3v//AACpXqje//8AAKleqN7//wAAViGpXlWhVG9WIaleVaFUb1YhqV5VoVRv/3//f1YhqlD/f/9/ViGqUP9//39VIapQ/3//f1UhqlD/f/9/ViGqUP9//39WIapQ/3//f1YhqlD/f/9/ViGrUP9//39WIapQ/////1Yhq1D/////ViGqUP////9WIapQ/////1YhqlD/////ViGqUP////9WIatQVqFWIf//AABWoVYh//8AAFahViH//wAAVqFWIf//AABWoVYh//8AAFahViH//wAAqN5VoVWhVG+o3lWhVaFUb6jeVaFVoVRv/3//f1YhqlD/f/9/ViGrUP9//39WIatQ/////4wYRkz/////jBhFTP////+LGEVMjBhyZ4yYuXOMGHJnjJi5c4wYcmeMmLlz/////4wYRkz/////jBhGTP////+MGEVMjJiMGP//AACMmIwY//8AAIyYjBj//wAAcueMmIyYuXNy54yYjJi5c3LnjJiMmLlz/////4wYRkz/////jBhGTP////+MGEVM/3//f4wYRkz/f/9/ixhFTP9//3+MGEVM/3//f4wYRkz/f/9/jBhFTP9//3+MGEZMjBhyZ4yYuXOMGHJnjJi5c4wYcmeMmLlzjJiMGP//AACMmIwY//8AAIyYjBj//wAA/3//f4wYRkz/f/9/jBhGTP9//3+MGEZMcueMmIyYuXNy54yYjJi5c3LnjJiMmLlz")
+"vertex_count": 46,
+"vertex_data": PackedByteArray("RTKUvyx3zD8sDEm+vcqQvxqqzT8sDEm+vcqQvxqqzT/5vEg/RTKUvyx3zD8sDEm+XGuCv+b8mT8sDEm+tr19v9jGmj8sDEm+RTKUvyx3zD8sDEm+XGuCv+b8mT/5vEg/XGuCv+b8mT8sDEm+vcqQvxqqzT8sDEm+vcqQvxqqzT8sDEm+tr19v9jGmj8sDEm+vcqQvxqqzT/5vEg/RTKUvyx3zD/5vEg/RTKUvyx3zD/5vEg/RTKUvyx3zD/5vEg/vcqQvxqqzT/5vEg/XGuCv+b8mT/5vEg/Y0aCv+qTmT/5vEg/M8p9v6XEmj/5vEg/M8p9v6XEmj8sDEm+XGuCv+b8mT8sDEm+Y0aCv+qTmT8sDEm+tr19v9jGmj/5vEg/5Kp0vxrVbz8sDEm+Y0aCv+qTmT8sDEm+XGuCv+b8mT8sDEm+5Kp0vxrVbz8sDEm+XGuCv+b8mT8sDEm+XGuCv+b8mT/5vEg/1KRtv85/cT8sDEm+5Kp0vxrVbz8sDEm+5Kp0vxrVbz/5vEg/1KRtv85/cT8sDEm+1KRtv85/cT8sDEm+1KRtv85/cT/5vEg/M8p9v6XEmj8sDEm+M8p9v6XEmj8sDEm+5Kp0vxrVbz/5vEg/XGuCv+b8mT/5vEg/Y0aCv+qTmT/5vEg/M8p9v6XEmj/5vEg/5Kp0vxrVbz/5vEg/1KRtv85/cT/5vEg/1KRtv85/cT/5vEg/M8p9v6XEmj/5vEg/qV6o3v//AACpXqje//8AAKleqN7//wAA/////1UhqVD/////VSGpUP////9VIalQVSGpXlWhU29VIaleVaFTb1UhqV5VoVNv/////1UhqVCn3lWhVaFTb6feVaFVoVNvp95VoVWhU2+pXqje//8AAFUhqV5VoVNv/3//f1UhqVD/f/9/VSGpUP9//39UIalQ/3//f1UhqVD/f/9/VSGqUP////9VIapQ/////1UhqVD/////VSGpUKfeVaFVoVNv/////4wYRUz/////jBhETP////+KGERMjBhyZ4yYuXOMGHJnjJi5c4wYcmeMmLlz/////4wYRUyMmIwY//8AAIyYjBj//wAAjJiMGP//AABy54yYjJi5c3LnjJiMmLlzcueMmIyYuXP/////jBhFTP9//3+MGEVM/3//f4oYREz/f/9/jBhETP9//3+MGEVMjBhyZ4yYuXOMmIwY//8AAP9//3+MGEVMcueMmIyYuXM=")
 }]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ij6lt"]
@@ -27,61 +30,61 @@ size = Vector3(1.0012512, 0.22009277, 1.2112427)
 
 [node name="StaticBody3D" type="StaticBody3D" unique_id=557637223]
 
-[node name="wooden_chair" parent="." unique_id=932397080 instance=ExtResource("1_rcluw")]
+[node name="wooden_chair" parent="." unique_id=174047115 instance=ExtResource("1_rcluw")]
 
-[node name="Округление_1" parent="wooden_chair" index="0" unique_id=1492820737]
+[node name="Округление_1" parent="wooden_chair" index="0" unique_id=1658114770]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="Округление_2" parent="wooden_chair" index="1" unique_id=942773555]
+[node name="Округление_2" parent="wooden_chair" index="1" unique_id=310714530]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="Передняя_Опора" parent="wooden_chair" index="2" unique_id=710140870]
+[node name="Передняя_Опора" parent="wooden_chair" index="2" unique_id=1002602001]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="Боковая_Частб_2" parent="wooden_chair" index="3" unique_id=958734395]
+[node name="Боковая_Частб_2" parent="wooden_chair" index="3" unique_id=916473366]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="Ножка_4" parent="wooden_chair" index="4" unique_id=1777379771]
+[node name="Ножка_4" parent="wooden_chair" index="4" unique_id=841143658]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="Боковая_Часть_1" parent="wooden_chair" index="5" unique_id=492125778]
+[node name="Боковая_Часть_1" parent="wooden_chair" index="5" unique_id=1773569236]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="Боковая_Верхняя_Часть_2" parent="wooden_chair" index="6" unique_id=1967912572]
+[node name="Боковая_Верхняя_Часть_2" parent="wooden_chair" index="6" unique_id=1842338363]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="Передняя_Часть" parent="wooden_chair" index="7" unique_id=1422965203]
+[node name="Передняя_Часть" parent="wooden_chair" index="7" unique_id=96105402]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="ЧастьОпоры_2" parent="wooden_chair" index="8" unique_id=2036444020]
+[node name="ЧастьОпоры_2" parent="wooden_chair" index="8" unique_id=1863218677]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="Доска" parent="wooden_chair" index="9" unique_id=325488234]
+[node name="Доска" parent="wooden_chair" index="9" unique_id=817841781]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="Боковая_Верхняя_Часть" parent="wooden_chair" index="10" unique_id=1750291994]
+[node name="Боковая_Верхняя_Часть" parent="wooden_chair" index="10" unique_id=12569200]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="Ножка_1" parent="wooden_chair" index="11" unique_id=1278423216]
+[node name="Ножка_1" parent="wooden_chair" index="11" unique_id=456465899]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="Задняя_Часть" parent="wooden_chair" index="12" unique_id=89049112]
+[node name="Задняя_Часть" parent="wooden_chair" index="12" unique_id=1111767456]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="ЧастьОпоры_1" parent="wooden_chair" index="13" unique_id=1371416383]
+[node name="ЧастьОпоры_1" parent="wooden_chair" index="13" unique_id=940633491]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="ЧастьОпоры_3" parent="wooden_chair" index="14" unique_id=970325808]
+[node name="ЧастьОпоры_3" parent="wooden_chair" index="14" unique_id=414000430]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="Ножка_2" parent="wooden_chair" index="15" unique_id=905557016]
+[node name="Ножка_2" parent="wooden_chair" index="15" unique_id=806135408]
 surface_material_override/0 = ExtResource("1_jbfej")
 
-[node name="Ножка_3" parent="wooden_chair" index="16" unique_id=1518642117]
+[node name="Ножка_3" parent="wooden_chair" index="16" unique_id=720248285]
 surface_material_override/0 = ExtResource("1_jbfej")
 
 [node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="." unique_id=621980405]
-mesh = SubResource("ArrayMesh_xafho")
+mesh = SubResource("ArrayMesh_rcluw")
 skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=666099685]

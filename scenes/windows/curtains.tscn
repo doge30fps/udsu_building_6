@@ -8,9 +8,9 @@ albedo_texture = ExtResource("2_8snqb")
 
 [node name="Node3D" type="Node3D" unique_id=10579080]
 
-[node name="v-form" parent="." unique_id=408980417 instance=ExtResource("1_7ttxc")]
+[node name="v-form" parent="." unique_id=1362025071 instance=ExtResource("1_7ttxc")]
 
-[node name="vform 01" parent="v-form" index="22" unique_id=1356178776]
+[node name="vform 01" parent="v-form" index="22" unique_id=1818190798]
 surface_material_override/0 = SubResource("StandardMaterial3D_kresw")
 
 [editable path="v-form"]
