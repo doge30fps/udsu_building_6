@@ -4502,7 +4502,7 @@ transform = Transform3D(-0.009052691, 0, 8.7422775e-10, 0, 0.011459251, 0, -7.91
 transform = Transform3D(-0.98391676, 0, -2.6315251e-07, 0, 0.9985675, 0, 7.786831e-08, 0, -2.7249632, -101.11713, -1.1969495, 34.962555)
 
 [node name="Node3D6" parent="floor_3_right_wing/doors" unique_id=413592860 instance=ExtResource("71_ee45l")]
-transform = Transform3D(-0.009052691, 0, 8.7422775e-10, 0, 0.011459251, 0, -7.914114e-10, 0, -0.01, -7.780262, 0.0137161175, -3.6822605)
+transform = Transform3D(-0.009052691, 0, 8.7422775e-10, 0, 0.011459251, 0, -7.914114e-10, 0, -0.01, -7.780262, 0.013715744, -3.6696978)
 
 [node name="door_kosyak2" parent="floor_3_right_wing/doors/Node3D6" unique_id=2136060973 instance=ExtResource("47_ebaet")]
 transform = Transform3D(-0.98391676, 0, -2.6315251e-07, 0, 0.9985675, 0, 7.786831e-08, 0, -2.7249632, -101.11713, -1.1969495, 34.962555)

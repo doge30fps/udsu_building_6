@@ -51,5 +51,14 @@ _surfaces = [{
 "vertex_data": PackedByteArray("Ms5BwaGUtD9mIpZA3tdBwaGUtD/CXMhA3tdBwaGUtD9mIpZA3tdBwT9EtD9mIpZAMs5BwT9EtD/CXMhAMs5BwT9EtD9mIpZAMs5BwaGUtD9mIpZAMs5BwT9EtD9mIpZAMs5BwT9EtD/CXMhA3tdBwT9EtD/CXMhAMs5BwaGUtD/CXMhAMs5BwaGUtD/CXMhA3tdBwT9EtD+QfshAMs5BwT9EtD/ObshA3tdBwT9EtD/ObshAMs5BwaGUtD+QfshA3tdBwaGUtD+QfshA3tdBwaGUtD/ObshAMs5BwT9EtD+QfshAMs5BwaGUtD/ObshAMs5BwT9EtD+QfshAMs5BwaGUtD/ObshAMs5BwT9EtD/ObshAMs5BwaGUtD+QfshA3tdBwXUEI0DCXMhA3tdBwXUEI0BmIpZAMs5BwXUEI0BmIpZAMs5BwV3oIkBmIpZA3tdBwV3oIkBmIpZAMs5BwV3oIkDCXMhAMs5BwXUEI0BmIpZAMs5BwV3oIkBmIpZAMs5BwV3oIkDCXMhA3tdBwV3oIkDCXMhAMs5BwXUEI0DCXMhAMs5BwXUEI0DCXMhAMs5BwV3oIkCQfshA3tdBwV3oIkDObshA3tdBwV3oIkCQfshAMs5BwXUEI0CQfshA3tdBwXUEI0CQfshA3tdBwXUEI0DObshAMs5BwV3oIkDObshAMs5BwXUEI0DObshAMs5BwV3oIkCQfshAMs5BwXUEI0DObshAMs5BwV3oIkDObshAMs5BwXUEI0CQfshAMs5BwaGUtD9mIpZA3tdBwaGUtD9mIpZAks1Bwb4FI0BmIpZAMs5BwT9EtD9mIpZAks1BwXw7tD+QFZZAks1BwXw7tD9mIpZAks1Bwb4FI0BmIpZAMs5BwV3oIkBmIpZA3tdBwV3oIkBmIpZAks1Bwb4FI0CQFZZAMs5BwaGUtD/CXMhA3tdBwV3oIkDCXMhA3tdBwaGUtD/CXMhAks1BwXw7tD/CXMhA3tdBwaGUtD/ObshAks1Bwb4FI0DObshAMs5BwaGUtD/ObshAks1BwXw7tD/CXMhAks1BwXw7tD/ObshAks1Bwb4FI0DCXMhAMs5BwT9EtD/ObshAMs5BwV3oIkDObshA3tdBwV3oIkDObshAMs5BwV3oIkDCXMhAMs5BwXUEI0DCXMhAks1Bwb4FI0DObshAAID/////AAAAgP////8AAACA/////wAAAIAAAP//AAAAgAAA//8AAACAAAD//wAA//8AgP9//n///wCA/3/+f///AID/f/5/AIAAAP//AAAAgP////8AAP//AID/f/5/AIAAAP//AAAAgAAA//8AAACAAAD//wAAAID/////AAAAgP////8AAACA/////wAAAIAAAP//AAAAgP////8AAP//AID/f/5///8AgP9//n///wCA/3/+f///AID/f/5/AID/////AAAAgP////8AAACA/////wAAAIAAAP//AAAAgAAA//8AAACAAAD//wAA//8AgP9//n///wCA/3/+f///AID/f/5/AIAAAP//AAAAgP////8AAP//AID/f/5/AIAAAP//AAAAgAAA//8AAACAAAD//wAAAID/////AAAAgP////8AAACA/////wAAAIAAAP//AAAAgP////8AAP//AID/f/5///8AgP9//n///wCA/3/+f///AID/f/5//3//f/9//n//f/9//3/+f/9//3//f/5//3//f/9//n///wCA/3//P///AID/f/8///8AgP9//z//f/9//3/+f/9//3//f/5///8AgP9//z///////3/+f///////f/5///////9//n///////3/+f/9//3//f/5//3//f/9//n//f/9//3/+f///AID/f/8///8AgP9//z///wCA/3//P/9//3//f/5//3//f/9//n//f/9//3/+f///////f/5///////9//n///wCA/3//Pw==")
 }]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_e6f58"]
+size = Vector3(0.083740234, 1.4629517, 1.8544922)
+
 [node name="CSGBakedMeshInstance3D" type="MeshInstance3D" unique_id=1538721364]
 mesh = SubResource("ArrayMesh_e6f58")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=388001117]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=937967393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.124247, 1.9291341, 5.4897804)
+shape = SubResource("BoxShape3D_e6f58")
