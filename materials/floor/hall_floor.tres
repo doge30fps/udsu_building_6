@@ -1,24 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://ci1y7xg8adqeh"]
-
-[ext_resource type="Texture2D" uid="uid://bbk0g636dkjet" path="res://textures/floor/gpt1.png" id="1_mgbe1"]
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_gn4w6"]
-seed = 16
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_hbxc2"]
-width = 2048
-height = 2048
-noise = SubResource("FastNoiseLite_gn4w6")
-
-[resource]
-albedo_texture = ExtResource("1_mgbe1")
-metallic = 0.78
-metallic_specular = 0.24
-normal_enabled = true
-normal_scale = 0.25
-normal_texture = SubResource("NoiseTexture2D_hbxc2")
-uv1_scale = Vector3(0.285, 0.285, 0.256)
-uv1_offset = Vector3(0.17, 0, 2.37)
-uv1_triplanar = true
-uv1_world_triplanar = true
-texture_filter = 5
+version https://git-lfs.github.com/spec/v1
+oid sha256:76e2ecd32465be9cf95acbd1a3f2b0750a3da589af94f4b33ff9595e06e27321
+size 722

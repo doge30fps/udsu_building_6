@@ -1,7 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://lba5bmoc21k1"]
-
-[ext_resource type="Texture2D" uid="uid://c5h20vaxiuq7n" path="res://textures/room321/sprites/fireextinguisher.png" id="1_bxe40"]
-
-[resource]
-transparency = 1
-albedo_texture = ExtResource("1_bxe40")
+version https://git-lfs.github.com/spec/v1
+oid sha256:bf2eaa46da2ee6f1167de1ff287f0e8fa3388d41437dad8a44a2b7268b07e5d0
+size 274

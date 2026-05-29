@@ -1,7 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://by2buyjdjsl2j"]
-
-[ext_resource type="Texture2D" uid="uid://b0wb4dyotymf4" path="res://textures/room321/sprites/electricshield.png" id="1_skqxr"]
-
-[resource]
-transparency = 1
-albedo_texture = ExtResource("1_skqxr")
+version https://git-lfs.github.com/spec/v1
+oid sha256:8af29a15ada79e7209db268a828ee5313f66d009fcfa61263cad7cb4d0cbdd2c
+size 273

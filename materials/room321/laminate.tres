@@ -1,19 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://bfduhrv4fmrf5"]
-
-[ext_resource type="Texture2D" uid="uid://b63xq4jn8f6d1" path="res://textures/room321/laminate/laminate_floor_03_diff_4k.jpg" id="1_0l7df"]
-[ext_resource type="Texture2D" uid="uid://c5d4fit3a4jhv" path="res://textures/room321/laminate/laminate_floor_03_nor_gl_4k.jpg" id="2_cunx5"]
-[ext_resource type="Texture2D" uid="uid://dwfkc854bo3ar" path="res://textures/room321/laminate/laminate_floor_03_rough_4k.jpg" id="3_xwemw"]
-
-[resource]
-albedo_color = Color(1, 1, 0, 1)
-albedo_texture = ExtResource("1_0l7df")
-metallic = 0.3
-metallic_specular = 0.6
-roughness_texture = ExtResource("3_xwemw")
-roughness_texture_channel = 4
-normal_enabled = true
-normal_scale = 4.63
-normal_texture = ExtResource("2_cunx5")
-uv1_scale = Vector3(0.765, 0.765, 0.765)
-uv1_offset = Vector3(0.395, 0, 0.955)
-uv1_triplanar = true
+version https://git-lfs.github.com/spec/v1
+oid sha256:700503872056f389cdb8402541bc4bdeb27a6ffba028d3177b7eb26bfbd8146e
+size 878

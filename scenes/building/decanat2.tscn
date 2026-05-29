@@ -272,6 +272,7 @@ transform = Transform3D(0.0072811684, 0, -3.9269514, 0, 6.5647016, 0, 0.76838076
 [node name="Sprite3D6" type="Sprite3D" parent="." unique_id=2051491495]
 transform = Transform3D(-2.2036955e-05, 0, 0.1605133, 0, 0.05111871, 0, -0.046762705, 0, -7.5630844e-05, -28.462341, 2.6117053, 1.2916527)
 material_override = SubResource("StandardMaterial3D_85l7j")
+shaded = true
 texture = ExtResource("3_awj1h")
 region_enabled = true
 region_rect = Rect2(144, 152, 272, 272)
@@ -279,12 +280,14 @@ region_rect = Rect2(144, 152, 272, 272)
 [node name="Sprite3D7" type="Sprite3D" parent="." unique_id=1937992715]
 transform = Transform3D(-3.6962552e-05, -1.1163533e-12, 0.16057125, -0.0011348203, 0.09846708, -1.0946396e-06, -0.07842679, -0.0014247978, -7.5650234e-05, -28.437374, 1.8069997, 0.49316406)
 material_override = SubResource("StandardMaterial3D_c3hej")
+shaded = true
 texture = ExtResource("4_ew027")
 region_rect = Rect2(144, 152, 272, 272)
 
 [node name="Sprite3D4" type="Sprite3D" parent="." unique_id=926604096]
 transform = Transform3D(-2.0457964e-07, 0, 0.36065608, 0, 0.05016917, 0, -0.058904745, 0, -2.4579819e-08, -28.425232, 2.2494764, 0.34263992)
 material_override = SubResource("StandardMaterial3D_bfalx")
+shaded = true
 texture = ExtResource("5_6he56")
 
 [node name="Label3D" type="Label3D" parent="Sprite3D4" unique_id=81025597]
@@ -303,6 +306,7 @@ outline_size = 3
 [node name="Sprite3D5" type="Sprite3D" parent="." unique_id=254925539]
 transform = Transform3D(-2.2836633e-09, 0, 0.09898509, 0, 0.08294916, 0, -0.05224413, 0, -4.3267763e-09, -28.425068, 2.2507489, 0.68255234)
 material_override = SubResource("StandardMaterial3D_ie0rk")
+shaded = true
 texture = ExtResource("6_ymy6l")
 region_enabled = true
 region_rect = Rect2(32, 16, 480, 160)

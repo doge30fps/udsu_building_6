@@ -1294,144 +1294,116 @@ transform = Transform3D(-0.02586295, 0, 0.99966544, 0, 0.99999994, 0, -0.9996654
 
 [node name="Set_1" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=1764087543]
 transform = Transform3D(0.9862825, 0, 3.7252903e-09, 0, 1.2408619, 0, -1.8626451e-09, 0, 1.5302169, 2.5039287, 0.2889443, -0.8187109)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_c5pi3")
 
 [node name="Set_9" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=1150172766]
 transform = Transform3D(1.0584289, 0, 3.7252903e-09, 0, 1.3129658, 0, -9.313226e-09, 0, 1.7299457, 1.8515567, 0.74547327, -0.86877793)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_avw7s")
 
 [node name="Set_18" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=1772795091]
 transform = Transform3D(1.1664184, 0, -1.8626451e-09, 0, 1.6660715, 0, -7.450581e-09, 0, 1.0072414, 2.6193695, -0.5913923, -1.0050248)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_6m4pb")
 
 [node name="Set_23" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=253337636]
 transform = Transform3D(1.3387955, 0, 5.5879354e-09, 0, 1.2105597, 0, -3.7252903e-09, 0, 1.0095106, 2.5901184, 0.73096734, -0.82218915)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_606ja")
 
 [node name="Set_8" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=548066453]
 transform = Transform3D(1.3507122, 0, -3.7252903e-09, 0, 1.2774363, 0, 0, 0, 1.0090735, 1.8815539, 0.2979304, -0.76601136)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_5tr57")
 
 [node name="Set_21" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=678279854]
 transform = Transform3D(1.0000002, 0, 1.8626451e-09, 0, 1.5376203, 0, -1.8626451e-09, 0, 1.0000002, 0.5267451, 0.28384924, -0.7786671)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_hrfef")
 
 [node name="Set_15" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=602881254]
 transform = Transform3D(1.0000005, 0, 1.8626451e-09, 0, 1.6852771, 0, -1.8626451e-09, 0, 1.0000005, 0.68291163, -0.6079809, -0.87449604)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_8ej1e")
 
 [node name="Set_16" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=1723819110]
 transform = Transform3D(1.0000005, 0, 1.8626451e-09, 0, 1.6852771, 0, -1.8626451e-09, 0, 1.0000005, 1.1171674, -0.66257745, -0.8744969)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_7l71h")
 
 [node name="Set_19" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=432341852]
 transform = Transform3D(1.0000005, 0, 1.8626451e-09, 0, 1.6852771, 0, -1.8626451e-09, 0, 1.0000005, 1.7419798, -0.66638625, -1.0063984)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_yg6od")
 
 [node name="Set_24" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=617367165]
 transform = Transform3D(1.0000005, 0, 1.8626451e-09, 0, 1.6852771, 0, -1.8626451e-09, 0, 1.0000005, 1.9476877, -0.66638625, -1.001076)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_5hrcv")
 
 [node name="Set_20" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=144412847]
 transform = Transform3D(1.8612417, 0, 7.450581e-09, 0, 1.8473821, 0, -2.9802322e-08, 0, 1.01999, 2.639523, -0.6606213, -0.83202994)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_kwqwt")
 
 [node name="Set_12" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=375143598]
 transform = Transform3D(1.0000002, 0, 1.8626451e-09, 0, 1.4327166, 0, -1.8626451e-09, 0, 1.0000002, 0.57866114, 0.2738455, -0.999201)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_jrq2g")
 
 [node name="Set_13" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=2096015218]
 transform = Transform3D(1.1456358, 0, 3.7252903e-09, 0, 1.8473821, 0, -9.313226e-09, 0, 1.0037683, 1.6955783, -0.6412691, -0.83737)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_7piw7")
 
 [node name="Set_17" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=1901489370]
 transform = Transform3D(1.1456358, 0, 3.7252903e-09, 0, 1.8473821, 0, -9.313226e-09, 0, 1.0037683, 2.146713, -0.6412691, -1.0182083)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_vynxj")
 
 [node name="Set_14" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=301429729]
 transform = Transform3D(1.9224606, 0, -3.7252903e-09, 0, 1.6199832, 0, -3.7252903e-09, 0, 1.023866, 1.0611442, 0.27034384, -0.9796492)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_nomd2")
 
 [node name="Set_11" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=1997632439]
 transform = Transform3D(1.629319, 0, 1.1175871e-08, 0, 1.9747239, 0, 1.4901161e-08, 0, 1.0162807, 0.4755944, 0.7888076, -0.8449875)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_fxf0b")
 
 [node name="Set_22" type="MeshInstance3D" parent="Books2/Book_sets" unique_id=887621577]
 transform = Transform3D(1.7113392, 0, 1.3038516e-08, 0, 1.523552, 0, 0, 0, 1.0184029, 2.252861, 0.7303713, -0.82492554)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_04a6m")
 
 [node name="Seperate_Books" type="Node3D" parent="Books2" unique_id=536067477]
 
 [node name="Book_22" type="MeshInstance3D" parent="Books2/Seperate_Books" unique_id=1700721797]
 transform = Transform3D(1.351342, 0.5384574, -0.0028373022, -0.6856457, 1.0611616, -0.011862205, -0.004242897, 0.013930763, 1.0132604, 1.489995, 0.71421945, -0.79982287)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_ktjq0")
 
 [node name="Book_23" type="MeshInstance3D" parent="Books2/Seperate_Books" unique_id=2051654996]
 transform = Transform3D(1.4220556, 0, 5.5879354e-09, 0, 1.4984087, 0, -1.8626451e-08, 0, 1.0109189, 1.1352774, 0.60021365, -0.7625154)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_gdah5")
 
 [node name="Book_24" type="MeshInstance3D" parent="Books2/Seperate_Books" unique_id=889236908]
 transform = Transform3D(1.4220556, 0, 5.5879354e-09, 0, 1.4984087, 0, -1.8626451e-08, 0, 1.0109189, 1.141571, 0.6306828, -0.7690958)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_ukg1c")
 
 [node name="Book_25" type="MeshInstance3D" parent="Books2/Seperate_Books" unique_id=824550916]
 transform = Transform3D(1.4220556, 0, 3.7252903e-09, 0, 1.4984087, 0, -2.2351742e-08, 0, 1.0109187, 1.1580671, 0.65489155, -0.7682174)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_ik17a")
 
 [node name="Book_26" type="MeshInstance3D" parent="Books2/Seperate_Books" unique_id=622661580]
 transform = Transform3D(1.4220556, 0, 3.7252903e-09, 0, 1.4984087, 0, -2.2351742e-08, 0, 1.0109187, 1.1199214, 0.68780524, -0.8067689)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_75ima")
 
 [node name="Book_27" type="MeshInstance3D" parent="Books2/Seperate_Books" unique_id=1108452255]
 transform = Transform3D(1.4220556, 0, 3.7252903e-09, 0, 1.4984087, 0, -2.2351742e-08, 0, 1.0109187, 1.1218599, 0.71597195, -0.8133501)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_kd866")
 
 [node name="Book_28" type="MeshInstance3D" parent="Books2/Seperate_Books" unique_id=383482746]
 transform = Transform3D(1.8374602, 0, 1.1175871e-08, 0, 2.7297707, 0, -3.7252903e-08, 0, 1.0185584, 0.8494698, 0.58532184, -0.8197041)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_5bmsg")
 
 [node name="Book_29" type="MeshInstance3D" parent="Books2/Seperate_Books" unique_id=1580035803]
 transform = Transform3D(0.13723657, 1.178326, -0.02348909, -1.3590335, 0.11827525, -0.025972681, -0.031798236, 0.030485183, 1.0086776, 1.3022479, 0.14867851, -0.7915312)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_ucojk")
 
 [node name="Book_30" type="MeshInstance3D" parent="Books2/Seperate_Books" unique_id=1391315461]
 transform = Transform3D(1.0000005, 0, 1.8626451e-09, 0, 1.6852771, 0, -1.8626451e-09, 0, 1.0000005, 0.33300668, -0.6103676, -0.88060683)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_bd7oe")
 
 [node name="Book_31" type="MeshInstance3D" parent="Books2/Seperate_Books" unique_id=1458966425]
 transform = Transform3D(1.0000005, 0, 1.8626451e-09, 0, 1.6852771, 0, -1.8626451e-09, 0, 1.0000005, 0.40341198, -0.67969453, -0.88461)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_tggpc")
 
 [node name="Book_32" type="MeshInstance3D" parent="Books2/Seperate_Books" unique_id=1507451970]
 transform = Transform3D(0.26699767, 0.38379416, 0.8952196, -1.5008198, 0.37122604, -0.052191686, -0.6671281, -0.6815351, 0.4756984, 1.4708418, -0.8303547, -0.8866716)
-cast_shadow = 0
 mesh = SubResource("ArrayMesh_u8uut")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2040122367]
@@ -1441,28 +1413,28 @@ shape = SubResource("BoxShape3D_mu2kt")
 [node name="book_shelf" parent="." unique_id=1122801939 instance=ExtResource("5_c5pi3")]
 transform = Transform3D(0.43988308, 0, 0, 0, 0.6807668, 0, 0, 0, 0.57519925, -1.1269801, 0.016200006, -0.30847365)
 
-[node name="Cube" parent="book_shelf" index="0" unique_id=1717757747]
+[node name="Cube" parent="book_shelf" index="0" unique_id=1980744832]
 surface_material_override/0 = SubResource("StandardMaterial3D_avw7s")
 
-[node name="Cube_007" parent="book_shelf" index="3" unique_id=997186546]
+[node name="Cube_007" parent="book_shelf" index="3" unique_id=369833938]
 surface_material_override/0 = ExtResource("1_y5dwn")
 
-[node name="Cube_005" parent="book_shelf" index="6" unique_id=239289250]
+[node name="Cube_005" parent="book_shelf" index="6" unique_id=658145210]
 surface_material_override/0 = ExtResource("1_y5dwn")
 
-[node name="Cube_001" parent="book_shelf" index="8" unique_id=1822178860]
+[node name="Cube_001" parent="book_shelf" index="8" unique_id=685909451]
 surface_material_override/0 = ExtResource("1_y5dwn")
 
-[node name="Cube_003" parent="book_shelf" index="9" unique_id=1063812490]
+[node name="Cube_003" parent="book_shelf" index="9" unique_id=1158847956]
 surface_material_override/0 = ExtResource("1_y5dwn")
 
-[node name="Cube_002" parent="book_shelf" index="12" unique_id=1170420385]
+[node name="Cube_002" parent="book_shelf" index="12" unique_id=659331768]
 surface_material_override/0 = ExtResource("1_y5dwn")
 
-[node name="Cube_006" parent="book_shelf" index="13" unique_id=1235520171]
+[node name="Cube_006" parent="book_shelf" index="13" unique_id=455444331]
 surface_material_override/0 = ExtResource("1_y5dwn")
 
-[node name="Cube_004" parent="book_shelf" index="15" unique_id=605303908]
+[node name="Cube_004" parent="book_shelf" index="15" unique_id=1577501837]
 surface_material_override/0 = ExtResource("1_y5dwn")
 
 [editable path="book_shelf"]

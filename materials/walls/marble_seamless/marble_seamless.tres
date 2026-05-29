@@ -1,16 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://f5omtinbkuaw"]
-
-[ext_resource type="Texture2D" uid="uid://dt43e65x7sly0" path="res://textures/walls/seamless_dark_marble/Marble016_1K-JPG/Marble016_1K-JPG_Color.jpg" id="1_xkww4"]
-[ext_resource type="Texture2D" uid="uid://bmedly02sqqx0" path="res://textures/walls/seamless_dark_marble/Marble016_1K-JPG/Marble016_1K-JPG_Displacement.jpg" id="2_en7lu"]
-[ext_resource type="Texture2D" uid="uid://0xljktn8441w" path="res://textures/walls/seamless_dark_marble/Marble016_1K-JPG/Marble016_1K-JPG_NormalGL.jpg" id="3_orv1r"]
-[ext_resource type="Texture2D" uid="uid://boyikqa88psuc" path="res://textures/walls/seamless_dark_marble/Marble016_1K-JPG/Marble016_1K-JPG_Roughness.jpg" id="4_vf54q"]
-
-[resource]
-albedo_texture = ExtResource("1_xkww4")
-roughness_texture = ExtResource("4_vf54q")
-normal_enabled = true
-normal_texture = ExtResource("3_orv1r")
-heightmap_enabled = true
-heightmap_scale = 0.661
-heightmap_texture = ExtResource("2_en7lu")
-uv1_scale = Vector3(5.745, 1, 1)
+version https://git-lfs.github.com/spec/v1
+oid sha256:67b4b3501aa5b4bb42be4845bd4789339666aebbe4c0a0fe7aa86ad1639cc86c
+size 1026

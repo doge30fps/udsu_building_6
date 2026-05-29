@@ -1,13 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://jhbujhwfj4ra"]
-
-[ext_resource type="Texture2D" uid="uid://cmuhy2f3p3rhv" path="res://textures/wooden_door/blinn2SG_baseColor.png" id="1_3b0pg"]
-
-[resource]
-resource_name = "blinn3SG"
-cull_mode = 2
-albedo_texture = ExtResource("1_3b0pg")
-metallic = 1.0
-metallic_texture_channel = 2
-roughness = 0.6
-roughness_texture_channel = 1
-normal_enabled = true
+version https://git-lfs.github.com/spec/v1
+oid sha256:cc794f2d35e20cfb1b6b1dab02a38a6653407005b903918437f596e14538914a
+size 408

@@ -1,4 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://bbtqsnl2cpkcn"]
-
-[resource]
-albedo_color = Color(0.9437122, 0.8746185, 0.7429365, 1)
+version https://git-lfs.github.com/spec/v1
+oid sha256:d4bcca91438dae464bab7bf4582b87d8b794168fdc184250aea7d0e20656f7ed
+size 144

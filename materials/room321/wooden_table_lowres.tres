@@ -1,6 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://b6t7lcj5j8l75"]
-
-[ext_resource type="Texture2D" uid="uid://bgewtp7woyas2" path="res://textures/room321/tables/wooden_part.JPG" id="1_gpbdb"]
-
-[resource]
-albedo_texture = ExtResource("1_gpbdb")
+version https://git-lfs.github.com/spec/v1
+oid sha256:0089bd50e3260fd4baa786c14b63feb61aa9cf5eb676fcad7e8abd899341b0fc
+size 252

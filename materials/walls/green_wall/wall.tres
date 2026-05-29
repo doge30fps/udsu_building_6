@@ -1,28 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://5kcngd34dwho"]
-
-[ext_resource type="Texture2D" uid="uid://c54w6q1lxbpq5" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_BaseColor.jpg" id="1_vxehs"]
-[ext_resource type="Texture2D" uid="uid://dmmysnvub0vs8" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_AmbientOcclusion.jpg" id="2_58vm7"]
-[ext_resource type="Texture2D" uid="uid://8n3misa6fn5w" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Displacement.png" id="3_16bte"]
-[ext_resource type="Texture2D" uid="uid://cudbqxvey3xkn" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Metallic.jpg" id="4_ubs1l"]
-[ext_resource type="Texture2D" uid="uid://cb5sct4py02m7" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Normal.png" id="5_hgujn"]
-[ext_resource type="Texture2D" uid="uid://u5ia7a3jidor" path="res://textures/walls/white_wall1/Poliigon_PlasterPainted_7664_Roughness.jpg" id="6_ywgmy"]
-
-[resource]
-albedo_color = Color(0.8716694, 0.9572546, 0.93265563, 1)
-albedo_texture = ExtResource("1_vxehs")
-metallic = 0.5
-metallic_texture = ExtResource("4_ubs1l")
-metallic_texture_channel = 3
-roughness_texture = ExtResource("6_ywgmy")
-roughness_texture_channel = 3
-normal_enabled = true
-normal_texture = ExtResource("5_hgujn")
-ao_enabled = true
-ao_texture = ExtResource("2_58vm7")
-ao_texture_channel = 3
-heightmap_enabled = true
-heightmap_deep_parallax = true
-heightmap_min_layers = 8
-heightmap_max_layers = 32
-heightmap_texture = ExtResource("3_16bte")
-uv1_world_triplanar = true
+version https://git-lfs.github.com/spec/v1
+oid sha256:762a9c9f2f36018f1ce41a6d0b684e399b26101ceeb85d756353020cffb39c3c
+size 1588

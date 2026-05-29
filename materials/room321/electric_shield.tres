@@ -1,7 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://dd6h0gbyetle2"]
-
-[ext_resource type="Texture2D" uid="uid://bvib4g8arq728" path="res://textures/room321/walls/beige_wall.JPG" id="1_jsq8j"]
-
-[resource]
-albedo_texture = ExtResource("1_jsq8j")
-uv1_triplanar = true
+version https://git-lfs.github.com/spec/v1
+oid sha256:bab4e9c104535f3f9d2a9cc559b773ed13fff4c16b700bdc2e587ef358689a79
+size 271

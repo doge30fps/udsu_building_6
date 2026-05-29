@@ -1,8 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://dk60bcu6hjcj2"]
-
-[ext_resource type="Texture2D" uid="uid://bjgj75tnvb7o0" path="res://textures/room321/tables/white_wood_part.JPG" id="1_j5mvo"]
-
-[resource]
-albedo_color = Color(0.76240367, 0.76240367, 0.76240367, 1)
-albedo_texture = ExtResource("1_j5mvo")
-uv1_scale = Vector3(1.895, 1, 1.895)
+version https://git-lfs.github.com/spec/v1
+oid sha256:cd5b3e246c2e49725b25a2efd34033eed9748b9a85fd5d03269aeb485e4c4b4b
+size 353

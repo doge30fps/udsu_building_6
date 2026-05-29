@@ -1,8 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://ghpoh7jjiucs"]
-
-[ext_resource type="Texture2D" uid="uid://dv4kndfmnyeof" path="res://textures/room321/chairs/wooden_chair.jpg" id="1_2e1qk"]
-
-[resource]
-albedo_color = Color(0.8346142, 0.83461434, 0.8346141, 1)
-albedo_texture = ExtResource("1_2e1qk")
-metallic = 0.65
+version https://git-lfs.github.com/spec/v1
+oid sha256:f196496cab342bd8e68500ba74f9a943634e7f8b23bffc3efc93f546182efb57
+size 326

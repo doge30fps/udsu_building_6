@@ -1,14 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://begxfr1w3bq6g"]
-
-[ext_resource type="Texture2D" uid="uid://bsqvtjh55ja0y" path="res://textures/room321/walls/PaintedPlaster017_2K-PNG_Color.png" id="1_ekcls"]
-[ext_resource type="Texture2D" uid="uid://hy3jgr0uj3c7" path="res://textures/room321/walls/PaintedPlaster017_2K-PNG_NormalGL.png" id="2_oq6xp"]
-[ext_resource type="Texture2D" uid="uid://4qpg0r60bagn" path="res://textures/room321/walls/PaintedPlaster017_2K-PNG_Roughness.png" id="3_m0evm"]
-
-[resource]
-albedo_color = Color(0.86036915, 0.8603692, 0.8603692, 1)
-albedo_texture = ExtResource("1_ekcls")
-roughness_texture = ExtResource("3_m0evm")
-roughness_texture_channel = 4
-normal_enabled = true
-normal_texture = ExtResource("2_oq6xp")
-uv1_triplanar = true
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f8108621fc3e2665102b10253e1a09618d083cfc2a4ffb351aaeaa9fc0adc47
+size 773

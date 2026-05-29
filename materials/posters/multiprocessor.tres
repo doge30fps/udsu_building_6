@@ -1,8 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://g6kg6orx3y7o"]
-
-[ext_resource type="Texture2D" uid="uid://c87on1t0i1v7x" path="res://textures/room321/sprites/poster5.png" id="1_fuumw"]
-
-[resource]
-albedo_texture = ExtResource("1_fuumw")
-uv1_scale = Vector3(0.955, 1, 1)
-uv1_offset = Vector3(0.015, 0, 0)
+version https://git-lfs.github.com/spec/v1
+oid sha256:3dc67874d0e617ec8d724f595292cd30b98144792733822b5d0fc096bd0b55e2
+size 315
