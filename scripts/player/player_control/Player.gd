@@ -4,29 +4,19 @@ var GRAVITY = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 var current_surface: StringName = "wood"  # По умолчанию - дерево
 
-# NORMAL SPEED.
 @export var normal_speed : float = 3;
-# SPRINT/RUNING SPEED.
 @export var sprint_speed : float = 4;
 @export var crouch_speed : float = 1.0;
 @export var walking_speed : float = 1.5;
-# accel_in_air STANDS FOR ACCELERATION IN HANPPENING IN AIR. 
-# accel_nomal STANDS FOR ACCELERATION IN NOT HANPPENING IN AIR BUT INSTEAD ON GROUND.
 @export var accel_nomal : float = 5.5
 @export var accel_in_air : float = 0.5
 @export var step_speed_normal : float = 9.5;
-# THESE CONSTANTS DEFINE TWO ACCELERATION VALUES:
-# THESE VALUES CONTROL HOW QUICKLY THE player SPEEDS UP AND SLOWS DOWN IN DIFFERENT CONTEXTS.
-# accel_nomal FOR WHEN THE player IS ON THE GROUND, AND accel_in_air FOR WHEN THE player IS IN THE AIR. 
-# ACCEL IS ABOUT THE CURRENT ACCELERATION.
 @onready var accel : float = accel_nomal
-@export var jump_velocity : float = 6.5 #NO NEED TO SET JUMP VALUE BECAUSE THE CROUCH FUNCTIONS DOES IT'S VALUE Changing.
+@export var jump_velocity : float = 6.5 
 var speed : float;
 var step_speed : float;
-# LOWEST HEIGHT AND MAXIMUM.
 @export var normal_height : float = 1.8
 @export var crouch_height : float = 1.3
-# LOWEST HEIGHT AND MAXIMUM TRANSITION SPEED OF CROUCHING.!!!!!!
 @export var crouching_speed : float = 1
 
 
@@ -75,17 +65,17 @@ func _physics_process(delta : float) -> void:
 		accel = accel_nomal
 		air_time = 0.0
 	
-	is_sprinting = false; #
+	is_sprinting = false;
 	if Input.is_action_pressed("move_run") and is_forward_moving and !is_in_crouch:
 		speed = sprint_speed
 		step_speed = (sprint_speed / normal_speed) * step_speed_normal;
-		is_sprinting = true; #
+		is_sprinting = true;
 	
-	is_walking = false; #
+	is_walking = false;
 	if Input.is_action_pressed("move_walk") and !is_in_crouch:
 		speed = walking_speed
 		step_speed = (walking_speed / normal_speed) * step_speed_normal;
-		is_walking = true; #
+		is_walking = true;
 		
 	
 	if Input.is_action_just_pressed("move_jump") and is_on_floor() and !is_in_crouch:
@@ -115,7 +105,6 @@ func CROUCH(delta : float) -> void:
 		head.position.y -= crouching_speed * delta
 
 	elif not colliding:
-		# IT WILL INCREASE THE SIZE OF THE CAPSULE BY THE CROUCHING SPEED AND RESETS THE JUMP VALUE.
 		speed = normal_speed
 		step_speed = step_speed_normal;
 		player_capsule_top.position.y += crouching_speed * delta
@@ -137,5 +126,5 @@ func handle_bounds() -> void:
 func _on_feet_check_surface_changed(surface_name: String):
 	if current_surface != surface_name:
 		current_surface = surface_name
-		# Это для отладки, чтобы убедиться, что всё работает
+		# Это для отладки
 		print("Surface changed to: ", current_surface)

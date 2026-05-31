@@ -1,6 +1,5 @@
 extends Node
 
-
 class_name CharacterPostureMachine
 @export var player : CharacterBody3D;
 @export var current_posture : Posture;

@@ -25,16 +25,11 @@ func _ready() -> void:
 		else:
 			push_warning("Child " + child.name + " is not a State for CharacterStateMachine!")
 
-			
-
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta : float) -> void:
 	if (current_state.next_state != null):
 		switch_states(current_state.next_state)
 	current_state.state_process(delta)
-
-
 
 func switch_states(new_state : State) -> void:
 	if(current_state != null):

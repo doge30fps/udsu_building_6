@@ -9,7 +9,7 @@ func interact():
 		interactable = false
 		toggle = !toggle
 		if toggle == false:
-			animation_player.play("close") # Вызываем анимацию "закрыть"
+			animation_player.play("close") # анимацию "закрыть"
 		if toggle == true:
-			animation_player.play("open") # Вызываем анимацию "закрыть"
+			animation_player.play("open") # анимация "открыть"
 		interactable = true

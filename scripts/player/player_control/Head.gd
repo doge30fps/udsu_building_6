@@ -5,16 +5,13 @@ extends Node3D
 @onready var camera : Camera3D = $Camera
 @export var sub_viewport : SubViewport;
 @export var player : CharacterBody3D;
-
 @export var MOUSE_SENS : float = 3.0
-
 @export var CAM_BOB : float = 0.11
 @export var bob_enabled : bool = true
-
 @export var smooth : bool = true
+
 var target_rot_x: float = 0.0
 var target_rot_y: float = 0.0
-
 var step_speed : float;
 var t : float = 0.0
 var cam_pos : Vector2
@@ -50,7 +47,7 @@ var step_sounds_map = {
 # если поверхность не найдена
 var default_step_sounds = step_sounds_map["concrete"]
 
-# Прыжки и приземления пока оставляем бетонными
+# Прыжки и приземления. Пока бетонными оставил
 @onready var land_sounds = [
 	preload("res://sounds/player/steps/concrete/land_concrete_01.ogg"),
 	preload("res://sounds/player/steps/concrete/land_concrete_02.ogg"),

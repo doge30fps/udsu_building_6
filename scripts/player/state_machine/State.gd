@@ -3,10 +3,8 @@ extends Node
 class_name State
 
 @export var can_move : bool = true
-
 var player : CharacterBody3D
 var next_state : State
-
 
 func state_process(_delta : float) -> void:
 	pass
